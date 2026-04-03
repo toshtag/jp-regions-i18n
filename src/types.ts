@@ -5,6 +5,7 @@ export type CityType = "city" | "designated_city" | "ward" | "special_ward" | "t
 export interface Prefecture {
   code: string;
   iso: string;
+  lgCode: string;
   name: string;
 }
 
