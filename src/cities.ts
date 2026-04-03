@@ -1,16 +1,8 @@
 import { normalizeLang } from "./lang.js";
-import {
-  getCitiesRawByPrefCode,
-  getCityRawByCode,
-  getCityRawByLGCode,
-} from "./store.js";
+import { getCitiesRawByPrefCode, getCityRawByCode, getCityRawByLGCode } from "./store.js";
 import type { City, GetCitiesOptions } from "./types.js";
 
-export function getCities(
-  prefCode: string,
-  lang?: string,
-  options?: GetCitiesOptions,
-): City[] {
+export function getCities(prefCode: string, lang?: string, options?: GetCitiesOptions): City[] {
   const l = normalizeLang(lang);
   let cities = getCitiesRawByPrefCode(prefCode);
 
@@ -31,10 +23,7 @@ export function getCities(
   }));
 }
 
-export function getCityByCode(
-  code: string,
-  lang?: string,
-): City | undefined {
+export function getCityByCode(code: string, lang?: string): City | undefined {
   const raw = getCityRawByCode(code);
   if (!raw) return undefined;
   const l = normalizeLang(lang);
@@ -48,10 +37,7 @@ export function getCityByCode(
   };
 }
 
-export function getCityByLGCode(
-  lgCode: string,
-  lang?: string,
-): City | undefined {
+export function getCityByLGCode(lgCode: string, lang?: string): City | undefined {
   const raw = getCityRawByLGCode(lgCode);
   if (!raw) return undefined;
   const l = normalizeLang(lang);
