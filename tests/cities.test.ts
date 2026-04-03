@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { getCities, getCityByJisCode, getCityByLGCode } from "../src/index.js";
+import {
+  getCities,
+  getCitiesAllLangs,
+  getCityByJisCode,
+  getCityByJisCodeAllLangs,
+  getCityByLGCode,
+  getCityByLGCodeAllLangs,
+} from "../src/index.js";
 
 describe("getCities", () => {
   it("filters cities by prefecture code", () => {
@@ -82,5 +89,81 @@ describe("getCityByLGCode", () => {
 
   it("returns undefined for non-existent lgCode", () => {
     expect(getCityByLGCode("999999")).toBeUndefined();
+  });
+});
+
+describe("getCitiesAllLangs", () => {
+  it("returns cities with all 7 languages", () => {
+    const langs = ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
+    const cities = getCitiesAllLangs("13");
+    expect(cities.length).toBeGreaterThan(0);
+    for (const c of cities) {
+      for (const lang of langs) {
+        expect(c.name[lang]).toBeTruthy();
+      }
+    }
+  });
+
+  it("returns correct prefCode for all cities", () => {
+    const cities = getCitiesAllLangs("13");
+    for (const c of cities) {
+      expect(c.prefCode).toBe("13");
+    }
+  });
+
+  it("supports type filter", () => {
+    const wards = getCitiesAllLangs("13", { type: "special_ward" });
+    expect(wards).toHaveLength(23);
+    for (const w of wards) {
+      expect(w.type).toBe("special_ward");
+    }
+  });
+
+  it("supports parentJisCode filter", () => {
+    const sapporoWards = getCitiesAllLangs("01", { parentJisCode: "01100" });
+    expect(sapporoWards).toHaveLength(10);
+    for (const w of sapporoWards) {
+      expect(w.parentJisCode).toBe("01100");
+    }
+  });
+
+  it("returns empty array for non-existent prefecture", () => {
+    expect(getCitiesAllLangs("99")).toEqual([]);
+  });
+});
+
+describe("getCityByJisCodeAllLangs", () => {
+  it("returns city with all languages", () => {
+    const chiyoda = getCityByJisCodeAllLangs("13101");
+    expect(chiyoda).toBeDefined();
+    expect(chiyoda?.jisCode).toBe("13101");
+    expect(chiyoda?.prefCode).toBe("13");
+    expect(chiyoda?.type).toBe("special_ward");
+    expect(chiyoda?.name.ja).toBe("千代田区");
+    expect(chiyoda?.name.en).toBeTruthy();
+  });
+
+  it("returns correct parentJisCode", () => {
+    const chuo = getCityByJisCodeAllLangs("01101");
+    expect(chuo?.parentJisCode).toBe("01100");
+  });
+
+  it("returns undefined for non-existent jisCode", () => {
+    expect(getCityByJisCodeAllLangs("99999")).toBeUndefined();
+  });
+});
+
+describe("getCityByLGCodeAllLangs", () => {
+  it("returns city with all languages", () => {
+    const chiyoda = getCityByLGCodeAllLangs("131016");
+    expect(chiyoda).toBeDefined();
+    expect(chiyoda?.jisCode).toBe("13101");
+    expect(chiyoda?.name.ja).toBe("千代田区");
+    expect(chiyoda?.name.en).toBeTruthy();
+    expect(chiyoda?.name.ko).toBeTruthy();
+  });
+
+  it("returns undefined for non-existent lgCode", () => {
+    expect(getCityByLGCodeAllLangs("999999")).toBeUndefined();
   });
 });
