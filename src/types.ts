@@ -34,7 +34,12 @@ export interface CityAllLangs {
   name: Record<Lang, string>;
 }
 
+export interface GetPrefecturesOptions {
+  short?: boolean;
+}
+
 export interface GetCitiesOptions {
   type?: CityType;
   parentJisCode?: string;
+  short?: boolean;
 }

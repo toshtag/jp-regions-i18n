@@ -24,6 +24,7 @@ export type {
   CityAllLangs,
   CityType,
   GetCitiesOptions,
+  GetPrefecturesOptions,
   Lang,
   Prefecture,
   PrefectureAllLangs,
