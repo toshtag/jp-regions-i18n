@@ -14,7 +14,12 @@ function toPublic(
   short?: boolean,
 ): Prefecture {
   const name = raw.name[lang];
-  return { code: raw.code, iso: raw.iso, lgCode: raw.lgCode, name: short ? shortenPrefName(name, lang) : name };
+  return {
+    code: raw.code,
+    iso: raw.iso,
+    lgCode: raw.lgCode,
+    name: short ? shortenPrefName(name, lang) : name,
+  };
 }
 
 function toPublicAllLangs(
@@ -24,7 +29,10 @@ function toPublicAllLangs(
   let name = raw.name;
   if (short) {
     name = Object.fromEntries(
-      (Object.entries(raw.name) as [Lang, string][]).map(([lang, n]) => [lang, shortenPrefName(n, lang)]),
+      (Object.entries(raw.name) as [Lang, string][]).map(([lang, n]) => [
+        lang,
+        shortenPrefName(n, lang),
+      ]),
     ) as Record<Lang, string>;
   }
   return { code: raw.code, iso: raw.iso, lgCode: raw.lgCode, name };
