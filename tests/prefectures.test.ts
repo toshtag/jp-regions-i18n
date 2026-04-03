@@ -1,9 +1,13 @@
 import { describe, expect, it } from "vitest";
 import {
   getPrefectureByCode,
+  getPrefectureByCodeAllLangs,
   getPrefectureByISO,
+  getPrefectureByISOAllLangs,
   getPrefectureByLGCode,
+  getPrefectureByLGCodeAllLangs,
   getPrefectures,
+  getPrefecturesAllLangs,
 } from "../src/index.js";
 
 describe("getPrefectures", () => {
@@ -120,5 +124,79 @@ describe("Prefecture lgCode field", () => {
   it("getPrefectureByISO includes lgCode", () => {
     const tokyo = getPrefectureByISO("JP-13");
     expect(tokyo?.lgCode).toBe("130001");
+  });
+});
+
+describe("getPrefecturesAllLangs", () => {
+  it("returns all 47 prefectures", () => {
+    expect(getPrefecturesAllLangs()).toHaveLength(47);
+  });
+
+  it("includes all 7 languages in name", () => {
+    const prefs = getPrefecturesAllLangs();
+    const langs = ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
+    for (const p of prefs) {
+      for (const lang of langs) {
+        expect(p.name[lang]).toBeTruthy();
+      }
+    }
+  });
+
+  it("returns correct names for Hokkaido", () => {
+    const hokkaido = getPrefecturesAllLangs()[0];
+    expect(hokkaido.name.ja).toBe("北海道");
+    expect(hokkaido.name.en).toBe("Hokkaido");
+  });
+
+  it("returns correct structure fields", () => {
+    const p = getPrefecturesAllLangs()[0];
+    expect(p.code).toBe("01");
+    expect(p.iso).toBe("JP-01");
+    expect(p.lgCode).toMatch(/^\d{6}$/);
+  });
+});
+
+describe("getPrefectureByCodeAllLangs", () => {
+  it("returns prefecture with all languages", () => {
+    const tokyo = getPrefectureByCodeAllLangs("13");
+    expect(tokyo).toBeDefined();
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.iso).toBe("JP-13");
+    expect(tokyo?.lgCode).toBe("130001");
+    expect(tokyo?.name.ja).toBe("東京都");
+    expect(tokyo?.name.en).toBe("Tokyo");
+    expect(tokyo?.name.ko).toBe("도쿄도");
+  });
+
+  it("returns undefined for non-existent code", () => {
+    expect(getPrefectureByCodeAllLangs("99")).toBeUndefined();
+  });
+});
+
+describe("getPrefectureByISOAllLangs", () => {
+  it("returns prefecture with all languages", () => {
+    const osaka = getPrefectureByISOAllLangs("JP-27");
+    expect(osaka).toBeDefined();
+    expect(osaka?.code).toBe("27");
+    expect(osaka?.name.ja).toBeTruthy();
+    expect(osaka?.name.en).toBeTruthy();
+  });
+
+  it("returns undefined for non-existent ISO", () => {
+    expect(getPrefectureByISOAllLangs("JP-99")).toBeUndefined();
+  });
+});
+
+describe("getPrefectureByLGCodeAllLangs", () => {
+  it("returns prefecture with all languages", () => {
+    const tokyo = getPrefectureByLGCodeAllLangs("130001");
+    expect(tokyo).toBeDefined();
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.name.ja).toBe("東京都");
+    expect(tokyo?.name.en).toBe("Tokyo");
+  });
+
+  it("returns undefined for non-existent lgCode", () => {
+    expect(getPrefectureByLGCodeAllLangs("999999")).toBeUndefined();
   });
 });
