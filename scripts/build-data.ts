@@ -7,6 +7,7 @@ const OUTPUT_DIR = "src/generated";
 interface PrefectureRow {
   code: string;
   iso: string;
+  lg_code: string;
   ja: string;
   en: string;
   "zh-CN": string;
@@ -48,6 +49,7 @@ function buildPrefectures(): void {
   const prefectures = rows.map((row) => ({
     code: row.code,
     iso: row.iso,
+    lgCode: row.lg_code,
     name: Object.fromEntries(LANG_KEYS.map((lang) => [lang, row[lang]])),
   }));
 

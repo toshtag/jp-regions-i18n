@@ -5,6 +5,7 @@ import type { CityType, Lang } from "./types.js";
 interface PrefectureRaw {
   code: string;
   iso: string;
+  lgCode: string;
   name: Record<Lang, string>;
 }
 
@@ -19,6 +20,7 @@ interface CityRaw {
 
 let prefByCode = new Map<string, PrefectureRaw>();
 let prefByISO = new Map<string, PrefectureRaw>();
+let prefByLGCode = new Map<string, PrefectureRaw>();
 let prefInitialized = false;
 
 let cityByCode = new Map<string, CityRaw>();
@@ -32,6 +34,7 @@ function initPrefectures(): void {
   const data = prefecturesData as PrefectureRaw[];
   prefByCode = new Map(data.map((p) => [p.code, p]));
   prefByISO = new Map(data.map((p) => [p.iso, p]));
+  prefByLGCode = new Map(data.map((p) => [p.lgCode, p]));
 }
 
 function initCities(): void {
@@ -64,6 +67,11 @@ export function getPrefectureRawByCode(code: string): PrefectureRaw | undefined 
 export function getPrefectureRawByISO(iso: string): PrefectureRaw | undefined {
   initPrefectures();
   return prefByISO.get(iso);
+}
+
+export function getPrefectureRawByLGCode(lgCode: string): PrefectureRaw | undefined {
+  initPrefectures();
+  return prefByLGCode.get(lgCode);
 }
 
 export function getCitiesRawByPrefCode(prefCode: string): CityRaw[] {
