@@ -1,9 +1,5 @@
 import { normalizeLang } from "./lang.js";
-import {
-  getAllPrefectures,
-  getPrefectureRawByCode,
-  getPrefectureRawByISO,
-} from "./store.js";
+import { getAllPrefectures, getPrefectureRawByCode, getPrefectureRawByISO } from "./store.js";
 import type { Prefecture } from "./types.js";
 
 export function getPrefectures(lang?: string): Prefecture[] {
@@ -15,20 +11,14 @@ export function getPrefectures(lang?: string): Prefecture[] {
   }));
 }
 
-export function getPrefectureByCode(
-  code: string,
-  lang?: string,
-): Prefecture | undefined {
+export function getPrefectureByCode(code: string, lang?: string): Prefecture | undefined {
   const raw = getPrefectureRawByCode(code);
   if (!raw) return undefined;
   const l = normalizeLang(lang);
   return { code: raw.code, iso: raw.iso, name: raw.name[l] };
 }
 
-export function getPrefectureByISO(
-  iso: string,
-  lang?: string,
-): Prefecture | undefined {
+export function getPrefectureByISO(iso: string, lang?: string): Prefecture | undefined {
   const raw = getPrefectureRawByISO(iso);
   if (!raw) return undefined;
   const l = normalizeLang(lang);
