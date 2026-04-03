@@ -2,6 +2,7 @@
   {
     "code": "01",
     "iso": "JP-01",
+    "lgCode": "010006",
     "name": {
       "ja": "北海道",
       "en": "Hokkaido",
@@ -15,6 +16,7 @@
   {
     "code": "02",
     "iso": "JP-02",
+    "lgCode": "020001",
     "name": {
       "ja": "青森県",
       "en": "Aomori",
@@ -28,6 +30,7 @@
   {
     "code": "03",
     "iso": "JP-03",
+    "lgCode": "030007",
     "name": {
       "ja": "岩手県",
       "en": "Iwate",
@@ -41,6 +44,7 @@
   {
     "code": "04",
     "iso": "JP-04",
+    "lgCode": "040002",
     "name": {
       "ja": "宮城県",
       "en": "Miyagi",
@@ -54,6 +58,7 @@
   {
     "code": "05",
     "iso": "JP-05",
+    "lgCode": "050008",
     "name": {
       "ja": "秋田県",
       "en": "Akita",
@@ -67,6 +72,7 @@
   {
     "code": "06",
     "iso": "JP-06",
+    "lgCode": "060003",
     "name": {
       "ja": "山形県",
       "en": "Yamagata",
@@ -80,6 +86,7 @@
   {
     "code": "07",
     "iso": "JP-07",
+    "lgCode": "070009",
     "name": {
       "ja": "福島県",
       "en": "Fukushima",
@@ -93,6 +100,7 @@
   {
     "code": "08",
     "iso": "JP-08",
+    "lgCode": "080004",
     "name": {
       "ja": "茨城県",
       "en": "Ibaraki",
@@ -106,6 +114,7 @@
   {
     "code": "09",
     "iso": "JP-09",
+    "lgCode": "090000",
     "name": {
       "ja": "栃木県",
       "en": "Tochigi",
@@ -119,6 +128,7 @@
   {
     "code": "10",
     "iso": "JP-10",
+    "lgCode": "100005",
     "name": {
       "ja": "群馬県",
       "en": "Gunma",
@@ -132,6 +142,7 @@
   {
     "code": "11",
     "iso": "JP-11",
+    "lgCode": "110001",
     "name": {
       "ja": "埼玉県",
       "en": "Saitama",
@@ -145,6 +156,7 @@
   {
     "code": "12",
     "iso": "JP-12",
+    "lgCode": "120006",
     "name": {
       "ja": "千葉県",
       "en": "Chiba",
@@ -158,6 +170,7 @@
   {
     "code": "13",
     "iso": "JP-13",
+    "lgCode": "130001",
     "name": {
       "ja": "東京都",
       "en": "Tokyo",
@@ -171,6 +184,7 @@
   {
     "code": "14",
     "iso": "JP-14",
+    "lgCode": "140007",
     "name": {
       "ja": "神奈川県",
       "en": "Kanagawa",
@@ -184,6 +198,7 @@
   {
     "code": "15",
     "iso": "JP-15",
+    "lgCode": "150002",
     "name": {
       "ja": "新潟県",
       "en": "Niigata",
@@ -197,6 +212,7 @@
   {
     "code": "16",
     "iso": "JP-16",
+    "lgCode": "160008",
     "name": {
       "ja": "富山県",
       "en": "Toyama",
@@ -210,6 +226,7 @@
   {
     "code": "17",
     "iso": "JP-17",
+    "lgCode": "170003",
     "name": {
       "ja": "石川県",
       "en": "Ishikawa",
@@ -223,6 +240,7 @@
   {
     "code": "18",
     "iso": "JP-18",
+    "lgCode": "180009",
     "name": {
       "ja": "福井県",
       "en": "Fukui",
@@ -236,6 +254,7 @@
   {
     "code": "19",
     "iso": "JP-19",
+    "lgCode": "190004",
     "name": {
       "ja": "山梨県",
       "en": "Yamanashi",
@@ -249,6 +268,7 @@
   {
     "code": "20",
     "iso": "JP-20",
+    "lgCode": "200000",
     "name": {
       "ja": "長野県",
       "en": "Nagano",
@@ -262,6 +282,7 @@
   {
     "code": "21",
     "iso": "JP-21",
+    "lgCode": "210005",
     "name": {
       "ja": "岐阜県",
       "en": "Gifu",
@@ -275,6 +296,7 @@
   {
     "code": "22",
     "iso": "JP-22",
+    "lgCode": "220001",
     "name": {
       "ja": "静岡県",
       "en": "Shizuoka",
@@ -288,6 +310,7 @@
   {
     "code": "23",
     "iso": "JP-23",
+    "lgCode": "230006",
     "name": {
       "ja": "愛知県",
       "en": "Aichi",
@@ -301,6 +324,7 @@
   {
     "code": "24",
     "iso": "JP-24",
+    "lgCode": "240001",
     "name": {
       "ja": "三重県",
       "en": "Mie",
@@ -314,6 +338,7 @@
   {
     "code": "25",
     "iso": "JP-25",
+    "lgCode": "250007",
     "name": {
       "ja": "滋賀県",
       "en": "Shiga",
@@ -327,6 +352,7 @@
   {
     "code": "26",
     "iso": "JP-26",
+    "lgCode": "260002",
     "name": {
       "ja": "京都府",
       "en": "Kyoto",
@@ -340,6 +366,7 @@
   {
     "code": "27",
     "iso": "JP-27",
+    "lgCode": "270008",
     "name": {
       "ja": "大阪府",
       "en": "Osaka",
@@ -353,6 +380,7 @@
   {
     "code": "28",
     "iso": "JP-28",
+    "lgCode": "280003",
     "name": {
       "ja": "兵庫県",
       "en": "Hyogo",
@@ -366,6 +394,7 @@
   {
     "code": "29",
     "iso": "JP-29",
+    "lgCode": "290009",
     "name": {
       "ja": "奈良県",
       "en": "Nara",
@@ -379,6 +408,7 @@
   {
     "code": "30",
     "iso": "JP-30",
+    "lgCode": "300004",
     "name": {
       "ja": "和歌山県",
       "en": "Wakayama",
@@ -392,6 +422,7 @@
   {
     "code": "31",
     "iso": "JP-31",
+    "lgCode": "310000",
     "name": {
       "ja": "鳥取県",
       "en": "Tottori",
@@ -405,6 +436,7 @@
   {
     "code": "32",
     "iso": "JP-32",
+    "lgCode": "320005",
     "name": {
       "ja": "島根県",
       "en": "Shimane",
@@ -418,6 +450,7 @@
   {
     "code": "33",
     "iso": "JP-33",
+    "lgCode": "330001",
     "name": {
       "ja": "岡山県",
       "en": "Okayama",
@@ -431,6 +464,7 @@
   {
     "code": "34",
     "iso": "JP-34",
+    "lgCode": "340006",
     "name": {
       "ja": "広島県",
       "en": "Hiroshima",
@@ -444,6 +478,7 @@
   {
     "code": "35",
     "iso": "JP-35",
+    "lgCode": "350001",
     "name": {
       "ja": "山口県",
       "en": "Yamaguchi",
@@ -457,6 +492,7 @@
   {
     "code": "36",
     "iso": "JP-36",
+    "lgCode": "360007",
     "name": {
       "ja": "徳島県",
       "en": "Tokushima",
@@ -470,6 +506,7 @@
   {
     "code": "37",
     "iso": "JP-37",
+    "lgCode": "370002",
     "name": {
       "ja": "香川県",
       "en": "Kagawa",
@@ -483,6 +520,7 @@
   {
     "code": "38",
     "iso": "JP-38",
+    "lgCode": "380008",
     "name": {
       "ja": "愛媛県",
       "en": "Ehime",
@@ -496,6 +534,7 @@
   {
     "code": "39",
     "iso": "JP-39",
+    "lgCode": "390003",
     "name": {
       "ja": "高知県",
       "en": "Kochi",
@@ -509,6 +548,7 @@
   {
     "code": "40",
     "iso": "JP-40",
+    "lgCode": "400009",
     "name": {
       "ja": "福岡県",
       "en": "Fukuoka",
@@ -522,6 +562,7 @@
   {
     "code": "41",
     "iso": "JP-41",
+    "lgCode": "410004",
     "name": {
       "ja": "佐賀県",
       "en": "Saga",
@@ -535,6 +576,7 @@
   {
     "code": "42",
     "iso": "JP-42",
+    "lgCode": "420000",
     "name": {
       "ja": "長崎県",
       "en": "Nagasaki",
@@ -548,6 +590,7 @@
   {
     "code": "43",
     "iso": "JP-43",
+    "lgCode": "430005",
     "name": {
       "ja": "熊本県",
       "en": "Kumamoto",
@@ -561,6 +604,7 @@
   {
     "code": "44",
     "iso": "JP-44",
+    "lgCode": "440001",
     "name": {
       "ja": "大分県",
       "en": "Oita",
@@ -574,6 +618,7 @@
   {
     "code": "45",
     "iso": "JP-45",
+    "lgCode": "450006",
     "name": {
       "ja": "宮崎県",
       "en": "Miyazaki",
@@ -587,6 +632,7 @@
   {
     "code": "46",
     "iso": "JP-46",
+    "lgCode": "460001",
     "name": {
       "ja": "鹿児島県",
       "en": "Kagoshima",
@@ -600,6 +646,7 @@
   {
     "code": "47",
     "iso": "JP-47",
+    "lgCode": "470007",
     "name": {
       "ja": "沖縄県",
       "en": "Okinawa",

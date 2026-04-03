@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { getPrefectureByCode, getPrefectureByISO, getPrefectures } from "../src/index.js";
+import {
+  getPrefectureByCode,
+  getPrefectureByISO,
+  getPrefectureByLGCode,
+  getPrefectures,
+} from "../src/index.js";
 
 describe("getPrefectures", () => {
   it("returns all 47 prefectures", () => {
@@ -70,5 +75,50 @@ describe("getPrefectureByISO", () => {
 
   it("returns undefined for non-existent ISO", () => {
     expect(getPrefectureByISO("JP-99")).toBeUndefined();
+  });
+});
+
+describe("getPrefectureByLGCode", () => {
+  it("returns correct prefecture for valid 6-digit lgCode", () => {
+    const tokyo = getPrefectureByLGCode("130001");
+    expect(tokyo).toBeDefined();
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.iso).toBe("JP-13");
+    expect(tokyo?.lgCode).toBe("130001");
+    expect(tokyo?.name).toBe("東京都");
+  });
+
+  it("returns English name when lang is specified", () => {
+    const tokyo = getPrefectureByLGCode("130001", "en");
+    expect(tokyo?.name).toBe("Tokyo");
+  });
+
+  it("returns Hokkaido by lgCode", () => {
+    const hokkaido = getPrefectureByLGCode("010006");
+    expect(hokkaido?.code).toBe("01");
+    expect(hokkaido?.lgCode).toBe("010006");
+  });
+
+  it("returns undefined for non-existent lgCode", () => {
+    expect(getPrefectureByLGCode("999999")).toBeUndefined();
+  });
+});
+
+describe("Prefecture lgCode field", () => {
+  it("all prefectures have a 6-digit lgCode", () => {
+    const prefs = getPrefectures();
+    for (const p of prefs) {
+      expect(p.lgCode).toMatch(/^\d{6}$/);
+    }
+  });
+
+  it("getPrefectureByCode includes lgCode", () => {
+    const tokyo = getPrefectureByCode("13");
+    expect(tokyo?.lgCode).toBe("130001");
+  });
+
+  it("getPrefectureByISO includes lgCode", () => {
+    const tokyo = getPrefectureByISO("JP-13");
+    expect(tokyo?.lgCode).toBe("130001");
   });
 });
