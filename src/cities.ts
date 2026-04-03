@@ -28,7 +28,10 @@ function toAllLangs(raw: RawCity, short?: boolean): CityAllLangs {
   let name = raw.name;
   if (short) {
     name = Object.fromEntries(
-      (Object.entries(raw.name) as [Lang, string][]).map(([lang, n]) => [lang, shortenCityName(n, lang)]),
+      (Object.entries(raw.name) as [Lang, string][]).map(([lang, n]) => [
+        lang,
+        shortenCityName(n, lang),
+      ]),
     ) as Record<Lang, string>;
   }
   return {
