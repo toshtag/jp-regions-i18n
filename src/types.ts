@@ -18,6 +18,22 @@ export interface City {
   name: string;
 }
 
+export interface PrefectureAllLangs {
+  code: string;
+  iso: string;
+  lgCode: string;
+  name: Record<Lang, string>;
+}
+
+export interface CityAllLangs {
+  jisCode: string;
+  prefCode: string;
+  lgCode: string;
+  parentJisCode: string | null;
+  type: CityType;
+  name: Record<Lang, string>;
+}
+
 export interface GetCitiesOptions {
   type?: CityType;
   parentJisCode?: string;
