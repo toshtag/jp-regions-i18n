@@ -7,7 +7,10 @@ import {
 } from "./store.js";
 import type { Prefecture } from "./types.js";
 
-function toPublic(raw: { code: string; iso: string; lgCode: string; name: Record<string, string> }, lang: string): Prefecture {
+function toPublic(
+  raw: { code: string; iso: string; lgCode: string; name: Record<string, string> },
+  lang: string,
+): Prefecture {
   return { code: raw.code, iso: raw.iso, lgCode: raw.lgCode, name: raw.name[lang] };
 }
 
