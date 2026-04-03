@@ -34,7 +34,7 @@ describe("getCities", () => {
   it("returns English names when specified", () => {
     const cities = getCities("13", "en", { type: "special_ward" });
     const chiyoda = cities.find((c) => c.code === "13101");
-    expect(chiyoda!.name).toBe("Chiyoda-ku");
+    expect(chiyoda?.name).toBe("Chiyoda-ku");
   });
 });
 
@@ -42,24 +42,24 @@ describe("getCityByCode", () => {
   it("returns correct city for valid code", () => {
     const chiyoda = getCityByCode("13101");
     expect(chiyoda).toBeDefined();
-    expect(chiyoda!.code).toBe("13101");
-    expect(chiyoda!.prefCode).toBe("13");
-    expect(chiyoda!.type).toBe("special_ward");
-    expect(chiyoda!.name).toBe("千代田区");
+    expect(chiyoda?.code).toBe("13101");
+    expect(chiyoda?.prefCode).toBe("13");
+    expect(chiyoda?.type).toBe("special_ward");
+    expect(chiyoda?.name).toBe("千代田区");
   });
 
   it("returns designated city", () => {
     const sapporo = getCityByCode("01100");
     expect(sapporo).toBeDefined();
-    expect(sapporo!.type).toBe("designated_city");
-    expect(sapporo!.parentCode).toBeNull();
+    expect(sapporo?.type).toBe("designated_city");
+    expect(sapporo?.parentCode).toBeNull();
   });
 
   it("returns ward with parentCode", () => {
     const chuo = getCityByCode("01101");
     expect(chuo).toBeDefined();
-    expect(chuo!.type).toBe("ward");
-    expect(chuo!.parentCode).toBe("01100");
+    expect(chuo?.type).toBe("ward");
+    expect(chuo?.parentCode).toBe("01100");
   });
 
   it("returns undefined for non-existent code", () => {
@@ -71,13 +71,13 @@ describe("getCityByLGCode", () => {
   it("returns correct city for valid 6-digit code", () => {
     const chiyoda = getCityByLGCode("131016");
     expect(chiyoda).toBeDefined();
-    expect(chiyoda!.code).toBe("13101");
-    expect(chiyoda!.name).toBe("千代田区");
+    expect(chiyoda?.code).toBe("13101");
+    expect(chiyoda?.name).toBe("千代田区");
   });
 
   it("returns Korean name when specified", () => {
     const chiyoda = getCityByLGCode("131016", "ko");
-    expect(chiyoda!.name).toBe("지요다구");
+    expect(chiyoda?.name).toBe("지요다구");
   });
 
   it("returns undefined for non-existent lgCode", () => {
