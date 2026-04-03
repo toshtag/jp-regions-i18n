@@ -1,0 +1,60 @@
+{
+  "name": "jp-regions-i18n",
+  "version": "0.1.0",
+  "description": "Multilingual Japanese prefectures and cities data (i18n)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:data": "tsx scripts/build-data.ts",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check src/ tests/",
+    "lint:fix": "biome check --write src/ tests/",
+    "format": "biome format --write src/ tests/",
+    "prepublishOnly": "pnpm run build:data && pnpm run build && pnpm test",
+    "validate": "pnpm run lint && pnpm run build:data && pnpm run build && pnpm test"
+  },
+  "keywords": [
+    "japan",
+    "prefecture",
+    "city",
+    "i18n",
+    "multilingual",
+    "japanese",
+    "地域",
+    "都道府県",
+    "市区町村"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toshtag/jp-regions-i18n.git"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.10",
+    "csv-parse": "^6.2.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
+  }
+}

@@ -1,0 +1,613 @@
+[
+  {
+    "code": "01",
+    "iso": "JP-01",
+    "name": {
+      "ja": "北海道",
+      "en": "Hokkaido",
+      "zh-CN": "北海道",
+      "zh-TW": "北海道",
+      "ko": "홋카이도",
+      "pt": "Hokkaido",
+      "vi": "Hokkaido"
+    }
+  },
+  {
+    "code": "02",
+    "iso": "JP-02",
+    "name": {
+      "ja": "青森県",
+      "en": "Aomori",
+      "zh-CN": "青森县",
+      "zh-TW": "青森縣",
+      "ko": "아오모리현",
+      "pt": "Aomori",
+      "vi": "Aomori"
+    }
+  },
+  {
+    "code": "03",
+    "iso": "JP-03",
+    "name": {
+      "ja": "岩手県",
+      "en": "Iwate",
+      "zh-CN": "岩手县",
+      "zh-TW": "岩手縣",
+      "ko": "이와테현",
+      "pt": "Iwate",
+      "vi": "Iwate"
+    }
+  },
+  {
+    "code": "04",
+    "iso": "JP-04",
+    "name": {
+      "ja": "宮城県",
+      "en": "Miyagi",
+      "zh-CN": "宫城县",
+      "zh-TW": "宮城縣",
+      "ko": "미야기현",
+      "pt": "Miyagi",
+      "vi": "Miyagi"
+    }
+  },
+  {
+    "code": "05",
+    "iso": "JP-05",
+    "name": {
+      "ja": "秋田県",
+      "en": "Akita",
+      "zh-CN": "秋田县",
+      "zh-TW": "秋田縣",
+      "ko": "아키타현",
+      "pt": "Akita",
+      "vi": "Akita"
+    }
+  },
+  {
+    "code": "06",
+    "iso": "JP-06",
+    "name": {
+      "ja": "山形県",
+      "en": "Yamagata",
+      "zh-CN": "山形县",
+      "zh-TW": "山形縣",
+      "ko": "야마가타현",
+      "pt": "Yamagata",
+      "vi": "Yamagata"
+    }
+  },
+  {
+    "code": "07",
+    "iso": "JP-07",
+    "name": {
+      "ja": "福島県",
+      "en": "Fukushima",
+      "zh-CN": "福岛县",
+      "zh-TW": "福島縣",
+      "ko": "후쿠시마현",
+      "pt": "Fukushima",
+      "vi": "Fukushima"
+    }
+  },
+  {
+    "code": "08",
+    "iso": "JP-08",
+    "name": {
+      "ja": "茨城県",
+      "en": "Ibaraki",
+      "zh-CN": "茨城县",
+      "zh-TW": "茨城縣",
+      "ko": "이바라키현",
+      "pt": "Ibaraki",
+      "vi": "Ibaraki"
+    }
+  },
+  {
+    "code": "09",
+    "iso": "JP-09",
+    "name": {
+      "ja": "栃木県",
+      "en": "Tochigi",
+      "zh-CN": "栃木县",
+      "zh-TW": "栃木縣",
+      "ko": "도치기현",
+      "pt": "Tochigi",
+      "vi": "Tochigi"
+    }
+  },
+  {
+    "code": "10",
+    "iso": "JP-10",
+    "name": {
+      "ja": "群馬県",
+      "en": "Gunma",
+      "zh-CN": "群马县",
+      "zh-TW": "群馬縣",
+      "ko": "군마현",
+      "pt": "Gunma",
+      "vi": "Gunma"
+    }
+  },
+  {
+    "code": "11",
+    "iso": "JP-11",
+    "name": {
+      "ja": "埼玉県",
+      "en": "Saitama",
+      "zh-CN": "埼玉县",
+      "zh-TW": "埼玉縣",
+      "ko": "사이타마현",
+      "pt": "Saitama",
+      "vi": "Saitama"
+    }
+  },
+  {
+    "code": "12",
+    "iso": "JP-12",
+    "name": {
+      "ja": "千葉県",
+      "en": "Chiba",
+      "zh-CN": "千叶县",
+      "zh-TW": "千葉縣",
+      "ko": "지바현",
+      "pt": "Chiba",
+      "vi": "Chiba"
+    }
+  },
+  {
+    "code": "13",
+    "iso": "JP-13",
+    "name": {
+      "ja": "東京都",
+      "en": "Tokyo",
+      "zh-CN": "东京都",
+      "zh-TW": "東京都",
+      "ko": "도쿄도",
+      "pt": "Tokyo",
+      "vi": "Tokyo"
+    }
+  },
+  {
+    "code": "14",
+    "iso": "JP-14",
+    "name": {
+      "ja": "神奈川県",
+      "en": "Kanagawa",
+      "zh-CN": "神奈川县",
+      "zh-TW": "神奈川縣",
+      "ko": "가나가와현",
+      "pt": "Kanagawa",
+      "vi": "Kanagawa"
+    }
+  },
+  {
+    "code": "15",
+    "iso": "JP-15",
+    "name": {
+      "ja": "新潟県",
+      "en": "Niigata",
+      "zh-CN": "新潟县",
+      "zh-TW": "新潟縣",
+      "ko": "니가타현",
+      "pt": "Niigata",
+      "vi": "Niigata"
+    }
+  },
+  {
+    "code": "16",
+    "iso": "JP-16",
+    "name": {
+      "ja": "富山県",
+      "en": "Toyama",
+      "zh-CN": "富山县",
+      "zh-TW": "富山縣",
+      "ko": "도야마현",
+      "pt": "Toyama",
+      "vi": "Toyama"
+    }
+  },
+  {
+    "code": "17",
+    "iso": "JP-17",
+    "name": {
+      "ja": "石川県",
+      "en": "Ishikawa",
+      "zh-CN": "石川县",
+      "zh-TW": "石川縣",
+      "ko": "이시카와현",
+      "pt": "Ishikawa",
+      "vi": "Ishikawa"
+    }
+  },
+  {
+    "code": "18",
+    "iso": "JP-18",
+    "name": {
+      "ja": "福井県",
+      "en": "Fukui",
+      "zh-CN": "福井县",
+      "zh-TW": "福井縣",
+      "ko": "후쿠이현",
+      "pt": "Fukui",
+      "vi": "Fukui"
+    }
+  },
+  {
+    "code": "19",
+    "iso": "JP-19",
+    "name": {
+      "ja": "山梨県",
+      "en": "Yamanashi",
+      "zh-CN": "山梨县",
+      "zh-TW": "山梨縣",
+      "ko": "야마나시현",
+      "pt": "Yamanashi",
+      "vi": "Yamanashi"
+    }
+  },
+  {
+    "code": "20",
+    "iso": "JP-20",
+    "name": {
+      "ja": "長野県",
+      "en": "Nagano",
+      "zh-CN": "长野县",
+      "zh-TW": "長野縣",
+      "ko": "나가노현",
+      "pt": "Nagano",
+      "vi": "Nagano"
+    }
+  },
+  {
+    "code": "21",
+    "iso": "JP-21",
+    "name": {
+      "ja": "岐阜県",
+      "en": "Gifu",
+      "zh-CN": "岐阜县",
+      "zh-TW": "岐阜縣",
+      "ko": "기후현",
+      "pt": "Gifu",
+      "vi": "Gifu"
+    }
+  },
+  {
+    "code": "22",
+    "iso": "JP-22",
+    "name": {
+      "ja": "静岡県",
+      "en": "Shizuoka",
+      "zh-CN": "静冈县",
+      "zh-TW": "靜岡縣",
+      "ko": "시즈오카현",
+      "pt": "Shizuoka",
+      "vi": "Shizuoka"
+    }
+  },
+  {
+    "code": "23",
+    "iso": "JP-23",
+    "name": {
+      "ja": "愛知県",
+      "en": "Aichi",
+      "zh-CN": "爱知县",
+      "zh-TW": "愛知縣",
+      "ko": "아이치현",
+      "pt": "Aichi",
+      "vi": "Aichi"
+    }
+  },
+  {
+    "code": "24",
+    "iso": "JP-24",
+    "name": {
+      "ja": "三重県",
+      "en": "Mie",
+      "zh-CN": "三重县",
+      "zh-TW": "三重縣",
+      "ko": "미에현",
+      "pt": "Mie",
+      "vi": "Mie"
+    }
+  },
+  {
+    "code": "25",
+    "iso": "JP-25",
+    "name": {
+      "ja": "滋賀県",
+      "en": "Shiga",
+      "zh-CN": "滋贺县",
+      "zh-TW": "滋賀縣",
+      "ko": "시가현",
+      "pt": "Shiga",
+      "vi": "Shiga"
+    }
+  },
+  {
+    "code": "26",
+    "iso": "JP-26",
+    "name": {
+      "ja": "京都府",
+      "en": "Kyoto",
+      "zh-CN": "京都府",
+      "zh-TW": "京都府",
+      "ko": "교토부",
+      "pt": "Kyoto",
+      "vi": "Kyoto"
+    }
+  },
+  {
+    "code": "27",
+    "iso": "JP-27",
+    "name": {
+      "ja": "大阪府",
+      "en": "Osaka",
+      "zh-CN": "大阪府",
+      "zh-TW": "大阪府",
+      "ko": "오사카부",
+      "pt": "Osaka",
+      "vi": "Osaka"
+    }
+  },
+  {
+    "code": "28",
+    "iso": "JP-28",
+    "name": {
+      "ja": "兵庫県",
+      "en": "Hyogo",
+      "zh-CN": "兵库县",
+      "zh-TW": "兵庫縣",
+      "ko": "효고현",
+      "pt": "Hyogo",
+      "vi": "Hyogo"
+    }
+  },
+  {
+    "code": "29",
+    "iso": "JP-29",
+    "name": {
+      "ja": "奈良県",
+      "en": "Nara",
+      "zh-CN": "奈良县",
+      "zh-TW": "奈良縣",
+      "ko": "나라현",
+      "pt": "Nara",
+      "vi": "Nara"
+    }
+  },
+  {
+    "code": "30",
+    "iso": "JP-30",
+    "name": {
+      "ja": "和歌山県",
+      "en": "Wakayama",
+      "zh-CN": "和歌山县",
+      "zh-TW": "和歌山縣",
+      "ko": "와카야마현",
+      "pt": "Wakayama",
+      "vi": "Wakayama"
+    }
+  },
+  {
+    "code": "31",
+    "iso": "JP-31",
+    "name": {
+      "ja": "鳥取県",
+      "en": "Tottori",
+      "zh-CN": "鸟取县",
+      "zh-TW": "鳥取縣",
+      "ko": "돗토리현",
+      "pt": "Tottori",
+      "vi": "Tottori"
+    }
+  },
+  {
+    "code": "32",
+    "iso": "JP-32",
+    "name": {
+      "ja": "島根県",
+      "en": "Shimane",
+      "zh-CN": "岛根县",
+      "zh-TW": "島根縣",
+      "ko": "시마네현",
+      "pt": "Shimane",
+      "vi": "Shimane"
+    }
+  },
+  {
+    "code": "33",
+    "iso": "JP-33",
+    "name": {
+      "ja": "岡山県",
+      "en": "Okayama",
+      "zh-CN": "冈山县",
+      "zh-TW": "岡山縣",
+      "ko": "오카야마현",
+      "pt": "Okayama",
+      "vi": "Okayama"
+    }
+  },
+  {
+    "code": "34",
+    "iso": "JP-34",
+    "name": {
+      "ja": "広島県",
+      "en": "Hiroshima",
+      "zh-CN": "广岛县",
+      "zh-TW": "廣島縣",
+      "ko": "히로시마현",
+      "pt": "Hiroshima",
+      "vi": "Hiroshima"
+    }
+  },
+  {
+    "code": "35",
+    "iso": "JP-35",
+    "name": {
+      "ja": "山口県",
+      "en": "Yamaguchi",
+      "zh-CN": "山口县",
+      "zh-TW": "山口縣",
+      "ko": "야마구치현",
+      "pt": "Yamaguchi",
+      "vi": "Yamaguchi"
+    }
+  },
+  {
+    "code": "36",
+    "iso": "JP-36",
+    "name": {
+      "ja": "徳島県",
+      "en": "Tokushima",
+      "zh-CN": "德岛县",
+      "zh-TW": "德島縣",
+      "ko": "도쿠시마현",
+      "pt": "Tokushima",
+      "vi": "Tokushima"
+    }
+  },
+  {
+    "code": "37",
+    "iso": "JP-37",
+    "name": {
+      "ja": "香川県",
+      "en": "Kagawa",
+      "zh-CN": "香川县",
+      "zh-TW": "香川縣",
+      "ko": "가가와현",
+      "pt": "Kagawa",
+      "vi": "Kagawa"
+    }
+  },
+  {
+    "code": "38",
+    "iso": "JP-38",
+    "name": {
+      "ja": "愛媛県",
+      "en": "Ehime",
+      "zh-CN": "爱媛县",
+      "zh-TW": "愛媛縣",
+      "ko": "에히메현",
+      "pt": "Ehime",
+      "vi": "Ehime"
+    }
+  },
+  {
+    "code": "39",
+    "iso": "JP-39",
+    "name": {
+      "ja": "高知県",
+      "en": "Kochi",
+      "zh-CN": "高知县",
+      "zh-TW": "高知縣",
+      "ko": "고치현",
+      "pt": "Kochi",
+      "vi": "Kochi"
+    }
+  },
+  {
+    "code": "40",
+    "iso": "JP-40",
+    "name": {
+      "ja": "福岡県",
+      "en": "Fukuoka",
+      "zh-CN": "福冈县",
+      "zh-TW": "福岡縣",
+      "ko": "후쿠오카현",
+      "pt": "Fukuoka",
+      "vi": "Fukuoka"
+    }
+  },
+  {
+    "code": "41",
+    "iso": "JP-41",
+    "name": {
+      "ja": "佐賀県",
+      "en": "Saga",
+      "zh-CN": "佐贺县",
+      "zh-TW": "佐賀縣",
+      "ko": "사가현",
+      "pt": "Saga",
+      "vi": "Saga"
+    }
+  },
+  {
+    "code": "42",
+    "iso": "JP-42",
+    "name": {
+      "ja": "長崎県",
+      "en": "Nagasaki",
+      "zh-CN": "长崎县",
+      "zh-TW": "長崎縣",
+      "ko": "나가사키현",
+      "pt": "Nagasaki",
+      "vi": "Nagasaki"
+    }
+  },
+  {
+    "code": "43",
+    "iso": "JP-43",
+    "name": {
+      "ja": "熊本県",
+      "en": "Kumamoto",
+      "zh-CN": "熊本县",
+      "zh-TW": "熊本縣",
+      "ko": "구마모토현",
+      "pt": "Kumamoto",
+      "vi": "Kumamoto"
+    }
+  },
+  {
+    "code": "44",
+    "iso": "JP-44",
+    "name": {
+      "ja": "大分県",
+      "en": "Oita",
+      "zh-CN": "大分县",
+      "zh-TW": "大分縣",
+      "ko": "오이타현",
+      "pt": "Oita",
+      "vi": "Oita"
+    }
+  },
+  {
+    "code": "45",
+    "iso": "JP-45",
+    "name": {
+      "ja": "宮崎県",
+      "en": "Miyazaki",
+      "zh-CN": "宫崎县",
+      "zh-TW": "宮崎縣",
+      "ko": "미야자키현",
+      "pt": "Miyazaki",
+      "vi": "Miyazaki"
+    }
+  },
+  {
+    "code": "46",
+    "iso": "JP-46",
+    "name": {
+      "ja": "鹿児島県",
+      "en": "Kagoshima",
+      "zh-CN": "鹿儿岛县",
+      "zh-TW": "鹿兒島縣",
+      "ko": "가고시마현",
+      "pt": "Kagoshima",
+      "vi": "Kagoshima"
+    }
+  },
+  {
+    "code": "47",
+    "iso": "JP-47",
+    "name": {
+      "ja": "沖縄県",
+      "en": "Okinawa",
+      "zh-CN": "冲绳县",
+      "zh-TW": "沖繩縣",
+      "ko": "오키나와현",
+      "pt": "Okinawa",
+      "vi": "Okinawa"
+    }
+  }
+]
