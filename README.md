@@ -27,7 +27,7 @@ const prefsEn = getPrefectures("en");
 
 // Cities in Tokyo (code "13")
 const cities = getCities("13", "en");
-// [{ code: "13101", name: "Chiyoda", ... }, ...]
+// [{ jisCode: "13101", name: "Chiyoda", ... }, ...]
 ```
 
 ## API
@@ -62,11 +62,20 @@ getPrefectureByISO("JP-13");       // 東京都
 getPrefectureByISO("JP-27", "en"); // Osaka
 ```
 
+#### `getPrefectureByLGCode(lgCode, lang?): Prefecture | undefined`
+
+Lookup by 6-digit local government code (全国地方公共団体コード).
+
+```typescript
+getPrefectureByLGCode("130001");        // 東京都
+getPrefectureByLGCode("130001", "en");  // Tokyo
+```
+
 ### Cities
 
 #### `getCities(prefCode, lang?, options?): City[]`
 
-Returns cities for a given prefecture code. Supports filtering by `type` and `parentCode`.
+Returns cities for a given prefecture code. Supports filtering by `type` and `parentJisCode`.
 
 ```typescript
 // All cities in Osaka
@@ -75,17 +84,17 @@ getCities("27", "en");
 // Only designated cities
 getCities("27", "en", { type: "designated_city" });
 
-// Wards of Osaka City (parentCode: "27100")
-getCities("27", "en", { parentCode: "27100" });
+// Wards of Osaka City (parentJisCode: "27100")
+getCities("27", "en", { parentJisCode: "27100" });
 ```
 
-#### `getCityByCode(code, lang?): City | undefined`
+#### `getCityByJisCode(jisCode, lang?): City | undefined`
 
 Lookup by JIS X 0402 municipal code (5-digit string).
 
 ```typescript
-getCityByCode("13101");        // 千代田区
-getCityByCode("13101", "en");  // Chiyoda
+getCityByJisCode("13101");        // 千代田区
+getCityByJisCode("13101", "en");  // Chiyoda
 ```
 
 #### `getCityByLGCode(lgCode, lang?): City | undefined`
@@ -124,21 +133,22 @@ type CityType =
 interface Prefecture {
   code: string;       // JIS X 0401 (e.g. "13")
   iso: string;        // ISO 3166-2:JP (e.g. "JP-13")
+  lgCode: string;     // 全国地方公共団体コード 6-digit (e.g. "130001")
   name: string;       // Localized name
 }
 
 interface City {
-  code: string;           // JIS X 0402 5-digit (e.g. "13101")
-  prefCode: string;       // Prefecture code (e.g. "13")
-  lgCode: string;         // 6-digit with check digit (e.g. "131016")
-  parentCode: string | null; // Parent designated city code, or null
+  jisCode: string;              // JIS X 0402 5-digit (e.g. "13101")
+  prefCode: string;             // Prefecture code (e.g. "13")
+  lgCode: string;               // 6-digit with check digit (e.g. "131016")
+  parentJisCode: string | null; // Parent designated city jisCode, or null
   type: CityType;
-  name: string;           // Localized name
+  name: string;                 // Localized name
 }
 
 interface GetCitiesOptions {
   type?: CityType;
-  parentCode?: string;
+  parentJisCode?: string;
 }
 ```
 
@@ -197,7 +207,7 @@ const prefsEn = getPrefectures("en");
 
 // 東京都の市区町村（英語）
 const cities = getCities("13", "en");
-// [{ code: "13101", name: "Chiyoda", ... }, ...]
+// [{ jisCode: "13101", name: "Chiyoda", ... }, ...]
 ```
 
 ## API
@@ -232,11 +242,20 @@ getPrefectureByISO("JP-13");       // 東京都
 getPrefectureByISO("JP-27", "en"); // Osaka
 ```
 
+#### `getPrefectureByLGCode(lgCode, lang?): Prefecture | undefined`
+
+6桁の全国地方公共団体コードで検索。
+
+```typescript
+getPrefectureByLGCode("130001");        // 東京都
+getPrefectureByLGCode("130001", "en");  // Tokyo
+```
+
 ### 市区町村
 
 #### `getCities(prefCode, lang?, options?): City[]`
 
-指定した都道府県コードの市区町村を返します。`type` と `parentCode` でフィルタリング可能。
+指定した都道府県コードの市区町村を返します。`type` と `parentJisCode` でフィルタリング可能。
 
 ```typescript
 // 大阪府の全市区町村
@@ -245,17 +264,17 @@ getCities("27", "en");
 // 政令指定都市のみ
 getCities("27", "en", { type: "designated_city" });
 
-// 大阪市の区（parentCode: "27100"）
-getCities("27", "en", { parentCode: "27100" });
+// 大阪市の区（parentJisCode: "27100"）
+getCities("27", "en", { parentJisCode: "27100" });
 ```
 
-#### `getCityByCode(code, lang?): City | undefined`
+#### `getCityByJisCode(jisCode, lang?): City | undefined`
 
 JIS X 0402 市区町村コード（5桁文字列）で検索。
 
 ```typescript
-getCityByCode("13101");        // 千代田区
-getCityByCode("13101", "en");  // Chiyoda
+getCityByJisCode("13101");        // 千代田区
+getCityByJisCode("13101", "en");  // Chiyoda
 ```
 
 #### `getCityByLGCode(lgCode, lang?): City | undefined`
@@ -294,21 +313,22 @@ type CityType =
 interface Prefecture {
   code: string;       // JIS X 0401（例: "13"）
   iso: string;        // ISO 3166-2:JP（例: "JP-13"）
+  lgCode: string;     // 全国地方公共団体コード 6桁（例: "130001"）
   name: string;       // ローカライズされた名前
 }
 
 interface City {
-  code: string;           // JIS X 0402 5桁（例: "13101"）
-  prefCode: string;       // 都道府県コード（例: "13"）
-  lgCode: string;         // 6桁チェックディジット付き（例: "131016"）
-  parentCode: string | null; // 親の政令指定都市コード、またはnull
+  jisCode: string;              // JIS X 0402 5桁（例: "13101"）
+  prefCode: string;             // 都道府県コード（例: "13"）
+  lgCode: string;               // 6桁チェックディジット付き（例: "131016"）
+  parentJisCode: string | null; // 親の政令指定都市JISコード、またはnull
   type: CityType;
-  name: string;           // ローカライズされた名前
+  name: string;                 // ローカライズされた名前
 }
 
 interface GetCitiesOptions {
   type?: CityType;
-  parentCode?: string;
+  parentJisCode?: string;
 }
 ```
 
