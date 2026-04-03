@@ -9,6 +9,13 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+### Added
+
+- `short?: boolean` option for all prefecture and city functions — strips administrative suffixes from the `name` field (e.g. `"東京都"` → `"東京"`, `"Chiyoda-ku"` → `"Chiyoda"`)
+- `GetPrefecturesOptions` type exported from the package
+- `short` is supported in `AllLangs` variants, stripping suffixes across all 7 languages simultaneously
+- Supported suffixes by language: ja/zh-CN/zh-TW/ko for CJK scripts; `-shi`/`-ku`/`-cho`/`-machi`/`-son`/`-mura` for en/pt/vi
+
 ## [0.3.0] - 2026-04-03
 
 ### Added
