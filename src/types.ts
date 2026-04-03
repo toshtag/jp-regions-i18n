@@ -9,15 +9,15 @@ export interface Prefecture {
 }
 
 export interface City {
-  code: string;
+  jisCode: string;
   prefCode: string;
   lgCode: string;
-  parentCode: string | null;
+  parentJisCode: string | null;
   type: CityType;
   name: string;
 }
 
 export interface GetCitiesOptions {
   type?: CityType;
-  parentCode?: string;
+  parentJisCode?: string;
 }
