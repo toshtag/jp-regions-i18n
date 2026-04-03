@@ -167,3 +167,77 @@ describe("getCityByLGCodeAllLangs", () => {
     expect(getCityByLGCodeAllLangs("999999")).toBeUndefined();
   });
 });
+
+describe("short option (cities)", () => {
+  it("strips Japanese city suffixes", () => {
+    const chiyoda = getCityByJisCode("13101", "ja", { short: true });
+    expect(chiyoda?.name).toBe("千代田");
+
+    const sapporo = getCityByJisCode("01100", "ja", { short: true });
+    expect(sapporo?.name).toBe("札幌");
+
+    const tobetsu = getCityByJisCode("01303", "ja", { short: true });
+    expect(tobetsu?.name).toBe("当別");
+
+    const shinshinotsu = getCityByJisCode("01304", "ja", { short: true });
+    expect(shinshinotsu?.name).toBe("新篠津");
+  });
+
+  it("strips English city suffixes", () => {
+    const chiyoda = getCityByJisCode("13101", "en", { short: true });
+    expect(chiyoda?.name).toBe("Chiyoda");
+
+    const sapporo = getCityByJisCode("01100", "en", { short: true });
+    expect(sapporo?.name).toBe("Sapporo");
+
+    const tobetsu = getCityByJisCode("01303", "en", { short: true });
+    expect(tobetsu?.name).toBe("Tobetsu");
+
+    const shinshinotsu = getCityByJisCode("01304", "en", { short: true });
+    expect(shinshinotsu?.name).toBe("Shinshinotsu");
+  });
+
+  it("strips Korean city suffixes", () => {
+    const chiyoda = getCityByLGCode("131016", "ko", { short: true });
+    expect(chiyoda?.name).toBe("지요다");
+
+    const shinshinotsu = getCityByJisCode("01304", "ko", { short: true });
+    expect(shinshinotsu?.name).toBe("신시노쓰");
+  });
+
+  it("does not modify name when short is omitted", () => {
+    const chiyoda = getCityByJisCode("13101", "ja");
+    expect(chiyoda?.name).toBe("千代田区");
+  });
+
+  it("supports short in getCities", () => {
+    const wards = getCities("13", "ja", { type: "special_ward", short: true });
+    for (const w of wards) {
+      expect(w.name).not.toMatch(/区$/);
+    }
+  });
+
+  it("strips all languages in AllLangs", () => {
+    const chiyoda = getCityByJisCodeAllLangs("13101", { short: true });
+    expect(chiyoda?.name.ja).toBe("千代田");
+    expect(chiyoda?.name.en).toBe("Chiyoda");
+    expect(chiyoda?.name["zh-CN"]).toBe("千代田");
+    expect(chiyoda?.name["zh-TW"]).toBe("千代田");
+    expect(chiyoda?.name.ko).toBe("지요다");
+  });
+
+  it("strips in getCitiesAllLangs", () => {
+    const wards = getCitiesAllLangs("13", { type: "special_ward", short: true });
+    expect(wards).toHaveLength(23);
+    for (const w of wards) {
+      expect(w.name.ja).not.toMatch(/区$/);
+      expect(w.name.en).not.toMatch(/-ku$/);
+    }
+  });
+
+  it("strips in getCityByLGCodeAllLangs", () => {
+    const chiyoda = getCityByLGCodeAllLangs("131016", { short: true });
+    expect(chiyoda?.name.ja).toBe("千代田");
+    expect(chiyoda?.name.en).toBe("Chiyoda");
+  });
+});
