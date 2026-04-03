@@ -26,7 +26,8 @@
     "lint:fix": "biome check --write src/ tests/",
     "format": "biome format --write src/ tests/",
     "prepublishOnly": "pnpm run build:data && pnpm run build && pnpm test",
-    "precommit": "pnpm run lint && pnpm test"
+    "precommit": "pnpm run lint && pnpm test",
+    "validate": "pnpm run lint && pnpm run build:data && pnpm run build && pnpm test"
   },
   "keywords": [
     "japan",
@@ -46,7 +47,7 @@
     "url": "https://github.com/toshtag/jp-regions-i18n.git"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.10",
