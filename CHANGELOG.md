@@ -9,6 +9,8 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-04-04
+
 ### Added
 
 - `short?: boolean` option for all prefecture and city functions — strips administrative suffixes from the `name` field (e.g. `"東京都"` → `"東京"`, `"Chiyoda-ku"` → `"Chiyoda"`)
