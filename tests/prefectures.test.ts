@@ -1,9 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  getPrefectures,
-  getPrefectureByCode,
-  getPrefectureByISO,
-} from "../src/index.js";
+import { getPrefectureByCode, getPrefectureByISO, getPrefectures } from "../src/index.js";
 
 describe("getPrefectures", () => {
   it("returns all 47 prefectures", () => {
@@ -39,14 +35,14 @@ describe("getPrefectureByCode", () => {
   it("returns correct prefecture for valid code", () => {
     const tokyo = getPrefectureByCode("13");
     expect(tokyo).toBeDefined();
-    expect(tokyo!.code).toBe("13");
-    expect(tokyo!.iso).toBe("JP-13");
-    expect(tokyo!.name).toBe("東京都");
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.iso).toBe("JP-13");
+    expect(tokyo?.name).toBe("東京都");
   });
 
   it("returns English name when lang is specified", () => {
     const tokyo = getPrefectureByCode("13", "en");
-    expect(tokyo!.name).toBe("Tokyo");
+    expect(tokyo?.name).toBe("Tokyo");
   });
 
   it("returns undefined for non-existent code", () => {
@@ -55,7 +51,7 @@ describe("getPrefectureByCode", () => {
 
   it("defaults to ja when lang is omitted", () => {
     const hokkaido = getPrefectureByCode("01");
-    expect(hokkaido!.name).toBe("北海道");
+    expect(hokkaido?.name).toBe("北海道");
   });
 });
 
@@ -63,13 +59,13 @@ describe("getPrefectureByISO", () => {
   it("returns correct prefecture for valid ISO code", () => {
     const tokyo = getPrefectureByISO("JP-13");
     expect(tokyo).toBeDefined();
-    expect(tokyo!.code).toBe("13");
-    expect(tokyo!.name).toBe("東京都");
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.name).toBe("東京都");
   });
 
   it("returns zh-CN name", () => {
     const tokyo = getPrefectureByISO("JP-13", "zh-CN");
-    expect(tokyo!.name).toBe("东京都");
+    expect(tokyo?.name).toBe("东京都");
   });
 
   it("returns undefined for non-existent ISO", () => {
