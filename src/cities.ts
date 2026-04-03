@@ -9,29 +9,29 @@ export function getCities(prefCode: string, lang?: string, options?: GetCitiesOp
   if (options?.type) {
     cities = cities.filter((c) => c.type === options.type);
   }
-  if (options?.parentCode) {
-    cities = cities.filter((c) => c.parentCode === options.parentCode);
+  if (options?.parentJisCode) {
+    cities = cities.filter((c) => c.parentCode === options.parentJisCode);
   }
 
   return cities.map((c) => ({
-    code: c.code,
+    jisCode: c.code,
     prefCode: c.prefCode,
     lgCode: c.lgCode,
-    parentCode: c.parentCode,
+    parentJisCode: c.parentCode,
     type: c.type,
     name: c.name[l],
   }));
 }
 
-export function getCityByCode(code: string, lang?: string): City | undefined {
-  const raw = getCityRawByCode(code);
+export function getCityByJisCode(jisCode: string, lang?: string): City | undefined {
+  const raw = getCityRawByCode(jisCode);
   if (!raw) return undefined;
   const l = normalizeLang(lang);
   return {
-    code: raw.code,
+    jisCode: raw.code,
     prefCode: raw.prefCode,
     lgCode: raw.lgCode,
-    parentCode: raw.parentCode,
+    parentJisCode: raw.parentCode,
     type: raw.type,
     name: raw.name[l],
   };
@@ -42,10 +42,10 @@ export function getCityByLGCode(lgCode: string, lang?: string): City | undefined
   if (!raw) return undefined;
   const l = normalizeLang(lang);
   return {
-    code: raw.code,
+    jisCode: raw.code,
     prefCode: raw.prefCode,
     lgCode: raw.lgCode,
-    parentCode: raw.parentCode,
+    parentJisCode: raw.parentCode,
     type: raw.type,
     name: raw.name[l],
   };
