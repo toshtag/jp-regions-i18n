@@ -1,4 +1,4 @@
-export { getCities, getCityByCode, getCityByLGCode } from "./cities.js";
+export { getCities, getCityByJisCode, getCityByLGCode } from "./cities.js";
 
 export { getSupportedLanguages } from "./lang.js";
 
