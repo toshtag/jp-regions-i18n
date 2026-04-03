@@ -200,3 +200,62 @@ describe("getPrefectureByLGCodeAllLangs", () => {
     expect(getPrefectureByLGCodeAllLangs("999999")).toBeUndefined();
   });
 });
+
+describe("short option (prefectures)", () => {
+  it("strips Japanese suffixes", () => {
+    const prefs = getPrefectures("ja", { short: true });
+    const tokyo = prefs.find((p) => p.code === "13");
+    const hokkaido = prefs.find((p) => p.code === "01");
+    const osaka = prefs.find((p) => p.code === "27");
+    const aomori = prefs.find((p) => p.code === "02");
+    expect(tokyo?.name).toBe("東京");
+    expect(hokkaido?.name).toBe("北海");
+    expect(osaka?.name).toBe("大阪");
+    expect(aomori?.name).toBe("青森");
+  });
+
+  it("is no-op for English (already suffix-free)", () => {
+    const prefs = getPrefectures("en", { short: true });
+    const tokyo = prefs.find((p) => p.code === "13");
+    expect(tokyo?.name).toBe("Tokyo");
+  });
+
+  it("strips zh-CN suffixes", () => {
+    const tokyo = getPrefectureByCode("13", "zh-CN", { short: true });
+    expect(tokyo?.name).toBe("东京");
+    const aomori = getPrefectureByCode("02", "zh-CN", { short: true });
+    expect(aomori?.name).toBe("青森");
+  });
+
+  it("strips Korean suffixes", () => {
+    const tokyo = getPrefectureByISO("JP-13", "ko", { short: true });
+    expect(tokyo?.name).toBe("도쿄");
+    const osaka = getPrefectureByLGCode("270008", "ko", { short: true });
+    expect(osaka?.name).toBe("오사카");
+    const aomori = getPrefectureByCode("02", "ko", { short: true });
+    expect(aomori?.name).toBe("아오모리");
+  });
+
+  it("does not modify name when short is omitted", () => {
+    const tokyo = getPrefectureByCode("13", "ja");
+    expect(tokyo?.name).toBe("東京都");
+  });
+
+  it("strips all languages in AllLangs", () => {
+    const tokyo = getPrefectureByCodeAllLangs("13", { short: true });
+    expect(tokyo?.name.ja).toBe("東京");
+    expect(tokyo?.name.en).toBe("Tokyo");
+    expect(tokyo?.name["zh-CN"]).toBe("东京");
+    expect(tokyo?.name["zh-TW"]).toBe("東京");
+    expect(tokyo?.name.ko).toBe("도쿄");
+  });
+
+  it("strips in getPrefecturesAllLangs", () => {
+    const all = getPrefecturesAllLangs({ short: true });
+    const aomori = all.find((p) => p.code === "02");
+    expect(aomori?.name.ja).toBe("青森");
+    expect(aomori?.name["zh-CN"]).toBe("青森");
+    expect(aomori?.name["zh-TW"]).toBe("青森");
+    expect(aomori?.name.ko).toBe("아오모리");
+  });
+});
