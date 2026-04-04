@@ -241,6 +241,10 @@ interface GetPrefecturesOptions {
   short?: boolean; // Strip administrative suffix from name (e.g. "東京都" → "東京")
 }
 
+interface GetPrefecturesOptions {
+  short?: boolean; // Strip administrative suffix from name (e.g. "東京都" → "東京")
+}
+
 interface GetCitiesOptions {
   type?: CityType;
   parentJisCode?: string;
@@ -534,6 +538,10 @@ interface CityAllLangs {
   parentJisCode: string | null;
   type: CityType;
   name: Record<Lang, string>; // 全10言語
+}
+
+interface GetPrefecturesOptions {
+  short?: boolean; // サフィックスを除去（例: "東京都" → "東京"）
 }
 
 interface GetPrefecturesOptions {
