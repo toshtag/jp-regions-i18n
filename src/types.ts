@@ -1,4 +1,14 @@
-export type Lang = "ja" | "ja-Hira" | "ja-Kana" | "ja-HW" | "en" | "zh-CN" | "zh-TW" | "ko" | "pt" | "vi";
+export type Lang =
+  | "ja"
+  | "ja-Hira"
+  | "ja-Kana"
+  | "ja-HW"
+  | "en"
+  | "zh-CN"
+  | "zh-TW"
+  | "ko"
+  | "pt"
+  | "vi";
 
 export type CityType = "city" | "designated_city" | "ward" | "special_ward" | "town" | "village";
 

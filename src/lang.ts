@@ -1,8 +1,24 @@
 import type { Lang } from "./types.js";
 
-const SUPPORTED_LANGS: readonly Lang[] = ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"];
+const SUPPORTED_LANGS: readonly Lang[] = [
+  "ja",
+  "ja-Hira",
+  "ja-Kana",
+  "ja-HW",
+  "en",
+  "zh-CN",
+  "zh-TW",
+  "ko",
+  "pt",
+  "vi",
+];
 
 const LANG_ALIASES: Record<string, Lang> = {
+  hira: "ja-Hira",
+  hiragana: "ja-Hira",
+  kana: "ja-Kana",
+  katakana: "ja-Kana",
+  hw: "ja-HW",
   "zh-Hans": "zh-CN",
   "zh-Hant": "zh-TW",
   zh: "zh-CN",
