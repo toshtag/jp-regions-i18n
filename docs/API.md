@@ -49,17 +49,19 @@ getPrefectureByLGCode("130001", "en");  // Tokyo
 
 #### `getPrefecturesAllLangs(options?): PrefectureAllLangs[]`
 
-Returns all 47 prefectures with names in all 7 languages simultaneously.
+Returns all 47 prefectures with names in all 10 languages simultaneously.
 
 ```typescript
 const prefs = getPrefecturesAllLangs();
-prefs[0].name["ja"]; // "北海道"
-prefs[0].name["en"]; // "Hokkaido"
+prefs[0].name["ja"];       // "北海道"
+prefs[0].name["ja-Hira"];  // "ほっかいどう"
+prefs[0].name["en"];       // "Hokkaido"
 
 // With short option — strips suffixes across all languages at once
 const short = getPrefecturesAllLangs({ short: true });
-short[12].name["ja"]; // "東京"
-short[12].name["ko"]; // "도쿄"
+short[12].name["ja"];      // "東京"
+short[12].name["ja-Hira"]; // "とうきょう"
+short[12].name["ko"];      // "도쿄"
 ```
 
 #### `getPrefectureByCodeAllLangs(code, options?): PrefectureAllLangs | undefined`
@@ -133,7 +135,7 @@ getCityByLGCode("131016", "en");  // Chiyoda-ku
 
 #### `getCitiesAllLangs(prefCode, options?): CityAllLangs[]`
 
-Returns cities for a given prefecture with names in all 7 languages. Supports the same filtering options as `getCities`.
+Returns cities for a given prefecture with names in all 10 languages. Supports the same filtering options as `getCities`.
 
 ```typescript
 const cities = getCitiesAllLangs("13");
@@ -175,7 +177,7 @@ Returns the list of supported language codes.
 
 ```typescript
 getSupportedLanguages();
-// ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"]
+// ["ja", "ja-Hira", "ja-Kana", "ja-HW", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"]
 ```
 
 ---
@@ -183,7 +185,17 @@ getSupportedLanguages();
 ### Types
 
 ```typescript
-type Lang = "ja" | "en" | "zh-CN" | "zh-TW" | "ko" | "pt" | "vi";
+type Lang =
+  | "ja"      // Japanese (kanji + kana)
+  | "ja-Hira" // Japanese hiragana
+  | "ja-Kana" // Japanese katakana
+  | "ja-HW"   // Japanese half-width katakana
+  | "en"
+  | "zh-CN"
+  | "zh-TW"
+  | "ko"
+  | "pt"
+  | "vi";
 
 type CityType =
   | "city"            // 市
@@ -204,7 +216,7 @@ interface PrefectureAllLangs {
   code: string;
   iso: string;
   lgCode: string;
-  name: Record<Lang, string>; // All 7 languages
+  name: Record<Lang, string>; // All 10 languages
 }
 
 interface City {
@@ -222,7 +234,11 @@ interface CityAllLangs {
   lgCode: string;
   parentJisCode: string | null;
   type: CityType;
-  name: Record<Lang, string>; // All 7 languages
+  name: Record<Lang, string>; // All 10 languages
+}
+
+interface GetPrefecturesOptions {
+  short?: boolean; // Strip administrative suffix from name (e.g. "東京都" → "東京")
 }
 
 interface GetPrefecturesOptions {
@@ -247,6 +263,9 @@ Suffixes stripped by language:
 | Language | Prefecture suffixes | City suffixes |
 |----------|--------------------|-----------------------------|
 | `ja` | 都, 道, 府, 県 | 市, 区, 町, 村 |
+| `ja-Hira` | と, どう, ふ, けん | し, く, まち, ちょう, むら, そん |
+| `ja-Kana` | ト, ドウ, フ, ケン | シ, ク, マチ, チョウ, ムラ, ソン |
+| `ja-HW` | ﾄ, ﾄﾞｳ, ﾌ, ｹﾝ | ｼ, ｸ, ﾏﾁ, ﾁｮｳ, ﾑﾗ, ｿﾝ |
 | `zh-CN` | 都, 道, 府, 县 | 市, 区, 町, 村 |
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
@@ -273,6 +292,11 @@ The `lang` parameter accepts aliases for convenience:
 
 | Alias | Resolves to |
 |-------|-------------|
+| `hira` | `ja-Hira` |
+| `hiragana` | `ja-Hira` |
+| `kana` | `ja-Kana` |
+| `katakana` | `ja-Kana` |
+| `hw` | `ja-HW` |
 | `zh-Hans` | `zh-CN` |
 | `zh-Hant` | `zh-TW` |
 | `zh` | `zh-CN` |
@@ -328,17 +352,19 @@ getPrefectureByLGCode("130001", "en");  // Tokyo
 
 #### `getPrefecturesAllLangs(options?): PrefectureAllLangs[]`
 
-全47都道府県を、7言語すべての名前付きで返します。
+全47都道府県を、10言語すべての名前付きで返します。
 
 ```typescript
 const prefs = getPrefecturesAllLangs();
-prefs[0].name["ja"]; // "北海道"
-prefs[0].name["en"]; // "Hokkaido"
+prefs[0].name["ja"];       // "北海道"
+prefs[0].name["ja-Hira"];  // "ほっかいどう"
+prefs[0].name["en"];       // "Hokkaido"
 
 // short オプション — 全言語のサフィックスをまとめて除去
 const short = getPrefecturesAllLangs({ short: true });
-short[12].name["ja"]; // "東京"
-short[12].name["ko"]; // "도쿄"
+short[12].name["ja"];      // "東京"
+short[12].name["ja-Hira"]; // "とうきょう"
+short[12].name["ko"];      // "도쿄"
 ```
 
 #### `getPrefectureByCodeAllLangs(code, options?): PrefectureAllLangs | undefined`
@@ -412,7 +438,7 @@ getCityByLGCode("131016", "en");  // Chiyoda-ku
 
 #### `getCitiesAllLangs(prefCode, options?): CityAllLangs[]`
 
-指定した都道府県コードの市区町村を、7言語すべての名前付きで返します。`getCities` と同じフィルタリングオプションをサポート。
+指定した都道府県コードの市区町村を、10言語すべての名前付きで返します。`getCities` と同じフィルタリングオプションをサポート。
 
 ```typescript
 const cities = getCitiesAllLangs("13");
@@ -454,7 +480,7 @@ getCityByLGCodeAllLangs("131016");
 
 ```typescript
 getSupportedLanguages();
-// ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"]
+// ["ja", "ja-Hira", "ja-Kana", "ja-HW", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"]
 ```
 
 ---
@@ -462,7 +488,17 @@ getSupportedLanguages();
 ### 型定義
 
 ```typescript
-type Lang = "ja" | "en" | "zh-CN" | "zh-TW" | "ko" | "pt" | "vi";
+type Lang =
+  | "ja"      // 日本語（漢字・かな混じり）
+  | "ja-Hira" // ひらがな
+  | "ja-Kana" // カタカナ
+  | "ja-HW"   // 半角カタカナ
+  | "en"
+  | "zh-CN"
+  | "zh-TW"
+  | "ko"
+  | "pt"
+  | "vi";
 
 type CityType =
   | "city"            // 市
@@ -483,7 +519,7 @@ interface PrefectureAllLangs {
   code: string;
   iso: string;
   lgCode: string;
-  name: Record<Lang, string>; // 全7言語
+  name: Record<Lang, string>; // 全10言語
 }
 
 interface City {
@@ -501,7 +537,11 @@ interface CityAllLangs {
   lgCode: string;
   parentJisCode: string | null;
   type: CityType;
-  name: Record<Lang, string>; // 全7言語
+  name: Record<Lang, string>; // 全10言語
+}
+
+interface GetPrefecturesOptions {
+  short?: boolean; // サフィックスを除去（例: "東京都" → "東京"）
 }
 
 interface GetPrefecturesOptions {
@@ -526,6 +566,9 @@ interface GetCitiesOptions {
 | 言語 | 都道府県サフィックス | 市区町村サフィックス |
 |------|--------------------|-----------------------------|
 | `ja` | 都, 道, 府, 県 | 市, 区, 町, 村 |
+| `ja-Hira` | と, どう, ふ, けん | し, く, まち, ちょう, むら, そん |
+| `ja-Kana` | ト, ドウ, フ, ケン | シ, ク, マチ, チョウ, ムラ, ソン |
+| `ja-HW` | ﾄ, ﾄﾞｳ, ﾌ, ｹﾝ | ｼ, ｸ, ﾏﾁ, ﾁｮｳ, ﾑﾗ, ｿﾝ |
 | `zh-CN` | 都, 道, 府, 县 | 市, 区, 町, 村 |
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
@@ -552,6 +595,11 @@ getCities("13", "ja", { short: true });
 
 | エイリアス | 解決先 |
 |-----------|--------|
+| `hira` | `ja-Hira` |
+| `hiragana` | `ja-Hira` |
+| `kana` | `ja-Kana` |
+| `katakana` | `ja-Kana` |
+| `hw` | `ja-HW` |
 | `zh-Hans` | `zh-CN` |
 | `zh-Hant` | `zh-TW` |
 | `zh` | `zh-CN` |

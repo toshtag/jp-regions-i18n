@@ -8,6 +8,33 @@ import {
   getCityByLGCodeAllLangs,
 } from "../src/index.js";
 
+describe("getCities (Japanese scripts)", () => {
+  it("returns hiragana names", () => {
+    const chiyoda = getCityByJisCode("13101", "ja-Hira");
+    expect(chiyoda?.name).toBe("ちよだく");
+    const sapporo = getCityByJisCode("01100", "ja-Hira");
+    expect(sapporo?.name).toBe("さっぽろし");
+    const tobetsu = getCityByJisCode("01303", "ja-Hira");
+    expect(tobetsu?.name).toBe("とうべつちょう");
+    const shinshinotsu = getCityByJisCode("01304", "ja-Hira");
+    expect(shinshinotsu?.name).toBe("しんしのつむら");
+  });
+
+  it("returns katakana names", () => {
+    const chiyoda = getCityByJisCode("13101", "ja-Kana");
+    expect(chiyoda?.name).toBe("チヨダク");
+    const sapporo = getCityByJisCode("01100", "ja-Kana");
+    expect(sapporo?.name).toBe("サッポロシ");
+  });
+
+  it("returns half-width kana names", () => {
+    const chiyoda = getCityByJisCode("13101", "ja-HW");
+    expect(chiyoda?.name).toBe("ﾁﾖﾀﾞｸ");
+    const sapporo = getCityByJisCode("01100", "ja-HW");
+    expect(sapporo?.name).toBe("ｻｯﾎﾟﾛｼ");
+  });
+});
+
 describe("getCities", () => {
   it("filters cities by prefecture code", () => {
     const tokyoCities = getCities("13");
@@ -93,8 +120,19 @@ describe("getCityByLGCode", () => {
 });
 
 describe("getCitiesAllLangs", () => {
-  it("returns cities with all 7 languages", () => {
-    const langs = ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
+  it("returns cities with all 10 languages", () => {
+    const langs = [
+      "ja",
+      "ja-Hira",
+      "ja-Kana",
+      "ja-HW",
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ko",
+      "pt",
+      "vi",
+    ] as const;
     const cities = getCitiesAllLangs("13");
     expect(cities.length).toBeGreaterThan(0);
     for (const c of cities) {
@@ -239,5 +277,37 @@ describe("short option (cities)", () => {
     const chiyoda = getCityByLGCodeAllLangs("131016", { short: true });
     expect(chiyoda?.name.ja).toBe("千代田");
     expect(chiyoda?.name.en).toBe("Chiyoda");
+  });
+
+  it("strips hiragana city suffixes", () => {
+    const chiyoda = getCityByJisCode("13101", "ja-Hira", { short: true });
+    expect(chiyoda?.name).toBe("ちよだ");
+    const sapporo = getCityByJisCode("01100", "ja-Hira", { short: true });
+    expect(sapporo?.name).toBe("さっぽろ");
+    const tobetsu = getCityByJisCode("01303", "ja-Hira", { short: true });
+    expect(tobetsu?.name).toBe("とうべつ");
+    const shinshinotsu = getCityByJisCode("01304", "ja-Hira", { short: true });
+    expect(shinshinotsu?.name).toBe("しんしのつ");
+  });
+
+  it("strips katakana city suffixes", () => {
+    const chiyoda = getCityByJisCode("13101", "ja-Kana", { short: true });
+    expect(chiyoda?.name).toBe("チヨダ");
+    const sapporo = getCityByJisCode("01100", "ja-Kana", { short: true });
+    expect(sapporo?.name).toBe("サッポロ");
+  });
+
+  it("strips half-width kana city suffixes", () => {
+    const chiyoda = getCityByJisCode("13101", "ja-HW", { short: true });
+    expect(chiyoda?.name).toBe("ﾁﾖﾀﾞ");
+    const sapporo = getCityByJisCode("01100", "ja-HW", { short: true });
+    expect(sapporo?.name).toBe("ｻｯﾎﾟﾛ");
+  });
+
+  it("strips kana in AllLangs", () => {
+    const chiyoda = getCityByJisCodeAllLangs("13101", { short: true });
+    expect(chiyoda?.name["ja-Hira"]).toBe("ちよだ");
+    expect(chiyoda?.name["ja-Kana"]).toBe("チヨダ");
+    expect(chiyoda?.name["ja-HW"]).toBe("ﾁﾖﾀﾞ");
   });
 });
