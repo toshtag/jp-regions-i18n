@@ -9,6 +9,23 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-04-04
+
+### Breaking Changes
+
+- `Lang` type extended with `"ja-Hira"`, `"ja-Kana"`, `"ja-HW"` — exhaustive switches on `Lang` must handle these new values
+
+### Added
+
+- `"ja-Hira"` — hiragana readings for all 47 prefectures and 1,917 municipalities
+- `"ja-Kana"` — katakana readings (derived from hiragana at build time)
+- `"ja-HW"` — half-width katakana readings (derived from katakana at build time)
+- Language aliases: `hira`/`hiragana` → `"ja-Hira"`, `kana`/`katakana` → `"ja-Kana"`, `hw` → `"ja-HW"`
+- `short` option supports the three new scripts: strips hiragana/katakana/half-width kana administrative suffixes
+- Data sourced from 総務省 (Ministry of Internal Affairs) official local government code list
+
+## [0.4.0] - 2026-04-04
+
 ### Added
 
 - `short?: boolean` option for all prefecture and city functions — strips administrative suffixes from the `name` field (e.g. `"東京都"` → `"東京"`, `"Chiyoda-ku"` → `"Chiyoda"`)
