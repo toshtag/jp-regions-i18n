@@ -38,6 +38,30 @@ describe("getPrefectures", () => {
       }
     }
   });
+
+  it("returns hiragana names", () => {
+    const prefs = getPrefectures("ja-Hira");
+    expect(prefs).toHaveLength(47);
+    expect(prefs[0].name).toBe("ほっかいどう");
+    expect(prefs[12].name).toBe("とうきょうと");
+    expect(prefs[26].name).toBe("おおさかふ");
+  });
+
+  it("returns katakana names", () => {
+    const prefs = getPrefectures("ja-Kana");
+    expect(prefs).toHaveLength(47);
+    expect(prefs[0].name).toBe("ホッカイドウ");
+    expect(prefs[12].name).toBe("トウキョウト");
+    expect(prefs[26].name).toBe("オオサカフ");
+  });
+
+  it("returns half-width kana names", () => {
+    const prefs = getPrefectures("ja-HW");
+    expect(prefs).toHaveLength(47);
+    expect(prefs[0].name).toBe("ﾎｯｶｲﾄﾞｳ");
+    expect(prefs[12].name).toBe("ﾄｳｷｮｳﾄ");
+    expect(prefs[26].name).toBe("ｵｵｻｶﾌ");
+  });
 });
 
 describe("getPrefectureByCode", () => {
@@ -132,9 +156,20 @@ describe("getPrefecturesAllLangs", () => {
     expect(getPrefecturesAllLangs()).toHaveLength(47);
   });
 
-  it("includes all 7 languages in name", () => {
+  it("includes all 10 languages in name", () => {
     const prefs = getPrefecturesAllLangs();
-    const langs = ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
+    const langs = [
+      "ja",
+      "ja-Hira",
+      "ja-Kana",
+      "ja-HW",
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ko",
+      "pt",
+      "vi",
+    ] as const;
     for (const p of prefs) {
       for (const lang of langs) {
         expect(p.name[lang]).toBeTruthy();
@@ -257,5 +292,41 @@ describe("short option (prefectures)", () => {
     expect(aomori?.name["zh-CN"]).toBe("青森");
     expect(aomori?.name["zh-TW"]).toBe("青森");
     expect(aomori?.name.ko).toBe("아오모리");
+  });
+
+  it("strips hiragana suffixes", () => {
+    const tokyo = getPrefectureByCode("13", "ja-Hira", { short: true });
+    expect(tokyo?.name).toBe("とうきょう");
+    const osaka = getPrefectureByCode("27", "ja-Hira", { short: true });
+    expect(osaka?.name).toBe("おおさか");
+    const hokkaido = getPrefectureByCode("01", "ja-Hira", { short: true });
+    expect(hokkaido?.name).toBe("ほっかい");
+    const aomori = getPrefectureByCode("02", "ja-Hira", { short: true });
+    expect(aomori?.name).toBe("あおもり");
+  });
+
+  it("strips katakana suffixes", () => {
+    const tokyo = getPrefectureByCode("13", "ja-Kana", { short: true });
+    expect(tokyo?.name).toBe("トウキョウ");
+    const osaka = getPrefectureByCode("27", "ja-Kana", { short: true });
+    expect(osaka?.name).toBe("オオサカ");
+    const aomori = getPrefectureByCode("02", "ja-Kana", { short: true });
+    expect(aomori?.name).toBe("アオモリ");
+  });
+
+  it("strips half-width kana suffixes", () => {
+    const tokyo = getPrefectureByCode("13", "ja-HW", { short: true });
+    expect(tokyo?.name).toBe("ﾄｳｷｮｳ");
+    const osaka = getPrefectureByCode("27", "ja-HW", { short: true });
+    expect(osaka?.name).toBe("ｵｵｻｶ");
+    const aomori = getPrefectureByCode("02", "ja-HW", { short: true });
+    expect(aomori?.name).toBe("ｱｵﾓﾘ");
+  });
+
+  it("strips kana in AllLangs", () => {
+    const tokyo = getPrefectureByCodeAllLangs("13", { short: true });
+    expect(tokyo?.name["ja-Hira"]).toBe("とうきょう");
+    expect(tokyo?.name["ja-Kana"]).toBe("トウキョウ");
+    expect(tokyo?.name["ja-HW"]).toBe("ﾄｳｷｮｳ");
   });
 });

@@ -26,6 +26,31 @@ describe("language aliases", () => {
     const pref = getPrefectureByCode("13", "tw");
     expect(pref?.name).toBe("東京都");
   });
+
+  it("resolves hira to ja-Hira", () => {
+    const pref = getPrefectureByCode("13", "hira");
+    expect(pref?.name).toBe("とうきょうと");
+  });
+
+  it("resolves hiragana to ja-Hira", () => {
+    const pref = getPrefectureByCode("13", "hiragana");
+    expect(pref?.name).toBe("とうきょうと");
+  });
+
+  it("resolves kana to ja-Kana", () => {
+    const pref = getPrefectureByCode("13", "kana");
+    expect(pref?.name).toBe("トウキョウト");
+  });
+
+  it("resolves katakana to ja-Kana", () => {
+    const pref = getPrefectureByCode("13", "katakana");
+    expect(pref?.name).toBe("トウキョウト");
+  });
+
+  it("resolves hw to ja-HW", () => {
+    const pref = getPrefectureByCode("13", "hw");
+    expect(pref?.name).toBe("ﾄｳｷｮｳﾄ");
+  });
 });
 
 describe("unsupported language fallback", () => {
@@ -41,10 +66,13 @@ describe("unsupported language fallback", () => {
 });
 
 describe("getSupportedLanguages", () => {
-  it("returns all 7 supported languages", () => {
+  it("returns all 10 supported languages", () => {
     const langs = getSupportedLanguages();
-    expect(langs).toHaveLength(7);
+    expect(langs).toHaveLength(10);
     expect(langs).toContain("ja");
+    expect(langs).toContain("ja-Hira");
+    expect(langs).toContain("ja-Kana");
+    expect(langs).toContain("ja-HW");
     expect(langs).toContain("en");
     expect(langs).toContain("zh-CN");
     expect(langs).toContain("zh-TW");
