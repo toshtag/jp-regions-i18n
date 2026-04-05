@@ -7,3 +7,10 @@ coverage/
 .env
 CLAUDE.local.md
 .claude/*.local.md
+
+# Translation scripts and intermediate data (local use only)
+scripts/fetch-translations.py
+scripts/fetch-vi-hanviet.py
+scripts/apply-translations.py
+scripts/intermediate_*.json
+scripts/translations_*.json
