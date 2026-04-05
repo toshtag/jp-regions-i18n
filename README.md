@@ -16,6 +16,18 @@ pnpm add jp-regions-i18n
 
 ## Quick Start
 
+Need only one language? Use a subpath import for a much smaller bundle (~17–30 KB gzip vs. 84 KB):
+
+```typescript
+import { getPrefectures, getCities } from "jp-regions-i18n/en"; // English only (~17 KB gzip)
+import { getPrefectures, getCities } from "jp-regions-i18n/ja"; // Japanese only (~30 KB gzip)
+// also: /zh-CN  /zh-TW  /ko  /pt  /vi
+```
+
+The subpath API is identical except the `lang` argument is omitted (language is fixed) and `AllLangs` variants are not included.
+
+To use all languages at once:
+
 ```typescript
 import { getPrefectures, getCities, getPrefecturesAllLangs, getPrefectureByName, getCitiesByPrefName } from "jp-regions-i18n";
 

@@ -16,6 +16,18 @@ pnpm add jp-regions-i18n
 
 ## クイックスタート
 
+1言語だけ使う場合は、サブパスインポートで大幅に軽量化できます（gzip 17〜30 KB、通常の84 KBより小さい）：
+
+```typescript
+import { getPrefectures, getCities } from "jp-regions-i18n/ja"; // 日本語のみ（約30 KB gzip）
+import { getPrefectures, getCities } from "jp-regions-i18n/en"; // 英語のみ（約17 KB gzip）
+// 他: /zh-CN  /zh-TW  /ko  /pt  /vi
+```
+
+サブパスAPIはメインと同じですが、`lang` 引数が不要（言語固定）で、`AllLangs` 系関数は含まれません。
+
+複数言語を使う場合はメインエントリポイントを使用：
+
 ```typescript
 import { getPrefectures, getCities, getPrefecturesAllLangs, getPrefectureByName, getCitiesByPrefName } from "jp-regions-i18n";
 

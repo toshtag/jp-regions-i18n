@@ -6,6 +6,43 @@
 
 ## English
 
+### Language-specific Subpath Imports
+
+For a smaller bundle, import from a language-specific subpath instead of the main entry point:
+
+```typescript
+import { getPrefectures, getCities } from "jp-regions-i18n/en";
+import { getPrefectures, getCities } from "jp-regions-i18n/ja";
+// also: /zh-CN  /zh-TW  /ko  /pt  /vi
+```
+
+| Subpath | Language | Bundle size (gzip) |
+|---------|----------|-------------------|
+| `jp-regions-i18n` | All 7 languages | ~84 KB |
+| `/ja` | Japanese | ~30 KB |
+| `/en` | English | ~17 KB |
+| `/zh-CN` | Simplified Chinese | ~18 KB |
+| `/zh-TW` | Traditional Chinese | ~18 KB |
+| `/ko` | Korean | ~18 KB |
+| `/pt` | Portuguese | ~16 KB |
+| `/vi` | Vietnamese | ~18 KB |
+
+**Differences from the main entry point:**
+- The `lang` argument is omitted from all functions (language is fixed by the subpath)
+- `AllLangs` variants (`getPrefecturesAllLangs`, `getCitiesAllLangs`, etc.) are not available
+
+```typescript
+// main entry — lang argument required for non-default languages
+import { getPrefectures } from "jp-regions-i18n";
+getPrefectures("en");
+
+// subpath — no lang argument
+import { getPrefectures } from "jp-regions-i18n/en";
+getPrefectures();
+```
+
+---
+
 ### Prefectures
 
 #### `getPrefectures(lang?, options?): Prefecture[]`
@@ -363,6 +400,43 @@ Unsupported or omitted language codes fall back to `ja`.
 ---
 
 ## 日本語
+
+### 言語別サブパスインポート
+
+バンドルサイズを小さくするため、メインエントリポイントの代わりに言語別サブパスからインポートできます：
+
+```typescript
+import { getPrefectures, getCities } from "jp-regions-i18n/ja";
+import { getPrefectures, getCities } from "jp-regions-i18n/en";
+// 他: /zh-CN  /zh-TW  /ko  /pt  /vi
+```
+
+| サブパス | 言語 | バンドルサイズ（gzip） |
+|---------|------|--------------------|
+| `jp-regions-i18n` | 全7言語 | 約84 KB |
+| `/ja` | 日本語 | 約30 KB |
+| `/en` | 英語 | 約17 KB |
+| `/zh-CN` | 簡体字中国語 | 約18 KB |
+| `/zh-TW` | 繁体字中国語 | 約18 KB |
+| `/ko` | 韓国語 | 約18 KB |
+| `/pt` | ポルトガル語 | 約16 KB |
+| `/vi` | ベトナム語 | 約18 KB |
+
+**メインエントリポイントとの違い：**
+- すべての関数から `lang` 引数が省略されます（言語はサブパスで固定）
+- `AllLangs` 系関数（`getPrefecturesAllLangs`、`getCitiesAllLangs` など）は含まれません
+
+```typescript
+// メインエントリ — デフォルト以外の言語にはlang引数が必要
+import { getPrefectures } from "jp-regions-i18n";
+getPrefectures("en");
+
+// サブパス — lang引数不要
+import { getPrefectures } from "jp-regions-i18n/en";
+getPrefectures();
+```
+
+---
 
 ### 都道府県
 
