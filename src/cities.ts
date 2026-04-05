@@ -1,6 +1,11 @@
 import { normalizeLang } from "./lang.js";
 import { shortenCityName } from "./name.js";
-import { getCitiesRawByPrefCode, getCityRawByCode, getCityRawByLGCode } from "./store.js";
+import {
+  getCitiesRawByPrefCode,
+  getCityRawByCode,
+  getCityRawByLGCode,
+  getPrefectureRawByName,
+} from "./store.js";
 import type { City, CityAllLangs, GetCitiesOptions, Lang } from "./types.js";
 
 type RawCity = {
@@ -107,4 +112,23 @@ export function getCityByLGCodeAllLangs(
   const raw = getCityRawByLGCode(lgCode);
   if (!raw) return undefined;
   return toAllLangs(raw, options?.short);
+}
+
+export function getCitiesByPrefName(
+  prefName: string,
+  lang?: string,
+  options?: GetCitiesOptions,
+): City[] {
+  const pref = getPrefectureRawByName(prefName);
+  if (!pref) return [];
+  return getCities(pref.code, lang, options);
+}
+
+export function getCitiesAllLangsByPrefName(
+  prefName: string,
+  options?: GetCitiesOptions,
+): CityAllLangs[] {
+  const pref = getPrefectureRawByName(prefName);
+  if (!pref) return [];
+  return getCitiesAllLangs(pref.code, options);
 }

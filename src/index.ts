@@ -1,6 +1,8 @@
 export {
   getCities,
   getCitiesAllLangs,
+  getCitiesAllLangsByPrefName,
+  getCitiesByPrefName,
   getCityByJisCode,
   getCityByJisCodeAllLangs,
   getCityByLGCode,
