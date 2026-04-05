@@ -30,55 +30,52 @@ interface CityLang {
   nameHira?: string;
 }
 
+// 日本語スキーマ: [code, lgSuffix4, ja, ja-Hira]
+// 単一言語スキーマ: [code, lgSuffix4, name]
+// iso = "JP-" + code, lgCode = code + lgSuffix4
 function parsePrefRow(row: unknown[], hasKana: boolean): PrefLang {
-  if (hasKana) {
-    // [code, iso, lgCode, ja, ja-Hira]
-    const [code, iso, lgCode, name, nameHira] = row as string[];
-    return { code, iso, lgCode, name, nameHira };
-  }
-  // [code, iso, lgCode, name]
-  const [code, iso, lgCode, name] = row as string[];
-  return { code, iso, lgCode, name };
-}
-
-function parseCityRow(row: unknown[], hasKana: boolean): CityLang {
-  if (hasKana) {
-    // [code, prefCode, lgCode, parentCode, typeNum, ja, ja-Hira]
-    const [code, prefCode, lgCode, parentCode, typeNum, name, nameHira] = row as [
-      string,
-      string,
-      string,
-      string | null,
-      number,
-      string,
-      string,
-    ];
-    return {
-      code,
-      prefCode,
-      lgCode,
-      parentCode: parentCode || null,
-      type: decodeCityType(typeNum),
-      name,
-      nameHira,
-    };
-  }
-  // [code, prefCode, lgCode, parentCode, typeNum, name]
-  const [code, prefCode, lgCode, parentCode, typeNum, name] = row as [
-    string,
-    string,
-    string,
-    string | null,
-    number,
-    string,
-  ];
+  const [code, lgSuffix, name, nameHira] = row as string[];
   return {
     code,
-    prefCode,
-    lgCode,
-    parentCode: parentCode || null,
+    iso: `JP-${code}`,
+    lgCode: code + lgSuffix,
+    name,
+    nameHira: hasKana ? nameHira : undefined,
+  };
+}
+
+// 日本語スキーマ: [code, lgSuffix1, typeNum, ja, ja-Hira, parentCode?]
+// 単一言語スキーマ: [code, lgSuffix1, typeNum, name, parentCode?]
+// prefCode = code[0:2], lgCode = code + lgSuffix1
+function parseCityRow(row: unknown[], hasKana: boolean): CityLang {
+  const [code, lgSuffix, typeNum, name, nameHiraOrParent, maybeParent] = row as [
+    string,
+    string,
+    number,
+    string,
+    string | undefined,
+    string | undefined,
+  ];
+
+  let nameHira: string | undefined;
+  let parentCode: string | null = null;
+
+  if (hasKana) {
+    nameHira = nameHiraOrParent;
+    parentCode = maybeParent ?? null;
+  } else {
+    // nameHiraOrParent は parentCode (存在すれば)
+    parentCode = nameHiraOrParent ?? null;
+  }
+
+  return {
+    code,
+    prefCode: code.slice(0, 2),
+    lgCode: code + lgSuffix,
+    parentCode,
     type: decodeCityType(typeNum),
     name,
+    nameHira,
   };
 }
 
