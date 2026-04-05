@@ -9,6 +9,16 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-04-05
+
+### Added
+
+- `getPrefectureByName(name, lang?, options?)` — look up a prefecture by name in any of the 10 supported languages
+- `getPrefectureByNameAllLangs(name, options?)` — same, returns all 10 language names
+- `getCitiesByPrefName(prefName, lang?, options?)` — get cities by prefecture name instead of prefecture code
+- `getCitiesAllLangsByPrefName(prefName, options?)` — same, returns all 10 language names per city
+- Name matching is case-insensitive and accepts both full forms (`"東京都"`, `"Tokyo"`) and short forms (`"東京"`, `"Osaka"`) across all languages
+
 ## [0.5.0] - 2026-04-04
 
 ### Breaking Changes

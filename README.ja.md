@@ -17,7 +17,7 @@ pnpm add jp-regions-i18n
 ## クイックスタート
 
 ```typescript
-import { getPrefectures, getCities, getPrefecturesAllLangs } from "jp-regions-i18n";
+import { getPrefectures, getCities, getPrefecturesAllLangs, getPrefectureByName, getCitiesByPrefName } from "jp-regions-i18n";
 
 // 全都道府県（日本語、デフォルト）
 const prefs = getPrefectures();
@@ -30,6 +30,10 @@ const prefsEn = getPrefectures("en");
 // 東京都の市区町村（英語）
 const cities = getCities("13", "en");
 // [{ jisCode: "13101", name: "Chiyoda-ku", ... }, ...]
+
+// 名前で検索 — 都道府県コードを覚える必要なし
+const tokyo = getPrefectureByName("東京");          // "東京都"、"Tokyo"、"도쿄도" なども可
+const cities2 = getCitiesByPrefName("東京", "en"); // getCities("13", "en") と同じ結果
 
 // 全都道府県を7言語まとめて取得
 const prefsAll = getPrefecturesAllLangs();

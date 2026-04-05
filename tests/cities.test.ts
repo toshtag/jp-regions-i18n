@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import {
   getCities,
   getCitiesAllLangs,
+  getCitiesAllLangsByPrefName,
+  getCitiesByPrefName,
   getCityByJisCode,
   getCityByJisCodeAllLangs,
   getCityByLGCode,
@@ -203,6 +205,106 @@ describe("getCityByLGCodeAllLangs", () => {
 
   it("returns undefined for non-existent lgCode", () => {
     expect(getCityByLGCodeAllLangs("999999")).toBeUndefined();
+  });
+});
+
+describe("getCitiesByPrefName", () => {
+  it("returns cities for Japanese full name", () => {
+    const cities = getCitiesByPrefName("東京都");
+    expect(cities.length).toBeGreaterThan(0);
+    for (const c of cities) {
+      expect(c.prefCode).toBe("13");
+    }
+  });
+
+  it("returns cities for Japanese short name", () => {
+    const cities = getCitiesByPrefName("東京");
+    expect(cities.length).toBeGreaterThan(0);
+    for (const c of cities) {
+      expect(c.prefCode).toBe("13");
+    }
+  });
+
+  it("returns cities for English name", () => {
+    const cities = getCitiesByPrefName("Tokyo");
+    expect(cities.length).toBeGreaterThan(0);
+    for (const c of cities) {
+      expect(c.prefCode).toBe("13");
+    }
+  });
+
+  it("is case-insensitive for English", () => {
+    const cities = getCitiesByPrefName("tokyo");
+    expect(cities.length).toBeGreaterThan(0);
+  });
+
+  it("returns English city names when lang is specified", () => {
+    const cities = getCitiesByPrefName("東京", "en", { type: "special_ward" });
+    expect(cities).toHaveLength(23);
+    const chiyoda = cities.find((c) => c.jisCode === "13101");
+    expect(chiyoda?.name).toBe("Chiyoda-ku");
+  });
+
+  it("supports type filter", () => {
+    const wards = getCitiesByPrefName("東京都", "ja", { type: "special_ward" });
+    expect(wards).toHaveLength(23);
+    for (const w of wards) {
+      expect(w.type).toBe("special_ward");
+    }
+  });
+
+  it("returns empty array for unknown prefecture name", () => {
+    expect(getCitiesByPrefName("存在しない県")).toEqual([]);
+    expect(getCitiesByPrefName("Unknown")).toEqual([]);
+  });
+
+  it("returns cities for Osaka by name", () => {
+    const cities = getCitiesByPrefName("大阪府");
+    expect(cities.length).toBeGreaterThan(0);
+    for (const c of cities) {
+      expect(c.prefCode).toBe("27");
+    }
+  });
+});
+
+describe("getCitiesAllLangsByPrefName", () => {
+  it("returns cities with all 10 languages for Japanese name", () => {
+    const langs = [
+      "ja",
+      "ja-Hira",
+      "ja-Kana",
+      "ja-HW",
+      "en",
+      "zh-CN",
+      "zh-TW",
+      "ko",
+      "pt",
+      "vi",
+    ] as const;
+    const cities = getCitiesAllLangsByPrefName("東京都");
+    expect(cities.length).toBeGreaterThan(0);
+    for (const c of cities) {
+      for (const lang of langs) {
+        expect(c.name[lang]).toBeTruthy();
+      }
+    }
+  });
+
+  it("matches English name", () => {
+    const cities = getCitiesAllLangsByPrefName("Tokyo");
+    expect(cities.length).toBeGreaterThan(0);
+    for (const c of cities) {
+      expect(c.prefCode).toBe("13");
+    }
+  });
+
+  it("supports type filter", () => {
+    const wards = getCitiesAllLangsByPrefName("東京都", { type: "special_ward" });
+    expect(wards).toHaveLength(23);
+  });
+
+  it("returns empty array for unknown prefecture name", () => {
+    expect(getCitiesAllLangsByPrefName("Unknown")).toEqual([]);
   });
 });
 
