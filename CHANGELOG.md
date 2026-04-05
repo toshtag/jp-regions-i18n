@@ -9,18 +9,20 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
-## [0.6.1] - 2026-04-05
-
-### Fixed
-
-- `tsconfig.json`: change `module` from `ES2022` to `ESNext` to properly support import attributes syntax (`with { type: "json" }`)
-- `tsconfig.json`: remove redundant options already managed by tsup (`declaration`, `declarationMap`, `sourceMap`, `outDir`) and `esModuleInterop` (unnecessary in ESM-first project)
+## [0.6.2] - 2026-04-05
 
 ### Changed
 
 - `pt` names updated to use proper Portuguese labels from Wikidata (with macron notation where applicable, e.g. `Hokkaidō`, `Hyōgo`, `Kōchi`)
 - `vi` names updated to use Hán Việt (Sino-Vietnamese) readings sourced from Vietnamese Wikipedia (e.g. `北海道→Bắc Hải Đạo`, `横浜市→Hoành Tân thị`, `京都市→Kinh Đô thị`)
 - Both `pt` and `vi` fall back to the English name when a translation is unavailable
+
+## [0.6.1] - 2026-04-05
+
+### Fixed
+
+- `tsconfig.json`: change `module` from `ES2022` to `ESNext` to properly support import attributes syntax (`with { type: "json" }`)
+- `tsconfig.json`: remove redundant options already managed by tsup (`declaration`, `declarationMap`, `sourceMap`, `outDir`) and `esModuleInterop` (unnecessary in ESM-first project)
 
 ## [0.6.0] - 2026-04-05
 
