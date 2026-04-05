@@ -9,6 +9,31 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-04-05
+
+### Added
+
+- **Language-specific subpath exports** — import only the language you need for a dramatically smaller bundle:
+  - `jp-regions-i18n/ja` — Japanese only (~30 KB gzip)
+  - `jp-regions-i18n/en` — English only (~17 KB gzip)
+  - `jp-regions-i18n/zh-CN`, `/zh-TW`, `/ko`, `/pt`, `/vi`
+- Each subpath exports the same API as the main entry point, but without the `lang` argument (language is fixed) and without `AllLangs` variants
+
+### Changed
+
+- **Internal data format rewritten for minimum size** — JSON payloads are now compact indexed arrays instead of named-key objects:
+  - Redundant fields eliminated: `prefCode` (derived from `code[0:2]`), `iso` (derived from `"JP-" + code`), full `lgCode` (stored as suffix, restored at runtime)
+  - `ja-Kana` and `ja-HW` removed from data files — computed at runtime from `ja-Hira` via character-code conversion
+  - All JSON files minified (no indentation)
+- Bundle size reduction (gzip):
+  - Main entry (`jp-regions-i18n`): 141 KB → **84 KB** (−40%)
+  - Per-language entries: **17–30 KB** (vs. 141 KB previously required)
+
+### Internal
+
+- `src/kana.ts` — hiragana↔katakana conversion extracted into a standalone module
+- `src/store-lang.ts` — lightweight per-language store factory (no `AllLangs` overhead)
+
 ## [0.6.2] - 2026-04-05
 
 ### Changed
