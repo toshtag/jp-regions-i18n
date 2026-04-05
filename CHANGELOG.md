@@ -9,6 +9,13 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-04-05
+
+### Changed
+
+- `tsconfig.json`: change `module` from `ES2022` to `ESNext` to properly support import attributes syntax (`with { type: "json" }`)
+- `tsconfig.json`: remove redundant options already managed by tsup (`declaration`, `declarationMap`, `sourceMap`, `outDir`) and `esModuleInterop` (unnecessary in ESM-first project)
+
 ## [0.6.0] - 2026-04-05
 
 ### Added
