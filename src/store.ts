@@ -20,14 +20,16 @@ interface CityRaw {
   name: Record<Lang, string>;
 }
 
-// 全言語配列スキーマ: [code, iso, lgCode, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
+// 全言語スキーマ: [code, lgSuffix4, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
+// iso  = "JP-" + code
+// lgCode = code + lgSuffix4
 function parsePref(row: unknown[]): PrefectureRaw {
-  const [code, iso, lgCode, ja, jaHira, en, zhCN, zhTW, ko, pt, vi] = row as string[];
+  const [code, lgSuffix, ja, jaHira, en, zhCN, zhTW, ko, pt, vi] = row as string[];
   const jaKana = hiraToKana(jaHira);
   return {
     code,
-    iso,
-    lgCode,
+    iso: `JP-${code}`,
+    lgCode: code + lgSuffix,
     name: {
       ja,
       "ja-Hira": jaHira,
@@ -43,30 +45,30 @@ function parsePref(row: unknown[]): PrefectureRaw {
   };
 }
 
-// 全言語配列スキーマ: [code, prefCode, lgCode, parentCode, typeNum, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
+// 全言語スキーマ: [code, lgSuffix1, typeNum, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi, parentCode?]
+// prefCode = code[0:2]
+// lgCode   = code + lgSuffix1
 function parseCity(row: unknown[]): CityRaw {
-  const [code, prefCode, lgCode, parentCode, typeNum, ja, jaHira, en, zhCN, zhTW, ko, pt, vi] =
-    row as [
-      string,
-      string,
-      string,
-      string | null,
-      number,
-      string,
-      string,
-      string,
-      string,
-      string,
-      string,
-      string,
-      string,
-    ];
+  const [code, lgSuffix, typeNum, ja, jaHira, en, zhCN, zhTW, ko, pt, vi, parentCode] = row as [
+    string,
+    string,
+    number,
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    string | undefined,
+  ];
   const jaKana = hiraToKana(jaHira);
   return {
     code,
-    prefCode,
-    lgCode,
-    parentCode: parentCode || null,
+    prefCode: code.slice(0, 2),
+    lgCode: code + lgSuffix,
+    parentCode: parentCode ?? null,
     type: decodeCityType(typeNum),
     name: {
       ja,
