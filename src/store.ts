@@ -2,7 +2,7 @@ import citiesData from "./generated/cities.json" with { type: "json" };
 import prefecturesData from "./generated/prefectures.json" with { type: "json" };
 import { hiraToKana, kanaToHW } from "./kana.js";
 import { shortenPrefName } from "./name.js";
-import { decodeCityType, type CityType, type Lang } from "./types.js";
+import { type CityType, decodeCityType, type Lang } from "./types.js";
 
 interface PrefectureRaw {
   code: string;
@@ -46,7 +46,21 @@ function parsePref(row: unknown[]): PrefectureRaw {
 // 全言語配列スキーマ: [code, prefCode, lgCode, parentCode, typeNum, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
 function parseCity(row: unknown[]): CityRaw {
   const [code, prefCode, lgCode, parentCode, typeNum, ja, jaHira, en, zhCN, zhTW, ko, pt, vi] =
-    row as [string, string, string, string | null, number, string, string, string, string, string, string, string, string];
+    row as [
+      string,
+      string,
+      string,
+      string | null,
+      number,
+      string,
+      string,
+      string,
+      string,
+      string,
+      string,
+      string,
+      string,
+    ];
   const jaKana = hiraToKana(jaHira);
   return {
     code,
