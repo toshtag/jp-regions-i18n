@@ -12,8 +12,8 @@
       "zh-CN": "北海道",
       "zh-TW": "北海道",
       "ko": "홋카이도",
-      "pt": "Hokkaido",
-      "vi": "Hokkaido"
+      "pt": "Hokkaidō",
+      "vi": "Bắc Hải Đạo"
     }
   },
   {
@@ -30,7 +30,7 @@
       "zh-TW": "青森縣",
       "ko": "아오모리현",
       "pt": "Aomori",
-      "vi": "Aomori"
+      "vi": "Thanh Sâm Huyện"
     }
   },
   {
@@ -47,7 +47,7 @@
       "zh-TW": "岩手縣",
       "ko": "이와테현",
       "pt": "Iwate",
-      "vi": "Iwate"
+      "vi": "Nham Thủ huyện"
     }
   },
   {
@@ -81,7 +81,7 @@
       "zh-TW": "秋田縣",
       "ko": "아키타현",
       "pt": "Akita",
-      "vi": "Akita"
+      "vi": "Thu Điền huyện"
     }
   },
   {
@@ -115,7 +115,7 @@
       "zh-TW": "福島縣",
       "ko": "후쿠시마현",
       "pt": "Fukushima",
-      "vi": "Fukushima"
+      "vi": "Phúc Đảo huyện"
     }
   },
   {
@@ -132,7 +132,7 @@
       "zh-TW": "茨城縣",
       "ko": "이바라키현",
       "pt": "Ibaraki",
-      "vi": "Ibaraki"
+      "vi": "Tỳ Thành huyện"
     }
   },
   {
@@ -166,7 +166,7 @@
       "zh-TW": "群馬縣",
       "ko": "군마현",
       "pt": "Gunma",
-      "vi": "Gunma"
+      "vi": "Quần Mã huyện"
     }
   },
   {
@@ -200,7 +200,7 @@
       "zh-TW": "千葉縣",
       "ko": "지바현",
       "pt": "Chiba",
-      "vi": "Chiba"
+      "vi": "Thiên Diệp huyện"
     }
   },
   {
@@ -216,7 +216,7 @@
       "zh-CN": "东京都",
       "zh-TW": "東京都",
       "ko": "도쿄도",
-      "pt": "Tokyo",
+      "pt": "Tóquio",
       "vi": "Tokyo"
     }
   },
@@ -234,7 +234,7 @@
       "zh-TW": "神奈川縣",
       "ko": "가나가와현",
       "pt": "Kanagawa",
-      "vi": "Kanagawa"
+      "vi": "Thần Nại Xuyên huyện"
     }
   },
   {
@@ -285,7 +285,7 @@
       "zh-TW": "石川縣",
       "ko": "이시카와현",
       "pt": "Ishikawa",
-      "vi": "Ishikawa"
+      "vi": "Thạch Xuyên huyện"
     }
   },
   {
@@ -302,7 +302,7 @@
       "zh-TW": "福井縣",
       "ko": "후쿠이현",
       "pt": "Fukui",
-      "vi": "Fukui"
+      "vi": "Phúc Tỉnh huyện"
     }
   },
   {
@@ -353,7 +353,7 @@
       "zh-TW": "岐阜縣",
       "ko": "기후현",
       "pt": "Gifu",
-      "vi": "Gifu"
+      "vi": "Kì Phụ Huyện"
     }
   },
   {
@@ -437,8 +437,8 @@
       "zh-CN": "京都府",
       "zh-TW": "京都府",
       "ko": "교토부",
-      "pt": "Kyoto",
-      "vi": "Kyoto"
+      "pt": "Quioto",
+      "vi": "Kinh Đô phủ"
     }
   },
   {
@@ -471,8 +471,8 @@
       "zh-CN": "兵库县",
       "zh-TW": "兵庫縣",
       "ko": "효고현",
-      "pt": "Hyogo",
-      "vi": "Hyogo"
+      "pt": "Hyōgo",
+      "vi": "Binh Khố huyện"
     }
   },
   {
@@ -574,7 +574,7 @@
       "zh-TW": "廣島縣",
       "ko": "히로시마현",
       "pt": "Hiroshima",
-      "vi": "Hiroshima"
+      "vi": "Quảng Đảo Huyện"
     }
   },
   {
@@ -625,7 +625,7 @@
       "zh-TW": "香川縣",
       "ko": "가가와현",
       "pt": "Kagawa",
-      "vi": "Kagawa"
+      "vi": "Hương Xuyên Huyện"
     }
   },
   {
@@ -642,7 +642,7 @@
       "zh-TW": "愛媛縣",
       "ko": "에히메현",
       "pt": "Ehime",
-      "vi": "Ehime"
+      "vi": "Ái Viên huyện"
     }
   },
   {
@@ -658,7 +658,7 @@
       "zh-CN": "高知县",
       "zh-TW": "高知縣",
       "ko": "고치현",
-      "pt": "Kochi",
+      "pt": "Kōchi",
       "vi": "Kochi"
     }
   },
@@ -676,7 +676,7 @@
       "zh-TW": "福岡縣",
       "ko": "후쿠오카현",
       "pt": "Fukuoka",
-      "vi": "Fukuoka"
+      "vi": "Phúc Cương Huyện"
     }
   },
   {
@@ -727,7 +727,7 @@
       "zh-TW": "熊本縣",
       "ko": "구마모토현",
       "pt": "Kumamoto",
-      "vi": "Kumamoto"
+      "vi": "Hùng Bản huyện"
     }
   },
   {
@@ -743,7 +743,7 @@
       "zh-CN": "大分县",
       "zh-TW": "大分縣",
       "ko": "오이타현",
-      "pt": "Oita",
+      "pt": "Ōita",
       "vi": "Oita"
     }
   },
@@ -778,7 +778,7 @@
       "zh-TW": "鹿兒島縣",
       "ko": "가고시마현",
       "pt": "Kagoshima",
-      "vi": "Kagoshima"
+      "vi": "Lộc Nhi Đảo huyện"
     }
   },
   {
