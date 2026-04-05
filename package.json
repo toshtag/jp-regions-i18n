@@ -1,6 +1,6 @@
 {
   "name": "jp-regions-i18n",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Multilingual Japanese prefectures and cities data (i18n)",
   "type": "module",
   "exports": {
@@ -8,6 +8,41 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./ja": {
+      "types": "./dist/ja.d.ts",
+      "import": "./dist/ja.js",
+      "require": "./dist/ja.cjs"
+    },
+    "./en": {
+      "types": "./dist/en.d.ts",
+      "import": "./dist/en.js",
+      "require": "./dist/en.cjs"
+    },
+    "./zh-CN": {
+      "types": "./dist/zh-CN.d.ts",
+      "import": "./dist/zh-CN.js",
+      "require": "./dist/zh-CN.cjs"
+    },
+    "./zh-TW": {
+      "types": "./dist/zh-TW.d.ts",
+      "import": "./dist/zh-TW.js",
+      "require": "./dist/zh-TW.cjs"
+    },
+    "./ko": {
+      "types": "./dist/ko.d.ts",
+      "import": "./dist/ko.js",
+      "require": "./dist/ko.cjs"
+    },
+    "./pt": {
+      "types": "./dist/pt.d.ts",
+      "import": "./dist/pt.js",
+      "require": "./dist/pt.cjs"
+    },
+    "./vi": {
+      "types": "./dist/vi.d.ts",
+      "import": "./dist/vi.js",
+      "require": "./dist/vi.cjs"
     }
   },
   "main": "./dist/index.cjs",

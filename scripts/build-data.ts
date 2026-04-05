@@ -34,44 +34,43 @@ interface CityRow {
   vi: string;
 }
 
-const LANG_KEYS = ["ja", "ja-Hira", "ja-Kana", "ja-HW", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
-
-// ひらがな→カタカナ（U+3041-U+3096 → U+30A1-U+30F6）
-function hiraToKana(str: string): string {
-  return str.replace(/[\u3041-\u3096]/g, (ch) =>
-    String.fromCharCode(ch.charCodeAt(0) + 0x60),
-  );
-}
-
-// カタカナ→半角カナ（濁点・半濁点は2文字に分解）
-const KANA_TO_HW: Record<string, string> = {
-  ア: "ｱ", イ: "ｲ", ウ: "ｳ", エ: "ｴ", オ: "ｵ",
-  カ: "ｶ", キ: "ｷ", ク: "ｸ", ケ: "ｹ", コ: "ｺ",
-  サ: "ｻ", シ: "ｼ", ス: "ｽ", セ: "ｾ", ソ: "ｿ",
-  タ: "ﾀ", チ: "ﾁ", ツ: "ﾂ", テ: "ﾃ", ト: "ﾄ",
-  ナ: "ﾅ", ニ: "ﾆ", ヌ: "ﾇ", ネ: "ﾈ", ノ: "ﾉ",
-  ハ: "ﾊ", ヒ: "ﾋ", フ: "ﾌ", ヘ: "ﾍ", ホ: "ﾎ",
-  マ: "ﾏ", ミ: "ﾐ", ム: "ﾑ", メ: "ﾒ", モ: "ﾓ",
-  ヤ: "ﾔ", ユ: "ﾕ", ヨ: "ﾖ",
-  ラ: "ﾗ", リ: "ﾘ", ル: "ﾙ", レ: "ﾚ", ロ: "ﾛ",
-  ワ: "ﾜ", ヲ: "ｦ", ン: "ﾝ",
-  ガ: "ｶﾞ", ギ: "ｷﾞ", グ: "ｸﾞ", ゲ: "ｹﾞ", ゴ: "ｺﾞ",
-  ザ: "ｻﾞ", ジ: "ｼﾞ", ズ: "ｽﾞ", ゼ: "ｾﾞ", ゾ: "ｿﾞ",
-  ダ: "ﾀﾞ", ヂ: "ﾁﾞ", ヅ: "ﾂﾞ", デ: "ﾃﾞ", ド: "ﾄﾞ",
-  バ: "ﾊﾞ", ビ: "ﾋﾞ", ブ: "ﾌﾞ", ベ: "ﾍﾞ", ボ: "ﾎﾞ",
-  パ: "ﾊﾟ", ピ: "ﾋﾟ", プ: "ﾌﾟ", ペ: "ﾍﾟ", ポ: "ﾎﾟ",
-  ァ: "ｧ", ィ: "ｨ", ゥ: "ｩ", ェ: "ｪ", ォ: "ｫ",
-  ッ: "ｯ", ャ: "ｬ", ュ: "ｭ", ョ: "ｮ",
-  ヴ: "ｳﾞ", ー: "ｰ",
-  // 括弧（地名で使用）
-  "（": "（", "）": "）",
+// CityType の数値エンコード（src/types.ts の CITY_TYPE_NAMES と同順）
+const CITY_TYPE_INDEX: Record<string, number> = {
+  city: 0,
+  designated_city: 1,
+  ward: 2,
+  special_ward: 3,
+  town: 4,
+  village: 5,
 };
 
-function kanaToHW(str: string): string {
-  return str
-    .split("")
-    .map((ch) => KANA_TO_HW[ch] ?? ch)
-    .join("");
+const SINGLE_LANGS = ["en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
+
+// lgCode(6桁) から code(5桁) のサフィックス1桁を抽出
+// code は5桁、lgCode は6桁で先頭5桁が同じ
+function cityLgSuffix(lgCode: string): string {
+  return lgCode.slice(5);
+}
+
+// lgCode(6桁) から pref code(2桁) のサフィックス4桁を抽出
+function prefLgSuffix(lgCode: string): string {
+  return lgCode.slice(2);
+}
+
+// 都市: [code, lgSuffix, typeNum, name..., parentCode?]
+// - prefCode は code[0:2] から派生可能 → 省略
+// - lgCode は code + lgSuffix(1桁) から復元可能 → suffix のみ保存
+// - parentCode は ward/designated_city の一部のみ存在 → 末尾オプション
+function buildCityRow(row: CityRow, ...names: string[]): unknown[] {
+  const result: unknown[] = [row.code, cityLgSuffix(row.lg_code), CITY_TYPE_INDEX[row.type] ?? 0, ...names];
+  if (row.parent_code) result.push(row.parent_code);
+  return result;
+}
+
+// 都道府県: [code, lgSuffix, name...]
+// - iso は "JP-" + code から派生可能 → 省略
+function buildPrefRow(row: PrefectureRow, ...names: string[]): unknown[] {
+  return [row.code, prefLgSuffix(row.lg_code), ...names];
 }
 
 function readCsv<T>(filePath: string): T[] {
@@ -86,58 +85,50 @@ function readCsv<T>(filePath: string): T[] {
 function buildPrefectures(): void {
   const rows = readCsv<PrefectureRow>(`${DATA_SOURCE_DIR}/prefectures.csv`);
 
-  const prefectures = rows.map((row) => {
-    const kana = hiraToKana(row.ja_hira);
-    const hw = kanaToHW(kana);
-    return {
-      code: row.code,
-      iso: row.iso,
-      lgCode: row.lg_code,
-      name: Object.fromEntries(
-        LANG_KEYS.map((lang) => {
-          if (lang === "ja-Hira") return [lang, row.ja_hira];
-          if (lang === "ja-Kana") return [lang, kana];
-          if (lang === "ja-HW") return [lang, hw];
-          return [lang, row[lang as keyof PrefectureRow]];
-        }),
-      ),
-    };
-  });
+  // 全言語: [code, lgSuffix, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
+  const all = rows.map((row) =>
+    buildPrefRow(row, row.ja, row.ja_hira, row.en, row["zh-CN"], row["zh-TW"], row.ko, row.pt, row.vi),
+  );
+  writeJson(`${OUTPUT_DIR}/prefectures.json`, all);
 
-  writeJson(`${OUTPUT_DIR}/prefectures.json`, prefectures);
-  console.log(`Generated prefectures.json (${prefectures.length} entries)`);
+  // 日本語: [code, lgSuffix, ja, ja-Hira]
+  const ja = rows.map((row) => buildPrefRow(row, row.ja, row.ja_hira));
+  writeJson(`${OUTPUT_DIR}/prefectures-ja.json`, ja);
+
+  // その他言語: [code, lgSuffix, name]
+  for (const lang of SINGLE_LANGS) {
+    const data = rows.map((row) => buildPrefRow(row, row[lang]));
+    writeJson(`${OUTPUT_DIR}/prefectures-${lang}.json`, data);
+  }
+
+  console.log(`Generated prefectures.json + ${1 + SINGLE_LANGS.length} lang files (${rows.length} entries)`);
 }
 
 function buildCities(): void {
   const rows = readCsv<CityRow>(`${DATA_SOURCE_DIR}/cities.csv`);
 
-  const cities = rows.map((row) => {
-    const kana = hiraToKana(row.ja_hira);
-    const hw = kanaToHW(kana);
-    return {
-      code: row.code,
-      prefCode: row.pref_code,
-      lgCode: row.lg_code,
-      parentCode: row.parent_code || null,
-      type: row.type,
-      name: Object.fromEntries(
-        LANG_KEYS.map((lang) => {
-          if (lang === "ja-Hira") return [lang, row.ja_hira];
-          if (lang === "ja-Kana") return [lang, kana];
-          if (lang === "ja-HW") return [lang, hw];
-          return [lang, row[lang as keyof CityRow]];
-        }),
-      ),
-    };
-  });
+  // 全言語: [code, lgSuffix, typeNum, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi, parentCode?]
+  const all = rows.map((row) =>
+    buildCityRow(row, row.ja, row.ja_hira, row.en, row["zh-CN"], row["zh-TW"], row.ko, row.pt, row.vi),
+  );
+  writeJson(`${OUTPUT_DIR}/cities.json`, all);
 
-  writeJson(`${OUTPUT_DIR}/cities.json`, cities);
-  console.log(`Generated cities.json (${cities.length} entries)`);
+  // 日本語: [code, lgSuffix, typeNum, ja, ja-Hira, parentCode?]
+  const ja = rows.map((row) => buildCityRow(row, row.ja, row.ja_hira));
+  writeJson(`${OUTPUT_DIR}/cities-ja.json`, ja);
+
+  // その他言語: [code, lgSuffix, typeNum, name, parentCode?]
+  for (const lang of SINGLE_LANGS) {
+    const data = rows.map((row) => buildCityRow(row, row[lang]));
+    writeJson(`${OUTPUT_DIR}/cities-${lang}.json`, data);
+  }
+
+  console.log(`Generated cities.json + ${1 + SINGLE_LANGS.length} lang files (${rows.length} entries)`);
 }
 
 function writeJson(filePath: string, data: unknown): void {
   mkdirSync(OUTPUT_DIR, { recursive: true });
-  writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf-8");
+  writeFileSync(filePath, JSON.stringify(data), "utf-8");
 }
 
 buildPrefectures();

@@ -1,7 +1,9 @@
 import { defineConfig } from "tsup";
 
+const LANG_ENTRIES = ["ja", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"];
+
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: ["src/index.ts", ...LANG_ENTRIES.map((l) => `src/${l}.ts`)],
   format: ["esm", "cjs"],
   dts: true,
   clean: true,

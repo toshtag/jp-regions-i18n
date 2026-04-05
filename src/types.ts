@@ -12,6 +12,19 @@ export type Lang =
 
 export type CityType = "city" | "designated_city" | "ward" | "special_ward" | "town" | "village";
 
+export const CITY_TYPE_NAMES = [
+  "city",
+  "designated_city",
+  "ward",
+  "special_ward",
+  "town",
+  "village",
+] as const satisfies readonly CityType[];
+
+export function decodeCityType(n: number): CityType {
+  return CITY_TYPE_NAMES[n];
+}
+
 export interface Prefecture {
   code: string;
   iso: string;
