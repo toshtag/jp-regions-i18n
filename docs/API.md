@@ -91,6 +91,35 @@ Lookup by 6-digit local government code, with all language names included.
 getPrefectureByLGCodeAllLangs("130001");
 ```
 
+#### `getPrefectureByName(name, lang?, options?): Prefecture | undefined`
+
+Lookup by name in **any** of the 10 supported languages. Matching is case-insensitive and supports both full and short forms.
+
+```typescript
+getPrefectureByName("東京都");           // matches full Japanese name
+getPrefectureByName("東京");             // matches short form (no suffix)
+getPrefectureByName("Tokyo");           // matches English name
+getPrefectureByName("tokyo");           // case-insensitive
+getPrefectureByName("とうきょうと");     // matches hiragana
+getPrefectureByName("도쿄도");           // matches Korean name
+
+// Control output language separately from the search term
+getPrefectureByName("Tokyo", "ja");     // { name: "東京都", ... }
+getPrefectureByName("東京都", "en");    // { name: "Tokyo", ... }
+getPrefectureByName("東京都", "ja", { short: true }); // { name: "東京", ... }
+```
+
+#### `getPrefectureByNameAllLangs(name, options?): PrefectureAllLangs | undefined`
+
+Lookup by name in any language, returning all 10 language names.
+
+```typescript
+const tokyo = getPrefectureByNameAllLangs("Tokyo");
+tokyo?.name["ja"]; // "東京都"
+tokyo?.name["en"]; // "Tokyo"
+tokyo?.name["ko"]; // "도쿄도"
+```
+
 ---
 
 ### Cities
@@ -167,6 +196,36 @@ Lookup by 6-digit local government code, with all language names included.
 getCityByLGCodeAllLangs("131016");
 ```
 
+#### `getCitiesByPrefName(prefName, lang?, options?): City[]`
+
+Returns cities for a prefecture identified by name in **any** of the 10 supported languages. Accepts the same options as `getCities`.
+
+```typescript
+// No need to know the prefecture code
+getCitiesByPrefName("東京都", "en");
+getCitiesByPrefName("東京", "en");          // short form works too
+getCitiesByPrefName("Tokyo", "ja");         // English input, Japanese output
+getCitiesByPrefName("tokyo", "en");         // case-insensitive
+
+// Filtering works just like getCities
+getCitiesByPrefName("東京", "ja", { type: "special_ward" });
+```
+
+Returns `[]` if the prefecture name is not found.
+
+#### `getCitiesAllLangsByPrefName(prefName, options?): CityAllLangs[]`
+
+Returns cities for a prefecture identified by name, with all 10 language names included. Accepts the same options as `getCitiesAllLangs`.
+
+```typescript
+const cities = getCitiesAllLangsByPrefName("Tokyo");
+cities[0].name["ja"]; // "千代田区"
+cities[0].name["en"]; // "Chiyoda-ku"
+
+// With filter
+getCitiesAllLangsByPrefName("大阪", { type: "designated_city" });
+```
+
 ---
 
 ### Utilities
@@ -235,10 +294,6 @@ interface CityAllLangs {
   parentJisCode: string | null;
   type: CityType;
   name: Record<Lang, string>; // All 10 languages
-}
-
-interface GetPrefecturesOptions {
-  short?: boolean; // Strip administrative suffix from name (e.g. "東京都" → "東京")
 }
 
 interface GetPrefecturesOptions {
@@ -394,6 +449,35 @@ getPrefectureByISOAllLangs("JP-13");
 getPrefectureByLGCodeAllLangs("130001");
 ```
 
+#### `getPrefectureByName(name, lang?, options?): Prefecture | undefined`
+
+**10言語いずれかの名前**で都道府県を検索します。大文字小文字を無視し、フルネーム・短縮形の両方にマッチします。
+
+```typescript
+getPrefectureByName("東京都");           // 漢字フルネームでマッチ
+getPrefectureByName("東京");             // 短縮形（サフィックスなし）でもマッチ
+getPrefectureByName("Tokyo");           // 英語名でマッチ
+getPrefectureByName("tokyo");           // 大文字小文字を無視
+getPrefectureByName("とうきょうと");     // ひらがなでマッチ
+getPrefectureByName("도쿄도");           // 韓国語名でマッチ
+
+// 検索語と出力言語は独立して指定できます
+getPrefectureByName("Tokyo", "ja");     // { name: "東京都", ... }
+getPrefectureByName("東京都", "en");    // { name: "Tokyo", ... }
+getPrefectureByName("東京都", "ja", { short: true }); // { name: "東京", ... }
+```
+
+#### `getPrefectureByNameAllLangs(name, options?): PrefectureAllLangs | undefined`
+
+任意の言語の名前で検索し、全10言語の名前を含む結果を返します。
+
+```typescript
+const tokyo = getPrefectureByNameAllLangs("Tokyo");
+tokyo?.name["ja"]; // "東京都"
+tokyo?.name["en"]; // "Tokyo"
+tokyo?.name["ko"]; // "도쿄도"
+```
+
 ---
 
 ### 市区町村
@@ -470,6 +554,36 @@ chiyoda?.name["en"]; // "Chiyoda-ku"
 getCityByLGCodeAllLangs("131016");
 ```
 
+#### `getCitiesByPrefName(prefName, lang?, options?): City[]`
+
+**都道府県コードを調べる必要なく**、10言語いずれかの名前で市区町村一覧を取得します。`getCities` と同じオプションをサポートします。
+
+```typescript
+// コードを知らなくても使える
+getCitiesByPrefName("東京都", "en");
+getCitiesByPrefName("東京", "en");          // 短縮形でもOK
+getCitiesByPrefName("Tokyo", "ja");         // 英語で検索、日本語で出力
+getCitiesByPrefName("tokyo", "en");         // 大文字小文字を無視
+
+// getCities と同様にフィルタリングも可能
+getCitiesByPrefName("東京", "ja", { type: "special_ward" });
+```
+
+都道府県名が見つからない場合は `[]` を返します。
+
+#### `getCitiesAllLangsByPrefName(prefName, options?): CityAllLangs[]`
+
+名前で都道府県を指定し、全10言語の名前付き市区町村一覧を返します。`getCitiesAllLangs` と同じオプションをサポートします。
+
+```typescript
+const cities = getCitiesAllLangsByPrefName("Tokyo");
+cities[0].name["ja"]; // "千代田区"
+cities[0].name["en"]; // "Chiyoda-ku"
+
+// フィルタリング
+getCitiesAllLangsByPrefName("大阪", { type: "designated_city" });
+```
+
 ---
 
 ### ユーティリティ
@@ -538,10 +652,6 @@ interface CityAllLangs {
   parentJisCode: string | null;
   type: CityType;
   name: Record<Lang, string>; // 全10言語
-}
-
-interface GetPrefecturesOptions {
-  short?: boolean; // サフィックスを除去（例: "東京都" → "東京"）
 }
 
 interface GetPrefecturesOptions {

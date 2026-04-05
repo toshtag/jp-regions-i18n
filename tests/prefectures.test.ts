@@ -6,6 +6,8 @@ import {
   getPrefectureByISOAllLangs,
   getPrefectureByLGCode,
   getPrefectureByLGCodeAllLangs,
+  getPrefectureByName,
+  getPrefectureByNameAllLangs,
   getPrefectures,
   getPrefecturesAllLangs,
 } from "../src/index.js";
@@ -233,6 +235,104 @@ describe("getPrefectureByLGCodeAllLangs", () => {
 
   it("returns undefined for non-existent lgCode", () => {
     expect(getPrefectureByLGCodeAllLangs("999999")).toBeUndefined();
+  });
+});
+
+describe("getPrefectureByName", () => {
+  it("matches Japanese full name", () => {
+    const tokyo = getPrefectureByName("東京都");
+    expect(tokyo).toBeDefined();
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.name).toBe("東京都");
+  });
+
+  it("matches Japanese short name", () => {
+    const tokyo = getPrefectureByName("東京");
+    expect(tokyo?.code).toBe("13");
+    const osaka = getPrefectureByName("大阪");
+    expect(osaka?.code).toBe("27");
+  });
+
+  it("matches English name", () => {
+    const tokyo = getPrefectureByName("Tokyo");
+    expect(tokyo?.code).toBe("13");
+  });
+
+  it("is case-insensitive for English", () => {
+    expect(getPrefectureByName("tokyo")?.code).toBe("13");
+    expect(getPrefectureByName("TOKYO")?.code).toBe("13");
+    expect(getPrefectureByName("osaka")?.code).toBe("27");
+  });
+
+  it("matches Korean name", () => {
+    const tokyo = getPrefectureByName("도쿄도");
+    expect(tokyo?.code).toBe("13");
+  });
+
+  it("matches hiragana name", () => {
+    const tokyo = getPrefectureByName("とうきょうと");
+    expect(tokyo?.code).toBe("13");
+  });
+
+  it("matches hiragana short name", () => {
+    const tokyo = getPrefectureByName("とうきょう");
+    expect(tokyo?.code).toBe("13");
+  });
+
+  it("returns undefined for unknown name", () => {
+    expect(getPrefectureByName("存在しない県")).toBeUndefined();
+    expect(getPrefectureByName("Unknown")).toBeUndefined();
+  });
+
+  it("returns output in specified lang", () => {
+    const tokyo = getPrefectureByName("Tokyo", "ja");
+    expect(tokyo?.name).toBe("東京都");
+    const osaka = getPrefectureByName("大阪府", "en");
+    expect(osaka?.name).toBe("Osaka");
+  });
+
+  it("supports short option", () => {
+    const tokyo = getPrefectureByName("東京都", "ja", { short: true });
+    expect(tokyo?.name).toBe("東京");
+  });
+
+  it("preserves code/iso/lgCode fields", () => {
+    const tokyo = getPrefectureByName("東京都");
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.iso).toBe("JP-13");
+    expect(tokyo?.lgCode).toBe("130001");
+  });
+});
+
+describe("getPrefectureByNameAllLangs", () => {
+  it("returns prefecture with all 10 languages", () => {
+    const tokyo = getPrefectureByNameAllLangs("東京都");
+    expect(tokyo).toBeDefined();
+    expect(tokyo?.code).toBe("13");
+    expect(tokyo?.name.ja).toBe("東京都");
+    expect(tokyo?.name.en).toBe("Tokyo");
+    expect(tokyo?.name.ko).toBe("도쿄도");
+  });
+
+  it("matches English name and returns all languages", () => {
+    const tokyo = getPrefectureByNameAllLangs("Tokyo");
+    expect(tokyo?.name.ja).toBe("東京都");
+    expect(tokyo?.name["zh-CN"]).toBeTruthy();
+  });
+
+  it("matches short name", () => {
+    const osaka = getPrefectureByNameAllLangs("大阪");
+    expect(osaka?.code).toBe("27");
+  });
+
+  it("supports short option", () => {
+    const tokyo = getPrefectureByNameAllLangs("東京都", { short: true });
+    expect(tokyo?.name.ja).toBe("東京");
+    expect(tokyo?.name.en).toBe("Tokyo");
+  });
+
+  it("returns undefined for unknown name", () => {
+    expect(getPrefectureByNameAllLangs("Unknown")).toBeUndefined();
   });
 });
 

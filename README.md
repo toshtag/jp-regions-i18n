@@ -17,7 +17,7 @@ pnpm add jp-regions-i18n
 ## Quick Start
 
 ```typescript
-import { getPrefectures, getCities, getPrefecturesAllLangs } from "jp-regions-i18n";
+import { getPrefectures, getCities, getPrefecturesAllLangs, getPrefectureByName, getCitiesByPrefName } from "jp-regions-i18n";
 
 // All prefectures in Japanese (default)
 const prefs = getPrefectures();
@@ -30,6 +30,10 @@ const prefsEn = getPrefectures("en");
 // Cities in Tokyo (code "13") in English
 const cities = getCities("13", "en");
 // [{ jisCode: "13101", name: "Chiyoda-ku", ... }, ...]
+
+// Look up by name — no need to memorize prefecture codes
+const tokyo = getPrefectureByName("Tokyo");          // or "東京都", "東京", "도쿄도", ...
+const cities2 = getCitiesByPrefName("東京", "en");  // same result as getCities("13", "en")
 
 // All prefectures with every language at once
 const prefsAll = getPrefecturesAllLangs();

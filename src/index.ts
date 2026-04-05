@@ -1,6 +1,8 @@
 export {
   getCities,
   getCitiesAllLangs,
+  getCitiesAllLangsByPrefName,
+  getCitiesByPrefName,
   getCityByJisCode,
   getCityByJisCodeAllLangs,
   getCityByLGCode,
@@ -16,6 +18,8 @@ export {
   getPrefectureByISOAllLangs,
   getPrefectureByLGCode,
   getPrefectureByLGCodeAllLangs,
+  getPrefectureByName,
+  getPrefectureByNameAllLangs,
   getPrefectures,
   getPrefecturesAllLangs,
 } from "./prefectures.js";
