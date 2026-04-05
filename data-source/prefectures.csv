@@ -1,48 +1,48 @@
 code,iso,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi,lg_code
-01,JP-01,北海道,ほっかいどう,Hokkaido,北海道,北海道,홋카이도,Hokkaido,Hokkaido,010006
-02,JP-02,青森県,あおもりけん,Aomori,青森县,青森縣,아오모리현,Aomori,Aomori,020001
-03,JP-03,岩手県,いわてけん,Iwate,岩手县,岩手縣,이와테현,Iwate,Iwate,030007
+01,JP-01,北海道,ほっかいどう,Hokkaido,北海道,北海道,홋카이도,Hokkaidō,Bắc Hải Đạo,010006
+02,JP-02,青森県,あおもりけん,Aomori,青森县,青森縣,아오모리현,Aomori,Thanh Sâm Huyện,020001
+03,JP-03,岩手県,いわてけん,Iwate,岩手县,岩手縣,이와테현,Iwate,Nham Thủ huyện,030007
 04,JP-04,宮城県,みやぎけん,Miyagi,宫城县,宮城縣,미야기현,Miyagi,Miyagi,040002
-05,JP-05,秋田県,あきたけん,Akita,秋田县,秋田縣,아키타현,Akita,Akita,050008
+05,JP-05,秋田県,あきたけん,Akita,秋田县,秋田縣,아키타현,Akita,Thu Điền huyện,050008
 06,JP-06,山形県,やまがたけん,Yamagata,山形县,山形縣,야마가타현,Yamagata,Yamagata,060003
-07,JP-07,福島県,ふくしまけん,Fukushima,福岛县,福島縣,후쿠시마현,Fukushima,Fukushima,070009
-08,JP-08,茨城県,いばらきけん,Ibaraki,茨城县,茨城縣,이바라키현,Ibaraki,Ibaraki,080004
+07,JP-07,福島県,ふくしまけん,Fukushima,福岛县,福島縣,후쿠시마현,Fukushima,Phúc Đảo huyện,070009
+08,JP-08,茨城県,いばらきけん,Ibaraki,茨城县,茨城縣,이바라키현,Ibaraki,Tỳ Thành huyện,080004
 09,JP-09,栃木県,とちぎけん,Tochigi,栃木县,栃木縣,도치기현,Tochigi,Tochigi,090000
-10,JP-10,群馬県,ぐんまけん,Gunma,群马县,群馬縣,군마현,Gunma,Gunma,100005
+10,JP-10,群馬県,ぐんまけん,Gunma,群马县,群馬縣,군마현,Gunma,Quần Mã huyện,100005
 11,JP-11,埼玉県,さいたまけん,Saitama,埼玉县,埼玉縣,사이타마현,Saitama,Saitama,110001
-12,JP-12,千葉県,ちばけん,Chiba,千叶县,千葉縣,지바현,Chiba,Chiba,120006
-13,JP-13,東京都,とうきょうと,Tokyo,东京都,東京都,도쿄도,Tokyo,Tokyo,130001
-14,JP-14,神奈川県,かながわけん,Kanagawa,神奈川县,神奈川縣,가나가와현,Kanagawa,Kanagawa,140007
+12,JP-12,千葉県,ちばけん,Chiba,千叶县,千葉縣,지바현,Chiba,Thiên Diệp huyện,120006
+13,JP-13,東京都,とうきょうと,Tokyo,东京都,東京都,도쿄도,Tóquio,Tokyo,130001
+14,JP-14,神奈川県,かながわけん,Kanagawa,神奈川县,神奈川縣,가나가와현,Kanagawa,Thần Nại Xuyên huyện,140007
 15,JP-15,新潟県,にいがたけん,Niigata,新潟县,新潟縣,니가타현,Niigata,Niigata,150002
 16,JP-16,富山県,とやまけん,Toyama,富山县,富山縣,도야마현,Toyama,Toyama,160008
-17,JP-17,石川県,いしかわけん,Ishikawa,石川县,石川縣,이시카와현,Ishikawa,Ishikawa,170003
-18,JP-18,福井県,ふくいけん,Fukui,福井县,福井縣,후쿠이현,Fukui,Fukui,180009
+17,JP-17,石川県,いしかわけん,Ishikawa,石川县,石川縣,이시카와현,Ishikawa,Thạch Xuyên huyện,170003
+18,JP-18,福井県,ふくいけん,Fukui,福井县,福井縣,후쿠이현,Fukui,Phúc Tỉnh huyện,180009
 19,JP-19,山梨県,やまなしけん,Yamanashi,山梨县,山梨縣,야마나시현,Yamanashi,Yamanashi,190004
 20,JP-20,長野県,ながのけん,Nagano,长野县,長野縣,나가노현,Nagano,Nagano,200000
-21,JP-21,岐阜県,ぎふけん,Gifu,岐阜县,岐阜縣,기후현,Gifu,Gifu,210005
+21,JP-21,岐阜県,ぎふけん,Gifu,岐阜县,岐阜縣,기후현,Gifu,Kì Phụ Huyện,210005
 22,JP-22,静岡県,しずおかけん,Shizuoka,静冈县,靜岡縣,시즈오카현,Shizuoka,Shizuoka,220001
 23,JP-23,愛知県,あいちけん,Aichi,爱知县,愛知縣,아이치현,Aichi,Aichi,230006
 24,JP-24,三重県,みえけん,Mie,三重县,三重縣,미에현,Mie,Mie,240001
 25,JP-25,滋賀県,しがけん,Shiga,滋贺县,滋賀縣,시가현,Shiga,Shiga,250007
-26,JP-26,京都府,きょうとふ,Kyoto,京都府,京都府,교토부,Kyoto,Kyoto,260002
+26,JP-26,京都府,きょうとふ,Kyoto,京都府,京都府,교토부,Quioto,Kinh Đô phủ,260002
 27,JP-27,大阪府,おおさかふ,Osaka,大阪府,大阪府,오사카부,Osaka,Osaka,270008
-28,JP-28,兵庫県,ひょうごけん,Hyogo,兵库县,兵庫縣,효고현,Hyogo,Hyogo,280003
+28,JP-28,兵庫県,ひょうごけん,Hyogo,兵库县,兵庫縣,효고현,Hyōgo,Binh Khố huyện,280003
 29,JP-29,奈良県,ならけん,Nara,奈良县,奈良縣,나라현,Nara,Nara,290009
 30,JP-30,和歌山県,わかやまけん,Wakayama,和歌山县,和歌山縣,와카야마현,Wakayama,Wakayama,300004
 31,JP-31,鳥取県,とっとりけん,Tottori,鸟取县,鳥取縣,돗토리현,Tottori,Tottori,310000
 32,JP-32,島根県,しまねけん,Shimane,岛根县,島根縣,시마네현,Shimane,Shimane,320005
 33,JP-33,岡山県,おかやまけん,Okayama,冈山县,岡山縣,오카야마현,Okayama,Okayama,330001
-34,JP-34,広島県,ひろしまけん,Hiroshima,广岛县,廣島縣,히로시마현,Hiroshima,Hiroshima,340006
+34,JP-34,広島県,ひろしまけん,Hiroshima,广岛县,廣島縣,히로시마현,Hiroshima,Quảng Đảo Huyện,340006
 35,JP-35,山口県,やまぐちけん,Yamaguchi,山口县,山口縣,야마구치현,Yamaguchi,Yamaguchi,350001
 36,JP-36,徳島県,とくしまけん,Tokushima,德岛县,德島縣,도쿠시마현,Tokushima,Tokushima,360007
-37,JP-37,香川県,かがわけん,Kagawa,香川县,香川縣,가가와현,Kagawa,Kagawa,370002
-38,JP-38,愛媛県,えひめけん,Ehime,爱媛县,愛媛縣,에히메현,Ehime,Ehime,380008
-39,JP-39,高知県,こうちけん,Kochi,高知县,高知縣,고치현,Kochi,Kochi,390003
-40,JP-40,福岡県,ふくおかけん,Fukuoka,福冈县,福岡縣,후쿠오카현,Fukuoka,Fukuoka,400009
+37,JP-37,香川県,かがわけん,Kagawa,香川县,香川縣,가가와현,Kagawa,Hương Xuyên Huyện,370002
+38,JP-38,愛媛県,えひめけん,Ehime,爱媛县,愛媛縣,에히메현,Ehime,Ái Viên huyện,380008
+39,JP-39,高知県,こうちけん,Kochi,高知县,高知縣,고치현,Kōchi,Kōchi,390003
+40,JP-40,福岡県,ふくおかけん,Fukuoka,福冈县,福岡縣,후쿠오카현,Fukuoka,Phúc Cương Huyện,400009
 41,JP-41,佐賀県,さがけん,Saga,佐贺县,佐賀縣,사가현,Saga,Saga,410004
 42,JP-42,長崎県,ながさきけん,Nagasaki,长崎县,長崎縣,나가사키현,Nagasaki,Nagasaki,420000
-43,JP-43,熊本県,くまもとけん,Kumamoto,熊本县,熊本縣,구마모토현,Kumamoto,Kumamoto,430005
-44,JP-44,大分県,おおいたけん,Oita,大分县,大分縣,오이타현,Oita,Oita,440001
+43,JP-43,熊本県,くまもとけん,Kumamoto,熊本县,熊本縣,구마모토현,Kumamoto,Hùng Bản huyện,430005
+44,JP-44,大分県,おおいたけん,Oita,大分县,大分縣,오이타현,Ōita,Ōita,440001
 45,JP-45,宮崎県,みやざきけん,Miyazaki,宫崎县,宮崎縣,미야자키현,Miyazaki,Miyazaki,450006
-46,JP-46,鹿児島県,かごしまけん,Kagoshima,鹿儿岛县,鹿兒島縣,가고시마현,Kagoshima,Kagoshima,460001
+46,JP-46,鹿児島県,かごしまけん,Kagoshima,鹿儿岛县,鹿兒島縣,가고시마현,Kagoshima,Lộc Nhi Đảo huyện,460001
 47,JP-47,沖縄県,おきなわけん,Okinawa,冲绳县,沖繩縣,오키나와현,Okinawa,Okinawa,470007
