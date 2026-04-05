@@ -5,6 +5,7 @@ import {
   getPrefectureRawByCode,
   getPrefectureRawByISO,
   getPrefectureRawByLGCode,
+  getPrefectureRawByName,
 } from "./store.js";
 import type { GetPrefecturesOptions, Lang, Prefecture, PrefectureAllLangs } from "./types.js";
 
@@ -100,6 +101,25 @@ export function getPrefectureByLGCodeAllLangs(
   options?: GetPrefecturesOptions,
 ): PrefectureAllLangs | undefined {
   const raw = getPrefectureRawByLGCode(lgCode);
+  if (!raw) return undefined;
+  return toPublicAllLangs(raw, options?.short);
+}
+
+export function getPrefectureByName(
+  name: string,
+  lang?: string,
+  options?: GetPrefecturesOptions,
+): Prefecture | undefined {
+  const raw = getPrefectureRawByName(name);
+  if (!raw) return undefined;
+  return toPublic(raw, normalizeLang(lang), options?.short);
+}
+
+export function getPrefectureByNameAllLangs(
+  name: string,
+  options?: GetPrefecturesOptions,
+): PrefectureAllLangs | undefined {
+  const raw = getPrefectureRawByName(name);
   if (!raw) return undefined;
   return toPublicAllLangs(raw, options?.short);
 }
