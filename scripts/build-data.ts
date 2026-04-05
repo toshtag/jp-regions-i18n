@@ -34,45 +34,18 @@ interface CityRow {
   vi: string;
 }
 
-const LANG_KEYS = ["ja", "ja-Hira", "ja-Kana", "ja-HW", "en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
-
-// ひらがな→カタカナ（U+3041-U+3096 → U+30A1-U+30F6）
-function hiraToKana(str: string): string {
-  return str.replace(/[\u3041-\u3096]/g, (ch) =>
-    String.fromCharCode(ch.charCodeAt(0) + 0x60),
-  );
-}
-
-// カタカナ→半角カナ（濁点・半濁点は2文字に分解）
-const KANA_TO_HW: Record<string, string> = {
-  ア: "ｱ", イ: "ｲ", ウ: "ｳ", エ: "ｴ", オ: "ｵ",
-  カ: "ｶ", キ: "ｷ", ク: "ｸ", ケ: "ｹ", コ: "ｺ",
-  サ: "ｻ", シ: "ｼ", ス: "ｽ", セ: "ｾ", ソ: "ｿ",
-  タ: "ﾀ", チ: "ﾁ", ツ: "ﾂ", テ: "ﾃ", ト: "ﾄ",
-  ナ: "ﾅ", ニ: "ﾆ", ヌ: "ﾇ", ネ: "ﾈ", ノ: "ﾉ",
-  ハ: "ﾊ", ヒ: "ﾋ", フ: "ﾌ", ヘ: "ﾍ", ホ: "ﾎ",
-  マ: "ﾏ", ミ: "ﾐ", ム: "ﾑ", メ: "ﾒ", モ: "ﾓ",
-  ヤ: "ﾔ", ユ: "ﾕ", ヨ: "ﾖ",
-  ラ: "ﾗ", リ: "ﾘ", ル: "ﾙ", レ: "ﾚ", ロ: "ﾛ",
-  ワ: "ﾜ", ヲ: "ｦ", ン: "ﾝ",
-  ガ: "ｶﾞ", ギ: "ｷﾞ", グ: "ｸﾞ", ゲ: "ｹﾞ", ゴ: "ｺﾞ",
-  ザ: "ｻﾞ", ジ: "ｼﾞ", ズ: "ｽﾞ", ゼ: "ｾﾞ", ゾ: "ｿﾞ",
-  ダ: "ﾀﾞ", ヂ: "ﾁﾞ", ヅ: "ﾂﾞ", デ: "ﾃﾞ", ド: "ﾄﾞ",
-  バ: "ﾊﾞ", ビ: "ﾋﾞ", ブ: "ﾌﾞ", ベ: "ﾍﾞ", ボ: "ﾎﾞ",
-  パ: "ﾊﾟ", ピ: "ﾋﾟ", プ: "ﾌﾟ", ペ: "ﾍﾟ", ポ: "ﾎﾟ",
-  ァ: "ｧ", ィ: "ｨ", ゥ: "ｩ", ェ: "ｪ", ォ: "ｫ",
-  ッ: "ｯ", ャ: "ｬ", ュ: "ｭ", ョ: "ｮ",
-  ヴ: "ｳﾞ", ー: "ｰ",
-  // 括弧（地名で使用）
-  "（": "（", "）": "）",
+// CityType の数値エンコード（src/types.ts の CITY_TYPE_NAMES と同順）
+const CITY_TYPE_INDEX: Record<string, number> = {
+  city: 0,
+  designated_city: 1,
+  ward: 2,
+  special_ward: 3,
+  town: 4,
+  village: 5,
 };
 
-function kanaToHW(str: string): string {
-  return str
-    .split("")
-    .map((ch) => KANA_TO_HW[ch] ?? ch)
-    .join("");
-}
+// 言語別ファイルのコロンは ja-Hira のみ（ja-Kana/ja-HW は実行時変換）
+const SINGLE_LANGS = ["en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
 
 function readCsv<T>(filePath: string): T[] {
   const content = readFileSync(filePath, "utf-8");
@@ -86,58 +59,88 @@ function readCsv<T>(filePath: string): T[] {
 function buildPrefectures(): void {
   const rows = readCsv<PrefectureRow>(`${DATA_SOURCE_DIR}/prefectures.csv`);
 
-  const prefectures = rows.map((row) => {
-    const kana = hiraToKana(row.ja_hira);
-    const hw = kanaToHW(kana);
-    return {
-      code: row.code,
-      iso: row.iso,
-      lgCode: row.lg_code,
-      name: Object.fromEntries(
-        LANG_KEYS.map((lang) => {
-          if (lang === "ja-Hira") return [lang, row.ja_hira];
-          if (lang === "ja-Kana") return [lang, kana];
-          if (lang === "ja-HW") return [lang, hw];
-          return [lang, row[lang as keyof PrefectureRow]];
-        }),
-      ),
-    };
-  });
+  // 全言語・配列形式: [code, iso, lgCode, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
+  const all = rows.map((row) => [
+    row.code,
+    row.iso,
+    row.lg_code,
+    row.ja,
+    row.ja_hira,
+    row.en,
+    row["zh-CN"],
+    row["zh-TW"],
+    row.ko,
+    row.pt,
+    row.vi,
+  ]);
+  writeJson(`${OUTPUT_DIR}/prefectures.json`, all);
 
-  writeJson(`${OUTPUT_DIR}/prefectures.json`, prefectures);
-  console.log(`Generated prefectures.json (${prefectures.length} entries)`);
+  // 日本語別: [code, iso, lgCode, ja, ja-Hira]
+  const ja = rows.map((row) => [row.code, row.iso, row.lg_code, row.ja, row.ja_hira]);
+  writeJson(`${OUTPUT_DIR}/prefectures-ja.json`, ja);
+
+  // その他言語別: [code, iso, lgCode, name]
+  for (const lang of SINGLE_LANGS) {
+    const data = rows.map((row) => [row.code, row.iso, row.lg_code, row[lang]]);
+    writeJson(`${OUTPUT_DIR}/prefectures-${lang}.json`, data);
+  }
+
+  console.log(`Generated prefectures.json + ${1 + SINGLE_LANGS.length} lang files (${rows.length} entries)`);
 }
 
 function buildCities(): void {
   const rows = readCsv<CityRow>(`${DATA_SOURCE_DIR}/cities.csv`);
 
-  const cities = rows.map((row) => {
-    const kana = hiraToKana(row.ja_hira);
-    const hw = kanaToHW(kana);
-    return {
-      code: row.code,
-      prefCode: row.pref_code,
-      lgCode: row.lg_code,
-      parentCode: row.parent_code || null,
-      type: row.type,
-      name: Object.fromEntries(
-        LANG_KEYS.map((lang) => {
-          if (lang === "ja-Hira") return [lang, row.ja_hira];
-          if (lang === "ja-Kana") return [lang, kana];
-          if (lang === "ja-HW") return [lang, hw];
-          return [lang, row[lang as keyof CityRow]];
-        }),
-      ),
-    };
-  });
+  // 全言語・配列形式: [code, prefCode, lgCode, parentCode, typeNum, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
+  const all = rows.map((row) => [
+    row.code,
+    row.pref_code,
+    row.lg_code,
+    row.parent_code || null,
+    CITY_TYPE_INDEX[row.type] ?? 0,
+    row.ja,
+    row.ja_hira,
+    row.en,
+    row["zh-CN"],
+    row["zh-TW"],
+    row.ko,
+    row.pt,
+    row.vi,
+  ]);
+  writeJson(`${OUTPUT_DIR}/cities.json`, all);
 
-  writeJson(`${OUTPUT_DIR}/cities.json`, cities);
-  console.log(`Generated cities.json (${cities.length} entries)`);
+  // 日本語別: [code, prefCode, lgCode, parentCode, typeNum, ja, ja-Hira]
+  const ja = rows.map((row) => [
+    row.code,
+    row.pref_code,
+    row.lg_code,
+    row.parent_code || null,
+    CITY_TYPE_INDEX[row.type] ?? 0,
+    row.ja,
+    row.ja_hira,
+  ]);
+  writeJson(`${OUTPUT_DIR}/cities-ja.json`, ja);
+
+  // その他言語別: [code, prefCode, lgCode, parentCode, typeNum, name]
+  for (const lang of SINGLE_LANGS) {
+    const data = rows.map((row) => [
+      row.code,
+      row.pref_code,
+      row.lg_code,
+      row.parent_code || null,
+      CITY_TYPE_INDEX[row.type] ?? 0,
+      row[lang],
+    ]);
+    writeJson(`${OUTPUT_DIR}/cities-${lang}.json`, data);
+  }
+
+  console.log(`Generated cities.json + ${1 + SINGLE_LANGS.length} lang files (${rows.length} entries)`);
 }
 
 function writeJson(filePath: string, data: unknown): void {
   mkdirSync(OUTPUT_DIR, { recursive: true });
-  writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf-8");
+  // minify: インデントなし
+  writeFileSync(filePath, JSON.stringify(data), "utf-8");
 }
 
 buildPrefectures();
