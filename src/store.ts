@@ -1,5 +1,6 @@
 import citiesData from "./generated/cities.json" with { type: "json" };
 import prefecturesData from "./generated/prefectures.json" with { type: "json" };
+import { shortenPrefName } from "./name.js";
 import type { CityType, Lang } from "./types.js";
 
 interface PrefectureRaw {
@@ -87,4 +88,17 @@ export function getCityRawByCode(code: string): CityRaw | undefined {
 export function getCityRawByLGCode(lgCode: string): CityRaw | undefined {
   initCities();
   return cityByLGCode.get(lgCode);
+}
+
+export function getPrefectureRawByName(name: string): PrefectureRaw | undefined {
+  initPrefectures();
+  const lower = name.toLowerCase();
+  for (const pref of prefByCode.values()) {
+    for (const [langKey, prefName] of Object.entries(pref.name) as [Lang, string][]) {
+      if (prefName.toLowerCase() === lower) return pref;
+      const short = shortenPrefName(prefName, langKey);
+      if (short.toLowerCase() === lower) return pref;
+    }
+  }
+  return undefined;
 }

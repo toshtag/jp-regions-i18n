@@ -16,6 +16,8 @@ export {
   getPrefectureByISOAllLangs,
   getPrefectureByLGCode,
   getPrefectureByLGCodeAllLangs,
+  getPrefectureByName,
+  getPrefectureByNameAllLangs,
   getPrefectures,
   getPrefecturesAllLangs,
 } from "./prefectures.js";
