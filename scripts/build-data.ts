@@ -44,8 +44,34 @@ const CITY_TYPE_INDEX: Record<string, number> = {
   village: 5,
 };
 
-// 言語別ファイルのコロンは ja-Hira のみ（ja-Kana/ja-HW は実行時変換）
 const SINGLE_LANGS = ["en", "zh-CN", "zh-TW", "ko", "pt", "vi"] as const;
+
+// lgCode(6桁) から code(5桁) のサフィックス1桁を抽出
+// code は5桁、lgCode は6桁で先頭5桁が同じ
+function cityLgSuffix(lgCode: string): string {
+  return lgCode.slice(5);
+}
+
+// lgCode(6桁) から pref code(2桁) のサフィックス4桁を抽出
+function prefLgSuffix(lgCode: string): string {
+  return lgCode.slice(2);
+}
+
+// 都市: [code, lgSuffix, typeNum, name..., parentCode?]
+// - prefCode は code[0:2] から派生可能 → 省略
+// - lgCode は code + lgSuffix(1桁) から復元可能 → suffix のみ保存
+// - parentCode は ward/designated_city の一部のみ存在 → 末尾オプション
+function buildCityRow(row: CityRow, ...names: string[]): unknown[] {
+  const result: unknown[] = [row.code, cityLgSuffix(row.lg_code), CITY_TYPE_INDEX[row.type] ?? 0, ...names];
+  if (row.parent_code) result.push(row.parent_code);
+  return result;
+}
+
+// 都道府県: [code, lgSuffix, name...]
+// - iso は "JP-" + code から派生可能 → 省略
+function buildPrefRow(row: PrefectureRow, ...names: string[]): unknown[] {
+  return [row.code, prefLgSuffix(row.lg_code), ...names];
+}
 
 function readCsv<T>(filePath: string): T[] {
   const content = readFileSync(filePath, "utf-8");
@@ -59,29 +85,19 @@ function readCsv<T>(filePath: string): T[] {
 function buildPrefectures(): void {
   const rows = readCsv<PrefectureRow>(`${DATA_SOURCE_DIR}/prefectures.csv`);
 
-  // 全言語・配列形式: [code, iso, lgCode, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
-  const all = rows.map((row) => [
-    row.code,
-    row.iso,
-    row.lg_code,
-    row.ja,
-    row.ja_hira,
-    row.en,
-    row["zh-CN"],
-    row["zh-TW"],
-    row.ko,
-    row.pt,
-    row.vi,
-  ]);
+  // 全言語: [code, lgSuffix, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
+  const all = rows.map((row) =>
+    buildPrefRow(row, row.ja, row.ja_hira, row.en, row["zh-CN"], row["zh-TW"], row.ko, row.pt, row.vi),
+  );
   writeJson(`${OUTPUT_DIR}/prefectures.json`, all);
 
-  // 日本語別: [code, iso, lgCode, ja, ja-Hira]
-  const ja = rows.map((row) => [row.code, row.iso, row.lg_code, row.ja, row.ja_hira]);
+  // 日本語: [code, lgSuffix, ja, ja-Hira]
+  const ja = rows.map((row) => buildPrefRow(row, row.ja, row.ja_hira));
   writeJson(`${OUTPUT_DIR}/prefectures-ja.json`, ja);
 
-  // その他言語別: [code, iso, lgCode, name]
+  // その他言語: [code, lgSuffix, name]
   for (const lang of SINGLE_LANGS) {
-    const data = rows.map((row) => [row.code, row.iso, row.lg_code, row[lang]]);
+    const data = rows.map((row) => buildPrefRow(row, row[lang]));
     writeJson(`${OUTPUT_DIR}/prefectures-${lang}.json`, data);
   }
 
@@ -91,46 +107,19 @@ function buildPrefectures(): void {
 function buildCities(): void {
   const rows = readCsv<CityRow>(`${DATA_SOURCE_DIR}/cities.csv`);
 
-  // 全言語・配列形式: [code, prefCode, lgCode, parentCode, typeNum, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi]
-  const all = rows.map((row) => [
-    row.code,
-    row.pref_code,
-    row.lg_code,
-    row.parent_code || null,
-    CITY_TYPE_INDEX[row.type] ?? 0,
-    row.ja,
-    row.ja_hira,
-    row.en,
-    row["zh-CN"],
-    row["zh-TW"],
-    row.ko,
-    row.pt,
-    row.vi,
-  ]);
+  // 全言語: [code, lgSuffix, typeNum, ja, ja-Hira, en, zh-CN, zh-TW, ko, pt, vi, parentCode?]
+  const all = rows.map((row) =>
+    buildCityRow(row, row.ja, row.ja_hira, row.en, row["zh-CN"], row["zh-TW"], row.ko, row.pt, row.vi),
+  );
   writeJson(`${OUTPUT_DIR}/cities.json`, all);
 
-  // 日本語別: [code, prefCode, lgCode, parentCode, typeNum, ja, ja-Hira]
-  const ja = rows.map((row) => [
-    row.code,
-    row.pref_code,
-    row.lg_code,
-    row.parent_code || null,
-    CITY_TYPE_INDEX[row.type] ?? 0,
-    row.ja,
-    row.ja_hira,
-  ]);
+  // 日本語: [code, lgSuffix, typeNum, ja, ja-Hira, parentCode?]
+  const ja = rows.map((row) => buildCityRow(row, row.ja, row.ja_hira));
   writeJson(`${OUTPUT_DIR}/cities-ja.json`, ja);
 
-  // その他言語別: [code, prefCode, lgCode, parentCode, typeNum, name]
+  // その他言語: [code, lgSuffix, typeNum, name, parentCode?]
   for (const lang of SINGLE_LANGS) {
-    const data = rows.map((row) => [
-      row.code,
-      row.pref_code,
-      row.lg_code,
-      row.parent_code || null,
-      CITY_TYPE_INDEX[row.type] ?? 0,
-      row[lang],
-    ]);
+    const data = rows.map((row) => buildCityRow(row, row[lang]));
     writeJson(`${OUTPUT_DIR}/cities-${lang}.json`, data);
   }
 
@@ -139,7 +128,6 @@ function buildCities(): void {
 
 function writeJson(filePath: string, data: unknown): void {
   mkdirSync(OUTPUT_DIR, { recursive: true });
-  // minify: インデントなし
   writeFileSync(filePath, JSON.stringify(data), "utf-8");
 }
 
