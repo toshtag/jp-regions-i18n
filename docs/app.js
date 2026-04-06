@@ -60,12 +60,26 @@ const btnCopyPrefEl   = document.getElementById("btn-copy-pref");
 // ===== Init =====
 function init() {
   allPrefectures = getPrefecturesAllLangs();
-  renderList(allPrefectures);
+
+  // URL パラメータから初期状態を復元
+  const params = new URLSearchParams(location.search);
+  const initialQuery = params.get("q") ?? "";
+  const initialPrefCode = params.get("pref") ?? "";
+
+  if (initialQuery) searchEl.value = initialQuery;
+  const initialList = filterPrefectures(initialQuery);
+  renderList(initialList);
+
+  if (initialPrefCode) {
+    const pref = allPrefectures.find((p) => p.code === initialPrefCode);
+    if (pref) selectPref(pref, /* pushState= */ false);
+  }
 
   searchEl.addEventListener("input", () => {
     const q = searchEl.value.trim();
     const filtered = filterPrefectures(q);
     renderList(filtered);
+    updateUrl({ q: q || null });
     if (selectedPref && !filtered.find((p) => p.code === selectedPref.code)) {
       clearDetail();
     }
@@ -117,14 +131,29 @@ function renderList(prefectures) {
   listEl.appendChild(fragment);
 }
 
+// ===== URL helpers =====
+function updateUrl(patch) {
+  const params = new URLSearchParams(location.search);
+  for (const [key, val] of Object.entries(patch)) {
+    if (val == null) {
+      params.delete(key);
+    } else {
+      params.set(key, val);
+    }
+  }
+  const qs = params.toString();
+  history.pushState({}, "", qs ? `?${qs}` : location.pathname);
+}
+
 // ===== Select prefecture =====
-function selectPref(pref) {
+function selectPref(pref, pushState = true) {
   selectedPref = pref;
   listEl.querySelectorAll(".pref-item").forEach((el) => {
     const isActive = el.dataset.code === pref.code;
     el.classList.toggle("active", isActive);
     el.setAttribute("aria-selected", isActive ? "true" : "false");
   });
+  if (pushState) updateUrl({ pref: pref.code });
   renderDetail(pref);
   renderCities(pref.code, pref.name.ja);
 }
