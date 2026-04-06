@@ -95,8 +95,12 @@ function buildPrefectures(): void {
   const ja = rows.map((row) => buildPrefRow(row, row.ja, row.ja_hira));
   writeJson(`${OUTPUT_DIR}/prefectures-ja.json`, ja);
 
+  // en: [code, lgSuffix, name, ja-Hira]  ← macrons オプションのためにひらがなを付与
+  const en = rows.map((row) => buildPrefRow(row, row.en, row.ja_hira));
+  writeJson(`${OUTPUT_DIR}/prefectures-en.json`, en);
+
   // その他言語: [code, lgSuffix, name]
-  for (const lang of SINGLE_LANGS) {
+  for (const lang of SINGLE_LANGS.filter((l) => l !== "en")) {
     const data = rows.map((row) => buildPrefRow(row, row[lang]));
     writeJson(`${OUTPUT_DIR}/prefectures-${lang}.json`, data);
   }
@@ -117,8 +121,12 @@ function buildCities(): void {
   const ja = rows.map((row) => buildCityRow(row, row.ja, row.ja_hira));
   writeJson(`${OUTPUT_DIR}/cities-ja.json`, ja);
 
+  // en: [code, lgSuffix, typeNum, name, ja-Hira, parentCode?]  ← macrons オプションのためにひらがなを付与
+  const en = rows.map((row) => buildCityRow(row, row.en, row.ja_hira));
+  writeJson(`${OUTPUT_DIR}/cities-en.json`, en);
+
   // その他言語: [code, lgSuffix, typeNum, name, parentCode?]
-  for (const lang of SINGLE_LANGS) {
+  for (const lang of SINGLE_LANGS.filter((l) => l !== "en")) {
     const data = rows.map((row) => buildCityRow(row, row[lang]));
     writeJson(`${OUTPUT_DIR}/cities-${lang}.json`, data);
   }
