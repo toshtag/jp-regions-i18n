@@ -275,7 +275,7 @@ btnCopyPrefEl.addEventListener("click", () => {
     showToast("JSON をクリップボードにコピーしました");
     setTimeout(() => {
       btnCopyPrefEl.classList.remove("copied");
-      btnCopyPrefEl.textContent = "⎘ Copy JSON";
+      btnCopyPrefEl.textContent = "📋 Copy JSON";
     }, 2000);
   });
 });
