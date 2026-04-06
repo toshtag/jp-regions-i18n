@@ -9,6 +9,22 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-04-06
+
+### Fixed
+
+- **Portuguese (`pt`) translations overhauled** — all 47 prefectures and ~1,900 cities corrected:
+  - Administrative suffixes now consistently applied throughout (`-shi`, `-ku`, `-machi`, `-cho`, `-son`, `-mura`) so that `{ short: true }` works correctly
+  - Macrons removed (e.g. `Hokkaidō` → `Hokkaido`, `Hyōgo` → `Hyogo`)
+  - Portuguese orthography rule applied: `n` before `b`/`p` written as `m` (e.g. `Nanporo` → `Namporo`, `Nanbu` → `Nambu`)
+  - Established Portuguese forms preserved: `Tóquio` (東京), `Quioto` (京都/京都市 → `Quioto-shi`), `Nagoia` (名古屋 → `Nagoia-shi`)
+  - Fixed incorrect entries (e.g. Chiba-shi was `Chuo-ku`, Tokyo special wards missing `-ku`)
+- **Vietnamese (`vi`) translations overhauled** — all 47 prefectures and ~1,900 cities corrected:
+  - Sino-Vietnamese (漢越語) readings applied to all kanji place names
+  - Ainu-origin and non-kanji names transliterated phonetically
+  - Administrative suffixes: 市=`thị`, 区=`khu`, 町=`đinh`, 村=`thôn`, 県=`tỉnh`, 府=`phủ`, 都=`đô`, 道=`đạo`
+- **`shortenCityName` / `shortenPrefName` for `vi`** — `CITY_SUFFIXES.vi` and `PREF_SUFFIXES.vi` were incorrect (using English-style suffixes); now use proper Vietnamese suffixes so `{ short: true }` works correctly
+
 ## [0.7.0] - 2026-04-05
 
 ### Added
