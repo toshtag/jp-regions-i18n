@@ -9,6 +9,8 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-04-06
+
 ### Added
 
 - **`jp-regions-i18n/en-macrons` subpath** — English with modified Hepburn macrons (ō/ū for long vowels), pre-computed at build time from hiragana readings. Zero extra runtime cost — same data structure as `/en`.
