@@ -111,8 +111,8 @@ export interface LangStore {
   getPrefectureByLGCode(lgCode: string, options?: GetPrefecturesOptions): Prefecture | undefined;
   getPrefectureByName(name: string, options?: GetPrefecturesOptions): Prefecture | undefined;
   getCities(prefCode: string, options?: GetCitiesOptions): City[];
-  getCityByJisCode(jisCode: string, options?: { short?: boolean }): City | undefined;
-  getCityByLGCode(lgCode: string, options?: { short?: boolean }): City | undefined;
+  getCityByJisCode(jisCode: string, options?: GetCitiesOptions): City | undefined;
+  getCityByLGCode(lgCode: string, options?: GetCitiesOptions): City | undefined;
   getCitiesByPrefName(prefName: string, options?: GetCitiesOptions): City[];
 }
 

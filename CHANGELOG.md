@@ -9,6 +9,15 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-04-06
+
+### Added
+
+- **`jp-regions-i18n/en-macrons` subpath** — English with modified Hepburn macrons (ō/ū for long vowels), pre-computed at build time from hiragana readings. Zero extra runtime cost — same data structure as `/en`.
+  - Prefectures: `Tōkyō`, `Ōsaka`, `Hokkaidō`, `Kyōto`, `Hyōgo`, `Kōchi`, `Ōita`, …
+  - Cities: `Tōbetsu-chō`, `Chūō-ku`, `Ōsaka-shi`, `Sapporo-shi` (no macron when reading has none), …
+  - `-chō` suffix for 町 (long vowel); `-shi`, `-ku`, `-machi`, `-son`, `-mura` unchanged
+
 ## [0.7.1] - 2026-04-06
 
 ### Fixed

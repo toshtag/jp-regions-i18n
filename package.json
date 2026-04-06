@@ -1,6 +1,6 @@
 {
   "name": "jp-regions-i18n",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "Multilingual Japanese prefectures and cities data (i18n)",
   "type": "module",
   "exports": {
@@ -18,6 +18,11 @@
       "types": "./dist/en.d.ts",
       "import": "./dist/en.js",
       "require": "./dist/en.cjs"
+    },
+    "./en-macrons": {
+      "types": "./dist/en-macrons.d.ts",
+      "import": "./dist/en-macrons.js",
+      "require": "./dist/en-macrons.cjs"
     },
     "./zh-CN": {
       "types": "./dist/zh-CN.d.ts",
