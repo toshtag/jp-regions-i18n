@@ -13,14 +13,15 @@ For a smaller bundle, import from a language-specific subpath instead of the mai
 ```typescript
 import { getPrefectures, getCities } from "jp-regions-i18n/en";
 import { getPrefectures, getCities } from "jp-regions-i18n/ja";
-// also: /zh-CN  /zh-TW  /ko  /pt  /vi
+// also: /en-macrons  /zh-CN  /zh-TW  /ko  /pt  /vi
 ```
 
 | Subpath | Language | Bundle size (gzip) |
 |---------|----------|-------------------|
 | `jp-regions-i18n` | All 7 languages | ~84 KB |
 | `/ja` | Japanese | ~30 KB |
-| `/en` | English | ~17 KB |
+| `/en` | English (conventional Hepburn) | ~17 KB |
+| `/en-macrons` | English with macrons (ō/ū) | ~18 KB |
 | `/zh-CN` | Simplified Chinese | ~18 KB |
 | `/zh-TW` | Traditional Chinese | ~18 KB |
 | `/ko` | Korean | ~18 KB |
@@ -39,6 +40,25 @@ getPrefectures("en");
 // subpath — no lang argument
 import { getPrefectures } from "jp-regions-i18n/en";
 getPrefectures();
+```
+
+#### `en` vs `en-macrons`
+
+`/en` uses conventional Hepburn romanization — the same spelling found on official signage and maps (e.g. `Tokyo`, `Osaka`, `Tōbetsu-cho`). Long vowels are **not** marked.
+
+`/en-macrons` uses modified Hepburn with macrons for long vowels (ō/ū), pre-computed at build time from hiragana readings. There is **no extra runtime cost** — macron names are stored directly in the bundle, identical in structure to `/en`.
+
+```typescript
+import { getPrefectures, getCities } from "jp-regions-i18n/en";
+getPrefectures();
+// → [{ name: "Hokkaido" }, { name: "Tokyo" }, ...]
+
+import { getPrefectures, getCities } from "jp-regions-i18n/en-macrons";
+getPrefectures();
+// → [{ name: "Hokkaidō" }, { name: "Tōkyō" }, ...]
+
+getCities("01");
+// → [{ name: "Sapporo-shi" }, { name: "Chūō-ku" }, { name: "Tōbetsu-chō" }, ...]
 ```
 
 ---
@@ -361,7 +381,8 @@ Suffixes stripped by language:
 | `zh-CN` | 都, 道, 府, 县 | 市, 区, 町, 村 |
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
-| `en` | (none — already suffix-free) | -shi, -ku, -machi, -cho, -son, -mura |
+| `en` | (none — already suffix-free) | -shi, -ku, -machi, -cho, -chō, -son, -mura |
+| `en-macrons` | (none — already suffix-free) | -shi, -ku, -machi, -chō, -son, -mura |
 | `pt` | (none — already suffix-free) | -xi, -cu, -maxi, -xo, -son, -mura |
 | `vi` | tỉnh, phủ, đô, đạo | thị, khu, đinh, thôn |
 
@@ -435,6 +456,25 @@ getPrefectures("en");
 // サブパス — lang引数不要
 import { getPrefectures } from "jp-regions-i18n/en";
 getPrefectures();
+```
+
+#### `en` と `en-macrons` の違い
+
+`/en` は一般的なヘボン式ローマ字（標識・地図に使われる表記）を使用します（例: `Tokyo`、`Osaka`、`Tobetsu-cho`）。長音は**記号なし**です。
+
+`/en-macrons` は修正ヘボン式（長音符マクロン付き: ō/ū）を使用します。ひらがな読みからビルド時に事前生成されるため、**ランタイムの追加コストはゼロ**です。データ構造は `/en` と同一です。
+
+```typescript
+import { getPrefectures, getCities } from "jp-regions-i18n/en";
+getPrefectures();
+// → [{ name: "Hokkaido" }, { name: "Tokyo" }, ...]
+
+import { getPrefectures, getCities } from "jp-regions-i18n/en-macrons";
+getPrefectures();
+// → [{ name: "Hokkaidō" }, { name: "Tōkyō" }, ...]
+
+getCities("01");
+// → [{ name: "Sapporo-shi" }, { name: "Chūō-ku" }, { name: "Tōbetsu-chō" }, ...]
 ```
 
 ---
@@ -757,7 +797,8 @@ interface GetCitiesOptions {
 | `zh-CN` | 都, 道, 府, 县 | 市, 区, 町, 村 |
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
-| `en` | （なし） | -shi, -ku, -machi, -cho, -son, -mura |
+| `en` | （なし） | -shi, -ku, -machi, -cho, -chō, -son, -mura |
+| `en-macrons` | （なし） | -shi, -ku, -machi, -chō, -son, -mura |
 | `pt` | （なし） | -xi, -cu, -maxi, -xo, -son, -mura |
 | `vi` | tỉnh, phủ, đô, đạo | thị, khu, đinh, thôn |
 
