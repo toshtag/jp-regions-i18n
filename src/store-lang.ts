@@ -1,3 +1,4 @@
+import { capitalizeHepburn, hiraToHepburn } from "./hepburn.js";
 import { hiraToKana, kanaToHW } from "./kana.js";
 import { shortenCityName, shortenPrefName } from "./name.js";
 import {
@@ -79,20 +80,22 @@ function parseCityRow(row: unknown[], hasKana: boolean): CityLang {
   };
 }
 
-function prefToPublic(p: PrefLang, lang: string, short?: boolean): Prefecture {
+function prefToPublic(p: PrefLang, lang: string, short?: boolean, macrons?: boolean): Prefecture {
   let name = p.name;
   if (lang === "ja-Kana" && p.nameHira) name = hiraToKana(p.nameHira);
   else if (lang === "ja-HW" && p.nameHira) name = kanaToHW(hiraToKana(p.nameHira));
   else if (lang === "ja-Hira" && p.nameHira) name = p.nameHira;
+  else if (lang === "en" && macrons && p.nameHira) name = capitalizeHepburn(hiraToHepburn(p.nameHira));
   if (short) name = shortenPrefName(name, lang as never);
   return { code: p.code, iso: p.iso, lgCode: p.lgCode, name };
 }
 
-function cityToPublic(c: CityLang, lang: string, short?: boolean): City {
+function cityToPublic(c: CityLang, lang: string, short?: boolean, macrons?: boolean): City {
   let name = c.name;
   if (lang === "ja-Kana" && c.nameHira) name = hiraToKana(c.nameHira);
   else if (lang === "ja-HW" && c.nameHira) name = kanaToHW(hiraToKana(c.nameHira));
   else if (lang === "ja-Hira" && c.nameHira) name = c.nameHira;
+  else if (lang === "en" && macrons && c.nameHira) name = capitalizeHepburn(hiraToHepburn(c.nameHira));
   if (short) name = shortenCityName(name, lang as never);
   return {
     jisCode: c.code,
@@ -111,8 +114,8 @@ export interface LangStore {
   getPrefectureByLGCode(lgCode: string, options?: GetPrefecturesOptions): Prefecture | undefined;
   getPrefectureByName(name: string, options?: GetPrefecturesOptions): Prefecture | undefined;
   getCities(prefCode: string, options?: GetCitiesOptions): City[];
-  getCityByJisCode(jisCode: string, options?: { short?: boolean }): City | undefined;
-  getCityByLGCode(lgCode: string, options?: { short?: boolean }): City | undefined;
+  getCityByJisCode(jisCode: string, options?: GetCitiesOptions): City | undefined;
+  getCityByLGCode(lgCode: string, options?: GetCitiesOptions): City | undefined;
   getCitiesByPrefName(prefName: string, options?: GetCitiesOptions): City[];
 }
 
@@ -172,49 +175,49 @@ export function createLangStore(
     getPrefectures(options) {
       initPrefs();
       return [...(prefByCode ?? new Map()).values()].map((p) =>
-        prefToPublic(p, lang, options?.short),
+        prefToPublic(p, lang, options?.short, options?.macrons),
       );
     },
     getPrefectureByCode(code, options) {
       initPrefs();
       const p = prefByCode?.get(code);
-      return p ? prefToPublic(p, lang, options?.short) : undefined;
+      return p ? prefToPublic(p, lang, options?.short, options?.macrons) : undefined;
     },
     getPrefectureByISO(iso, options) {
       initPrefs();
       const p = prefByISO?.get(iso);
-      return p ? prefToPublic(p, lang, options?.short) : undefined;
+      return p ? prefToPublic(p, lang, options?.short, options?.macrons) : undefined;
     },
     getPrefectureByLGCode(lgCode, options) {
       initPrefs();
       const p = prefByLGCode?.get(lgCode);
-      return p ? prefToPublic(p, lang, options?.short) : undefined;
+      return p ? prefToPublic(p, lang, options?.short, options?.macrons) : undefined;
     },
     getPrefectureByName(name, options) {
       const p = findPrefByName(name);
-      return p ? prefToPublic(p, lang, options?.short) : undefined;
+      return p ? prefToPublic(p, lang, options?.short, options?.macrons) : undefined;
     },
     getCities(prefCode, options) {
       initCities();
       const cities = filterCities(citiesByPrefCode?.get(prefCode) ?? [], options);
-      return cities.map((c) => cityToPublic(c, lang, options?.short));
+      return cities.map((c) => cityToPublic(c, lang, options?.short, options?.macrons));
     },
     getCityByJisCode(jisCode, options) {
       initCities();
       const c = cityByCode?.get(jisCode);
-      return c ? cityToPublic(c, lang, options?.short) : undefined;
+      return c ? cityToPublic(c, lang, options?.short, options?.macrons) : undefined;
     },
     getCityByLGCode(lgCode, options) {
       initCities();
       const c = cityByLGCode?.get(lgCode);
-      return c ? cityToPublic(c, lang, options?.short) : undefined;
+      return c ? cityToPublic(c, lang, options?.short, options?.macrons) : undefined;
     },
     getCitiesByPrefName(prefName, options) {
       const p = findPrefByName(prefName);
       if (!p) return [];
       initCities();
       const cities = filterCities(citiesByPrefCode?.get(p.code) ?? [], options);
-      return cities.map((c) => cityToPublic(c, lang, options?.short));
+      return cities.map((c) => cityToPublic(c, lang, options?.short, options?.macrons));
     },
   };
 }
