@@ -1,5 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { parse } from "csv-parse/sync";
+import { hiraToHepburnCity, hiraToHepburnPref } from "../src/hepburn.js";
 
 const DATA_SOURCE_DIR = "data-source";
 const OUTPUT_DIR = "src/generated";
@@ -95,8 +96,16 @@ function buildPrefectures(): void {
   const ja = rows.map((row) => buildPrefRow(row, row.ja, row.ja_hira));
   writeJson(`${OUTPUT_DIR}/prefectures-ja.json`, ja);
 
+  // en: [code, lgSuffix, name]
+  const en = rows.map((row) => buildPrefRow(row, row.en));
+  writeJson(`${OUTPUT_DIR}/prefectures-en.json`, en);
+
+  // en-macrons: [code, lgSuffix, name] — ヘボン式マクロン付き（ビルド時に変換済み）
+  const enMacrons = rows.map((row) => buildPrefRow(row, hiraToHepburnPref(row.ja_hira)));
+  writeJson(`${OUTPUT_DIR}/prefectures-en-macrons.json`, enMacrons);
+
   // その他言語: [code, lgSuffix, name]
-  for (const lang of SINGLE_LANGS) {
+  for (const lang of SINGLE_LANGS.filter((l) => l !== "en")) {
     const data = rows.map((row) => buildPrefRow(row, row[lang]));
     writeJson(`${OUTPUT_DIR}/prefectures-${lang}.json`, data);
   }
@@ -117,8 +126,16 @@ function buildCities(): void {
   const ja = rows.map((row) => buildCityRow(row, row.ja, row.ja_hira));
   writeJson(`${OUTPUT_DIR}/cities-ja.json`, ja);
 
+  // en: [code, lgSuffix, typeNum, name, parentCode?]
+  const en = rows.map((row) => buildCityRow(row, row.en));
+  writeJson(`${OUTPUT_DIR}/cities-en.json`, en);
+
+  // en-macrons: [code, lgSuffix, typeNum, macron_name, parentCode?] — ビルド時にひらがなから変換済み
+  const enMacrons = rows.map((row) => buildCityRow(row, hiraToHepburnCity(row.ja_hira, row.en)));
+  writeJson(`${OUTPUT_DIR}/cities-en-macrons.json`, enMacrons);
+
   // その他言語: [code, lgSuffix, typeNum, name, parentCode?]
-  for (const lang of SINGLE_LANGS) {
+  for (const lang of SINGLE_LANGS.filter((l) => l !== "en")) {
     const data = rows.map((row) => buildCityRow(row, row[lang]));
     writeJson(`${OUTPUT_DIR}/cities-${lang}.json`, data);
   }
