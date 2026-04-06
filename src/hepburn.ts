@@ -39,22 +39,6 @@ const TABLE_2: Readonly<Record<string, string>> = {
   ぢゃ: "ja",
   ぢゅ: "ju",
   ぢょ: "jo",
-  // 旧仮名遣い（CSVデータに存在するケース）
-  しよ: "sho",
-  しゆ: "shu",
-  しや: "sha",
-  ちよ: "cho",
-  ちゆ: "chu",
-  ちや: "cha",
-  じよ: "jo",
-  じゆ: "ju",
-  じや: "ja",
-  りよ: "ryo",
-  りゆ: "ryu",
-  りや: "rya",
-  ぎよ: "gyo",
-  ぎゆ: "gyu",
-  ぎや: "gya",
 };
 
 const TABLE_1: Readonly<Record<string, string>> = {
@@ -228,13 +212,63 @@ export function hiraToHepburn(hira: string): string {
   return parts.join("");
 }
 
+// 都市サフィックス: ひらがな末尾 → ローマ字サフィックス (ハイフン付き)
+// 長い順に並べてグリーディマッチ
+const CITY_SUFFIX_MAP: ReadonlyArray<[string, string]> = [
+  ["ちょう", "-cho"],
+  ["まち", "-machi"],
+  ["むら", "-mura"],
+  ["そん", "-son"],
+  ["し", "-shi"],
+  ["く", "-ku"],
+];
+
+// 都道府県サフィックス (ひらがな末尾 → 除去)
+// 注: 北海道の「どう」は地名の一部なので含めない
+const PREF_SUFFIX_HIRA: ReadonlyArray<string> = ["けん", "ふ", "と"];
+
 /**
- * ヘボン式ローマ字を先頭大文字にする。
- * ハイフン区切りの各セグメントも大文字化する。
+ * ひらがなから修正ヘボン式に変換し、都市サフィックスをハイフン付きで付与する。
+ * en 名（既存）を参照してサフィックスの形式（-cho/-machi 等）を決定する。
+ *
+ * @param hira ひらがな（例: "いいだし"）
+ * @param enName 既存の en 名（例: "Iida-shi"）。サフィックス判定に使用。
  */
-export function capitalizeHepburn(s: string): string {
-  return s
-    .split("-")
-    .map((seg) => (seg ? seg[0].toUpperCase() + seg.slice(1) : seg))
-    .join("-");
+export function hiraToHepburnCity(hira: string, enName: string): string {
+  // en名にハイフンがある場合はサフィックスを流用
+  const hyphenIdx = enName.lastIndexOf("-");
+  if (hyphenIdx !== -1) {
+    const enSuffix = enName.slice(hyphenIdx); // "-shi" / "-ku" 等
+    // ひらがなからサフィックス分を除去
+    let hiraBody = hira;
+    for (const [hiraSuf] of CITY_SUFFIX_MAP) {
+      if (hira.endsWith(hiraSuf)) {
+        hiraBody = hira.slice(0, -hiraSuf.length);
+        break;
+      }
+    }
+    const body = hiraToHepburn(hiraBody);
+    const cap = body ? body[0].toUpperCase() + body.slice(1) : body;
+    return cap + enSuffix;
+  }
+
+  // ハイフンなし（既存 en 名がサフィックスなし）: 全体変換して先頭大文字
+  const rom = hiraToHepburn(hira);
+  return rom ? rom[0].toUpperCase() + rom.slice(1) : rom;
+}
+
+/**
+ * ひらがなから修正ヘボン式に変換し、都道府県サフィックス（県/府/都/道）を除去する。
+ * 既存の en 名はサフィックスなし（"Tokyo", "Osaka"）なので、ひらがなからも除去する。
+ */
+export function hiraToHepburnPref(hira: string): string {
+  let hiraBody = hira;
+  for (const suf of PREF_SUFFIX_HIRA) {
+    if (hira.endsWith(suf)) {
+      hiraBody = hira.slice(0, -suf.length);
+      break;
+    }
+  }
+  const rom = hiraToHepburn(hiraBody);
+  return rom ? rom[0].toUpperCase() + rom.slice(1) : rom;
 }
