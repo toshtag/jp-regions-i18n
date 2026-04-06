@@ -229,9 +229,11 @@ ul { list-style: none; }
   left: 24px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 16px;
+  width: 16px;
+  height: 16px;
   pointer-events: none;
   opacity: .4;
+  color: var(--color-text);
 }
 
 .pref-count {
@@ -543,9 +545,11 @@ ul { list-style: none; }
   left: calc(28px + 6px);
   top: 50%;
   transform: translateY(-50%);
-  font-size: 16px;
+  width: 14px;
+  height: 14px;
   pointer-events: none;
   opacity: .4;
+  color: var(--color-text);
 }
 
 .cities-container {
