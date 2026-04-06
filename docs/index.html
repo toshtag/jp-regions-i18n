@@ -5,39 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jp-regions-i18n — Demo</title>
   <meta name="description" content="日本の都道府県・市区町村を10言語で検索できるインタラクティブデモ" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=0.9.1" />
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <div class="header-title">
-        <span class="header-icon" aria-hidden="true">🗾</span>
-        <span class="header-name">jp-regions-i18n</span>
-        <span class="header-badge">v0.9.0 demo</span>
+      <div class="header-brand">
+        <div class="header-logo" aria-hidden="true">🗾</div>
+        <div class="header-title-wrap">
+          <span class="header-name">jp-regions-i18n</span>
+          <span class="header-tagline">日本の都道府県・市区町村 10言語データライブラリ</span>
+        </div>
+        <span class="header-badge">v0.9.1</span>
       </div>
-      <p class="header-desc">
-        日本の都道府県・市区町村データを 10 言語で検索 &mdash;
-        <a href="https://github.com/toshtag/jp-regions-i18n" target="_blank" rel="noopener">GitHub</a>
-        &nbsp;|&nbsp;
-        <a href="https://www.npmjs.com/package/jp-regions-i18n" target="_blank" rel="noopener">npm</a>
-      </p>
+      <nav class="header-links" aria-label="外部リンク">
+        <a class="header-link" href="https://github.com/toshtag/jp-regions-i18n" target="_blank" rel="noopener">
+          GitHub
+        </a>
+        <a class="header-link" href="https://www.npmjs.com/package/jp-regions-i18n" target="_blank" rel="noopener">
+          npm
+        </a>
+      </nav>
     </div>
   </header>
 
   <main class="layout">
     <!-- Left: search + prefecture list -->
     <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">都道府県 / Prefecture</div>
+      </div>
       <div class="search-wrap">
         <label for="search" class="visually-hidden">検索</label>
         <input
           id="search"
           type="search"
           class="search-input"
-          placeholder="都道府県名・コードで検索 (任意言語可)"
+          placeholder="名前・コードで検索（多言語対応）"
           autocomplete="off"
           spellcheck="false"
         />
-        <span class="search-icon" aria-hidden="true">🔍</span>
+        <span class="search-icon" aria-hidden="true">⌕</span>
       </div>
       <div id="pref-count" class="pref-count"></div>
       <ul id="pref-list" class="pref-list" role="listbox" aria-label="都道府県一覧"></ul>
@@ -46,16 +54,19 @@
     <!-- Right: detail + cities -->
     <section class="detail-panel" id="detail-panel">
       <div class="detail-placeholder" id="detail-placeholder">
-        <p>← 都道府県を選択すると<br>全言語の表記と市区町村が表示されます</p>
+        <span class="placeholder-icon" aria-hidden="true">🗾</span>
+        <p>都道府県を選択すると<br>全言語の表記と市区町村が表示されます</p>
       </div>
 
       <!-- Prefecture detail -->
       <div id="pref-detail" class="pref-detail hidden">
         <div class="detail-header">
-          <h2 id="detail-title"></h2>
-          <div class="detail-codes" id="detail-codes"></div>
+          <div class="detail-header-left">
+            <h2 id="detail-title"></h2>
+            <div class="detail-codes" id="detail-codes"></div>
+          </div>
           <button type="button" class="btn-copy" id="btn-copy-pref" title="JSON をコピー">
-            <span class="copy-icon">📋</span> Copy JSON
+            ⎘ Copy JSON
           </button>
         </div>
         <div class="lang-grid" id="lang-grid"></div>
@@ -63,9 +74,23 @@
 
       <!-- Cities -->
       <div id="cities-section" class="cities-section hidden">
-        <div class="cities-header">
-          <h3 id="cities-title"></h3>
-          <span id="cities-count" class="cities-count"></span>
+        <div class="cities-toolbar">
+          <div class="cities-toolbar-left">
+            <h3 id="cities-title"></h3>
+            <span id="cities-count" class="cities-count"></span>
+          </div>
+          <div class="city-lang-tabs" id="city-lang-tabs" role="tablist" aria-label="表示言語"></div>
+        </div>
+        <div class="cities-search-wrap">
+          <input
+            id="cities-search"
+            type="search"
+            class="cities-search-input"
+            placeholder="市区町村名で絞り込み…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="cities-search-icon" aria-hidden="true">⌕</span>
         </div>
         <div id="cities-container" class="cities-container"></div>
       </div>
@@ -82,6 +107,6 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script type="module" src="app.js"></script>
+  <script type="module" src="app.js?v=0.9.1"></script>
 </body>
 </html>

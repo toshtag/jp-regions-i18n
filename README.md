@@ -2,7 +2,7 @@
 
 Zero-dependency multilingual Japanese prefectures and cities data.
 
-47 prefectures and 1,917 municipalities across 7 languages: Japanese, English, Simplified Chinese, Traditional Chinese, Korean, Portuguese, and Vietnamese.
+47 prefectures and 1,917 municipalities across 10 languages: Japanese (kanji / hiragana / katakana / half-width kana), English, English with macrons, Simplified Chinese, Traditional Chinese, Korean, Portuguese, and Vietnamese.
 
 [日本語版はこちら](README.ja.md) | [Full API Reference](docs/API.md) | **[▶ Live Demo](https://toshtag.github.io/jp-regions-i18n/)**
 
