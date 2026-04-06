@@ -1,7 +1,7 @@
 import {
   getCitiesAllLangs,
   getPrefecturesAllLangs,
-} from "https://esm.sh/jp-regions-i18n@0.9.0";
+} from "https://esm.sh/jp-regions-i18n@0.9.1";
 
 // ===== 言語メタ定義 =====
 const LANG_META = [
