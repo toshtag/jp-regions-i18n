@@ -9,6 +9,27 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-04-06
+
+### Fixed
+
+- **Portuguese (`pt`) translations overhauled** — all 47 prefectures and ~1,900 cities rewritten using classical European Portuguese orthography, consistent with the established forms `Tóquio` (東京) and `Quioto` (京都):
+  - Consonant transcription: `sh`→`x`, `ch`→`x`, `ky`→`qui`, `tsu`→`tçu`, `k(a/o/u)`→`c`, `k(e/i)`→`qu`
+    (e.g. `Hiroshima`→`Hiroxima`, `Chiba`→`Xiba`, `Fukuoka`→`Fucuoca`, `Ibaraki`→`Ibaraqui`)
+  - Long vowel macrons added from hiragana readings: `ō` (おお/おう/とう/しょう…), `ū` (うう/ゅう/しゅう…)
+    (e.g. `Ōsaka`, `Tōbetsu-xo`, `Xūnan-xi`, `Chūō-cu`)
+  - Administrative suffixes transcribed accordingly: `-shi`→`-xi`, `-ku`→`-cu`, `-machi`→`-maxi`, `-cho`→`-xo`
+  - Portuguese orthography rule: `n` before `b`/`p` → `m` (e.g. `Nanporo`→`Namporo`)
+  - Fixed numerous incorrect entries (e.g. 千葉市 was `Chuo-ku`, Tokyo special wards missing `-ku`)
+  - Established historical PT forms preserved: `Tóquio`, `Quioto`/`Quioto-xi`, `Nagoia-xi`
+- **Vietnamese (`vi`) translations overhauled** — all 47 prefectures and ~1,900 cities corrected:
+  - Sino-Vietnamese (漢越語) readings applied to all kanji place names
+  - Ainu-origin and non-kanji names transliterated phonetically
+  - Administrative suffixes: 市=`thị`, 区=`khu`, 町=`đinh`, 村=`thôn`, 県=`tỉnh`, 府=`phủ`, 都=`đô`, 道=`đạo`
+- **`shortenCityName` / `shortenPrefName` for `vi` and `pt`** now work correctly:
+  - `CITY_SUFFIXES.pt` updated to transcribed suffixes (`-xi`, `-cu`, `-maxi`, `-xo`, `-son`, `-mura`)
+  - `CITY_SUFFIXES.vi` and `PREF_SUFFIXES.vi` now use proper Vietnamese suffixes (` thị`, ` khu`, ` đinh`, ` thôn` / ` tỉnh`, ` phủ`, ` đô`, ` đạo`)
+
 ## [0.7.0] - 2026-04-05
 
 ### Added

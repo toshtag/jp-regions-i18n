@@ -12,5 +12,7 @@ CLAUDE.local.md
 scripts/fetch-translations.py
 scripts/fetch-vi-hanviet.py
 scripts/apply-translations.py
+scripts/fix_pt_vi.py
 scripts/intermediate_*.json
 scripts/translations_*.json
+scripts/__pycache__/
