@@ -78,6 +78,45 @@ describe("jp-regions-i18n/en", () => {
     const cities = getCitiesByPrefName("Tokyo");
     expect(cities.length).toBeGreaterThan(0);
   });
+
+  describe("macrons option", () => {
+    it("getPrefectures with macrons: long vowels use ō/ū", () => {
+      const prefs = getPrefectures({ macrons: true });
+      expect(prefs.find((p) => p.code === "13")?.name).toBe("Tōkyōto");
+      expect(prefs.find((p) => p.code === "27")?.name).toBe("Ōsakafu");
+      expect(prefs.find((p) => p.code === "26")?.name).toBe("Kyōtofu");
+      expect(prefs.find((p) => p.code === "28")?.name).toBe("Hyōgoken");
+      expect(prefs.find((p) => p.code === "39")?.name).toBe("Kōchiken");
+      expect(prefs.find((p) => p.code === "44")?.name).toBe("Ōitaken");
+    });
+
+    it("getPrefectures without macrons stays unchanged", () => {
+      const prefs = getPrefectures();
+      expect(prefs.find((p) => p.code === "13")?.name).toBe("Tokyo");
+    });
+
+    it("getPrefectureByCode with macrons", () => {
+      expect(getPrefectureByCode("27", { macrons: true })?.name).toBe("Ōsakafu");
+    });
+
+    it("getCities with macrons: long vowels in city names", () => {
+      const cities = getCities("01", { macrons: true });
+      // 札幌市 (さっぽろし) → 長音なし
+      expect(cities.find((c) => c.jisCode === "01100")?.name).toBe("Sapporoshi");
+      // 中央区 (ちゅうおうく) → Chūōku
+      expect(cities.find((c) => c.jisCode === "01101")?.name).toBe("Chūōku");
+    });
+
+    it("getCityByJisCode with macrons", () => {
+      // 大阪市 (おおさかし) → Ōsakashi
+      expect(getCityByJisCode("27100", { macrons: true })?.name).toBe("Ōsakashi");
+    });
+
+    it("getCityByLGCode with macrons", () => {
+      // lgCode = jisCode + lgSuffix = "27100" + "4" = "271004"
+      expect(getCityByLGCode("271004", { macrons: true })?.name).toBe("Ōsakashi");
+    });
+  });
 });
 
 describe("jp-regions-i18n/ja", () => {
