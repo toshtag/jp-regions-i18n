@@ -4,7 +4,7 @@
 
 47都道府県・1,917市区町村を7言語（日本語・英語・簡体字中国語・繁体字中国語・韓国語・ポルトガル語・ベトナム語）で提供します。
 
-[English](README.md) | [API リファレンス](docs/API.md)
+[English](README.md) | [API リファレンス](docs/API.md) | **[▶ ライブデモ](https://toshtag.github.io/jp-regions-i18n/)**
 
 ## インストール
 
