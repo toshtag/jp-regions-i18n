@@ -59,14 +59,10 @@ export interface CityAllLangs {
 
 export interface GetPrefecturesOptions {
   short?: boolean;
-  /** en エントリポイントのみ有効。true にすると長音をマクロン付き(ō/ū)で返す */
-  macrons?: boolean;
 }
 
 export interface GetCitiesOptions {
   type?: CityType;
   parentJisCode?: string;
   short?: boolean;
-  /** en エントリポイントのみ有効。true にすると長音をマクロン付き(ō/ū)で返す */
-  macrons?: boolean;
 }
