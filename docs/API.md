@@ -362,7 +362,8 @@ Suffixes stripped by language:
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
 | `en` | (none — already suffix-free) | -shi, -ku, -machi, -cho, -son, -mura |
-| `pt` / `vi` | (none) | -shi, -ku, -machi, -cho, -son, -mura |
+| `pt` | (none — already suffix-free) | -xi, -cu, -maxi, -xo, -son, -mura |
+| `vi` | tỉnh, phủ, đô, đạo | thị, khu, đinh, thôn |
 
 Prefecture and city functions are independent, so `short` can be applied selectively:
 
@@ -756,8 +757,9 @@ interface GetCitiesOptions {
 | `zh-CN` | 都, 道, 府, 县 | 市, 区, 町, 村 |
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
-| `en` | （なし — 元々サフィックスなし） | -shi, -ku, -machi, -cho, -son, -mura |
-| `pt` / `vi` | （なし） | -shi, -ku, -machi, -cho, -son, -mura |
+| `en` | （なし） | -shi, -ku, -machi, -cho, -son, -mura |
+| `pt` | （なし） | -xi, -cu, -maxi, -xo, -son, -mura |
+| `vi` | tỉnh, phủ, đô, đạo | thị, khu, đinh, thôn |
 
 都道府県と市区町村の関数は独立しているため、片方だけに `short` を適用することも可能です：
 
