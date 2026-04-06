@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jp-regions-i18n — Demo</title>
   <meta name="description" content="日本の都道府県・市区町村を10言語で検索できるインタラクティブデモ" />
-  <link rel="stylesheet" href="style.css?v=0.9.1" />
+  <link rel="stylesheet" href="style.css?v=0.9.2" />
 </head>
 <body>
   <header class="site-header">
@@ -16,7 +16,7 @@
           <span class="header-name">jp-regions-i18n</span>
           <span class="header-tagline">日本の都道府県・市区町村 10言語データライブラリ</span>
         </div>
-        <span class="header-badge">v0.9.1</span>
+        <span class="header-badge">v0.9.2</span>
       </div>
       <nav class="header-links" aria-label="外部リンク">
         <a class="header-link" href="https://github.com/toshtag/jp-regions-i18n" target="_blank" rel="noopener">
@@ -37,6 +37,7 @@
       </div>
       <div class="search-wrap">
         <label for="search" class="visually-hidden">検索</label>
+        <span class="search-icon" aria-hidden="true">⌕</span>
         <input
           id="search"
           type="search"
@@ -45,7 +46,6 @@
           autocomplete="off"
           spellcheck="false"
         />
-        <span class="search-icon" aria-hidden="true">⌕</span>
       </div>
       <div id="pref-count" class="pref-count"></div>
       <ul id="pref-list" class="pref-list" role="listbox" aria-label="都道府県一覧"></ul>
@@ -55,7 +55,6 @@
     <section class="detail-panel" id="detail-panel">
       <div class="detail-placeholder" id="detail-placeholder">
         <span class="placeholder-icon" aria-hidden="true">🗾</span>
-        <p>都道府県を選択すると<br>全言語の表記と市区町村が表示されます</p>
       </div>
 
       <!-- Prefecture detail -->
@@ -66,7 +65,7 @@
             <div class="detail-codes" id="detail-codes"></div>
           </div>
           <button type="button" class="btn-copy" id="btn-copy-pref" title="JSON をコピー">
-            ⎘ Copy JSON
+            📋 Copy JSON
           </button>
         </div>
         <div class="lang-grid" id="lang-grid"></div>
@@ -82,6 +81,7 @@
           <div class="city-lang-tabs" id="city-lang-tabs" role="tablist" aria-label="表示言語"></div>
         </div>
         <div class="cities-search-wrap">
+          <span class="cities-search-icon" aria-hidden="true">⌕</span>
           <input
             id="cities-search"
             type="search"
@@ -90,7 +90,6 @@
             autocomplete="off"
             spellcheck="false"
           />
-          <span class="cities-search-icon" aria-hidden="true">⌕</span>
         </div>
         <div id="cities-container" class="cities-container"></div>
       </div>
@@ -107,6 +106,6 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script type="module" src="app.js?v=0.9.1"></script>
+  <script type="module" src="app.js?v=0.9.2"></script>
 </body>
 </html>
