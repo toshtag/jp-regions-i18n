@@ -80,14 +80,20 @@ describe("jp-regions-i18n/en", () => {
   });
 
   describe("macrons option", () => {
-    it("getPrefectures with macrons: long vowels use ō/ū", () => {
+    it("getPrefectures with macrons: 行政区分サフィックスを除いた長音表記", () => {
       const prefs = getPrefectures({ macrons: true });
-      expect(prefs.find((p) => p.code === "13")?.name).toBe("Tōkyōto");
-      expect(prefs.find((p) => p.code === "27")?.name).toBe("Ōsakafu");
-      expect(prefs.find((p) => p.code === "26")?.name).toBe("Kyōtofu");
-      expect(prefs.find((p) => p.code === "28")?.name).toBe("Hyōgoken");
-      expect(prefs.find((p) => p.code === "39")?.name).toBe("Kōchiken");
-      expect(prefs.find((p) => p.code === "44")?.name).toBe("Ōitaken");
+      // 東京都: とうきょう + と(都) → Tōkyō
+      expect(prefs.find((p) => p.code === "13")?.name).toBe("Tōkyō");
+      // 大阪府: おおさか + ふ(府) → Ōsaka
+      expect(prefs.find((p) => p.code === "27")?.name).toBe("Ōsaka");
+      // 京都府: きょうと + ふ → Kyōto
+      expect(prefs.find((p) => p.code === "26")?.name).toBe("Kyōto");
+      // 兵庫県: ひょうご + けん → Hyōgo
+      expect(prefs.find((p) => p.code === "28")?.name).toBe("Hyōgo");
+      // 高知県: こうち + けん → Kōchi
+      expect(prefs.find((p) => p.code === "39")?.name).toBe("Kōchi");
+      // 大分県: おおいた + けん → Ōita
+      expect(prefs.find((p) => p.code === "44")?.name).toBe("Ōita");
     });
 
     it("getPrefectures without macrons stays unchanged", () => {
@@ -96,25 +102,25 @@ describe("jp-regions-i18n/en", () => {
     });
 
     it("getPrefectureByCode with macrons", () => {
-      expect(getPrefectureByCode("27", { macrons: true })?.name).toBe("Ōsakafu");
+      expect(getPrefectureByCode("27", { macrons: true })?.name).toBe("Ōsaka");
     });
 
-    it("getCities with macrons: long vowels in city names", () => {
+    it("getCities with macrons: ハイフン付きサフィックスを維持", () => {
       const cities = getCities("01", { macrons: true });
-      // 札幌市 (さっぽろし) → 長音なし
-      expect(cities.find((c) => c.jisCode === "01100")?.name).toBe("Sapporoshi");
-      // 中央区 (ちゅうおうく) → Chūōku
-      expect(cities.find((c) => c.jisCode === "01101")?.name).toBe("Chūōku");
+      // 札幌市 (さっぽろし) → 長音なし、サフィックス維持
+      expect(cities.find((c) => c.jisCode === "01100")?.name).toBe("Sapporo-shi");
+      // 中央区 (ちゅうおうく) → Chūō-ku
+      expect(cities.find((c) => c.jisCode === "01101")?.name).toBe("Chūō-ku");
     });
 
     it("getCityByJisCode with macrons", () => {
-      // 大阪市 (おおさかし) → Ōsakashi
-      expect(getCityByJisCode("27100", { macrons: true })?.name).toBe("Ōsakashi");
+      // 大阪市 (おおさかし) → Ōsaka-shi
+      expect(getCityByJisCode("27100", { macrons: true })?.name).toBe("Ōsaka-shi");
     });
 
     it("getCityByLGCode with macrons", () => {
       // lgCode = jisCode + lgSuffix = "27100" + "4" = "271004"
-      expect(getCityByLGCode("271004", { macrons: true })?.name).toBe("Ōsakashi");
+      expect(getCityByLGCode("271004", { macrons: true })?.name).toBe("Ōsaka-shi");
     });
   });
 });
