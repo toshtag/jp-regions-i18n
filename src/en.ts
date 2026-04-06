@@ -2,7 +2,7 @@ import cityData from "./generated/cities-en.json" with { type: "json" };
 import prefData from "./generated/prefectures-en.json" with { type: "json" };
 import { createLangStore } from "./store-lang.js";
 
-const store = createLangStore(prefData as unknown[][], cityData as unknown[][], "en", false);
+const store = createLangStore(prefData as unknown[][], cityData as unknown[][], "en", true);
 
 export const getPrefectures = store.getPrefectures.bind(store);
 export const getPrefectureByCode = store.getPrefectureByCode.bind(store);
