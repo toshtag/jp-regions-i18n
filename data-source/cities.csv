@@ -81,7 +81,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01407,014079,,town,仁木町,にきちょう,Niki-cho,仁木町,仁木町,니키정,Niki-cho,Nhân Mộc đinh
 01,01408,014087,,city,余市町,よいちちょう,Yoichi-cho,余市町,余市町,요이치정,Yoichi-cho,Dư Thị đinh
 01,01409,014095,,village,赤井川村,あかいがわむら,Akaigawa-mura,赤井川村,赤井川村,아카이가와촌,Akaigawa-mura,Xích Tỉnh Xuyên thôn
-01,01423,014230,,town,南幌町,なんぽろちょう,Nanporo-cho,南幌町,南幌町,난포로정,Nanporo-cho,Nam Bát đinh
+01,01423,014230,,town,南幌町,なんぽろちょう,Nanporo-cho,南幌町,南幌町,난포로정,Namporo-cho,Nam Bát đinh
 01,01424,014249,,town,奈井江町,ないえちょう,Naie-cho,奈井江町,奈井江町,나이에정,Naie-cho,Nại Tỉnh Giang đinh
 01,01425,014257,,town,上砂川町,かみすながわちょう,Kamisunagawa-cho,上砂川町,上砂川町,가미스나가와정,Kamisunagawa-cho,Thượng Sa Xuyên đinh
 01,01427,014273,,town,由仁町,ゆにちょう,Yuni-cho,由仁町,由仁町,유니정,Yuni-cho,Do Nhân đinh
@@ -118,12 +118,12 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01482,014826,,town,小平町,おびらちょう,Obira-cho,小平町,小平町,오비라정,Obira-cho,Tiểu Bình đinh
 01,01483,014834,,town,苫前町,とままえちょう,Tomamae-cho,苫前町,苫前町,도마마에정,Tomamae-cho,Thổ Tiền đinh
 01,01484,014842,,town,羽幌町,はぼろちょう,Haboro-cho,羽幌町,羽幌町,하보로정,Haboro-cho,Vũ Phách đinh
-01,01485,014850,,village,初山別村,しょさんべつむら,Shosanbetsu-mura,初山别村,初山別村,쇼산베쓰촌,Shosanbetsu-mura,Sơ Sơn Biệt thôn
+01,01485,014850,,village,初山別村,しょさんべつむら,Shosanbetsu-mura,初山别村,初山別村,쇼산베쓰촌,Shosambetsu-mura,Sơ Sơn Biệt thôn
 01,01486,014869,,town,遠別町,えんべつちょう,Embetsu-cho,远别町,遠別町,엔베쓰정,Embetsu-cho,Viễn Biệt đinh
 01,01487,014877,,town,天塩町,てしおちょう,Teshio-cho,天盐町,天鹽町,데시오정,Teshio-cho,Thiên Tốc đinh
 01,01511,015113,,village,猿払村,さるふつむら,Sarufutsu-mura,猿拂村,猿拂村,사루후쓰촌,Sarufutsu-mura,Viên Phất thôn
-01,01512,015121,,town,浜頓別町,はまとんべつちょう,Hamatonbetsu-cho,滨顿别町,濱頓別町,하마톤베쓰정,Hamatonbetsu-cho,Tân Đốn Biệt đinh
-01,01513,015130,,town,中頓別町,なかとんべつちょう,Nakatonbetsu-cho,中顿别町,中頓別町,나카톤베쓰정,Nakatonbetsu-cho,Trung Đốn Biệt đinh
+01,01512,015121,,town,浜頓別町,はまとんべつちょう,Hamatonbetsu-cho,滨顿别町,濱頓別町,하마톤베쓰정,Hamatombetsu-cho,Tân Đốn Biệt đinh
+01,01513,015130,,town,中頓別町,なかとんべつちょう,Nakatonbetsu-cho,中顿别町,中頓別町,나카톤베쓰정,Nakatombetsu-cho,Trung Đốn Biệt đinh
 01,01514,015148,,town,枝幸町,えさしちょう,Esashi-cho,枝幸町,枝幸町,에사시정,Esashi-cho,Chi Hạnh đinh
 01,01516,015164,,town,豊富町,とよとみちょう,Toyotomi-cho,丰富町,豐富町,도요토미정,Toyotomi-cho,Phong Phú đinh
 01,01517,015172,,town,礼文町,れぶんちょう,Rebun-cho,礼文町,禮文町,레분정,Rebun-cho,Lễ Văn đinh
@@ -173,7 +173,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01643,016438,,town,幕別町,まくべつちょう,Makubetsu-cho,幕别町,幕別町,마쿠베쓰정,Makubetsu-cho,U Biệt đinh
 01,01644,016446,,town,池田町,いけだちょう,Ikeda-cho,池田町,池田町,이케다정,Ikeda-cho,Trì Điền đinh
 01,01645,016454,,town,豊頃町,とよころちょう,Toyokoro-cho,丰顷町,豐頃町,도요코로정,Toyokoro-cho,Phong Khoảnh đinh
-01,01646,016462,,town,本別町,ほんべつちょう,Honbetsu-cho,本别町,本別町,혼베쓰정,Honbetsu-cho,Bản Biệt đinh
+01,01646,016462,,town,本別町,ほんべつちょう,Honbetsu-cho,本别町,本別町,혼베쓰정,Hombetsu-cho,Bản Biệt đinh
 01,01647,016470,,town,足寄町,あしょろちょう,Ashoro-cho,足寄町,足寄町,아쇼로정,Ashoro-cho,Túc Ký đinh
 01,01648,016489,,town,陸別町,りくべつちょう,Rikubetsu-cho,陆别町,陸別町,리쿠베쓰정,Rikubetsu-cho,Lục Biệt đinh
 01,01649,016497,,town,浦幌町,うらほろちょう,Urahoro-cho,浦幌町,浦幌町,우라호로정,Urahoro-cho,Phổ U đinh
@@ -231,7 +231,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 02,02441,024414,,town,三戸町,さんのへまち,Sannohe-machi,三户町,三戶町,산노헤정,Sannohe-machi,Tam Hộ đinh
 02,02442,024422,,town,五戸町,ごのへまち,Gonohe-machi,五户町,五戶町,고노헤정,Gonohe-machi,Ngũ Hộ đinh
 02,02443,024430,,town,田子町,たっこまち,Takko-machi,田子町,田子町,닷코정,Takko-machi,Điền Tử đinh
-02,02445,024457,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nanbu-cho,Giai Thượng đinh
+02,02445,024457,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nambu-cho,Giai Thượng đinh
 02,02446,024465,,town,階上町,はしかみちょう,Hashikami-cho,阶上町,階上町,하시카미정,Hashikami-cho,Tân Hương thôn
 02,02450,024503,,village,新郷村,しんごうむら,Shingo-mura,新乡村,新鄉村,신고촌,Shingo-mura,Tân Hương thôn
 03,03201,032018,,city,盛岡市,もりおかし,Morioka-shi,盛冈市,盛岡市,모리오카시,Morioka-shi,Thịnh Cương thị
@@ -890,7 +890,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 19,19346,193461,,city,市川三郷町,いちかわみさとちょう,Ichikawamisato-cho,市川三乡町,市川三鄉町,이치카와미사토정,Ichikawamisato-cho,Phú Sĩ Hà Khẩu Hồ đinh
 19,19364,193640,,town,早川町,はやかわちょう,Hayakawa-cho,早川町,早川町,하야카와정,Hayakawa-cho,Tảo Xuyên đinh
 19,19365,193658,,town,身延町,みのぶちょう,Minobu-cho,身延町,身延町,미노부정,Minobu-cho,Thân Diên đinh
-19,19366,193666,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nanbu-cho,Nam Bộ đinh
+19,19366,193666,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nambu-cho,Nam Bộ đinh
 19,19368,193682,,town,富士川町,ふじかわちょう,Fujikawa-cho,富士川町,富士川町,후지카와정,Fujikawa-cho,Phú Sĩ Xuyên đinh
 19,19384,193844,,town,昭和町,しょうわちょう,Showa-cho,昭和町,昭和町,쇼와정,Showa-cho,Chiêu Hòa đinh
 19,19422,194220,,village,道志村,どうしむら,Doshi-mura,道志村,道志村,도시촌,Doshi-mura,Đạo Chí thôn
@@ -1006,7 +1006,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 21,21362,213624,,town,関ケ原町,せきがはらちょう,Sekigahara-cho,关原町,關原町,세키가하라정,Sekigahara-cho,Quan Cá Nguyên đinh
 21,21381,213810,,town,神戸町,ごうどちょう,Godo-cho,神户町,神戶町,고도정,Godo-cho,Thần Hộ đinh
 21,21382,213829,,town,輪之内町,わのうちちょう,Wanouchi-cho,轮之内町,輪之內町,와노우치정,Wanouchi-cho,Luân Chi Nội đinh
-21,21383,213837,,town,安八町,あんぱちちょう,Anpachi-cho,安八町,安八町,안파치정,Anpachi-cho,An Bát đinh
+21,21383,213837,,town,安八町,あんぱちちょう,Anpachi-cho,安八町,安八町,안파치정,Ampachi-cho,An Bát đinh
 21,21401,214019,,town,揖斐川町,いびがわちょう,Ibigawa-cho,揖斐川町,揖斐川町,이비가와정,Ibigawa-cho,Y Bỉ Xuyên đinh
 21,21403,214035,,town,大野町,おおのちょう,Ono-cho,大野町,大野町,오노정,Ono-cho,Đại Dã đinh
 21,21404,214043,,town,池田町,いけだちょう,Ikeda-cho,池田町,池田町,이케다정,Ikeda-cho,Trì Điền đinh
@@ -1423,7 +1423,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 31,31372,313726,,town,北栄町,ほくえいちょう,Hokuei-cho,北荣町,北榮町,호쿠에이정,Hokuei-cho,Bắc Vinh đinh
 31,31384,313840,,village,日吉津村,ひえづそん,Hiezu-son,日吉津村,日吉津村,히에즈촌,Hiezu-son,Nhật Thần Tân thôn
 31,31386,313866,,town,大山町,だいせんちょう,Daisen-cho,大山町,大山町,다이센정,Daisen-cho,Đại Sơn đinh
-31,31389,313890,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nanbu-cho,Nam Bộ đinh
+31,31389,313890,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nambu-cho,Nam Bộ đinh
 31,31390,313904,,town,伯耆町,ほうきちょう,Hoki-cho,伯耆町,伯耆町,호키정,Hoki-cho,Bá Kỳ đinh
 31,31401,314013,,town,日南町,にちなんちょう,Nichinan-cho,日南町,日南町,니치난정,Nichinan-cho,Nhật Nam đinh
 31,31402,314021,,town,日野町,ひのちょう,Hino-cho,日野町,日野町,히노정,Hino-cho,Nhật Dã đinh
