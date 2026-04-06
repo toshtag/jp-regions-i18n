@@ -1,9 +1,9 @@
 pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01100,011002,,designated_city,札幌市,さっぽろし,Sapporo-shi,札幌市,札幌市,삿포로시,Sapporo-shi,Trát Hoảng thị
-01,01101,011010,01100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+01,01101,011010,01100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 01,01102,011029,01100,ward,北区,きたく,Kita-ku,北区,北區,기타구,Kita-ku,Bắc khu
 01,01103,011037,01100,ward,東区,ひがしく,Higashi-ku,东区,東區,히가시구,Higashi-ku,Đông khu
-01,01104,011045,01100,ward,白石区,しろいしく,Shiraishi-ku,白石区,白石區,시로이시구,Shiraishi-ku,Bạch Thạch khu
+01,01104,011045,01100,ward,白石区,しろいしく,Shiraishi-ku,白石区,白石區,시로이시구,Shiroishi-ku,Bạch Thạch khu
 01,01105,011053,01100,ward,豊平区,とよひらく,Toyohira-ku,丰平区,豐平區,도요히라구,Toyohira-ku,Phong Bình khu
 01,01106,011061,01100,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
 01,01107,011070,01100,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
@@ -17,7 +17,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01206,012068,,city,釧路市,くしろし,Kushiro-shi,钏路市,釧路市,구시로시,Kushiro-shi,Xuyên Lộ thị
 01,01207,012076,,city,帯広市,おびひろし,Obihiro-shi,带广市,帶廣市,오비히로시,Obihiro-shi,Đới Quảng thị
 01,01208,012084,,city,北見市,きたみし,Kitami-shi,北见市,北見市,기타미시,Kitami-shi,Bắc Kiến thị
-01,01209,012092,,city,夕張市,ゆうばりし,Yubari-shi,夕张市,夕張市,유바리시,Yubari-shi,Tịch Trương thị
+01,01209,012092,,city,夕張市,ゆうばりし,Yubari-shi,夕张市,夕張市,유바리시,Yūbari-shi,Tịch Trương thị
 01,01210,012106,,city,岩見沢市,いわみざわし,Iwamizawa-shi,岩见泽市,岩見澤市,이와미자와시,Iwamizawa-shi,Nham Kiến Trạch thị
 01,01211,012114,,city,網走市,あばしりし,Abashiri-shi,网走市,網走市,아바시리시,Abashiri-shi,Võng Tẩu thị
 01,01212,012122,,city,留萌市,るもいし,Rumoi-shi,留萌市,留萌市,루모이시,Rumoi-shi,Lưu Manh thị
@@ -44,7 +44,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01234,012343,,city,北広島市,きたひろしまし,Kitahiroshima-shi,北广岛市,北廣島市,기타히로시마시,Kitahiroshima-shi,Bắc Quảng Đảo thị
 01,01235,012351,,city,石狩市,いしかりし,Ishikari-shi,石狩市,石狩市,이시카리시,Ishikari-shi,Thạch Lạp thị
 01,01236,012360,,city,北斗市,ほくとし,Hokuto-shi,北斗市,北斗市,호쿠토시,Hokuto-shi,Bắc Đẩu thị
-01,01303,013030,,town,当別町,とうべつちょう,Tobetsu-cho,当别町,當別町,도베쓰정,Tobetsu-cho,Đương Biệt đinh
+01,01303,013030,,town,当別町,とうべつちょう,Tobetsu-cho,当别町,當別町,도베쓰정,Tōbetsu-cho,Đương Biệt đinh
 01,01304,013048,,village,新篠津村,しんしのつむら,Shinshinotsu-mura,新篠津村,新篠津村,신시노쓰촌,Shinshinotsu-mura,Tân Tiểu Tân thôn
 01,01331,013315,,town,松前町,まつまえちょう,Matsumae-cho,松前町,松前町,마쓰마에정,Matsumae-cho,Tùng Tiền đinh
 01,01332,013323,,town,福島町,ふくしまちょう,Fukushima-cho,福岛町,福島町,후쿠시마정,Fukushima-cho,Phúc Đảo đinh
@@ -70,9 +70,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01396,013960,,village,真狩村,まっかりむら,Makkari-mura,真狩村,真狩村,맛카리촌,Makkari-mura,Chân Thú thôn
 01,01397,013978,,village,留寿都村,るすつむら,Rusutsu-mura,留寿都村,留壽都村,루스쓰촌,Rusutsu-mura,Lưu Thọ Đô thôn
 01,01398,013986,,town,喜茂別町,きもべつちょう,Kimobetsu-cho,喜茂别町,喜茂別町,기모베쓰정,Kimobetsu-cho,Hỷ Mậu Biệt đinh
-01,01399,013994,,town,京極町,きょうごくちょう,Kyogoku-cho,京极町,京極町,교고쿠정,Kyogoku-cho,Kinh Cực đinh
-01,01400,014001,,town,倶知安町,くっちゃんちょう,Kutchan-cho,俱知安町,俱知安町,굿찬정,Kutchan-cho,Câu Tri An đinh
-01,01401,014010,,town,共和町,きょうわちょう,Kyowa-cho,共和町,共和町,교와정,Kyowa-cho,Cộng Hòa đinh
+01,01399,013994,,town,京極町,きょうごくちょう,Kyogoku-cho,京极町,京極町,교고쿠정,Kyōgoku-cho,Kinh Cực đinh
+01,01400,014001,,town,倶知安町,くっちゃんちょう,Kutchan-cho,俱知安町,俱知安町,굿찬정,Kucchan-cho,Câu Tri An đinh
+01,01401,014010,,town,共和町,きょうわちょう,Kyowa-cho,共和町,共和町,교와정,Kyōwa-cho,Cộng Hòa đinh
 01,01402,014028,,town,岩内町,いわないちょう,Iwanai-cho,岩内町,岩內町,이와나이정,Iwanai-cho,Nham Nội đinh
 01,01403,014036,,village,泊村,とまりむら,Tomari-mura,泊村,泊村,도마리촌,Tomari-mura,Bạc thôn
 01,01404,014044,,village,神恵内村,かもえないむら,Kamoenai-mura,神惠内村,神惠內村,가모에나이촌,Kamoenai-mura,Thần Huệ Nội thôn
@@ -92,12 +92,12 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01432,014320,,town,新十津川町,しんとつかわちょう,Shintotsukawa-cho,新十津川町,新十津川町,신토쓰카와정,Shintotsukawa-cho,Tân Thập Tân Xuyên đinh
 01,01433,014338,,town,妹背牛町,もせうしちょう,Moseushi-cho,妹背牛町,妹背牛町,모세우시정,Moseushi-cho,Muội Bối Ngưu đinh
 01,01434,014346,,town,秩父別町,ちっぷべつちょう,Chippubetsu-cho,秩父别町,秩父別町,짓푸베쓰정,Chippubetsu-cho,Trật Phụ Biệt đinh
-01,01436,014362,,town,雨竜町,うりゅうちょう,Uryu-cho,雨龙町,雨龍町,우류정,Uryu-cho,Vũ Long đinh
-01,01437,014370,,town,北竜町,ほくりゅうちょう,Hokuryu-cho,北龙町,北龍町,호쿠류정,Hokuryu-cho,Bắc Long đinh
+01,01436,014362,,town,雨竜町,うりゅうちょう,Uryu-cho,雨龙町,雨龍町,우류정,Uryū-cho,Vũ Long đinh
+01,01437,014370,,town,北竜町,ほくりゅうちょう,Hokuryu-cho,北龙町,北龍町,호쿠류정,Hokuryū-cho,Bắc Long đinh
 01,01438,014389,,town,沼田町,ぬまたちょう,Numata-cho,沼田町,沼田町,누마타정,Numata-cho,Chiểu Điền đinh
 01,01452,014524,,town,鷹栖町,たかすちょう,Takasu-cho,鹰栖町,鷹栖町,다카스정,Takasu-cho,Ưng Thê đinh
 01,01453,014532,,town,東神楽町,ひがしかぐらちょう,Higashikagura-cho,东神乐町,東神樂町,히가시카구라정,Higashikagura-cho,Đông Thần Nhạc đinh
-01,01454,014540,,town,当麻町,とうまちょう,Toma-cho,当麻町,當麻町,도마정,Toma-cho,Đương Ma đinh
+01,01454,014540,,town,当麻町,とうまちょう,Toma-cho,当麻町,當麻町,도마정,Tōma-cho,Đương Ma đinh
 01,01455,014559,,town,比布町,ぴっぷちょう,Pippu-cho,比布町,比布町,핏푸정,Pippu-cho,Tỷ Bố đinh
 01,01456,014567,,town,愛別町,あいべつちょう,Aibetsu-cho,爱别町,愛別町,아이베쓰정,Aibetsu-cho,Ái Biệt đinh
 01,01457,014575,,town,上川町,かみかわちょう,Kamikawa-cho,上川町,上川町,가미카와정,Kamikawa-cho,Thượng Xuyên đinh
@@ -139,17 +139,17 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01550,015504,,town,置戸町,おけとちょう,Oketo-cho,置户町,置戶町,오케토정,Oketo-cho,Trí Hộ đinh
 01,01552,015520,,town,佐呂間町,さろまちょう,Saroma-cho,佐吕间町,佐呂間町,사로마정,Saroma-cho,Tá Lư Gian đinh
 01,01555,015555,,town,遠軽町,えんがるちょう,Engaru-cho,远轻町,遠輕町,엔가루정,Engaru-cho,Viễn Khinh đinh
-01,01559,015598,,town,湧別町,ゆうべつちょう,Yubetsu-cho,涌别町,湧別町,유베쓰정,Yubetsu-cho,Nhật Cao đinh
-01,01560,015601,,town,滝上町,たきのうえちょう,Takinoue-cho,泷上町,瀧上町,다키노우에정,Takinoue-cho,Bình Thủ đinh
+01,01559,015598,,town,湧別町,ゆうべつちょう,Yubetsu-cho,涌别町,湧別町,유베쓰정,Yūbetsu-cho,Nhật Cao đinh
+01,01560,015601,,town,滝上町,たきのうえちょう,Takinoue-cho,泷上町,瀧上町,다키노우에정,Takinōe-cho,Bình Thủ đinh
 01,01561,015610,,town,興部町,おこっぺちょう,Okoppe-cho,兴部町,興部町,오콧페정,Okoppe-cho,Tân Quan đinh
 01,01562,015628,,village,西興部村,にしおこっぺむら,Nishiokoppe-mura,西兴部村,西興部村,니시오콧페촌,Nishiokoppe-mura,Phổ Hà đinh
-01,01563,015636,,town,雄武町,おうむちょう,Omu-cho,雄武町,雄武町,오무정,Omu-cho,Dạng Tự đinh
-01,01564,015644,,town,大空町,おおぞらちょう,Ozora-cho,大空町,大空町,오조라정,Ozora-cho,Ơ Lý Mô đinh
-01,01571,015717,,town,豊浦町,とようらちょう,Toyoura-cho,丰浦町,豐浦町,도요우라정,Toyoura-cho,Phong Phổ đinh
-01,01575,015750,,town,壮瞥町,そうべつちょう,Sobetsu-cho,壮瞥町,壯瞥町,소베쓰정,Sobetsu-cho,Tráng Miệt đinh
+01,01563,015636,,town,雄武町,おうむちょう,Omu-cho,雄武町,雄武町,오무정,Ōmu-cho,Dạng Tự đinh
+01,01564,015644,,town,大空町,おおぞらちょう,Ozora-cho,大空町,大空町,오조라정,Ōzora-cho,Ơ Lý Mô đinh
+01,01571,015717,,town,豊浦町,とようらちょう,Toyoura-cho,丰浦町,豐浦町,도요우라정,Toyōra-cho,Phong Phổ đinh
+01,01575,015750,,town,壮瞥町,そうべつちょう,Sobetsu-cho,壮瞥町,壯瞥町,소베쓰정,Sōbetsu-cho,Tráng Miệt đinh
 01,01578,015784,,town,白老町,しらおいちょう,Shiraoi-cho,白老町,白老町,시라오이정,Shiraoi-cho,Bạch Lão đinh
 01,01581,015814,,town,厚真町,あつまちょう,Atsuma-cho,厚真町,厚真町,아쓰마정,Atsuma-cho,Âm Cánh đinh
-01,01584,015849,,town,洞爺湖町,とうやこちょう,Toyako-cho,洞爷湖町,洞爺湖町,도야코정,Toyako-cho,Lộc Truy đinh
+01,01584,015849,,town,洞爺湖町,とうやこちょう,Toyako-cho,洞爷湖町,洞爺湖町,도야코정,Tōyako-cho,Lộc Truy đinh
 01,01585,015857,,town,安平町,あびらちょう,Abira-cho,安平町,安平町,아비라정,Abira-cho,Tân Đắc đinh
 01,01586,015865,,town,むかわ町,むかわちょう,Mukawa-cho,鹉川町,鵡川町,무카와정,Mukawa-cho,Thanh Thủy đinh
 01,01601,016012,,town,日高町,ひだかちょう,Hidaka-cho,日高町,日高町,히다카정,Hidaka-cho,Nhật Cao đinh
@@ -169,7 +169,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01638,016381,,village,中札内村,なかさつないむら,Nakasatsunai-mura,中札内村,中札內村,나카사쓰나이촌,Nakasatsunai-mura,Trung Trát Nội thôn
 01,01639,016390,,village,更別村,さらべつむら,Sarabetsu-mura,更别村,更別村,사라베쓰촌,Sarabetsu-mura,Canh Biệt thôn
 01,01641,016411,,town,大樹町,たいきちょう,Taiki-cho,大树町,大樹町,다이키정,Taiki-cho,Đại Thụ đinh
-01,01642,016420,,town,広尾町,ひろおちょう,Hiroo-cho,广尾町,廣尾町,히로오정,Hiroo-cho,Quảng Vĩ đinh
+01,01642,016420,,town,広尾町,ひろおちょう,Hiroo-cho,广尾町,廣尾町,히로오정,Hirō-cho,Quảng Vĩ đinh
 01,01643,016438,,town,幕別町,まくべつちょう,Makubetsu-cho,幕别町,幕別町,마쿠베쓰정,Makubetsu-cho,U Biệt đinh
 01,01644,016446,,town,池田町,いけだちょう,Ikeda-cho,池田町,池田町,이케다정,Ikeda-cho,Trì Điền đinh
 01,01645,016454,,town,豊頃町,とよころちょう,Toyokoro-cho,丰顷町,豐頃町,도요코로정,Toyokoro-cho,Phong Khoảnh đinh
@@ -189,7 +189,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 01,01693,016934,,town,標津町,しべつちょう,Shibetsu-cho,标津町,標津町,시베쓰정,Shibetsu-cho,Tiêu Tân đinh
 01,01694,016942,,town,羅臼町,らうすちょう,Rausu-cho,罗臼町,羅臼町,라우스정,Rausu-cho,La Thần đinh
 01,01695,016950,,village,色丹村,しこたんむら,Shikotan-mura,色丹村,色丹村,시코탄촌,Shikotan-mura,Sắc Đan thôn
-01,01696,016969,,village,泊村（国後郡）,とまりむら,Tomari-mura (Kunashiri-gun),泊村（国后郡）,泊村（國後郡）,도마리촌 (구나시리군),Tomari,Bạc thôn (Quốc Hậu quận)
+01,01696,016969,,village,泊村（国後郡）,とまりむら,Tomari-mura (Kunashiri-gun),泊村（国后郡）,泊村（國後郡）,도마리촌 (구나시리군),Tomarimura,Bạc thôn (Quốc Hậu quận)
 01,01697,016977,,village,留夜別村,るやべつむら,Ruyabetsu-mura,留夜别村,留夜別村,루요베쓰촌,Ruyabetsu-mura,Lưu Dạ Biệt thôn
 01,01698,016985,,village,留別村,るべつむら,Rubetsu-mura,留别村,留別村,루베쓰촌,Rubetsu-mura,Lưu Biệt thôn
 01,01699,016993,,village,紗那村,しゃなむら,Shana-mura,纱那村,紗那村,샤나촌,Shana-mura,Sa Na thôn
@@ -212,7 +212,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 02,02323,023230,,town,深浦町,ふかうらまち,Fukaura-machi,深浦町,深浦町,후카우라정,Fukaura-machi,Tây Mục Ốc thôn
 02,02343,023434,,village,西目屋村,にしめやむら,Nishimeya-mura,西目屋村,西目屋村,니시메야촌,Nishimeya-mura,Điền Xá Quán thôn
 02,02361,023612,,town,藤崎町,ふじさきまち,Fujisaki-machi,藤崎町,藤崎町,후지사키정,Fujisaki-machi,Bản Liễu đinh
-02,02362,023620,,town,大鰐町,おおわにまち,Owani-machi,大鳄町,大鰐町,오와니정,Owani-machi,Hạc Điền đinh
+02,02362,023620,,town,大鰐町,おおわにまち,Owani-machi,大鳄町,大鰐町,오와니정,Ōwani-machi,Hạc Điền đinh
 02,02367,023671,,village,田舎館村,いなかだてむら,Inakadate-mura,田舍馆村,田舍館村,이나카다테촌,Inakadate-mura,Điền Xá Quán thôn
 02,02381,023817,,town,板柳町,いたやなぎまち,Itayanagi-machi,板柳町,板柳町,이타야나기정,Itayanagi-machi,Dã Biên Địa đinh
 02,02384,023841,,town,鶴田町,つるたまち,Tsuruta-machi,鹤田町,鶴田町,쓰루타정,Tsuruta-machi,Hoành Tân đinh
@@ -221,11 +221,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 02,02402,024023,,town,七戸町,しちのへまち,Shichinohe-machi,七户町,七戶町,시치노헤정,Shichinohe-machi,Đông Thông thôn
 02,02405,024058,,town,六戸町,ろくのへまち,Rokunohe-machi,六户町,六戶町,로쿠노헤정,Rokunohe-machi,Lục Hộ đinh
 02,02406,024066,,town,横浜町,よこはままち,Yokohama-machi,横滨町,橫濱町,요코하마정,Yokohama-machi,Hoành Tân đinh
-02,02408,024082,,town,東北町,とうほくまち,Tohoku-machi,东北町,東北町,도호쿠정,Tohoku-machi,Đông Bắc đinh
+02,02408,024082,,town,東北町,とうほくまち,Tohoku-machi,东北町,東北町,도호쿠정,Tōhoku-machi,Đông Bắc đinh
 02,02411,024112,,village,六ヶ所村,ろっかしょむら,Rokkasho-mura,六所村,六所村,롯카쇼촌,Rokkasho-mura,Lục Cá Sở thôn
 02,02412,024120,,town,おいらせ町,おいらせちょう,Oirase-cho,奥入濑町,奧入瀨町,오이라세정,Oirase-cho,Oi Ra Se đinh
-02,02423,024236,,town,大間町,おおままち,Oma-machi,大间町,大間町,오마정,Oma-machi,Đại Gian đinh
-02,02424,024244,,village,東通村,ひがしどおりむら,Higashidori-mura,东通村,東通村,히가시도리촌,Higashidori-mura,Đông Thông thôn
+02,02423,024236,,town,大間町,おおままち,Oma-machi,大间町,大間町,오마정,Ōma-machi,Đại Gian đinh
+02,02424,024244,,village,東通村,ひがしどおりむら,Higashidori-mura,东通村,東通村,히가시도리촌,Higashidōri-mura,Đông Thông thôn
 02,02425,024252,,village,風間浦村,かざまうらむら,Kazamaura-mura,风间浦村,風間浦村,가자마우라촌,Kazamaura-mura,Phong Gian Phổ thôn
 02,02426,024260,,village,佐井村,さいむら,Sai-mura,佐井村,佐井村,사이촌,Sai-mura,Tả Tỉnh thôn
 02,02441,024414,,town,三戸町,さんのへまち,Sannohe-machi,三户町,三戶町,산노헤정,Sannohe-machi,Tam Hộ đinh
@@ -233,20 +233,20 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 02,02443,024430,,town,田子町,たっこまち,Takko-machi,田子町,田子町,닷코정,Takko-machi,Điền Tử đinh
 02,02445,024457,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nambu-cho,Giai Thượng đinh
 02,02446,024465,,town,階上町,はしかみちょう,Hashikami-cho,阶上町,階上町,하시카미정,Hashikami-cho,Tân Hương thôn
-02,02450,024503,,village,新郷村,しんごうむら,Shingo-mura,新乡村,新鄉村,신고촌,Shingo-mura,Tân Hương thôn
+02,02450,024503,,village,新郷村,しんごうむら,Shingo-mura,新乡村,新鄉村,신고촌,Shingō-mura,Tân Hương thôn
 03,03201,032018,,city,盛岡市,もりおかし,Morioka-shi,盛冈市,盛岡市,모리오카시,Morioka-shi,Thịnh Cương thị
 03,03202,032026,,city,宮古市,みやこし,Miyako-shi,宫古市,宮古市,미야코시,Miyako-shi,Cung Cổ thị
-03,03203,032034,,city,大船渡市,おおふなとし,Ofunato-shi,大船渡市,大船渡市,오후나토시,Ofunato-shi,Đại Thuyền Độ thị
+03,03203,032034,,city,大船渡市,おおふなとし,Ofunato-shi,大船渡市,大船渡市,오후나토시,Ōfunato-shi,Đại Thuyền Độ thị
 03,03205,032050,,city,花巻市,はなまきし,Hanamaki-shi,花卷市,花卷市,하나마키시,Hanamaki-shi,Bắc Thượng thị
 03,03206,032069,,city,北上市,きたかみし,Kitakami-shi,北上市,北上市,기타카미시,Kitakami-shi,Cửu Từ thị
 03,03207,032077,,city,久慈市,くじし,Kuji-shi,久慈市,久慈市,구지시,Kuji-shi,Viễn Dã thị
-03,03208,032085,,city,遠野市,とおのし,Tono-shi,远野市,遠野市,도노시,Tono-shi,Nhất Quan thị
+03,03208,032085,,city,遠野市,とおのし,Tono-shi,远野市,遠野市,도노시,Tōno-shi,Nhất Quan thị
 03,03209,032093,,city,一関市,いちのせきし,Ichinoseki-shi,一关市,一關市,이치노세키시,Ichinoseki-shi,Lục Tiền Cao Điền thị
 03,03210,032107,,city,陸前高田市,りくぜんたかたし,Rikuzentakata-shi,陆前高田市,陸前高田市,리쿠젠타카타시,Rikuzentakata-shi,Lô Thạch thị
 03,03211,032115,,city,釜石市,かまいしし,Kamaishi-shi,釜石市,釜石市,가마이시시,Kamaishi-shi,Nhị Hộ thị
 03,03213,032131,,city,二戸市,にのへし,Ninohe-shi,二户市,二戸市,니노헤시,Ninohe-shi,Áo Châu thị
 03,03214,032140,,city,八幡平市,はちまんたいし,Hachimantai-shi,八幡平市,八幡平市,하치만타이시,Hachimantai-shi,Lũng Trạch thị
-03,03215,032158,,city,奥州市,おうしゅうし,Oshu-shi,奥州市,奧州市,오슈시,Oshu-shi,Áo Châu thị
+03,03215,032158,,city,奥州市,おうしゅうし,Oshu-shi,奥州市,奧州市,오슈시,Ōshū-shi,Áo Châu thị
 03,03216,032166,,city,滝沢市,たきざわし,Takizawa-shi,泷泽市,瀧澤市,다키자와시,Takizawa-shi,Lũng Trạch thị
 03,03301,033014,,town,雫石町,しずくいしちょう,Shizukuishi-cho,雫石町,雫石町,시즈쿠이시정,Shizukuishi-cho,Giọt Thạch đinh
 03,03302,033022,,town,葛巻町,くずまきまち,Kuzumaki-machi,葛卷町,葛卷町,구즈마키정,Kuzumaki-machi,Cát Quyển đinh
@@ -257,7 +257,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 03,03381,033812,,town,金ケ崎町,かねがさきちょう,Kanegasaki-cho,金崎町,金崎町,가네가사키정,Kanegasaki-cho,Kim Cương Kỳ đinh
 03,03402,034029,,town,平泉町,ひらいずみちょう,Hiraizumi-cho,平泉町,平泉町,히라이즈미정,Hiraizumi-cho,Đại Chùy đinh
 03,03441,034410,,town,住田町,すみたちょう,Sumita-cho,住田町,住田町,스미타정,Sumita-cho,Sơn Điền đinh
-03,03461,034614,,town,大槌町,おおつちちょう,Otsuchi-cho,大槌町,大槌町,오쓰치정,Otsuchi-cho,Đại Chùy đinh
+03,03461,034614,,town,大槌町,おおつちちょう,Otsuchi-cho,大槌町,大槌町,오쓰치정,Ōtsuchi-cho,Đại Chùy đinh
 03,03482,034827,,town,山田町,やまだまち,Yamada-machi,山田町,山田町,야마다정,Yamada-machi,Dã Điền thôn
 03,03483,034835,,town,岩泉町,いわいずみちょう,Iwaizumi-cho,岩泉町,岩泉町,이와이즈미정,Iwaizumi-cho,Cửu Hộ thôn
 03,03484,034843,,village,田野畑村,たのはたむら,Tanohata-mura,田野畑村,田野畑村,다노하타촌,Tanohata-mura,Dương Dã đinh
@@ -279,16 +279,16 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 04,04206,042064,,city,白石市,しろいしし,Shiroishi-shi,白石市,白石市,시로이시시,Shiroishi-shi,Bạch Thạch thị
 04,04207,042072,,city,名取市,なとりし,Natori-shi,名取市,名取市,나토리시,Natori-shi,Danh Thủ thị
 04,04208,042080,,city,角田市,かくだし,Kakuda-shi,角田市,角田市,가쿠다시,Kakuda-shi,Giác Điền thị
-04,04209,042099,,city,多賀城市,たがじょうし,Tagajo-shi,多贺城市,多賀城市,다가조시,Tagajo-shi,Đa Hạ Thành thị
+04,04209,042099,,city,多賀城市,たがじょうし,Tagajo-shi,多贺城市,多賀城市,다가조시,Tagajō-shi,Đa Hạ Thành thị
 04,04211,042110,,city,岩沼市,いわぬまし,Iwanuma-shi,岩沼市,岩沼市,이와누마시,Iwanuma-shi,Đăng Mễ thị
 04,04212,042129,,city,登米市,とめし,Tome-shi,登米市,登米市,도메시,Tome-shi,Lật Nguyên thị
 04,04213,042137,,city,栗原市,くりはらし,Kurihara-shi,栗原市,栗原市,구리하라시,Kurihara-shi,Đông Tùng Đảo thị
 04,04214,042145,,city,東松島市,ひがしまつしまし,Higashimatsushima-shi,东松岛市,東松島市,히가시마쓰시마시,Higashimatsushima-shi,Đại Kỳ thị
-04,04215,042153,,city,大崎市,おおさきし,Osaki-shi,大崎市,大崎市,오사키시,Osaki-shi,Phú Cốc thị
+04,04215,042153,,city,大崎市,おおさきし,Osaki-shi,大崎市,大崎市,오사키시,Ōsaki-shi,Phú Cốc thị
 04,04216,042161,,city,富谷市,とみやし,Tomiya-shi,富谷市,富谷市,도미야시,Tomiya-shi,Phú Cốc thị
-04,04301,043010,,town,蔵王町,ざおうまち,Zao-machi,藏王町,藏王町,자오정,Zao-machi,Tàng Vương đinh
+04,04301,043010,,town,蔵王町,ざおうまち,Zao-machi,藏王町,藏王町,자오정,Zaō-machi,Tàng Vương đinh
 04,04302,043028,,town,七ヶ宿町,しちかしゅくまち,Shichikashuku-machi,七宿町,七宿町,시치카슈쿠정,Shichikashuku-machi,Thất Cá Túc đinh
-04,04321,043214,,town,大河原町,おおがわらまち,Ogawara-machi,大河原町,大河原町,오가와라정,Ogawara-machi,Hoàn Sâm đinh
+04,04321,043214,,town,大河原町,おおがわらまち,Ogawara-machi,大河原町,大河原町,오가와라정,Ōgawara-machi,Hoàn Sâm đinh
 04,04322,043222,,town,村田町,むらたまち,Murata-machi,村田町,村田町,무라타정,Murata-machi,Thôn Điền đinh
 04,04323,043230,,town,柴田町,しばたまち,Shibata-machi,柴田町,柴田町,시바타정,Shibata-machi,Sài Điền đinh
 04,04324,043249,,town,川崎町,かわさきまち,Kawasaki-machi,川崎町,川崎町,가와사키정,Kawasaki-machi,Xuyên Kỳ đinh
@@ -299,8 +299,8 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 04,04404,044040,,town,七ヶ浜町,しちがはままち,Shichigahama-machi,七滨町,七濱町,시치가하마정,Shichigahama-machi,Thất Cá Tân đinh
 04,04406,044067,,town,利府町,りふちょう,Rifu-cho,利府町,利府町,리후정,Rifu-cho,Lợi Phủ đinh
 04,04421,044210,,town,大和町,たいわちょう,Taiwa-cho,大和町,大和町,다이와정,Taiwa-cho,Đại Hòa đinh
-04,04422,044229,,town,大郷町,おおさとちょう,Osato-cho,大乡町,大鄉町,오사토정,Osato-cho,Đại Hương đinh
-04,04424,044245,,village,大衡村,おおひらむら,Ohira-mura,大衡村,大衡村,오히라촌,Ohira-mura,Đại Hành thôn
+04,04422,044229,,town,大郷町,おおさとちょう,Osato-cho,大乡町,大鄉町,오사토정,Ōsato-cho,Đại Hương đinh
+04,04424,044245,,village,大衡村,おおひらむら,Ohira-mura,大衡村,大衡村,오히라촌,Ōhira-mura,Đại Hành thôn
 04,04444,044440,,town,色麻町,しかまちょう,Shikama-cho,色麻町,色麻町,시카마정,Shikama-cho,Sắc Ma đinh
 04,04445,044458,,town,加美町,かみまち,Kami-machi,加美町,加美町,가미정,Kami-machi,Gia Mỹ đinh
 04,04501,045012,,town,涌谷町,わくやちょう,Wakuya-cho,涌谷町,涌谷町,와쿠야정,Wakuya-cho,Dũng Cốc đinh
@@ -310,11 +310,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 05,05201,052019,,city,秋田市,あきたし,Akita-shi,秋田市,秋田市,아키타시,Akita-shi,Thu Điền thị
 05,05202,052027,,city,能代市,のしろし,Noshiro-shi,能代市,能代市,노시로시,Noshiro-shi,Năng Đại thị
 05,05203,052035,,city,横手市,よこてし,Yokote-shi,横手市,橫手市,요코테시,Yokote-shi,Hoành Thủ thị
-05,05204,052043,,city,大館市,おおだてし,Odate-shi,大馆市,大館市,오다테시,Odate-shi,Đại Quán thị
+05,05204,052043,,city,大館市,おおだてし,Odate-shi,大馆市,大館市,오다테시,Ōdate-shi,Đại Quán thị
 05,05206,052060,,city,男鹿市,おがし,Oga-shi,男鹿市,男鹿市,오가시,Oga-shi,Thang Trạch thị
 05,05207,052078,,city,湯沢市,ゆざわし,Yuzawa-shi,汤泽市,湯澤市,유자와시,Yuzawa-shi,Lộc Giác thị
 05,05209,052094,,city,鹿角市,かづのし,Kazuno-shi,鹿角市,鹿角市,가즈노시,Kazuno-shi,Khoái Thượng thị
-05,05210,052108,,city,由利本荘市,ゆりほんじょうし,Yurihonjo-shi,由利本庄市,由利本庄市,유리혼조시,Yurihonjo-shi,Đại Tiên thị
+05,05210,052108,,city,由利本荘市,ゆりほんじょうし,Yurihonjo-shi,由利本庄市,由利本庄市,유리혼조시,Yurihonjō-shi,Đại Tiên thị
 05,05211,052116,,city,潟上市,かたがみし,Katagami-shi,潟上市,潟上市,가타가미시,Katagami-shi,Bắc Thu Điền thị
 05,05212,052124,,city,大仙市,だいせんし,Daisen-shi,大仙市,大仙市,다이센시,Daisen-shi,Ni Ka Hô thị
 05,05213,052132,,city,北秋田市,きたあきたし,Kitaakita-shi,北秋田市,北秋田市,기타아키타시,Kitaakita-shi,Tiên Bắc thị
@@ -324,11 +324,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 05,05327,053279,,village,上小阿仁村,かみこあにむら,Kamikoani-mura,上小阿仁村,上小阿仁村,가미코아니촌,Kamikoani-mura,Thượng Tiểu A Nhân thôn
 05,05346,053465,,town,藤里町,ふじさとまち,Fujisato-machi,藤里町,藤里町,후지사토정,Fujisato-machi,Đằng Lý đinh
 05,05348,053481,,town,三種町,みたねちょう,Mitane-cho,三种町,三種町,미타네정,Mitane-cho,Bát Phong đinh
-05,05349,053490,,town,八峰町,はっぽうちょう,Happo-cho,八峰町,八峰町,핫포정,Happo-cho,Bát Phong đinh
-05,05361,053619,,town,五城目町,ごじょうめまち,Gojome-machi,五城目町,五城目町,고조메정,Gojome-machi,Ngũ Thành Mục đinh
-05,05363,053635,,town,八郎潟町,はちろうがたまち,Hachirogata-machi,八郎潟町,八郎潟町,하치로가타정,Hachirogata-machi,Tỉnh Xuyên đinh
+05,05349,053490,,town,八峰町,はっぽうちょう,Happo-cho,八峰町,八峰町,핫포정,Happō-cho,Bát Phong đinh
+05,05361,053619,,town,五城目町,ごじょうめまち,Gojome-machi,五城目町,五城目町,고조메정,Gojōme-machi,Ngũ Thành Mục đinh
+05,05363,053635,,town,八郎潟町,はちろうがたまち,Hachirogata-machi,八郎潟町,八郎潟町,하치로가타정,Hachirōgata-machi,Tỉnh Xuyên đinh
 05,05366,053660,,town,井川町,いかわまち,Ikawa-machi,井川町,井川町,이카와정,Ikawa-machi,Tỉnh Xuyên đinh
-05,05368,053686,,village,大潟村,おおがたむら,Ogata-mura,大潟村,大潟村,오가타촌,Ogata-mura,Đại Hình thôn
+05,05368,053686,,village,大潟村,おおがたむら,Ogata-mura,大潟村,大潟村,오가타촌,Ōgata-mura,Đại Hình thôn
 05,05434,054348,,town,美郷町,みさとちょう,Misato-cho,美乡町,美鄉町,미사토정,Misato-cho,Mỹ Hương đinh
 05,05463,054631,,town,羽後町,うごまち,Ugo-machi,羽后町,羽後町,우고정,Ugo-machi,Vũ Hậu đinh
 05,05464,054640,,village,東成瀬村,ひがしなるせむら,Higashinaruse-mura,东成濑村,東成瀨村,히가시나루세촌,Higashinaruse-mura,Đông Thành Oanh thôn
@@ -336,27 +336,27 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 06,06202,062022,,city,米沢市,よねざわし,Yonezawa-shi,米泽市,米澤市,요네자와시,Yonezawa-shi,Mễ Trạch thị
 06,06203,062030,,city,鶴岡市,つるおかし,Tsuruoka-shi,鹤冈市,鶴岡市,쓰루오카시,Tsuruoka-shi,Hạc Cương thị
 06,06204,062049,,city,酒田市,さかたし,Sakata-shi,酒田市,酒田市,사카타시,Sakata-shi,Tửu Điền thị
-06,06205,062057,,city,新庄市,しんじょうし,Shinjo-shi,新庄市,新庄市,신조시,Shinjo-shi,Tân Trang thị
+06,06205,062057,,city,新庄市,しんじょうし,Shinjo-shi,新庄市,新庄市,신조시,Shinjō-shi,Tân Trang thị
 06,06206,062065,,city,寒河江市,さがえし,Sagae-shi,寒河江市,寒河江市,사가에시,Sagae-shi,Hàn Hà Giang thị
 06,06207,062073,,city,上山市,かみのやまし,Kaminoyama-shi,上山市,上山市,가미노야마시,Kaminoyama-shi,Thượng Sơn thị
 06,06208,062081,,city,村山市,むらやまし,Murayama-shi,村山市,村山市,무라야마시,Murayama-shi,Thôn Sơn thị
 06,06209,062090,,city,長井市,ながいし,Nagai-shi,长井市,長井市,나가이시,Nagai-shi,Trường Tỉnh thị
-06,06210,062103,,city,天童市,てんどうし,Tendo-shi,天童市,天童市,덴도시,Tendo-shi,Thiên Đồng thị
+06,06210,062103,,city,天童市,てんどうし,Tendo-shi,天童市,天童市,덴도시,Tendō-shi,Thiên Đồng thị
 06,06211,062111,,city,東根市,ひがしねし,Higashine-shi,东根市,東根市,히가시네시,Higashine-shi,Đông Căn thị
 06,06212,062120,,city,尾花沢市,おばなざわし,Obanazawa-shi,尾花泽市,尾花澤市,오바나자와시,Obanazawa-shi,Vĩ Hoa Trạch thị
-06,06213,062138,,city,南陽市,なんようし,Nan'yo-shi,南阳市,南陽市,난요시,Nan'yo-shi,Nam Dương thị
+06,06213,062138,,city,南陽市,なんようし,Nan'yo-shi,南阳市,南陽市,난요시,Nanyō-shi,Nam Dương thị
 06,06301,063010,,town,山辺町,やまのべまち,Yamanobe-machi,山边町,山邊町,야마노베정,Yamanobe-machi,Sơn Biên đinh
 06,06302,063029,,town,中山町,なかやままち,Nakayama-machi,中山町,中山町,나카야마정,Nakayama-machi,Trung Sơn đinh
 06,06321,063215,,town,河北町,かほくちょう,Kahoku-cho,河北町,河北町,가호쿠정,Kahoku-cho,Đại Thạch Điền đinh
 06,06322,063223,,town,西川町,にしかわまち,Nishikawa-machi,西川町,西川町,니시카와정,Nishikawa-machi,Tây Xuyên đinh
 06,06323,063231,,town,朝日町,あさひまち,Asahi-machi,朝日町,朝日町,아사히정,Asahi-machi,Triêu Nhật đinh
-06,06324,063240,,town,大江町,おおえまち,Oe-machi,大江町,大江町,오에정,Oe-machi,Đại Giang đinh
-06,06341,063410,,town,大石田町,おおいしだまち,Oishida-machi,大石田町,大石田町,오이시다정,Oishida-machi,Kim Sơn đinh
+06,06324,063240,,town,大江町,おおえまち,Oe-machi,大江町,大江町,오에정,Ōe-machi,Đại Giang đinh
+06,06341,063410,,town,大石田町,おおいしだまち,Oishida-machi,大石田町,大石田町,오이시다정,Ōishida-machi,Kim Sơn đinh
 06,06361,063614,,town,金山町,かねやままち,Kaneyama-machi,金山町,金山町,가네야마정,Kaneyama-machi,Cao Hoa đinh
 06,06362,063622,,town,最上町,もがみまち,Mogami-machi,最上町,最上町,모가미정,Mogami-machi,Xuyên Tây đinh
 06,06363,063630,,town,舟形町,ふながたまち,Funagata-machi,舟形町,舟形町,후나가타정,Funagata-machi,Tiểu Quốc đinh
 06,06364,063649,,town,真室川町,まむろがわまち,Mamurogawa-machi,真室川町,真室川町,마무로가와정,Mamurogawa-machi,Bạch Ưng đinh
-06,06365,063657,,village,大蔵村,おおくらむら,Okura-mura,大藏村,大藏村,오쿠라촌,Okura-mura,Phạn Phong đinh
+06,06365,063657,,village,大蔵村,おおくらむら,Okura-mura,大藏村,大藏村,오쿠라촌,Ōkura-mura,Phạn Phong đinh
 06,06366,063665,,village,鮭川村,さけがわむら,Sakegawa-mura,鲑川村,鮭川村,사케가와촌,Sakegawa-mura,Lý Xuyên thôn
 06,06367,063673,,village,戸沢村,とざわむら,Tozawa-mura,户泽村,戶澤村,도자와촌,Tozawa-mura,Hộ Trạch thôn
 06,06381,063819,,town,高畠町,たかはたまち,Takahata-machi,高畠町,高畠町,다카하타정,Takahata-machi,Tam Xuyên đinh
@@ -365,28 +365,28 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 06,06402,064025,,town,白鷹町,しらたかまち,Shirataka-cho,白鹰町,白鷹町,시라타카정,Shirataka-cho,Bạch Ưng đinh
 06,06403,064033,,town,飯豊町,いいでまち,Iide-machi,饭丰町,飯豐町,이데정,Iide-machi,Phạn Phong đinh
 06,06426,064262,,town,三川町,みかわまち,Mikawa-machi,三川町,三川町,미카와정,Mikawa-machi,Tam Xuyên đinh
-06,06428,064289,,town,庄内町,しようないまち,Shonai-machi,庄内町,庄內町,쇼나이정,Shonai-machi,Trang Nội đinh
+06,06428,064289,,town,庄内町,しようないまち,Shonai-machi,庄内町,庄內町,쇼나이정,Shiyōnai-machi,Trang Nội đinh
 06,06461,064610,,town,遊佐町,ゆざまち,Yuza-machi,游佐町,遊佐町,유자정,Yuza-machi,Du Tá đinh
 07,07201,072010,,city,福島市,ふくしまし,Fukushima-shi,福岛市,福島市,후쿠시마시,Fukushima-shi,Phúc Đảo thị
 07,07202,072028,,city,会津若松市,あいづわかまつし,Aizuwakamatsu-shi,会津若松市,會津若松市,아이즈와카마쓰시,Aizuwakamatsu-shi,Hội Tân Nhược Tùng thị
-07,07203,072036,,city,郡山市,こおりやまし,Koriyama-shi,郡山市,郡山市,고리야마시,Koriyama-shi,Quận Sơn thị
+07,07203,072036,,city,郡山市,こおりやまし,Koriyama-shi,郡山市,郡山市,고리야마시,Kōriyama-shi,Quận Sơn thị
 07,07204,072044,,city,いわき市,いわきし,Iwaki-shi,磐城市,磐城市,이와키시,Iwaki-shi,Y Ngoa Kỳ thị
 07,07205,072052,,city,白河市,しらかわし,Shirakawa-shi,白河市,白河市,시라카와시,Shirakawa-shi,Bạch Hà thị
 07,07207,072079,,city,須賀川市,すかがわし,Sukagawa-shi,须贺川市,須賀川市,스카가와시,Sukagawa-shi,Hỷ Đa Phương thị
 07,07208,072087,,city,喜多方市,きたかたし,Kitakata-shi,喜多方市,喜多方市,기타카타시,Kitakata-shi,Tương Mã thị
-07,07209,072095,,city,相馬市,そうまし,Soma-shi,相马市,相馬市,소마시,Soma-shi,Nhị Bản Tùng thị
+07,07209,072095,,city,相馬市,そうまし,Soma-shi,相马市,相馬市,소마시,Sōma-shi,Nhị Bản Tùng thị
 07,07210,072109,,city,二本松市,にほんまつし,Nihonmatsu-shi,二本松市,二本松市,니혼마쓰시,Nihonmatsu-shi,Điền Thôn thị
 07,07211,072117,,city,田村市,たむらし,Tamura-shi,田村市,田村市,다무라시,Tamura-shi,Nam Tương Mã thị
-07,07212,072125,,city,南相馬市,みなみそうまし,Minamisoma-shi,南相马市,南相馬市,미나미소마시,Minamisoma-shi,Y Đạt thị
+07,07212,072125,,city,南相馬市,みなみそうまし,Minamisoma-shi,南相马市,南相馬市,미나미소마시,Minamisōma-shi,Y Đạt thị
 07,07213,072133,,city,伊達市,だてし,Date-shi,伊达市,伊達市,다테시,Date-shi,Bản Cung thị
 07,07214,072141,,city,本宮市,もとみやし,Motomiya-shi,本宫市,本宮市,모토미야시,Motomiya-shi,Bản Cung thị
-07,07301,073016,,town,桑折町,こおりまち,Koori-machi,桑折町,桑折町,고오리정,Koori-machi,Tang Chiết đinh
+07,07301,073016,,town,桑折町,こおりまち,Koori-machi,桑折町,桑折町,고오리정,Kōri-machi,Tang Chiết đinh
 07,07303,073032,,town,国見町,くにみまち,Kunimi-machi,国见町,國見町,구니미정,Kunimi-machi,Quốc Kiến đinh
 07,07308,073083,,town,川俣町,かわまたまち,Kawamata-machi,川俣町,川俁町,가와마타정,Kawamata-machi,Xuyên Tục đinh
-07,07322,073229,,village,大玉村,おおたまむら,Otama-mura,大玉村,大玉村,오타마촌,Otama-mura,Đại Ngọc thôn
+07,07322,073229,,village,大玉村,おおたまむら,Otama-mura,大玉村,大玉村,오타마촌,Ōtama-mura,Đại Ngọc thôn
 07,07342,073423,,town,鏡石町,かがみいしまち,Kagamiishi-machi,镜石町,鏡石町,가가미이시정,Kagamiishi-machi,Thiên Anh thôn
-07,07344,073440,,village,天栄村,てんえいむら,Ten'ei-mura,天荣村,天榮村,덴에이촌,Ten'ei-mura,Thiên Anh thôn
-07,07362,073628,,town,下郷町,しもごうまち,Shimogo-machi,下乡町,下鄉町,시모고정,Shimogo-machi,Hạ Hương đinh
+07,07344,073440,,village,天栄村,てんえいむら,Ten'ei-mura,天荣村,天榮村,덴에이촌,Tenei-mura,Thiên Anh thôn
+07,07362,073628,,town,下郷町,しもごうまち,Shimogo-machi,下乡町,下鄉町,시모고정,Shimogō-machi,Hạ Hương đinh
 07,07364,073644,,village,檜枝岐村,ひのえまたむら,Hinoemata-mura,桧枝岐村,檜枝岐村,히노에마타촌,Hinoemata-mura,Chỉ Kiến đinh
 07,07367,073679,,town,只見町,ただみまち,Tadami-machi,只见町,只見町,다다미정,Tadami-machi,Chỉ Kiến đinh
 07,07368,073687,,town,南会津町,みなみあいづまち,Minamiaizu-machi,南会津町,南會津町,미나미아이즈정,Minamiaizu-machi,Nam Hội Tân đinh
@@ -399,9 +399,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 07,07423,074233,,town,柳津町,やないづまち,Yanaizu-machi,柳津町,柳津町,야나이즈정,Yanaizu-machi,Hoa Luân đinh
 07,07444,074446,,town,三島町,みしままち,Mishima-machi,三岛町,三島町,미시마정,Mishima-machi,Thiển Xuyên đinh
 07,07445,074454,,town,金山町,かねやままち,Kaneyama-machi,金山町,金山町,가네야마정,Kaneyama-machi,Cổ Điện đinh
-07,07446,074462,,village,昭和村,しょうわむら,Showa-mura,昭和村,昭和村,쇼와촌,Showa-mura,Chiêu Hòa thôn
+07,07446,074462,,village,昭和村,しょうわむら,Showa-mura,昭和村,昭和村,쇼와촌,Shōwa-mura,Chiêu Hòa thôn
 07,07447,074470,,town,会津美里町,あいづみさとまち,Aizumisato-machi,会津美里町,會津美里町,아이즈미사토정,Aizumisato-machi,Hội Tân Mỹ Lý đinh
-07,07461,074616,,village,西郷村,にしごうむら,Nishigo-mura,西乡村,西鄉村,니시고촌,Nishigo-mura,Tam Xuân đinh
+07,07461,074616,,village,西郷村,にしごうむら,Nishigo-mura,西乡村,西鄉村,니시고촌,Nishigō-mura,Tam Xuân đinh
 07,07464,074640,,village,泉崎村,いずみざきむら,Izumizaki-mura,泉崎村,泉崎村,이즈미자키촌,Izumizaki-mura,Tuyền Kỳ thôn
 07,07465,074659,,village,中島村,なかじまむら,Nakajima-mura,中岛村,中島村,나카지마촌,Nakajima-mura,Trung Đảo thôn
 07,07466,074667,,town,矢吹町,やぶきまち,Yabuki-machi,矢吹町,矢吹町,야부키정,Yabuki-machi,Thỉ Cát đinh
@@ -419,8 +419,8 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 07,07541,075418,,town,広野町,ひろのまち,Hirono-machi,广野町,廣野町,히로노정,Hirono-machi,Tân Địa đinh
 07,07542,075426,,town,楢葉町,ならはまち,Naraha-machi,楢叶町,楢葉町,나라하정,Naraha-machi,Phạn Quán thôn
 07,07543,075434,,town,富岡町,とみおかまち,Tomioka-machi,富冈町,富岡町,도미오카정,Tomioka-machi,Phú Cương đinh
-07,07544,075442,,village,川内村,かわうちむら,Kawauchi-mura,川内村,川內村,가와우치촌,Kawauchi-mura,Xuyên Nội thôn
-07,07545,075450,,town,大熊町,おおくままち,Okuma-machi,大熊町,大熊町,오쿠마정,Okuma-machi,Đại Hùng đinh
+07,07544,075442,,village,川内村,かわうちむら,Kawauchi-mura,川内村,川內村,가와우치촌,Kawōchi-mura,Xuyên Nội thôn
+07,07545,075450,,town,大熊町,おおくままち,Okuma-machi,大熊町,大熊町,오쿠마정,Ōkuma-machi,Đại Hùng đinh
 07,07546,075469,,town,双葉町,ふたばまち,Futaba-machi,双叶町,雙葉町,후타바정,Futaba-machi,Song Diệp đinh
 07,07547,075477,,town,浪江町,なみえまち,Namie-machi,浪江町,浪江町,나미에정,Namie-machi,Lãng Giang đinh
 07,07548,075485,,village,葛尾村,かつらおむら,Katsurao-mura,葛尾村,葛尾村,가쓰라오촌,Katsurao-mura,Cát Vĩ thôn
@@ -431,11 +431,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 08,08203,082031,,city,土浦市,つちうらし,Tsuchiura-shi,土浦市,土浦市,쓰치우라시,Tsuchiura-shi,Thổ Phổ thị
 08,08204,082040,,city,古河市,こがし,Koga-shi,古河市,古河市,고가시,Koga-shi,Cổ Hà thị
 08,08205,082058,,city,石岡市,いしおかし,Ishioka-shi,石冈市,石岡市,이시오카시,Ishioka-shi,Thạch Cương thị
-08,08207,082074,,city,結城市,ゆうきし,Yuki-shi,结城市,結城市,유키시,Yuki-shi,Long Cá Kì thị
-08,08208,082082,,city,龍ケ崎市,りゅうがさきし,Ryugasaki-shi,龙崎市,龍崎市,류가사키시,Ryugasaki-shi,Hạ Thê thị
+08,08207,082074,,city,結城市,ゆうきし,Yuki-shi,结城市,結城市,유키시,Yūki-shi,Long Cá Kì thị
+08,08208,082082,,city,龍ケ崎市,りゅうがさきし,Ryugasaki-shi,龙崎市,龍崎市,류가사키시,Ryūgasaki-shi,Hạ Thê thị
 08,08210,082104,,city,下妻市,しもつまし,Shimotsuma-shi,下妻市,下妻市,시모쓰마시,Shimotsuma-shi,Thường Lục Thái Điền thị
-08,08211,082112,,city,常総市,じょうそうし,Joso-shi,常总市,常總市,조소시,Joso-shi,Cao Thoái thị
-08,08212,082120,,city,常陸太田市,ひたちおおたし,Hitachiota-shi,常陆太田市,常陸太田市,히타치오타시,Hitachiota-shi,Bắc Tỳ Thành thị
+08,08211,082112,,city,常総市,じょうそうし,Joso-shi,常总市,常總市,조소시,Jōsō-shi,Cao Thoái thị
+08,08212,082120,,city,常陸太田市,ひたちおおたし,Hitachiota-shi,常陆太田市,常陸太田市,히타치오타시,Hitachiōta-shi,Bắc Tỳ Thành thị
 08,08214,082147,,city,高萩市,たかはぎし,Takahagi-shi,高萩市,高萩市,다카하기시,Takahagi-shi,Thủ thị
 08,08215,082155,,city,北茨城市,きたいばらきし,Kitaibaraki-shi,北茨城市,北茨城市,기타이바라키시,Kitaibaraki-shi,Ngưu Cửu thị
 08,08216,082163,,city,笠間市,かさまし,Kasama-shi,笠间市,笠間市,가사마시,Kasama-shi,Trúc Ba thị
@@ -449,7 +449,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 08,08225,082252,,city,常陸大宮市,ひたちおおみやし,Hitachiomiya-shi,常陆大宫市,常陸大宮市,히타치오미야시,Hitachi-Omiya-shi,Đạo Ngôn thị
 08,08226,082260,,city,那珂市,なかし,Naka-shi,那珂市,那珂市,나카시,Naka-shi,Hà Vụ Nguyên thị
 08,08227,082279,,city,筑西市,ちくせいし,Chikusei-shi,筑西市,筑西市,지쿠세이시,Chikusei-shi,Anh Mộc Xuyên thị
-08,08228,082287,,city,坂東市,ばんどうし,Bando-shi,坂东市,坂東市,반도시,Bando-shi,Thần Thê thị
+08,08228,082287,,city,坂東市,ばんどうし,Bando-shi,坂东市,坂東市,반도시,Bandō-shi,Thần Thê thị
 08,08229,082295,,city,稲敷市,いなしきし,Inashiki-shi,稻敷市,稻敷市,이나시키시,Inashiki-shi,Hành Phương thị
 08,08230,082309,,city,かすみがうら市,かすみがうらし,Kasumigaura-shi,霞浦市,霞浦市,가스미가우라시,Kasumigaura-shi,Mâu Điền thị
 08,08231,082317,,city,桜川市,さくらがわし,Sakuragawa-shi,樱川市,櫻川市,사쿠라가와시,Sakuragawa-shi,Trúc Ba Vị Lai thị
@@ -459,9 +459,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 08,08235,082350,,city,つくばみらい市,つくばみらいし,Tsukubamirai-shi,筑波未来市,筑波未來市,쓰쿠바미라이시,Tsukubamirai-shi,Trúc Ba Vị Lai thị
 08,08236,082368,,city,小美玉市,おみたまし,Omitama-shi,小美玉市,小美玉市,오미타마시,Omitama-shi,Tiểu Mỹ Ngọc thị
 08,08302,083020,,town,茨城町,いばらきまち,Ibaraki-machi,茨城町,茨城町,이바라키정,Ibaraki-machi,Tỳ Thành đinh
-08,08309,083097,,town,大洗町,おおあらいまち,Oarai-machi,大洗町,大洗町,오아라이정,Oarai-machi,Đại Tẩy đinh
+08,08309,083097,,town,大洗町,おおあらいまち,Oarai-machi,大洗町,大洗町,오아라이정,Ōarai-machi,Đại Tẩy đinh
 08,08310,083100,,town,城里町,しろさとまち,Shirosato-machi,城里町,城里町,시로사토정,Shirosato-machi,Thành Lý đinh
-08,08341,083410,,village,東海村,とうかいむら,Tokai-mura,东海村,東海村,도카이촌,Tokai-mura,Đông Hải thôn
+08,08341,083410,,village,東海村,とうかいむら,Tokai-mura,东海村,東海村,도카이촌,Tōkai-mura,Đông Hải thôn
 08,08364,083640,,town,大子町,だいごまち,Daigo-machi,大子町,大子町,다이고정,Daigo-machi,Đại Tử đinh
 08,08442,084425,,village,美浦村,みほむら,Miho-mura,美浦村,美浦村,미호촌,Miho-mura,Mỹ Phổ thôn
 08,08443,084433,,town,阿見町,あみまち,Ami-machi,阿见町,阿見町,아미정,Ami-machi,A Kiến đinh
@@ -475,10 +475,10 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 09,09203,092037,,city,栃木市,とちぎし,Tochigi-shi,栃木市,栃木市,도치기시,Tochigi-shi,Lê Mộc thị
 09,09204,092045,,city,佐野市,さのし,Sano-shi,佐野市,佐野市,사노시,Sano-shi,Tá Dã thị
 09,09205,092053,,city,鹿沼市,かぬまし,Kanuma-shi,鹿沼市,鹿沼市,가누마시,Kanuma-shi,Lộc Chiểu thị
-09,09206,092061,,city,日光市,にっこうし,Nikko-shi,日光市,日光市,닛코시,Nikko-shi,Nhật Quang thị
+09,09206,092061,,city,日光市,にっこうし,Nikko-shi,日光市,日光市,닛코시,Nikkō-shi,Nhật Quang thị
 09,09208,092088,,city,小山市,おやまし,Oyama-shi,小山市,小山市,오야마시,Oyama-shi,Chân Cương thị
-09,09209,092096,,city,真岡市,もおかし,Mooka-shi,真冈市,真岡市,모카시,Mooka-shi,Đại Điền Nguyên thị
-09,09210,092100,,city,大田原市,おおたわらし,Otawara-shi,大田原市,大田原市,오타와라시,Otawara-shi,Thỉ Bản thị
+09,09209,092096,,city,真岡市,もおかし,Mooka-shi,真冈市,真岡市,모카시,Mōka-shi,Đại Điền Nguyên thị
+09,09210,092100,,city,大田原市,おおたわらし,Otawara-shi,大田原市,大田原市,오타와라시,Ōtawara-shi,Thỉ Bản thị
 09,09211,092118,,city,矢板市,やいたし,Yaita-shi,矢板市,矢板市,야이타시,Yaita-shi,Na Tu Diêm Nguyên thị
 09,09213,092134,,city,那須塩原市,なすしおばらし,Nasushiobara-shi,那须盐原市,那須鹽原市,나스시오바라시,Nasushiobara-shi,Na Tu Ô Sơn thị
 09,09214,092142,,city,さくら市,さくらし,Sakura-shi,樱市,櫻市,사쿠라시,Sakura-shi,Hạ Dã thị
@@ -497,9 +497,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 09,09411,094110,,town,那珂川町,なかがわまち,Nakagawa-machi,那珂川町,那珂川町,나카가와정,Nakagawa-machi,Na Kha Xuyên đinh
 10,10201,102016,,city,前橋市,まえばしし,Maebashi-shi,前桥市,前橋市,마에바시시,Maebashi-shi,Tiền Kiều thị
 10,10202,102024,,city,高崎市,たかさきし,Takasaki-shi,高崎市,高崎市,다카사키시,Takasaki-shi,Cao Kỳ thị
-10,10203,102032,,city,桐生市,きりゅうし,Kiryu-shi,桐生市,桐生市,기류시,Kiryu-shi,Đồng Sinh thị
+10,10203,102032,,city,桐生市,きりゅうし,Kiryu-shi,桐生市,桐生市,기류시,Kiryū-shi,Đồng Sinh thị
 10,10204,102040,,city,伊勢崎市,いせさきし,Isesaki-shi,伊势崎市,伊勢崎市,이세사키시,Isesaki-shi,Y Thế Kỳ thị
-10,10205,102059,,city,太田市,おおたし,Ota-shi,太田市,太田市,오타시,Ota-shi,Thái Điền thị
+10,10205,102059,,city,太田市,おおたし,Ota-shi,太田市,太田市,오타시,Ōta-shi,Thái Điền thị
 10,10206,102067,,city,沼田市,ぬまたし,Numata-shi,沼田市,沼田市,누마타시,Numata-shi,Chiểu Điền thị
 10,10207,102075,,city,館林市,たてばやしし,Tatebayashi-shi,馆林市,館林市,다테바야시시,Tatebayashi-shi,Quán Lâm thị
 10,10208,102083,,city,渋川市,しぶかわし,Shibukawa-shi,涩川市,澀川市,시부카와시,Shibukawa-shi,Sáp Xuyên thị
@@ -507,14 +507,14 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 10,10210,102105,,city,富岡市,とみおかし,Tomioka-shi,富冈市,富岡市,도미오카시,Tomioka-shi,Phú Cương thị
 10,10211,102113,,city,安中市,あんなかし,Annaka-shi,安中市,安中市,안나카시,Annaka-shi,An Trung thị
 10,10212,102121,,city,みどり市,みどりし,Midori-shi,绿市,綠市,미도리시,Midori-shi,Lục Thị
-10,10344,103446,,village,榛東村,しんとうむら,Shinto-mura,榛东村,榛東村,신토촌,Shinto-mura,Trăn Đông thôn
+10,10344,103446,,village,榛東村,しんとうむら,Shinto-mura,榛东村,榛東村,신토촌,Shintō-mura,Trăn Đông thôn
 10,10345,103454,,town,吉岡町,よしおかまち,Yoshioka-machi,吉冈町,吉岡町,요시오카정,Yoshioka-machi,Cát Cương đinh
 10,10366,103667,,village,上野村,うえのむら,Ueno-mura,上野村,上野村,우에노촌,Ueno-mura,Thượng Dã thôn
 10,10367,103675,,town,神流町,かんなまち,Kanna-machi,神流町,神流町,간나정,Kanna-machi,Thần Lưu đinh
 10,10382,103829,,town,下仁田町,しもにたまち,Shimonita-machi,下仁田町,下仁田町,시모니타정,Shimonita-machi,Hạ Nhân Điền đinh
 10,10383,103837,,village,南牧村,なんもくむら,Nanmoku-mura,南牧村,南牧村,난모쿠촌,Nanmoku-mura,Nam Mục thôn
 10,10384,103845,,town,甘楽町,かんらまち,Kanra-machi,甘乐町,甘樂町,간라정,Kanra-machi,Cam Lạp đinh
-10,10421,104213,,town,中之条町,なかのじようまち,Nakanojo-machi,中之条町,中之條町,나카노조정,Nakanojo-machi,Trung Chi Điều đinh
+10,10421,104213,,town,中之条町,なかのじようまち,Nakanojo-machi,中之条町,中之條町,나카노조정,Nakanojiyō-machi,Trung Chi Điều đinh
 10,10424,104248,,town,長野原町,ながのはらまち,Naganohara-machi,长野原町,長野原町,나가노하라정,Naganohara-machi,Thảo Tân đinh
 10,10425,104256,,village,嬬恋村,つまごいむら,Tsumagoi-mura,嬬恋村,嬬戀村,쓰마고이촌,Tsumagoi-mura,Cao Sơn thôn
 10,10426,104264,,town,草津町,くさつまち,Kusatsu-machi,草津町,草津町,구사쓰정,Kusatsu-machi,Đông Ngô Thê đinh
@@ -522,20 +522,20 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 10,10429,104299,,town,東吾妻町,ひがしあがつままち,Higashiagatsuma-machi,东吾妻町,東吾妻町,히가시아가쓰마정,Higashiagatsuma-machi,Đông Ngô Thê đinh
 10,10443,104434,,village,片品村,かたしなむら,Katashina-mura,片品村,片品村,가타시나촌,Katashina-mura,Chiêu Hòa thôn
 10,10444,104442,,village,川場村,かわばむら,Kawaba-mura,川场村,川場村,가와바촌,Kawaba-mura,Thủy Thượng đinh
-10,10448,104485,,village,昭和村,しょうわむら,Showa-mura,昭和村,昭和村,쇼와촌,Showa-mura,Chiêu Hòa thôn
+10,10448,104485,,village,昭和村,しょうわむら,Showa-mura,昭和村,昭和村,쇼와촌,Shōwa-mura,Chiêu Hòa thôn
 10,10449,104493,,town,みなかみ町,みなかみまち,Minakami-machi,水上町,水上町,미나카미정,Minakami-machi,Thủy Thượng đinh
 10,10464,104647,,town,玉村町,たまむらまち,Tamamura-machi,玉村町,玉村町,다마무라정,Tamamura-machi,Ngọc Thôn đinh
 10,10521,105210,,town,板倉町,いたくらまち,Itakura-machi,板仓町,板倉町,이타쿠라정,Itakura-machi,Ngọc Thôn đinh
 10,10522,105228,,town,明和町,めいわまち,Meiwa-machi,明和町,明和町,메이와정,Meiwa-machi,Minh Hòa đinh
 10,10523,105236,,town,千代田町,ちよだまち,Chiyoda-machi,千代田町,千代田町,지요다정,Chiyoda-machi,Thiên Đại Điền đinh
-10,10524,105244,,town,大泉町,おおいずみまち,Oizumi-machi,大泉町,大泉町,오이즈미정,Oizumi-machi,Đại Tuyền đinh
-10,10525,105252,,town,邑楽町,おうらまち,Ora-machi,邑乐町,邑樂町,오라정,Ora-machi,Ấp Nhạc đinh
+10,10524,105244,,town,大泉町,おおいずみまち,Oizumi-machi,大泉町,大泉町,오이즈미정,Ōizumi-machi,Đại Tuyền đinh
+10,10525,105252,,town,邑楽町,おうらまち,Ora-machi,邑乐町,邑樂町,오라정,Ōra-machi,Ấp Nhạc đinh
 11,11100,111007,,designated_city,さいたま市,さいたまし,Saitama-shi,埼玉市,埼玉市,사이타마시,Saitama-shi,Kỳ Ngọc thị
 11,11101,111015,11100,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
 11,11102,111023,11100,ward,北区,きたく,Kita-ku,北区,北區,기타구,Kita-ku,Bắc khu
-11,11103,111031,11100,ward,大宮区,おおみやく,Omiya-ku,大宫区,大宮區,오미야구,Omiya-ku,Đại Cung khu
+11,11103,111031,11100,ward,大宮区,おおみやく,Omiya-ku,大宫区,大宮區,오미야구,Ōmiya-ku,Đại Cung khu
 11,11104,111040,11100,ward,見沼区,みぬまく,Minuma-ku,见沼区,見沼區,미누마구,Minuma-ku,Kiến Chiểu khu
-11,11105,111058,11100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+11,11105,111058,11100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 11,11106,111066,11100,ward,桜区,さくらく,Sakura-ku,樱区,櫻區,사쿠라구,Sakura-ku,Anh Mộc khu
 11,11107,111074,11100,ward,浦和区,うらわく,Urawa-ku,浦和区,浦和區,우라와구,Urawa-ku,Phổ Hòa khu
 11,11108,111082,11100,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
@@ -544,27 +544,27 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 11,11201,112011,,city,川越市,かわごえし,Kawagoe-shi,川越市,川越市,가와고에시,Kawagoe-shi,Xuyên Việt thị
 11,11202,112020,,city,熊谷市,くまがやし,Kumagaya-shi,熊谷市,熊谷市,구마가야시,Kumagaya-shi,Hùng Cốc thị
 11,11203,112038,,city,川口市,かわぐちし,Kawaguchi-shi,川口市,川口市,가와구치시,Kawaguchi-shi,Xuyên Khẩu thị
-11,11206,112062,,city,行田市,ぎようだし,Gyoda-shi,行田市,行田市,교다시,Gyoda-shi,Sở Trạch thị
+11,11206,112062,,city,行田市,ぎようだし,Gyoda-shi,行田市,行田市,교다시,Giyōda-shi,Sở Trạch thị
 11,11207,112070,,city,秩父市,ちちぶし,Chichibu-shi,秩父市,秩父市,지치부시,Chichibu-shi,Phạn Năng thị
 11,11208,112089,,city,所沢市,ところざわし,Tokorozawa-shi,所泽市,所澤市,도코로자와시,Tokorozawa-shi,Gia Tố thị
-11,11209,112097,,city,飯能市,はんのうし,Hanno-shi,饭能市,飯能市,한노시,Hanno-shi,Bản Trang thị
+11,11209,112097,,city,飯能市,はんのうし,Hanno-shi,饭能市,飯能市,한노시,Hannō-shi,Bản Trang thị
 11,11210,112100,,city,加須市,かぞし,Kazo-shi,加须市,加須市,가조시,Kazo-shi,Đông Tùng Sơn thị
-11,11211,112119,,city,本庄市,ほんじようし,Honjo-shi,本庄市,本庄市,혼조시,Honjo-shi,Bản Trang thị
+11,11211,112119,,city,本庄市,ほんじようし,Honjo-shi,本庄市,本庄市,혼조시,Honjiyō-shi,Bản Trang thị
 11,11212,112127,,city,東松山市,ひがしまつやまし,Higashimatsuyama-shi,东松山市,東松山市,히가시마쓰야마시,Higashimatsuyama-shi,Xuân Nhật Bộ thị
 11,11214,112143,,city,春日部市,かすかべし,Kasukabe-shi,春日部市,春日部市,가스카베시,Kasukabe-shi,Vũ Sinh thị
 11,11215,112151,,city,狭山市,さやまし,Sayama-shi,狭山市,狹山市,사야마시,Sayama-shi,Hồng Sào thị
-11,11216,112160,,city,羽生市,はにゆうし,Hanyu-shi,羽生市,羽生市,하뉴시,Hanyu-shi,Thâm Cốc thị
-11,11217,112178,,city,鴻巣市,こうのすし,Konosu-shi,鸿巢市,鴻巢市,고노스시,Konosu-shi,Thượng Vĩ thị
+11,11216,112160,,city,羽生市,はにゆうし,Hanyu-shi,羽生市,羽生市,하뉴시,Haniyū-shi,Thâm Cốc thị
+11,11217,112178,,city,鴻巣市,こうのすし,Konosu-shi,鸿巢市,鴻巢市,고노스시,Kōnosu-shi,Thượng Vĩ thị
 11,11218,112186,,city,深谷市,ふかやし,Fukaya-shi,深谷市,深谷市,후카야시,Fukaya-shi,Thảo Gia thị
 11,11219,112194,,city,上尾市,あげおし,Ageo-shi,上尾市,上尾市,아게오시,Ageo-shi,Việt Cốc thị
-11,11221,112216,,city,草加市,そうかし,Soka-shi,草加市,草加市,소카시,Soka-shi,Hộ Điền thị
+11,11221,112216,,city,草加市,そうかし,Soka-shi,草加市,草加市,소카시,Sōka-shi,Hộ Điền thị
 11,11222,112224,,city,越谷市,こしがやし,Koshigaya-shi,越谷市,越谷市,고시가야시,Koshigaya-shi,Nhập Gian thị
 11,11223,112232,,city,蕨市,わらびし,Warabi-shi,蕨市,蕨市,와라비시,Warabi-shi,Triêu Hà thị
 11,11224,112240,,city,戸田市,とだし,Toda-shi,户田市,戶田市,도다시,Toda-shi,Chí Mộc thị
 11,11225,112259,,city,入間市,いるまし,Iruma-shi,入间市,入間市,이루마시,Iruma-shi,Hòa Quang thị
 11,11227,112275,,city,朝霞市,あさかし,Asaka-shi,朝霞市,朝霞市,아사카시,Asaka-shi,Thùng Xuyên thị
 11,11228,112283,,city,志木市,しきし,Shiki-shi,志木市,志木市,시키시,Shiki-shi,Cửu Hỷ thị
-11,11229,112291,,city,和光市,わこうし,Wako-shi,和光市,和光市,와코시,Wako-shi,Bắc Bản thị
+11,11229,112291,,city,和光市,わこうし,Wako-shi,和光市,和光市,와코시,Wakō-shi,Bắc Bản thị
 11,11230,112305,,city,新座市,にいざし,Niiza-shi,新座市,新座市,니자시,Niiza-shi,Bát Triều thị
 11,11231,112313,,city,桶川市,おけがわし,Okegawa-shi,桶川市,桶川市,오케가와시,Okegawa-shi,Phú Sĩ Kiến thị
 11,11232,112321,,city,久喜市,くきし,Kuki-shi,久喜市,久喜市,구키시,Kuki-shi,Tam Hương thị
@@ -604,13 +604,13 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 11,11464,114642,,town,杉戸町,すぎとまち,Sugito-machi,杉户町,杉戶町,스기토정,Sugito-machi,Sam Hộ đinh
 11,11465,114650,,town,松伏町,まつぶしまち,Matsubushi-machi,松伏町,松伏町,마쓰부시정,Matsubushi-machi,Tùng Phục đinh
 12,12100,121002,,designated_city,千葉市,ちばし,Chiba-shi,千叶市,千葉市,지바시,Chiba-shi,Thiên Diệp thị
-12,12101,121010,12100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+12,12101,121010,12100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 12,12102,121029,12100,ward,花見川区,はなみがわく,Hanamigawa-ku,花见川区,花見川區,하나미가와구,Hanamigawa-ku,Hoa Kiến Xuyên khu
 12,12103,121037,12100,ward,稲毛区,いなげく,Inage-ku,稻毛区,稻毛區,이나게구,Inage-ku,Đạo Mao khu
 12,12104,121045,12100,ward,若葉区,わかばく,Wakaba-ku,若叶区,若葉區,와카바구,Wakaba-ku,Nhược Diệp khu
 12,12105,121053,12100,ward,緑区,みどりく,Midori-ku,绿区,綠區,미도리구,Midori-ku,Lục khu
 12,12106,121061,12100,ward,美浜区,みはまく,Mihama-ku,美滨区,美濱區,미하마구,Mihama-ku,Mỹ Tân khu
-12,12202,122025,,city,銚子市,ちょうしし,Choshi-shi,铫子市,銚子市,조시시,Choshi-shi,Điều Tử thị
+12,12202,122025,,city,銚子市,ちょうしし,Choshi-shi,铫子市,銚子市,조시시,Chōshi-shi,Điều Tử thị
 12,12203,122033,,city,市川市,いちかわし,Ichikawa-shi,市川市,市川市,이치카와시,Ichikawa-shi,Thị Xuyên thị
 12,12204,122041,,city,船橋市,ふなばしし,Funabashi-shi,船桥市,船橋市,후나바시시,Funabashi-shi,Thuyền Kiều thị
 12,12205,122050,,city,館山市,たてやまし,Tateyama-shi,馆山市,館山市,다테야마시,Tateyama-shi,Quán Sơn thị
@@ -620,11 +620,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 12,12210,122106,,city,茂原市,もばらし,Mobara-shi,茂原市,茂原市,모바라시,Mobara-shi,Mậu Nguyên thị
 12,12211,122114,,city,成田市,なりたし,Narita-shi,成田市,成田市,나리타시,Narita-shi,Thành Điền thị
 12,12212,122122,,city,佐倉市,さくらし,Sakura-shi,佐仓市,佐倉市,사쿠라시,Sakura-shi,Tá Thương thị
-12,12213,122130,,city,東金市,とうがねし,Togane-shi,东金市,東金市,도가네시,Togane-shi,Đông Kim thị
+12,12213,122130,,city,東金市,とうがねし,Togane-shi,东金市,東金市,도가네시,Tōgane-shi,Đông Kim thị
 12,12215,122157,,city,旭市,あさひし,Asahi-shi,旭市,旭市,아사히시,Asahi-shi,Tập Chí Dã thị
 12,12216,122165,,city,習志野市,ならしのし,Narashino-shi,习志野市,習志野市,나라시노시,Narashino-shi,Bách thị
 12,12217,122173,,city,柏市,かしわし,Kashiwa-shi,柏市,柏市,가시와시,Kashiwa-shi,Thắng Phổ thị
-12,12218,122181,,city,勝浦市,かつうらし,Katsuura-shi,胜浦市,勝浦市,가쓰우라시,Katsuura-shi,Thị Nguyên thị
+12,12218,122181,,city,勝浦市,かつうらし,Katsuura-shi,胜浦市,勝浦市,가쓰우라시,Katsūra-shi,Thị Nguyên thị
 12,12219,122190,,city,市原市,いちはらし,Ichihara-shi,市原市,市原市,이치하라시,Ichihara-shi,Lưu Sơn thị
 12,12220,122203,,city,流山市,ながれやまし,Nagareyama-shi,流山市,流山市,나가레야마시,Nagareyama-shi,Bát Thiên Đại thị
 12,12221,122211,,city,八千代市,やちよし,Yachiyo-shi,八千代市,八千代市,야치요시,Yachiyo-shi,Ngã Tôn Tử thị
@@ -634,46 +634,46 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 12,12225,122254,,city,君津市,きみつし,Kimitsu-shi,君津市,君津市,기미쓰시,Kimitsu-shi,Phú Tân thị
 12,12226,122262,,city,富津市,ふっつし,Futtsu-shi,富津市,富津市,훗쓰시,Futtsu-shi,Phổ An thị
 12,12227,122270,,city,浦安市,うらやすし,Urayasu-shi,浦安市,浦安市,우라야스시,Urayasu-shi,Tứ Nhai Đạo thị
-12,12228,122289,,city,四街道市,よつかいどうし,Yotsukaido-shi,四街道市,四街道市,요쓰카이도시,Yotsukaido-shi,Tụ Cá Phổ thị
+12,12228,122289,,city,四街道市,よつかいどうし,Yotsukaido-shi,四街道市,四街道市,요쓰카이도시,Yotsukaidō-shi,Tụ Cá Phổ thị
 12,12229,122297,,city,袖ケ浦市,そでがうらし,Sodegaura-shi,袖浦市,袖浦市,소데가우라시,Sodegaura-shi,Bát Nhai thị
 12,12230,122300,,city,八街市,やちまたし,Yachimata-shi,八街市,八街市,야치마타시,Yachimata-shi,Ấn Tây thị
 12,12231,122319,,city,印西市,いんざいし,Inzai-shi,印西市,印西市,인자이시,Inzai-shi,Bạch Tỉnh thị
 12,12232,122327,,city,白井市,しろいし,Shiroi-shi,白井市,白井市,시로이시,Shiroi-shi,Phú Lý thị
 12,12233,122335,,city,富里市,とみさとし,Tomisato-shi,富里市,富里市,도미사토시,Tomisato-shi,Nam Phòng Tổng thị
-12,12234,122343,,city,南房総市,みなみぼうそうし,Minamiboso-shi,南房总市,南房總市,미나미보소시,Minamiboso-shi,Thương Tá thị
-12,12235,122351,,city,匝瑳市,そうさし,Sosa-shi,匝瑳市,匝瑳市,소사시,Sosa-shi,Hương Thủ thị
+12,12234,122343,,city,南房総市,みなみぼうそうし,Minamiboso-shi,南房总市,南房總市,미나미보소시,Minamibōsō-shi,Thương Tá thị
+12,12235,122351,,city,匝瑳市,そうさし,Sosa-shi,匝瑳市,匝瑳市,소사시,Sōsa-shi,Hương Thủ thị
 12,12236,122360,,city,香取市,かとりし,Katori-shi,香取市,香取市,가토리시,Katori-shi,Sơn Vũ thị
 12,12237,122378,,city,山武市,さんむし,Sanmu-shi,山武市,山武市,산무시,Sanmu-shi,Y Tử Mỹ thị
 12,12238,122386,,city,いすみ市,いすみし,Isumi-shi,夷隅市,夷隅市,이스미시,Isumi-shi,Đại Võng Bạch Lý thị
-12,12239,122394,,city,大網白里市,おおあみしらさとし,Oamishirasato-shi,大网白里市,大網白里市,오아미시라사토시,Oamishirasato-shi,Đại Võng Bạch Lý thị
+12,12239,122394,,city,大網白里市,おおあみしらさとし,Oamishirasato-shi,大网白里市,大網白里市,오아미시라사토시,Ōamishirasato-shi,Đại Võng Bạch Lý thị
 12,12322,123226,,town,酒々井町,しすいまち,Shisui-machi,酒酒井町,酒酒井町,시스이정,Shisui-machi,Tửu Tửu Tỉnh đinh
 12,12329,123293,,town,栄町,さかえまち,Sakae-machi,荣町,榮町,사카에정,Sakae-machi,Vinh đinh
-12,12342,123420,,town,神崎町,こうざきまち,Kozaki-machi,神崎町,神崎町,간자키정,Kozaki-machi,Cửu Thập Cửu Lý đinh
+12,12342,123420,,town,神崎町,こうざきまち,Kozaki-machi,神崎町,神崎町,간자키정,Kōzaki-machi,Cửu Thập Cửu Lý đinh
 12,12347,123471,,town,多古町,たこまち,Tako-machi,多古町,多古町,다코정,Tako-machi,Chi Sơn đinh
-12,12349,123498,,town,東庄町,とうのしょうまち,Tonosho-machi,东庄町,東庄町,도노쇼정,Tonosho-machi,Nhất Cung đinh
-12,12403,124036,,town,九十九里町,くじゆうくりまち,Kujukuri-machi,九十九里町,九十九里町,구주쿠리정,Kujukuri-machi,Cửu Thập Cửu Lý đinh
+12,12349,123498,,town,東庄町,とうのしょうまち,Tonosho-machi,东庄町,東庄町,도노쇼정,Tōnoshō-machi,Nhất Cung đinh
+12,12403,124036,,town,九十九里町,くじゆうくりまち,Kujukuri-machi,九十九里町,九十九里町,구주쿠리정,Kujiyūkuri-machi,Cửu Thập Cửu Lý đinh
 12,12409,124095,,town,芝山町,しばやままち,Shibayama-machi,芝山町,芝山町,시바야마정,Shibayama-machi,Chi Sơn đinh
 12,12410,124109,,town,横芝光町,よこしばひかりまち,Yokoshibahikari-machi,横芝光町,橫芝光町,요코시바히카리정,Yokoshibahikari-machi,Hoành Chi Quang đinh
 12,12421,124214,,town,一宮町,いちのみやまち,Ichinomiya-machi,一宫町,一宮町,이치노미야정,Ichinomiya-machi,Nhất Cung đinh
 12,12422,124222,,town,睦沢町,むつざわまち,Mutsuzawa-machi,睦泽町,睦澤町,무쓰자와정,Mutsuzawa-machi,Mục Trạch đinh
-12,12423,124230,,village,長生村,ちょうせいむら,Chosei-mura,长生村,長生村,조세이촌,Chosei-mura,Trường Sinh thôn
+12,12423,124230,,village,長生村,ちょうせいむら,Chosei-mura,长生村,長生村,조세이촌,Chōsei-mura,Trường Sinh thôn
 12,12424,124249,,town,白子町,しらこまち,Shirako-machi,白子町,白子町,시라코정,Shirako-machi,Bạch Tử đinh
 12,12426,124265,,town,長柄町,ながらまち,Nagara-machi,长柄町,長柄町,나가라정,Nagara-machi,Trường Tỷ đinh
-12,12427,124273,,town,長南町,ちょうなんまち,Chonan-machi,长南町,長南町,조난정,Chonan-machi,Trường Nam đinh
-12,12441,124419,,town,大多喜町,おおたきまち,Otaki-machi,大多喜町,大多喜町,오타키정,Otaki-machi,Đại Đa Hỷ đinh
-12,12443,124435,,town,御宿町,おんじゆくまち,Onjuku-machi,御宿町,御宿町,온주쿠정,Onjuku-machi,Ngự Túc đinh
-12,12463,124630,,town,鋸南町,きよなんまち,Kyonan-machi,锯南町,鋸南町,교난정,Kyonan-machi,Cứ Nam đinh
+12,12427,124273,,town,長南町,ちょうなんまち,Chonan-machi,长南町,長南町,조난정,Chōnan-machi,Trường Nam đinh
+12,12441,124419,,town,大多喜町,おおたきまち,Otaki-machi,大多喜町,大多喜町,오타키정,Ōtaki-machi,Đại Đa Hỷ đinh
+12,12443,124435,,town,御宿町,おんじゆくまち,Onjuku-machi,御宿町,御宿町,온주쿠정,Onjiyuku-machi,Ngự Túc đinh
+12,12463,124630,,town,鋸南町,きよなんまち,Kyonan-machi,锯南町,鋸南町,교난정,Kiyonan-machi,Cứ Nam đinh
 13,13101,131016,,special_ward,千代田区,ちよだく,Chiyoda-ku,千代田区,千代田區,지요다구,Chiyoda-ku,Thiên Đại Điền khu
 13,13102,131024,,special_ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
 13,13103,131032,,special_ward,港区,みなとく,Minato-ku,港区,港區,미나토구,Minato-ku,Cảng khu
 13,13104,131040,,special_ward,新宿区,しんじゅくく,Shinjuku-ku,新宿区,新宿區,신주쿠구,Shinjuku-ku,Tân Túc khu
-13,13105,131059,,special_ward,文京区,ぶんきょうく,Bunkyo-ku,文京区,文京區,분쿄구,Bunkyo-ku,Văn Kinh khu
-13,13106,131067,,special_ward,台東区,たいとうく,Taito-ku,台东区,台東區,다이토구,Taito-ku,Đài Đông khu
+13,13105,131059,,special_ward,文京区,ぶんきょうく,Bunkyo-ku,文京区,文京區,분쿄구,Bunkyō-ku,Văn Kinh khu
+13,13106,131067,,special_ward,台東区,たいとうく,Taito-ku,台东区,台東區,다이토구,Taitō-ku,Đài Đông khu
 13,13107,131075,,special_ward,墨田区,すみだく,Sumida-ku,墨田区,墨田區,스미다구,Sumida-ku,Mặc Điền khu
-13,13108,131083,,special_ward,江東区,こうとうく,Koto-ku,江东区,江東區,고토구,Koto-ku,Giang Đông khu
+13,13108,131083,,special_ward,江東区,こうとうく,Koto-ku,江东区,江東區,고토구,Kōtō-ku,Giang Đông khu
 13,13109,131091,,special_ward,品川区,しながわく,Shinagawa-ku,品川区,品川區,시나가와구,Shinagawa-ku,Phẩm Xuyên khu
 13,13110,131105,,special_ward,目黒区,めぐろく,Meguro-ku,目黑区,目黑區,메구로구,Meguro-ku,Mục Hắc khu
-13,13111,131113,,special_ward,大田区,おおたく,Ota-ku,大田区,大田區,오타구,Ota-ku,Đại Điền khu
+13,13111,131113,,special_ward,大田区,おおたく,Ota-ku,大田区,大田區,오타구,Ōta-ku,Đại Điền khu
 13,13112,131121,,special_ward,世田谷区,せたがやく,Setagaya-ku,世田谷区,世田谷區,세타가야구,Setagaya-ku,Thế Điền Cốc khu
 13,13113,131130,,special_ward,渋谷区,しぶやく,Shibuya-ku,涩谷区,澀谷區,시부야구,Shibuya-ku,Sáp Cốc khu
 13,13114,131148,,special_ward,中野区,なかのく,Nakano-ku,中野区,中野區,나카노구,Nakano-ku,Trung Dã khu
@@ -686,14 +686,14 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 13,13121,131210,,special_ward,足立区,あだちく,Adachi-ku,足立区,足立區,아다치구,Adachi-ku,Túc Lập khu
 13,13122,131229,,special_ward,葛飾区,かつしかく,Katsushika-ku,葛饰区,葛飾區,가쓰시카구,Katsushika-ku,Cát Sức khu
 13,13123,131237,,special_ward,江戸川区,えどがわく,Edogawa-ku,江户川区,江戶川區,에도가와구,Edogawa-ku,Giang Hộ Xuyên khu
-13,13201,132012,,city,八王子市,はちおうじし,Hachioji-shi,八王子市,八王子市,하치오지시,Hachioji-shi,Bát Vương Tử thị
+13,13201,132012,,city,八王子市,はちおうじし,Hachioji-shi,八王子市,八王子市,하치오지시,Hachiōji-shi,Bát Vương Tử thị
 13,13202,132020,,city,立川市,たちかわし,Tachikawa-shi,立川市,立川市,다치카와시,Tachikawa-shi,Lập Xuyên thị
 13,13203,132039,,city,武蔵野市,むさしのし,Musashino-shi,武藏野市,武藏野市,무사시노시,Musashino-shi,Võ Tàng Dã thị
 13,13204,132047,,city,三鷹市,みたかし,Mitaka-shi,三鹰市,三鷹市,미타카시,Mitaka-shi,Tam Ưng thị
-13,13205,132055,,city,青梅市,おうめし,Ome-shi,青梅市,青梅市,오메시,Ome-shi,Thanh Mai thị
-13,13206,132063,,city,府中市,ふちゅうし,Fuchu-shi,府中市,府中市,후추시,Fuchu-shi,Phủ Trung thị
+13,13205,132055,,city,青梅市,おうめし,Ome-shi,青梅市,青梅市,오메시,Ōme-shi,Thanh Mai thị
+13,13206,132063,,city,府中市,ふちゅうし,Fuchu-shi,府中市,府中市,후추시,Fuchū-shi,Phủ Trung thị
 13,13207,132071,,city,昭島市,あきしまし,Akishima-shi,昭岛市,昭島市,아키시마시,Akishima-shi,Chiêu Đảo thị
-13,13208,132080,,city,調布市,ちょうふし,Chofu-shi,调布市,調布市,조후시,Chofu-shi,Điều Bố thị
+13,13208,132080,,city,調布市,ちょうふし,Chofu-shi,调布市,調布市,조후시,Chōfu-shi,Điều Bố thị
 13,13209,132098,,city,町田市,まちだし,Machida-shi,町田市,町田市,마치다시,Machida-shi,Đinh Điền thị
 13,13210,132101,,city,小金井市,こがねいし,Koganei-shi,小金井市,小金井市,고가네이시,Koganei-shi,Tiểu Kim Tỉnh thị
 13,13211,132110,,city,小平市,こだいらし,Kodaira-shi,小平市,小平市,고다이라시,Kodaira-shi,Tiểu Bình thị
@@ -716,13 +716,13 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 13,13305,133051,,town,日の出町,ひのでまち,Hinode-machi,日之出町,日之出町,히노데정,Hinode-machi,Nhật Xuất đinh
 13,13307,133078,,village,檜原村,ひのはらむら,Hinohara-mura,桧原村,檜原村,히노하라촌,Hinohara-mura,Tuyền Nguyên thôn
 13,13308,133086,,town,奥多摩町,おくたままち,Okutama-machi,奥多摩町,奧多摩町,오쿠타마정,Okutama-machi,Áo Đa Ma đinh
-13,13361,133612,,town,大島町,おおしままち,Oshima-machi,大岛町,大島町,오시마정,Oshima-machi,Đại Đảo đinh
+13,13361,133612,,town,大島町,おおしままち,Oshima-machi,大岛町,大島町,오시마정,Ōshima-machi,Đại Đảo đinh
 13,13362,133620,,village,利島村,としまむら,Toshima-mura,利岛村,利島村,도시마촌,Toshima-mura,Lợi Đảo thôn
 13,13363,133639,,village,新島村,にいじまむら,Niijima-mura,新岛村,新島村,니지마촌,Niijima-mura,Tân Đảo thôn
-13,13364,133647,,village,神津島村,こうづしまむら,Kozushima-mura,神津岛村,神津島村,고즈시마촌,Kozushima-mura,Thần Tân Đảo thôn
+13,13364,133647,,village,神津島村,こうづしまむら,Kozushima-mura,神津岛村,神津島村,고즈시마촌,Kōzushima-mura,Thần Tân Đảo thôn
 13,13381,133817,,village,三宅村,みやけむら,Miyake-mura,三宅村,三宅村,미야케촌,Miyake-mura,Tam Trạch thôn
 13,13382,133825,,village,御蔵島村,みくらじまむら,Mikurajima-mura,御藏岛村,御藏島村,미쿠라지마촌,Mikurajima-mura,Ngự Tàng Đảo thôn
-13,13401,134015,,town,八丈町,はちじょうまち,Hachijo-machi,八丈町,八丈町,하치조정,Hachijo-machi,Bát Trượng đinh
+13,13401,134015,,town,八丈町,はちじょうまち,Hachijo-machi,八丈町,八丈町,하치조정,Hachijō-machi,Bát Trượng đinh
 13,13402,134023,,village,青ヶ島村,あおがしまむら,Aogashima-mura,青岛村,青島村,아오가시마촌,Aogashima-mura,Thanh Đảo thôn
 13,13421,134210,,village,小笠原村,おがさわらむら,Ogasawara-mura,小笠原村,小笠原村,오가사와라촌,Ogasawara-mura,Tiểu Tiếu Nguyên thôn
 14,14100,141003,,designated_city,横浜市,よこはまし,Yokohama-shi,横滨市,橫濱市,요코하마시,Yokohama-shi,Hoành Tân thị
@@ -734,9 +734,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 14,14106,141062,14100,ward,保土ケ谷区,ほどがやく,Hodogaya-ku,保土谷区,保土谷區,호도가야구,Hodogaya-ku,Bảo Thổ Cốc khu
 14,14107,141070,14100,ward,磯子区,いそごく,Isogo-ku,矶子区,磯子區,이소고구,Isogo-ku,Cơ Tử khu
 14,14108,141089,14100,ward,金沢区,かなざわく,Kanazawa-ku,金泽区,金澤區,가나자와구,Kanazawa-ku,Kim Trạch khu
-14,14109,141097,14100,ward,港北区,こうほくく,Kohoku-ku,港北区,港北區,고호쿠구,Kohoku-ku,Cảng Bắc khu
+14,14109,141097,14100,ward,港北区,こうほくく,Kohoku-ku,港北区,港北區,고호쿠구,Kōhoku-ku,Cảng Bắc khu
 14,14110,141100,14100,ward,戸塚区,とつかく,Totsuka-ku,户冢区,戶塚區,도쓰카구,Totsuka-ku,Hộ Trũng khu
-14,14111,141119,14100,ward,港南区,こうなんく,Konan-ku,港南区,港南區,고난구,Konan-ku,Cảng Nam khu
+14,14111,141119,14100,ward,港南区,こうなんく,Konan-ku,港南区,港南區,고난구,Kōnan-ku,Cảng Nam khu
 14,14112,141127,14100,ward,旭区,あさひく,Asahi-ku,旭区,旭區,아사히구,Asahi-ku,Húc khu
 14,14113,141135,14100,ward,緑区,みどりく,Midori-ku,绿区,綠區,미도리구,Midori-ku,Lục khu
 14,14114,141143,14100,ward,瀬谷区,せやく,Seya-ku,濑谷区,瀨谷區,세야구,Seya-ku,Lại Cốc khu
@@ -754,7 +754,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 14,14137,141372,14130,ward,麻生区,あさおく,Asao-ku,麻生区,麻生區,아사오구,Asao-ku,Ma Sinh khu
 14,14150,141500,,designated_city,相模原市,さがみはらし,Sagamihara-shi,相模原市,相模原市,사가미하라시,Sagamihara-shi,Tương Mô Nguyên thị
 14,14151,141518,14150,ward,緑区,みどりく,Midori-ku,绿区,綠區,미도리구,Midori-ku,Lục khu
-14,14152,141526,14150,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+14,14152,141526,14150,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 14,14153,141534,14150,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
 14,14201,142018,,city,横須賀市,よこすかし,Yokosuka-shi,横须贺市,橫須賀市,요코스카시,Yokosuka-shi,Hoành Tu Hạ thị
 14,14203,142034,,city,平塚市,ひらつかし,Hiratsuka-shi,平冢市,平塚市,히라쓰카시,Hiratsuka-shi,Bình Trủng thị
@@ -774,10 +774,10 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 14,14218,142182,,city,綾瀬市,あやせし,Ayase-shi,绫濑市,綾瀨市,아야세시,Ayase-shi,Lăng Lại thị
 14,14301,143014,,town,葉山町,はやままち,Hayama-machi,叶山町,葉山町,하야마정,Hayama-machi,Diệp Sơn đinh
 14,14321,143219,,town,寒川町,さむかわまち,Samukawa-machi,寒川町,寒川町,사무카와정,Samukawa-machi,Hàn Xuyên đinh
-14,14341,143413,,town,大磯町,おおいそまち,Oiso-machi,大矶町,大磯町,오이소정,Oiso-machi,Trung Tỉnh đinh
+14,14341,143413,,town,大磯町,おおいそまち,Oiso-machi,大矶町,大磯町,오이소정,Ōiso-machi,Trung Tỉnh đinh
 14,14342,143421,,town,二宮町,にのみやまち,Ninomiya-machi,二宫町,二宮町,니노미야정,Ninomiya-machi,Đại Tỉnh đinh
 14,14361,143618,,town,中井町,なかいまち,Nakai-machi,中井町,中井町,나카이정,Nakai-machi,Hộp Căn đinh
-14,14362,143626,,town,大井町,おおいまち,Oi-machi,大井町,大井町,오이정,Oi-machi,Chân Hạc đinh
+14,14362,143626,,town,大井町,おおいまち,Oi-machi,大井町,大井町,오이정,Ōi-machi,Chân Hạc đinh
 14,14363,143634,,town,松田町,まつだまち,Matsuda-machi,松田町,松田町,마쓰다정,Matsuda-machi,Thang Hà Nguyên đinh
 14,14364,143642,,town,山北町,やまきたまち,Yamakita-machi,山北町,山北町,야마키타정,Yamakita-machi,Sơn Bắc đinh
 14,14366,143669,,town,開成町,かいせいまち,Kaisei-machi,开成町,開成町,가이세이정,Kaisei-machi,Khai Thành đinh
@@ -789,32 +789,32 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 15,15100,151009,,designated_city,新潟市,にいがたし,Niigata-shi,新潟市,新潟市,니가타시,Niigata-shi,Tân Tích thị
 15,15101,151017,15100,ward,北区,きたく,Kita-ku,北区,北區,기타구,Kita-ku,Bắc khu
 15,15102,151025,15100,ward,東区,ひがしく,Higashi-ku,东区,東區,히가시구,Higashi-ku,Đông khu
-15,15103,151033,15100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
-15,15104,151041,15100,ward,江南区,こうなんく,Konan-ku,江南区,江南區,고난구,Konan-ku,Giang Nam khu
+15,15103,151033,15100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
+15,15104,151041,15100,ward,江南区,こうなんく,Konan-ku,江南区,江南區,고난구,Kōnan-ku,Giang Nam khu
 15,15105,151050,15100,ward,秋葉区,あきはく,Akiha-ku,秋叶区,秋葉區,아키하구,Akiha-ku,Thu Diệp khu
 15,15106,151068,15100,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
 15,15107,151076,15100,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
 15,15108,151084,15100,ward,西蒲区,にしかんく,Nishikan-ku,西蒲区,西蒲區,니시칸구,Nishikan-ku,Tây Bồ khu
 15,15202,152021,,city,長岡市,ながおかし,Nagaoka-shi,长冈市,長岡市,나가오카시,Nagaoka-shi,Trường Cương thị
-15,15204,152048,,city,三条市,さんじょうし,Sanjo-shi,三条市,三條市,산조시,Sanjo-shi,Bách Kỳ Thác thị
+15,15204,152048,,city,三条市,さんじょうし,Sanjo-shi,三条市,三條市,산조시,Sanjō-shi,Bách Kỳ Thác thị
 15,15205,152056,,city,柏崎市,かしわざきし,Kashiwazaki-shi,柏崎市,柏崎市,가시와자키시,Kashiwazaki-shi,Tân Phát Điền thị
 15,15206,152064,,city,新発田市,しばたし,Shibata-shi,新发田市,新發田市,시바타시,Shibata-shi,Tiểu Thiên Cốc thị
 15,15208,152080,,city,小千谷市,おぢやし,Ojiya-shi,小千谷市,小千谷市,오지야시,Ojiya-shi,Thập Nhật Đinh thị
 15,15209,152099,,city,加茂市,かもし,Kamo-shi,加茂市,加茂市,가모시,Kamo-shi,Kiến Phụ thị
-15,15210,152102,,city,十日町市,とおかまちし,Tokamachi-shi,十日町市,十日町市,도카마치시,Tokamachi-shi,Thôn Thượng thị
+15,15210,152102,,city,十日町市,とおかまちし,Tokamachi-shi,十日町市,十日町市,도카마치시,Tōkamachi-shi,Thôn Thượng thị
 15,15211,152110,,city,見附市,みつけし,Mitsuke-shi,见附市,見附市,미쓰케시,Mitsuke-shi,Yến thị
 15,15212,152129,,city,村上市,むらかみし,Murakami-shi,村上市,村上市,무라카미시,Murakami-shi,Ty Ngư Xuyên thị
 15,15213,152137,,city,燕市,つばめし,Tsubame-shi,燕市,燕市,쓰바메시,Tsubame-shi,Diệu Cao thị
 15,15216,152161,,city,糸魚川市,いといがわし,Itoigawa-shi,丝鱼川市,糸魚川市,이토이가와시,Itoigawa-shi,Thượng Việt thị
-15,15217,152170,,city,妙高市,みょうこうし,Myoko-shi,妙高市,妙高市,묘코시,Myoko-shi,A Hạ Dã thị
+15,15217,152170,,city,妙高市,みょうこうし,Myoko-shi,妙高市,妙高市,묘코시,Myōkō-shi,A Hạ Dã thị
 15,15218,152188,,city,五泉市,ごせんし,Gosen-shi,五泉市,五泉市,고센시,Gosen-shi,Tá Độ thị
-15,15222,152226,,city,上越市,じょうえつし,Joetsu-shi,上越市,上越市,조에쓰시,Joetsu-shi,Thượng Việt thị
+15,15222,152226,,city,上越市,じょうえつし,Joetsu-shi,上越市,上越市,조에쓰시,Jōetsu-shi,Thượng Việt thị
 15,15223,152234,,city,阿賀野市,あがのし,Agano-shi,阿贺野市,阿賀野市,아가노시,Agano-shi,A Hạ Dã thị
 15,15224,152242,,city,佐渡市,さどし,Sado-shi,佐渡市,佐渡市,사도시,Sado-shi,Tá Độ thị
 15,15225,152250,,city,魚沼市,うおぬまし,Uonuma-shi,鱼沼市,魚沼市,우오누마시,Uonuma-shi,Ngư Chiểu thị
 15,15226,152269,,city,南魚沼市,みなみうおぬまし,Minamiuonuma-shi,南鱼沼市,南魚沼市,미나미우오누마시,Minamiuonuma-shi,Nam Ngư Chiểu thị
 15,15227,152277,,city,胎内市,たいないし,Tainai-shi,胎内市,胎內市,다이나이시,Tainai-shi,Thai Nội thị
-15,15307,153079,,town,聖籠町,せいろうまち,Seiro-machi,圣笼町,聖籠町,세이로정,Seiro-machi,Thánh Lung đinh
+15,15307,153079,,town,聖籠町,せいろうまち,Seiro-machi,圣笼町,聖籠町,세이로정,Seirō-machi,Thánh Lung đinh
 15,15342,153427,,village,弥彦村,やひこむら,Yahiko-mura,弥彦村,彌彥村,야히코촌,Yahiko-mura,Dã Ngạn thôn
 15,15385,153850,,town,阿賀町,あがまち,Aga-machi,阿贺町,阿賀町,아가정,Aga-machi,A Hạ đinh
 15,15405,154059,,town,出雲崎町,いずもざきまち,Izumozaki-machi,出云崎町,出雲崎町,이즈모자키정,Izumozaki-machi,A Hạ đinh
@@ -836,7 +836,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 16,16321,163210,,village,舟橋村,ふなはしむら,Funahashi-mura,舟桥村,舟橋村,후나하시촌,Funahashi-mura,Thuyền Kiều thôn
 16,16322,163228,,city,上市町,かみいちまち,Kamiichi-machi,上市町,上市町,가미이치정,Kamiichi-machi,Thượng Thị đinh
 16,16323,163236,,town,立山町,たてやままち,Tateyama-machi,立山町,立山町,다테야마정,Tateyama-machi,Lập Sơn đinh
-16,16342,163422,,town,入善町,にゅうぜんまち,Nyuzen-machi,入善町,入善町,뉴젠정,Nyuzen-machi,Nhập Thiện đinh
+16,16342,163422,,town,入善町,にゅうぜんまち,Nyuzen-machi,入善町,入善町,뉴젠정,Nyūzen-machi,Nhập Thiện đinh
 16,16343,163430,,town,朝日町,あさひまち,Asahi-machi,朝日町,朝日町,아사히정,Asahi-machi,Triêu Nhật đinh
 17,17201,172014,,city,金沢市,かなざわし,Kanazawa-shi,金泽市,金澤市,가나자와시,Kanazawa-shi,Kim Trạch thị
 17,17202,172022,,city,七尾市,ななおし,Nanao-shi,七尾市,七尾市,나나오시,Nanao-shi,Thất Vĩ thị
@@ -853,14 +853,14 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 17,17361,173614,,town,津幡町,つばたまち,Tsubata-machi,津幡町,津幡町,쓰바타정,Tsubata-machi,Chí Hạ đinh
 17,17365,173657,,town,内灘町,うちなだまち,Uchinada-machi,内滩町,內灘町,우치나다정,Uchinada-machi,Bảo Đạt Chí Thủy đinh
 17,17384,173843,,town,志賀町,しかまち,Shika-machi,志贺町,志賀町,시카정,Shika-machi,Huyệt Thủy đinh
-17,17386,173860,,town,宝達志水町,ほうだつしみずちょう,Hodatsushimizu-machi,宝达志水町,寶達志水町,호다쓰시미즈정,Hodatsushimizu-machi,Năng Đăng đinh
+17,17386,173860,,town,宝達志水町,ほうだつしみずちょう,Hodatsushimizu-machi,宝达志水町,寶達志水町,호다쓰시미즈정,Hōdatsushimizu-machi,Năng Đăng đinh
 17,17407,174076,,town,中能登町,なかのとまち,Nakanoto-machi,中能登町,中能登町,나카노토정,Nakanoto-machi,Trung Năng Đăng đinh
 17,17461,174610,,town,穴水町,あなみずまち,Anamizu-machi,穴水町,穴水町,아나미즈정,Anamizu-machi,Huyệt Thủy đinh
 17,17463,174637,,town,能登町,のとちょう,Noto-cho,能登町,能登町,노토정,Noto-cho,Năng Đăng đinh
 18,18201,182010,,city,福井市,ふくいし,Fukui-shi,福井市,福井市,후쿠이시,Fukui-shi,Phúc Tỉnh thị
 18,18202,182028,,city,敦賀市,つるがし,Tsuruga-shi,敦贺市,敦賀市,쓰루가시,Tsuruga-shi,Đôn Hạ thị
 18,18204,182044,,city,小浜市,おばまし,Obama-shi,小滨市,小濱市,오바마시,Obama-shi,Đại Dã thị
-18,18205,182052,,city,大野市,おおのし,Ono-shi,大野市,大野市,오노시,Ono-shi,Thắng Sơn thị
+18,18205,182052,,city,大野市,おおのし,Ono-shi,大野市,大野市,오노시,Ōno-shi,Thắng Sơn thị
 18,18206,182060,,city,勝山市,かつやまし,Katsuyama-shi,胜山市,勝山市,가쓰야마시,Katsuyama-shi,Cá Giang thị
 18,18207,182079,,city,鯖江市,さばえし,Sabae-shi,鲭江市,鯖江市,사바에시,Sabae-shi,A Oa La thị
 18,18208,182087,,city,あわら市,あわらし,Awara-shi,芦原市,蘆原市,아와라시,Awara-shi,Việt Tiền thị
@@ -872,28 +872,28 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 18,18423,184233,,town,越前町,えちぜんちょう,Echizen-cho,越前町,越前町,에치젠정,Echizen-cho,Việt Tiền đinh
 18,18442,184420,,town,美浜町,みはまちょう,Mihama-cho,美滨町,美濱町,미하마정,Mihama-cho,Trì Điền đinh
 18,18481,184810,,town,高浜町,たかはまちょう,Takahama-cho,高滨町,高濱町,다카하마정,Takahama-cho,Cao Tân đinh
-18,18483,184837,,town,おおい町,おおいちょう,Oi-cho,大饭町,大飯町,오이정,Oi-cho,Ôi đinh
+18,18483,184837,,town,おおい町,おおいちょう,Oi-cho,大饭町,大飯町,오이정,Ōi-cho,Ôi đinh
 18,18501,185019,,town,若狭町,わかさちょう,Wakasa-cho,若狭町,若狹町,와카사정,Wakasa-cho,Nhược Hạ đinh
-19,19201,192015,,city,甲府市,こうふし,Kofu-shi,甲府市,甲府市,고후시,Kofu-shi,Giáp Phủ thị
+19,19201,192015,,city,甲府市,こうふし,Kofu-shi,甲府市,甲府市,고후시,Kōfu-shi,Giáp Phủ thị
 19,19202,192023,,city,富士吉田市,ふじよしだし,Fujiyoshida-shi,富士吉田市,富士吉田市,후지요시다시,Fujiyoshida-shi,Phú Sĩ Cát Điền thị
 19,19204,192040,,city,都留市,つるし,Tsuru-shi,都留市,都留市,쓰루시,Tsuru-shi,Đô Lưu thị
 19,19205,192058,,city,山梨市,やまなしし,Yamanashi-shi,山梨市,山梨市,야마나시시,Yamanashi-shi,Sơn Lê thị
-19,19206,192066,,city,大月市,おおつきし,Otsuki-shi,大月市,大月市,오쓰키시,Otsuki-shi,Đại Nguyệt thị
+19,19206,192066,,city,大月市,おおつきし,Otsuki-shi,大月市,大月市,오쓰키시,Ōtsuki-shi,Đại Nguyệt thị
 19,19207,192074,,city,韮崎市,にらさきし,Nirasaki-shi,韭崎市,韮崎市,니라사키시,Nirasaki-shi,Lạt Thải thị
 19,19208,192082,,city,南アルプス市,みなみあるぷすし,Minamialps-shi,南阿尔卑斯市,南阿爾卑斯市,미나미알프스시,Minami-Arupusu-shi,Nam An Phổ Tư thị
 19,19209,192090,,city,北杜市,ほくとし,Hokuto-shi,北杜市,北杜市,호쿠토시,Hokuto-shi,Bắc Đỗ thị
 19,19210,192104,,city,甲斐市,かいし,Kai-shi,甲斐市,甲斐市,가이시,Kai-shi,Giáp Phỉ thị
 19,19211,192112,,city,笛吹市,ふえふきし,Fuefuki-shi,笛吹市,笛吹市,후에후키시,Fuefuki-shi,Địch Xuy thị
 19,19212,192120,,city,上野原市,うえのはらし,Uenohara-shi,上野原市,上野原市,우에노하라시,Uenohara-shi,Thượng Dã Nguyên thị
-19,19213,192139,,city,甲州市,こうしゅうし,Koshu-shi,甲州市,甲州市,고슈시,Koshu-shi,Giáp Châu thị
-19,19214,192147,,city,中央市,ちゅうおうし,Chuo-shi,中央市,中央市,주오시,Chuo-shi,Trung Ương thị
+19,19213,192139,,city,甲州市,こうしゅうし,Koshu-shi,甲州市,甲州市,고슈시,Kōshū-shi,Giáp Châu thị
+19,19214,192147,,city,中央市,ちゅうおうし,Chuo-shi,中央市,中央市,주오시,Chūō-shi,Trung Ương thị
 19,19346,193461,,city,市川三郷町,いちかわみさとちょう,Ichikawamisato-cho,市川三乡町,市川三鄉町,이치카와미사토정,Ichikawamisato-cho,Phú Sĩ Hà Khẩu Hồ đinh
 19,19364,193640,,town,早川町,はやかわちょう,Hayakawa-cho,早川町,早川町,하야카와정,Hayakawa-cho,Tảo Xuyên đinh
 19,19365,193658,,town,身延町,みのぶちょう,Minobu-cho,身延町,身延町,미노부정,Minobu-cho,Thân Diên đinh
 19,19366,193666,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nambu-cho,Nam Bộ đinh
 19,19368,193682,,town,富士川町,ふじかわちょう,Fujikawa-cho,富士川町,富士川町,후지카와정,Fujikawa-cho,Phú Sĩ Xuyên đinh
-19,19384,193844,,town,昭和町,しょうわちょう,Showa-cho,昭和町,昭和町,쇼와정,Showa-cho,Chiêu Hòa đinh
-19,19422,194220,,village,道志村,どうしむら,Doshi-mura,道志村,道志村,도시촌,Doshi-mura,Đạo Chí thôn
+19,19384,193844,,town,昭和町,しょうわちょう,Showa-cho,昭和町,昭和町,쇼와정,Shōwa-cho,Chiêu Hòa đinh
+19,19422,194220,,village,道志村,どうしむら,Doshi-mura,道志村,道志村,도시촌,Dōshi-mura,Đạo Chí thôn
 19,19423,194239,,town,西桂町,にしかつらちょう,Nishikatsura-cho,西桂町,西桂町,니시카쓰라정,Nishikatsura-cho,Tây Quyết đinh
 19,19424,194247,,village,忍野村,おしのむら,Oshino-mura,忍野村,忍野村,오시노촌,Oshino-mura,Nhẫn Dã thôn
 19,19425,194255,,village,山中湖村,やまなかこむら,Yamanakako-mura,山中湖村,山中湖村,야마나카코촌,Yamanakako-mura,Sơn Trung Hồ thôn
@@ -912,15 +912,15 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 20,20209,202096,,city,伊那市,いなし,Ina-shi,伊那市,伊那市,이나시,Ina-shi,Y Na thị
 20,20210,202100,,city,駒ヶ根市,こまがねし,Komagane-shi,驹根市,駒根市,고마가네시,Komagane-shi,Câu Cá Căn thị
 20,20211,202118,,city,中野市,なかのし,Nakano-shi,中野市,中野市,나카노시,Nakano-shi,Trung Dã thị
-20,20212,202126,,city,大町市,おおまちし,Omachi-shi,大町市,大町市,오마치시,Omachi-shi,Đại Đinh thị
+20,20212,202126,,city,大町市,おおまちし,Omachi-shi,大町市,大町市,오마치시,Ōmachi-shi,Đại Đinh thị
 20,20213,202134,,city,飯山市,いいやまし,Iiyama-shi,饭山市,飯山市,이야마시,Iiyama-shi,Phạn Sơn thị
 20,20214,202142,,city,茅野市,ちのし,Chino-shi,茅野市,茅野市,지노시,Chino-shi,Thước Dã thị
 20,20215,202150,,city,塩尻市,しおじりし,Shiojiri-shi,盐尻市,鹽尻市,시오지리시,Shiojiri-shi,Diêm Vĩ thị
 20,20217,202177,,city,佐久市,さくし,Saku-shi,佐久市,佐久市,사쿠시,Saku-shi,Tá Cửu thị
 20,20218,202185,,city,千曲市,ちくまし,Chikuma-shi,千曲市,千曲市,지쿠마시,Chikuma-shi,Thiên Khúc thị
-20,20219,202193,,city,東御市,とうみし,Tomi-shi,东御市,東御市,도미시,Tomi-shi,Thiên Khúc thị
+20,20219,202193,,city,東御市,とうみし,Tomi-shi,东御市,東御市,도미시,Tōmi-shi,Thiên Khúc thị
 20,20220,202207,,city,安曇野市,あづみのし,Azumino-shi,安昙野市,安曇野市,아즈미노시,Azumino-shi,Đông Ngự thị
-20,20303,203033,,town,小海町,こうみまち,Koumi-machi,小海町,小海町,고우미정,Koumi-machi,Nam Mục thôn
+20,20303,203033,,town,小海町,こうみまち,Koumi-machi,小海町,小海町,고우미정,Kōmi-machi,Nam Mục thôn
 20,20304,203041,,village,川上村,かわかみむら,Kawakami-mura,川上村,川上村,가와카미촌,Kawakami-mura,Nam Tương Mộc thôn
 20,20305,203050,,village,南牧村,みなみまきむら,Minamimaki-mura,南牧村,南牧村,미나미마키촌,Minamimaki-mura,Bắc Tương Mộc thôn
 20,20306,203068,,village,南相木村,みなみあいきむら,Minamiaiki-mura,南相木村,南相木村,미나미아이키촌,Minamiaiki-mura,Tá Cửu Tuệ đinh
@@ -946,18 +946,18 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 20,20407,204072,,village,阿智村,あちむら,Achi-mura,阿智村,阿智村,아치촌,Achi-mura,Tùng Xuyên đinh
 20,20409,204099,,village,平谷村,ひらやむら,Hiraya-mura,平谷村,平谷村,히라야촌,Hiraya-mura,A Nam đinh
 20,20410,204102,,village,根羽村,ねばむら,Neba-mura,根羽村,根羽村,네바촌,Neba-mura,A Trí thôn
-20,20411,204110,,village,下條村,しもじょうむら,Shimojo-mura,下条村,下條村,시모조촌,Shimojo-mura,Bình Cốc thôn
+20,20411,204110,,village,下條村,しもじょうむら,Shimojo-mura,下条村,下條村,시모조촌,Shimojō-mura,Bình Cốc thôn
 20,20412,204129,,village,売木村,うるぎむら,Urugi-mura,卖木村,賣木村,우루기촌,Urugi-mura,Căn Vũ thôn
-20,20413,204137,,village,天龍村,てんりゅうむら,Tenryu-mura,天龙村,天龍村,덴류촌,Tenryu-mura,Hạ Điều thôn
+20,20413,204137,,village,天龍村,てんりゅうむら,Tenryu-mura,天龙村,天龍村,덴류촌,Tenryū-mura,Hạ Điều thôn
 20,20414,204145,,village,泰阜村,やすおかむら,Yasuoka-mura,泰阜村,泰阜村,야스오카촌,Yasuoka-mura,Bán Mộc thôn
 20,20415,204153,,village,喬木村,たかぎむら,Takagi-mura,乔木村,喬木村,다카기촌,Takagi-mura,Thiên Long thôn
 20,20416,204161,,village,豊丘村,とよおかむら,Toyooka-mura,丰丘村,豐丘村,도요오카촌,Toyooka-mura,Thái U thôn
-20,20417,204170,,village,大鹿村,おおしかむら,Oshika-mura,大鹿村,大鹿村,오시카촌,Oshika-mura,Kiều Mộc thôn
+20,20417,204170,,village,大鹿村,おおしかむら,Oshika-mura,大鹿村,大鹿村,오시카촌,Ōshika-mura,Kiều Mộc thôn
 20,20422,204226,,town,上松町,あげまつまち,Agematsu-machi,上松町,上松町,아게마쓰정,Agematsu-machi,Nam Mộc Tằng đinh
 20,20423,204234,,town,南木曽町,なぎそまち,Nagiso-machi,南木曾町,南木曾町,나기소정,Nagiso-machi,Mộc Tổ thôn
 20,20425,204250,,village,木祖村,きそむら,Kiso-mura,木祖村,木祖村,기소촌,Kiso-mura,Đại Tang thôn
-20,20429,204293,,village,王滝村,おうたきむら,Otaki-mura,王泷村,王瀧村,오타키촌,Otaki-mura,Ma Tích thôn
-20,20430,204307,,village,大桑村,おおくわむら,Okuwa-mura,大桑村,大桑村,오쿠와촌,Okuwa-mura,Sinh Phản thôn
+20,20429,204293,,village,王滝村,おうたきむら,Otaki-mura,王泷村,王瀧村,오타키촌,Ōtaki-mura,Ma Tích thôn
+20,20430,204307,,village,大桑村,おおくわむら,Okuwa-mura,大桑村,大桑村,오쿠와촌,Ōkuwa-mura,Sinh Phản thôn
 20,20432,204323,,town,木曽町,きそまち,Kiso-machi,木曾町,木曾町,기소군,Kiso-machi,Triêu Nhật thôn
 20,20446,204463,,village,麻績村,おみむら,Omi-mura,麻绩村,麻績村,오미촌,Omi-mura,Ma Tích thôn
 20,20448,204480,,village,生坂村,いくさかむら,Ikusaka-mura,生坂村,生坂村,이쿠사카촌,Ikusaka-mura,Sinh Phản thôn
@@ -971,7 +971,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 20,20521,205214,,town,坂城町,さかきまち,Sakaki-machi,坂城町,坂城町,사카키정,Sakaki-machi,Bản Thành đinh
 20,20541,205419,,town,小布施町,おぶせまち,Obuse-machi,小布施町,小布施町,오부세정,Obuse-machi,Tín Nùng đinh
 20,20543,205435,,village,高山村,たかやまむら,Takayama-mura,高山村,高山村,다카야마촌,Takayama-mura,Tiểu Xuyên thôn
-20,20561,205613,,town,山ノ内町,やまのうちまち,Yamanouchi-machi,山之内町,山之內町,야마노우치정,Yamanouchi-machi,Sơn Chi Nội đinh
+20,20561,205613,,town,山ノ内町,やまのうちまち,Yamanouchi-machi,山之内町,山之內町,야마노우치정,Yamanōchi-machi,Sơn Chi Nội đinh
 20,20562,205621,,village,木島平村,きじまだいらむら,Kijimadaira-mura,木岛平村,木島平村,기지마다이라촌,Kijimadaira-mura,Mộc Đảo Bình thôn
 20,20563,205630,,village,野沢温泉村,のざわおんせんむら,Nozawaonsen-mura,野泽温泉村,野澤溫泉村,노자와온센촌,Nozawaonsen-mura,Dã Trạch Ôn Tuyền thôn
 20,20583,205834,,town,信濃町,しなのまち,Shinano-machi,信浓町,信濃町,시나노정,Shinano-machi,Tín Nùng đinh
@@ -979,7 +979,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 20,20590,205907,,town,飯綱町,いいづなまち,Iizuna-machi,饭纲町,飯綱町,이즈나정,Iizuna-machi,Phạn Tùng đinh
 20,20602,206024,,village,栄村,さかえむら,Sakae-mura,荣村,榮村,사카에촌,Sakae-mura,Vinh thôn
 21,21201,212016,,city,岐阜市,ぎふし,Gifu-shi,岐阜市,岐阜市,기후시,Gifu-shi,Kỳ Phụ thị
-21,21202,212024,,city,大垣市,おおがきし,Ogaki-shi,大垣市,大垣市,오가키시,Ogaki-shi,Đại Viên thị
+21,21202,212024,,city,大垣市,おおがきし,Ogaki-shi,大垣市,大垣市,오가키시,Ōgaki-shi,Đại Viên thị
 21,21203,212032,,city,高山市,たかやまし,Takayama-shi,高山市,高山市,다카야마시,Takayama-shi,Cao Sơn thị
 21,21204,212040,,city,多治見市,たじみし,Tajimi-shi,多治见市,多治見市,다지미시,Tajimi-shi,Đa Trị Kiến thị
 21,21205,212059,,city,関市,せきし,Seki-shi,关市,關市,세키시,Seki-shi,Quan thị
@@ -996,25 +996,25 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 21,21216,212164,,city,瑞穂市,みずほし,Mizuho-shi,瑞穗市,瑞穗市,미즈호시,Mizuho-shi,Thụy Tuệ thị
 21,21217,212172,,city,飛騨市,ひだし,Hida-shi,飞驒市,飛驒市,히다시,Hida-shi,Phi Đàn thị
 21,21218,212180,,city,本巣市,もとすし,Motosu-shi,本巢市,本巢市,모토스시,Motosu-shi,Bản Tổ thị
-21,21219,212199,,city,郡上市,ぐじょうし,Gujo-shi,郡上市,郡上市,구조시,Gujo-shi,Quận Thượng thị
+21,21219,212199,,city,郡上市,ぐじょうし,Gujo-shi,郡上市,郡上市,구조시,Gujō-shi,Quận Thượng thị
 21,21220,212202,,city,下呂市,げろし,Gero-shi,下吕市,下呂市,게로시,Gero-shi,Hạ Lữ thị
 21,21221,212210,,city,海津市,かいづし,Kaizu-shi,海津市,海津市,가이즈시,Kaizu-shi,Hải Tân thị
 21,21302,213020,,town,岐南町,ぎなんちょう,Ginan-cho,岐南町,岐南町,기난정,Ginan-cho,Lạp Tùng đinh
 21,21303,213039,,town,笠松町,かさまつちょう,Kasamatsu-cho,笠松町,笠松町,가사마쓰정,Kasamatsu-cho,Dưỡng Lão đinh
-21,21341,213411,,town,養老町,ようろうちょう,Yoro-cho,养老町,養老町,요로정,Yoro-cho,Dưỡng Lão đinh
+21,21341,213411,,town,養老町,ようろうちょう,Yoro-cho,养老町,養老町,요로정,Yōrō-cho,Dưỡng Lão đinh
 21,21361,213616,,town,垂井町,たるいちょう,Tarui-cho,垂井町,垂井町,다루이정,Tarui-cho,Thùy Tỉnh đinh
 21,21362,213624,,town,関ケ原町,せきがはらちょう,Sekigahara-cho,关原町,關原町,세키가하라정,Sekigahara-cho,Quan Cá Nguyên đinh
-21,21381,213810,,town,神戸町,ごうどちょう,Godo-cho,神户町,神戶町,고도정,Godo-cho,Thần Hộ đinh
-21,21382,213829,,town,輪之内町,わのうちちょう,Wanouchi-cho,轮之内町,輪之內町,와노우치정,Wanouchi-cho,Luân Chi Nội đinh
+21,21381,213810,,town,神戸町,ごうどちょう,Godo-cho,神户町,神戶町,고도정,Gōdo-cho,Thần Hộ đinh
+21,21382,213829,,town,輪之内町,わのうちちょう,Wanouchi-cho,轮之内町,輪之內町,와노우치정,Wanōchi-cho,Luân Chi Nội đinh
 21,21383,213837,,town,安八町,あんぱちちょう,Anpachi-cho,安八町,安八町,안파치정,Ampachi-cho,An Bát đinh
 21,21401,214019,,town,揖斐川町,いびがわちょう,Ibigawa-cho,揖斐川町,揖斐川町,이비가와정,Ibigawa-cho,Y Bỉ Xuyên đinh
-21,21403,214035,,town,大野町,おおのちょう,Ono-cho,大野町,大野町,오노정,Ono-cho,Đại Dã đinh
+21,21403,214035,,town,大野町,おおのちょう,Ono-cho,大野町,大野町,오노정,Ōno-cho,Đại Dã đinh
 21,21404,214043,,town,池田町,いけだちょう,Ikeda-cho,池田町,池田町,이케다정,Ikeda-cho,Trì Điền đinh
 21,21421,214213,,town,北方町,きたがたちょう,Kitagata-cho,北方町,北方町,기타가타정,Kitagata-cho,Bắc Phương đinh
 21,21501,215015,,town,坂祝町,さかほぎちょう,Sakahogi-cho,坂祝町,坂祝町,사카호기정,Sakahogi-cho,Bản Chúc đinh
 21,21502,215023,,town,富加町,とみかちょう,Tomika-cho,富加町,富加町,도미카정,Tomika-cho,Phú Gia đinh
 21,21503,215031,,town,川辺町,かわべちょう,Kawabe-cho,川边町,川邊町,가와베정,Kawabe-cho,Xuyên Biên đinh
-21,21504,215040,,town,七宗町,ひちそうちょう,Hichiso-cho,七宗町,七宗町,히치소정,Hichiso-cho,Thất Tông đinh
+21,21504,215040,,town,七宗町,ひちそうちょう,Hichiso-cho,七宗町,七宗町,히치소정,Hichisō-cho,Thất Tông đinh
 21,21505,215058,,town,八百津町,やおつちょう,Yaotsu-cho,八百津町,八百津町,야오쓰정,Yaotsu-cho,Bạch Xuyên thôn
 21,21506,215066,,town,白川町,しらかわちょう,Shirakawa-cho,白川町,白川町,시라카와정,Shirakawa-cho,Bạch Xuyên đinh
 21,21507,215074,,village,東白川村,ひがししらかわむら,Higashishirakawa-mura,东白川村,東白川村,히가시시라카와촌,Higashishirakawa-mura,Đông Bạch Xuyên thôn
@@ -1025,14 +1025,14 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 22,22102,221023,22100,ward,駿河区,するがく,Suruga-ku,骏河区,駿河區,스루가구,Suruga-ku,Tuấn Hà khu
 22,22103,221031,22100,ward,清水区,しみずく,Shimizu-ku,清水区,清水區,시미즈구,Shimizu-ku,Thanh Thủy khu
 22,22130,221309,,designated_city,浜松市,はままつし,Hamamatsu-shi,滨松市,濱松市,하마마쓰시,Hamamatsu-shi,Tân Tùng thị
-22,22131,221317,22130,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+22,22131,221317,22130,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 22,22132,221325,22130,ward,浜名区,はまなく,Hamana-ku,滨名区,濱名區,하마나구,Hamana-ku,Tân Danh khu
-22,22133,221333,22130,ward,天竜区,てんりゅうく,Tenryu-ku,天龙区,天龍區,덴류구,Tenryu-ku,Thiên Long khu
+22,22133,221333,22130,ward,天竜区,てんりゅうく,Tenryu-ku,天龙区,天龍區,덴류구,Tenryū-ku,Thiên Long khu
 22,22203,222038,,city,沼津市,ぬまづし,Numazu-shi,沼津市,沼津市,누마즈시,Numazu-shi,Chiểu Tân thị
 22,22205,222054,,city,熱海市,あたみし,Atami-shi,热海市,熱海市,아타미시,Atami-shi,Nhiệt Hải thị
 22,22206,222062,,city,三島市,みしまし,Mishima-shi,三岛市,三島市,미시마시,Mishima-shi,Tam Đảo thị
 22,22207,222070,,city,富士宮市,ふじのみやし,Fujinomiya-shi,富士宫市,富士宮市,후지노미야시,Fujinomiya-shi,Phú Sĩ Cung thị
-22,22208,222089,,city,伊東市,いとうし,Ito-shi,伊东市,伊東市,이토시,Ito-shi,Y Đông thị
+22,22208,222089,,city,伊東市,いとうし,Ito-shi,伊东市,伊東市,이토시,Itō-shi,Y Đông thị
 22,22209,222097,,city,島田市,しまだし,Shimada-shi,岛田市,島田市,시마다시,Shimada-shi,Đảo Điền thị
 22,22210,222100,,city,富士市,ふじし,Fuji-shi,富士市,富士市,후지시,Fuji-shi,Phú Sĩ thị
 22,22211,222119,,city,磐田市,いわたし,Iwata-shi,磐田市,磐田市,이와타시,Iwata-shi,Bàn Điền thị
@@ -1068,7 +1068,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 23,23104,231045,23100,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
 23,23105,231053,23100,ward,中村区,なかむらく,Nakamura-ku,中村区,中村區,나카무라구,Nakamura-ku,Trung Thôn khu
 23,23106,231061,23100,ward,中区,なかく,Naka-ku,中区,中區,나카구,Naka-ku,Trung khu
-23,23107,231070,23100,ward,昭和区,しょうわく,Showa-ku,昭和区,昭和區,쇼와구,Showa-ku,Chiêu Hòa khu
+23,23107,231070,23100,ward,昭和区,しょうわく,Showa-ku,昭和区,昭和區,쇼와구,Shōwa-ku,Chiêu Hòa khu
 23,23108,231088,23100,ward,瑞穂区,みずほく,Mizuho-ku,瑞穗区,瑞穗區,미즈호구,Mizuho-ku,Thụy Tuệ khu
 23,23109,231096,23100,ward,熱田区,あつたく,Atsuta-ku,热田区,熱田區,아쓰타구,Atsuta-ku,Nhiệt Điền khu
 23,23110,231100,23100,ward,中川区,なかがわく,Nakagawa-ku,中川区,中川區,나카가와구,Nakagawa-ku,Trung Xuyên khu
@@ -1076,7 +1076,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 23,23112,231126,23100,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
 23,23113,231134,23100,ward,守山区,もりやまく,Moriyama-ku,守山区,守山區,모리야마구,Moriyama-ku,Thủ Sơn khu
 23,23114,231142,23100,ward,緑区,みどりく,Midori-ku,绿区,綠區,미도리구,Midori-ku,Lục khu
-23,23115,231150,23100,ward,名東区,めいとうく,Meito-ku,名东区,名東區,메이토구,Meito-ku,Danh Đông khu
+23,23115,231150,23100,ward,名東区,めいとうく,Meito-ku,名东区,名東區,메이토구,Meitō-ku,Danh Đông khu
 23,23116,231169,23100,ward,天白区,てんぱくく,Tempaku-ku,天白区,天白區,덴파쿠구,Tempaku-ku,Thiên Bạch khu
 23,23201,232017,,city,豊橋市,とよはしし,Toyohashi-shi,丰桥市,豐橋市,도요하시시,Toyohashi-shi,Phong Kiều thị
 23,23202,232025,,city,岡崎市,おかざきし,Okazaki-shi,冈崎市,岡崎市,오카자키시,Okazaki-shi,Cương Khi thị
@@ -1089,19 +1089,19 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 23,23209,232092,,city,碧南市,へきなんし,Hekinan-shi,碧南市,碧南市,헤키난시,Hekinan-shi,Bích Nam thị
 23,23210,232106,,city,刈谷市,かりやし,Kariya-shi,刈谷市,刈谷市,가리야시,Kariya-shi,Thủ Xa thị
 23,23211,232114,,city,豊田市,とよたし,Toyota-shi,丰田市,豐田市,도요타시,Toyota-shi,Phong Điền thị
-23,23212,232122,,city,安城市,あんじょうし,Anjo-shi,安城市,安城市,안조시,Anjo-shi,An Thành thị
+23,23212,232122,,city,安城市,あんじょうし,Anjo-shi,安城市,安城市,안조시,Anjō-shi,An Thành thị
 23,23213,232130,,city,西尾市,にしおし,Nishio-shi,西尾市,西尾市,니시오시,Nishio-shi,Tây Vĩ thị
-23,23214,232149,,city,蒲郡市,がまごおりし,Gamagori-shi,蒲郡市,蒲郡市,가마고리시,Gamagori-shi,Bồ Quận thị
+23,23214,232149,,city,蒲郡市,がまごおりし,Gamagori-shi,蒲郡市,蒲郡市,가마고리시,Gamagōri-shi,Bồ Quận thị
 23,23215,232157,,city,犬山市,いぬやまし,Inuyama-shi,犬山市,犬山市,이누야마시,Inuyama-shi,Khuyển Sơn thị
 23,23216,232165,,city,常滑市,とこなめし,Tokoname-shi,常滑市,常滑市,도코나메시,Tokoname-shi,Thường Hoạt thị
-23,23217,232173,,city,江南市,こうなんし,Konan-shi,江南市,江南市,고난시,Konan-shi,Giang Nam thị
+23,23217,232173,,city,江南市,こうなんし,Konan-shi,江南市,江南市,고난시,Kōnan-shi,Giang Nam thị
 23,23219,232190,,city,小牧市,こまきし,Komaki-shi,小牧市,小牧市,고마키시,Komaki-shi,Đạo Trạch thị
 23,23220,232203,,city,稲沢市,いなざわし,Inazawa-shi,稻泽市,稻澤市,이나자와시,Inazawa-shi,Tân Thành thị
 23,23221,232211,,city,新城市,しんしろし,Shinshiro-shi,新城市,新城市,신시로시,Shinshiro-shi,Đông Hải thị
-23,23222,232220,,city,東海市,とうかいし,Tokai-shi,东海市,東海市,도카이시,Tokai-shi,Đại Phủ thị
-23,23223,232238,,city,大府市,おおぶし,Obu-shi,大府市,大府市,오부시,Obu-shi,Tri Đa thị
+23,23222,232220,,city,東海市,とうかいし,Tokai-shi,东海市,東海市,도카이시,Tōkai-shi,Đại Phủ thị
+23,23223,232238,,city,大府市,おおぶし,Obu-shi,大府市,大府市,오부시,Ōbu-shi,Tri Đa thị
 23,23224,232246,,city,知多市,ちたし,Chita-shi,知多市,知多市,지타시,Chita-shi,Tri Lập thị
-23,23225,232254,,city,知立市,ちりゅうし,Chiryu-shi,知立市,知立市,지류시,Chiryu-shi,Vĩ Trương Húc thị
+23,23225,232254,,city,知立市,ちりゅうし,Chiryu-shi,知立市,知立市,지류시,Chiryū-shi,Vĩ Trương Húc thị
 23,23226,232262,,city,尾張旭市,おわりあさひし,Owariasahi-shi,尾张旭市,尾張旭市,오와리아사히시,Owariasahi-shi,Cao Tân thị
 23,23227,232270,,city,高浜市,たかはまし,Takahama-shi,高滨市,高濱市,다카하마시,Takahama-shi,Nham Thương thị
 23,23228,232289,,city,岩倉市,いわくらし,Iwakura-shi,岩仓市,岩倉市,이와쿠라시,Iwakura-shi,Phong Minh thị
@@ -1115,11 +1115,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 23,23236,232360,,city,みよし市,みよしし,Miyoshi-shi,三好市,三好市,미요시시,Miyoshi-shi,A Ma thị
 23,23237,232378,,city,あま市,あまし,Ama-shi,海部市,海部市,아마시,Ama-shi,Trường Cửu Thủ thị
 23,23238,232386,,city,長久手市,ながくてし,Nagakute-shi,长久手市,長久手市,나가쿠테시,Nagakute-shi,Trường Cửu Thủ thị
-23,23302,233021,,town,東郷町,とうごうちょう,Togo-cho,东乡町,東鄉町,도고정,Togo-cho,Phong Sơn đinh
+23,23302,233021,,town,東郷町,とうごうちょう,Togo-cho,东乡町,東鄉町,도고정,Tōgō-cho,Phong Sơn đinh
 23,23342,233420,,town,豊山町,とよやまちょう,Toyoyama-cho,丰山町,豐山町,도요야마정,Toyoyama-cho,Đại Trị đinh
-23,23361,233617,,town,大口町,おおぐちちょう,Oguchi-cho,大口町,大口町,오구치정,Oguchi-cho,A Cửu Tỷ đinh
-23,23362,233625,,town,扶桑町,ふそうちょう,Fuso-cho,扶桑町,扶桑町,후소정,Fuso-cho,Đông Phổ đinh
-23,23424,234249,,town,大治町,おおはるちょう,Oharu-cho,大治町,大治町,오하루정,Oharu-cho,Hạnh Điền đinh
+23,23361,233617,,town,大口町,おおぐちちょう,Oguchi-cho,大口町,大口町,오구치정,Ōguchi-cho,A Cửu Tỷ đinh
+23,23362,233625,,town,扶桑町,ふそうちょう,Fuso-cho,扶桑町,扶桑町,후소정,Fusō-cho,Đông Phổ đinh
+23,23424,234249,,town,大治町,おおはるちょう,Oharu-cho,大治町,大治町,오하루정,Ōharu-cho,Hạnh Điền đinh
 23,23425,234257,,town,蟹江町,かにえちょう,Kanie-cho,蟹江町,蟹江町,가니에정,Kanie-cho,Giải Giang đinh
 23,23427,234273,,village,飛島村,とびしまむら,Tobishima-mura,飞岛村,飛島村,도비시마촌,Tobishima-mura,Phi Đảo thôn
 23,23441,234419,,town,阿久比町,あぐいちょう,Agui-cho,阿久比町,阿久比町,아구이정,Agui-cho,Thiết Lạp đinh
@@ -1127,9 +1127,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 23,23445,234451,,town,南知多町,みなみちたちょう,Minamichita-cho,南知多町,南知多町,미나미치타정,Minamichita-cho,Nam Tri Đa đinh
 23,23446,234460,,town,美浜町,みはまちょう,Mihama-cho,美滨町,美濱町,미하마정,Mihama-cho,Mỹ Tân đinh
 23,23447,234478,,town,武豊町,たけとよちょう,Taketoyo-cho,武丰町,武豐町,다케토요정,Taketoyo-cho,Vũ Phong đinh
-23,23501,235016,,town,幸田町,こうたちょう,Kota-cho,幸田町,幸田町,고타정,Kota-cho,Hạnh Điền đinh
+23,23501,235016,,town,幸田町,こうたちょう,Kota-cho,幸田町,幸田町,고타정,Kōta-cho,Hạnh Điền đinh
 23,23561,235610,,town,設楽町,したらちょう,Shitara-cho,设乐町,設樂町,시타라정,Shitara-cho,Thiết Lạp đinh
-23,23562,235628,,town,東栄町,とうえいちょう,Toei-cho,东荣町,東榮町,도에이정,Toei-cho,Đông Vinh đinh
+23,23562,235628,,town,東栄町,とうえいちょう,Toei-cho,东荣町,東榮町,도에이정,Tōei-cho,Đông Vinh đinh
 23,23563,235636,,village,豊根村,とよねむら,Toyone-mura,丰根村,豐根村,도요네촌,Toyone-mura,Phong Căn thôn
 24,24201,242012,,city,津市,つし,Tsu-shi,津市,津市,쓰시,Tsu-shi,Tân thị
 24,24202,242020,,city,四日市市,よっかいちし,Yokkaichi-shi,四日市市,四日市市,욧카이치시,Yokkaichi-shi,Tứ Nhật Thị thị
@@ -1146,66 +1146,66 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 24,24215,242152,,city,志摩市,しまし,Shima-shi,志摩市,志摩市,시마시,Shima-shi,Chí Ma thị
 24,24216,242160,,city,伊賀市,いがし,Iga-shi,伊贺市,伊賀市,이가시,Iga-shi,Y Hạ thị
 24,24303,243035,,town,木曽岬町,きそさきちょう,Kisosaki-cho,木曾岬町,木曾岬町,기소사키정,Kisosaki-cho,Mộc Tằng Hải đinh
-24,24324,243248,,town,東員町,とういんちょう,Toin-cho,东员町,東員町,도인정,Toin-cho,Đông Ấn đinh
+24,24324,243248,,town,東員町,とういんちょう,Toin-cho,东员町,東員町,도인정,Tōin-cho,Đông Ấn đinh
 24,24341,243418,,town,菰野町,こものちょう,Komono-cho,菰野町,菰野町,고모노정,Komono-cho,Bồ Dã đinh
 24,24343,243434,,town,朝日町,あさひちょう,Asahi-cho,朝日町,朝日町,아사히정,Asahi-cho,Xuyên Việt đinh
 24,24344,243442,,town,川越町,かわごえちょう,Kawagoe-cho,川越町,川越町,가와고에정,Kawagoe-cho,Xuyên Việt đinh
 24,24441,244414,,town,多気町,たきちょう,Taki-cho,多气町,多氣町,다키정,Taki-cho,Đa Khí đinh
 24,24442,244422,,town,明和町,めいわちょう,Meiwa-cho,明和町,明和町,메이와정,Meiwa-cho,Minh Hòa đinh
-24,24443,244430,,town,大台町,おおだいちょう,Odai-cho,大台町,大臺町,오다이정,Odai-cho,Đại Đài đinh
+24,24443,244430,,town,大台町,おおだいちょう,Odai-cho,大台町,大臺町,오다이정,Ōdai-cho,Đại Đài đinh
 24,24461,244619,,town,玉城町,たまきちょう,Tamaki-cho,玉城町,玉城町,다마키정,Tamaki-cho,Ngọc Thành đinh
 24,24470,244708,,town,度会町,わたらいちょう,Watarai-cho,度会町,度會町,와타라이정,Watarai-cho,Độ Hội đinh
 24,24471,244716,,town,大紀町,たいきちょう,Taiki-cho,大纪町,大紀町,다이키정,Taiki-cho,Đại Kỷ đinh
 24,24472,244724,,town,南伊勢町,みなみいせちょう,Minamiise-cho,南伊势町,南伊勢町,미나미이세정,Minamiise-cho,Nam Y Thế đinh
 24,24543,245437,,town,紀北町,きほくちょう,Kihoku-cho,纪北町,紀北町,기호쿠정,Kihoku-cho,Kỷ Bắc đinh
 24,24561,245615,,town,御浜町,みはまちょう,Mihama-cho,御滨町,御濱町,미하마정,Mihama-cho,Ngự Tân đinh
-24,24562,245623,,town,紀宝町,きほうちょう,Kiho-cho,纪宝町,紀寶町,기호정,Kiho-cho,Kỷ Bảo đinh
-25,25201,252018,,city,大津市,おおつし,Otsu-shi,大津市,大津市,오쓰시,Otsu-shi,Đại Tân thị
+24,24562,245623,,town,紀宝町,きほうちょう,Kiho-cho,纪宝町,紀寶町,기호정,Kihō-cho,Kỷ Bảo đinh
+25,25201,252018,,city,大津市,おおつし,Otsu-shi,大津市,大津市,오쓰시,Ōtsu-shi,Đại Tân thị
 25,25202,252026,,city,彦根市,ひこねし,Hikone-shi,彦根市,彥根市,히코네시,Hikone-shi,Ngạn Căn thị
 25,25203,252034,,city,長浜市,ながはまし,Nagahama-shi,长滨市,長濱市,나가하마시,Nagahama-shi,Trường Tân thị
-25,25204,252042,,city,近江八幡市,おうみはちまんし,Omihachiman-shi,近江八幡市,近江八幡市,오미하치만시,Omihachiman-shi,Cận Giang Bát Phan thị
+25,25204,252042,,city,近江八幡市,おうみはちまんし,Omihachiman-shi,近江八幡市,近江八幡市,오미하치만시,Ōmihachiman-shi,Cận Giang Bát Phan thị
 25,25206,252069,,city,草津市,くさつし,Kusatsu-shi,草津市,草津市,구사쓰시,Kusatsu-shi,Thảo Tân thị
 25,25207,252077,,city,守山市,もりやまし,Moriyama-shi,守山市,守山市,모리야마시,Moriyama-shi,Thủ Sơn thị
-25,25208,252085,,city,栗東市,りっとうし,Ritto-shi,栗东市,栗東市,릿토시,Ritto-shi,Lật Đông thị
-25,25209,252093,,city,甲賀市,こうかし,Koka-shi,甲贺市,甲賀市,고카시,Koka-shi,Giáp Hạ thị
+25,25208,252085,,city,栗東市,りっとうし,Ritto-shi,栗东市,栗東市,릿토시,Rittō-shi,Lật Đông thị
+25,25209,252093,,city,甲賀市,こうかし,Koka-shi,甲贺市,甲賀市,고카시,Kōka-shi,Giáp Hạ thị
 25,25210,252107,,city,野洲市,やすし,Yasu-shi,野洲市,野洲市,야스시,Yasu-shi,Dã Châu thị
 25,25211,252115,,city,湖南市,こなんし,Konan-shi,湖南市,湖南市,고난시,Konan-shi,Hồ Nam thị
 25,25212,252123,,city,高島市,たかしまし,Takashima-shi,高岛市,高島市,다카시마시,Takashima-shi,Cao Đảo thị
-25,25213,252131,,city,東近江市,ひがしおうみし,Higashiomi-shi,东近江市,東近江市,히가시오미시,Higashiomi-shi,Đông Cận Giang thị
+25,25213,252131,,city,東近江市,ひがしおうみし,Higashiomi-shi,东近江市,東近江市,히가시오미시,Higashiōmi-shi,Đông Cận Giang thị
 25,25214,252140,,city,米原市,まいばらし,Maibara-shi,米原市,米原市,마이바라시,Maibara-shi,Mễ Nguyên thị
 25,25383,253839,,town,日野町,ひのちょう,Hino-cho,日野町,日野町,히노정,Hino-cho,Nhật Dã đinh
-25,25384,253847,,town,竜王町,りゆうおうちょう,Ryuo-cho,龙王町,龍王町,류오정,Ryuo-cho,Long Vương đinh
-25,25425,254258,,town,愛荘町,あいしょうちょう,Aisho-cho,爱庄町,愛莊町,아이쇼정,Aisho-cho,Ái Trang đinh
+25,25384,253847,,town,竜王町,りゆうおうちょう,Ryuo-cho,龙王町,龍王町,류오정,Riyūō-cho,Long Vương đinh
+25,25425,254258,,town,愛荘町,あいしょうちょう,Aisho-cho,爱庄町,愛莊町,아이쇼정,Aishō-cho,Ái Trang đinh
 25,25441,254410,,town,豊郷町,とよさとちょう,Toyosato-cho,丰乡町,豐鄉町,도요사토정,Toyosato-cho,Phong Hương đinh
-25,25442,254428,,town,甲良町,こうらちょう,Kora-cho,甲良町,甲良町,고라정,Kora-cho,Giáp Lương đinh
+25,25442,254428,,town,甲良町,こうらちょう,Kora-cho,甲良町,甲良町,고라정,Kōra-cho,Giáp Lương đinh
 25,25443,254436,,town,多賀町,たがちょう,Taga-cho,多贺町,多賀町,다가정,Taga-cho,Đa Hạ đinh
 26,26100,261009,,designated_city,京都市,きょうとし,Kyoto-shi,京都市,京都市,교토시,Quioto-shi,Kinh Đô thị
 26,26101,261017,26100,ward,北区,きたく,Kita-ku,北区,北區,기타구,Kita-ku,Bắc khu
-26,26102,261025,26100,ward,上京区,かみぎょうく,Kamigyo-ku,上京区,上京區,가미교구,Kamigyo-ku,Thượng Kinh khu
-26,26103,261033,26100,ward,左京区,さきょうく,Sakyo-ku,左京区,左京區,사쿄구,Sakyo-ku,Tả Kinh khu
-26,26104,261041,26100,ward,中京区,なかぎょうく,Nakagyo-ku,中京区,中京區,나카교구,Nakagyo-ku,Trung Kinh khu
+26,26102,261025,26100,ward,上京区,かみぎょうく,Kamigyo-ku,上京区,上京區,가미교구,Kamigyō-ku,Thượng Kinh khu
+26,26103,261033,26100,ward,左京区,さきょうく,Sakyo-ku,左京区,左京區,사쿄구,Sakyō-ku,Tả Kinh khu
+26,26104,261041,26100,ward,中京区,なかぎょうく,Nakagyo-ku,中京区,中京區,나카교구,Nakagyō-ku,Trung Kinh khu
 26,26105,261050,26100,ward,東山区,ひがしやまく,Higashiyama-ku,东山区,東山區,히가시야마구,Higashiyama-ku,Đông Sơn khu
-26,26106,261068,26100,ward,下京区,しもぎょうく,Shimogyo-ku,下京区,下京區,시모교구,Shimogyo-ku,Hạ Kinh khu
+26,26106,261068,26100,ward,下京区,しもぎょうく,Shimogyo-ku,下京区,下京區,시모교구,Shimogyō-ku,Hạ Kinh khu
 26,26107,261076,26100,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
-26,26108,261084,26100,ward,右京区,うきょうく,Ukyo-ku,右京区,右京區,우쿄구,Ukyo-ku,Hữu Kinh khu
+26,26108,261084,26100,ward,右京区,うきょうく,Ukyo-ku,右京区,右京區,우쿄구,Ukyō-ku,Hữu Kinh khu
 26,26109,261092,26100,ward,伏見区,ふしみく,Fushimi-ku,伏见区,伏見區,후시미구,Fushimi-ku,Phục Kiến khu
 26,26110,261106,26100,ward,山科区,やましなく,Yamashina-ku,山科区,山科區,야마시나구,Yamashina-ku,Sơn Khoa khu
-26,26111,261114,26100,ward,西京区,にしきょうく,Nishikyo-ku,西京区,西京區,니시쿄구,Nishikyo-ku,Tây Kinh khu
+26,26111,261114,26100,ward,西京区,にしきょうく,Nishikyo-ku,西京区,西京區,니시쿄구,Nishikyō-ku,Tây Kinh khu
 26,26201,262013,,city,福知山市,ふくちやまし,Fukuchiyama-shi,福知山市,福知山市,후쿠치야마시,Fukuchiyama-shi,Phúc Tri Sơn thị
 26,26202,262021,,city,舞鶴市,まいづるし,Maizuru-shi,舞鹤市,舞鶴市,마이즈루시,Maizuru-shi,Vũ Hạc thị
 26,26203,262030,,city,綾部市,あやべし,Ayabe-shi,绫部市,綾部市,아야베시,Ayabe-shi,Lăng Bộ thị
 26,26204,262048,,city,宇治市,うじし,Uji-shi,宇治市,宇治市,우지시,Uji-shi,Vũ Trị thị
 26,26205,262056,,city,宮津市,みやづし,Miyazu-shi,宫津市,宮津市,미야즈시,Miyazu-shi,Cung Tân thị
 26,26206,262064,,city,亀岡市,かめおかし,Kameoka-shi,龟冈市,龜岡市,가메오카시,Kameoka-shi,Quy Cương thị
-26,26207,262072,,city,城陽市,じょうようし,Joyo-shi,城阳市,城陽市,조요시,Joyo-shi,Thành Dương thị
-26,26208,262080,,city,向日市,むこうし,Muko-shi,向日市,向日市,무코시,Muko-shi,Hướng Nhật thị
-26,26209,262099,,city,長岡京市,ながおかきょうし,Nagaokakyo-shi,长冈京市,長岡京市,나가오카쿄시,Nagaokakyo-shi,Trường Cương Kinh thị
+26,26207,262072,,city,城陽市,じょうようし,Joyo-shi,城阳市,城陽市,조요시,Jōyō-shi,Thành Dương thị
+26,26208,262080,,city,向日市,むこうし,Muko-shi,向日市,向日市,무코시,Mukō-shi,Hướng Nhật thị
+26,26209,262099,,city,長岡京市,ながおかきょうし,Nagaokakyo-shi,长冈京市,長岡京市,나가오카쿄시,Nagaokakyō-shi,Trường Cương Kinh thị
 26,26210,262102,,city,八幡市,やわたし,Yawata-shi,八幡市,八幡市,야와타시,Yawata-shi,Bát Phan thị
-26,26211,262110,,city,京田辺市,きょうたなべし,Kyotanabe-shi,京田边市,京田邊市,교타나베시,Kyotanabe-shi,Kinh Điền Biên thị
-26,26212,262129,,city,京丹後市,きょうたんごし,Kyotango-shi,京丹后市,京丹後市,교탄고시,Kyotango-shi,Kinh Đan Hậu thị
+26,26211,262110,,city,京田辺市,きょうたなべし,Kyotanabe-shi,京田边市,京田邊市,교타나베시,Kyōtanabe-shi,Kinh Điền Biên thị
+26,26212,262129,,city,京丹後市,きょうたんごし,Kyotango-shi,京丹后市,京丹後市,교탄고시,Kyōtango-shi,Kinh Đan Hậu thị
 26,26213,262137,,city,南丹市,なんたんし,Nantan-shi,南丹市,南丹市,난탄시,Nantan-shi,Nam Đan thị
 26,26214,262145,,city,木津川市,きづがわし,Kizugawa-shi,木津川市,木津川市,기즈가와시,Kizugawa-shi,Mộc Tân Xuyên thị
-26,26303,263036,,town,大山崎町,おおやまざきちょう,Oyamazaki-cho,大山崎町,大山崎町,오야마자키정,Oyamazaki-cho,Đại Sơn Kỳ đinh
+26,26303,263036,,town,大山崎町,おおやまざきちょう,Oyamazaki-cho,大山崎町,大山崎町,오야마자키정,Ōyamazaki-cho,Đại Sơn Kỳ đinh
 26,26322,263222,,town,久御山町,くみやまちょう,Kumiyama-cho,久御山町,久御山町,구미야마정,Kumiyama-cho,Cửu Ngự Sơn đinh
 26,26343,263435,,town,井手町,いでちょう,Ide-cho,井手町,井手町,이데정,Ide-cho,Cửu Ngự Sơn đinh
 26,26344,263443,,town,宇治田原町,うじたわらちょう,Ujitawara-cho,宇治田原町,宇治田原町,우지타와라정,Ujitawara-cho,Vũ Trị Điền Nguyên đinh
@@ -1213,24 +1213,24 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 26,26365,263656,,town,和束町,わづかちょう,Wazuka-cho,和束町,和束町,와즈카정,Wazuka-cho,Hòa Thúc đinh
 26,26366,263664,,town,精華町,せいかちょう,Seika-cho,精华町,精華町,세이카정,Seika-cho,Tinh Hoa đinh
 26,26367,263672,,village,南山城村,みなみやましろむら,Minamiyamashiro-mura,南山城村,南山城村,미나미야마시로촌,Minamiyamashiro-mura,Nam Sơn Thành thôn
-26,26407,264075,,town,京丹波町,きょうたんばちょう,Kyotamba-cho,京丹波町,京丹波町,교탄바정,Kyotamba-cho,Lạp Trí đinh
+26,26407,264075,,town,京丹波町,きょうたんばちょう,Kyotamba-cho,京丹波町,京丹波町,교탄바정,Kyōtamba-cho,Lạp Trí đinh
 26,26463,264636,,town,伊根町,いねちょう,Ine-cho,伊根町,伊根町,이네정,Ine-cho,Kinh Đan Ba đinh
 26,26465,264652,,town,与謝野町,よさのちょう,Yosano-cho,与谢野町,與謝野町,요사노정,Yosano-cho,Y Căn đinh
-27,27100,271004,,designated_city,大阪市,おおさかし,Osaka-shi,大阪市,大阪市,오사카시,Osaka-shi,Đại Phản thị
+27,27100,271004,,designated_city,大阪市,おおさかし,Osaka-shi,大阪市,大阪市,오사카시,Ōsaka-shi,Đại Phản thị
 27,27102,271020,27100,ward,都島区,みやこじまく,Miyakojima-ku,都岛区,都島區,미야코지마구,Miyakojima-ku,Đô Đảo khu
 27,27103,271039,27100,ward,福島区,ふくしまく,Fukushima-ku,福岛区,福島區,후쿠시마구,Fukushima-ku,Phúc Đảo khu
 27,27104,271047,27100,ward,此花区,このはなく,Konohana-ku,此花区,此花區,고노하나구,Konohana-ku,Thử Hoa khu
 27,27106,271063,27100,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
 27,27107,271071,27100,ward,港区,みなとく,Minato-ku,港区,港區,미나토구,Minato-ku,Cảng khu
-27,27108,271080,27100,ward,大正区,たいしょうく,Taisho-ku,大正区,大正區,다이쇼구,Taisho-ku,Đại Chính khu
-27,27109,271098,27100,ward,天王寺区,てんのうじく,Tennoji-ku,天王寺区,天王寺區,덴노지구,Tennoji-ku,Thiên Vương Tự khu
+27,27108,271080,27100,ward,大正区,たいしょうく,Taisho-ku,大正区,大正區,다이쇼구,Taishō-ku,Đại Chính khu
+27,27109,271098,27100,ward,天王寺区,てんのうじく,Tennoji-ku,天王寺区,天王寺區,덴노지구,Tennōji-ku,Thiên Vương Tự khu
 27,27111,271110,27100,ward,浪速区,なにわく,Naniwa-ku,浪速区,浪速區,나니와구,Naniwa-ku,Lãng Tốc khu
 27,27113,271136,27100,ward,西淀川区,にしよどがわく,Nishiyodogawa-ku,西淀川区,西淀川區,니시요도가와구,Nishiyodogawa-ku,Tây Dâm Xuyên khu
 27,27114,271144,27100,ward,東淀川区,ひがしよどがわく,Higashiyodogawa-ku,东淀川区,東淀川區,히가시요도가와구,Higashiyodogawa-ku,Đông Dâm Xuyên khu
 27,27115,271152,27100,ward,東成区,ひがしなりく,Higashinari-ku,东成区,東成區,히가시나리구,Higashinari-ku,Đông Thành khu
 27,27116,271160,27100,ward,生野区,いくのく,Ikuno-ku,生野区,生野區,이쿠노구,Ikuno-ku,Sinh Dã khu
 27,27117,271179,27100,ward,旭区,あさひく,Asahi-ku,旭区,旭區,아사히구,Asahi-ku,Húc khu
-27,27118,271187,27100,ward,城東区,じょうとうく,Joto-ku,城东区,城東區,조토구,Joto-ku,Thành Đông khu
+27,27118,271187,27100,ward,城東区,じょうとうく,Joto-ku,城东区,城東區,조토구,Jōtō-ku,Thành Đông khu
 27,27119,271195,27100,ward,阿倍野区,あべのく,Abeno-ku,阿倍野区,阿倍野區,아베노구,Abeno-ku,A Bùi Dã khu
 27,27120,271209,27100,ward,住吉区,すみよしく,Sumiyoshi-ku,住吉区,住吉區,스미요시구,Sumiyoshi-ku,Trú Cát khu
 27,27121,271217,27100,ward,東住吉区,ひがしすみよしく,Higashisumiyoshi-ku,东住吉区,東住吉區,히가시스미요시구,Higashisumiyoshi-ku,Đông Trú Cát khu
@@ -1240,7 +1240,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 27,27125,271250,27100,ward,住之江区,すみのえく,Suminoe-ku,住之江区,住之江區,스미노에구,Suminoe-ku,Trú Chi Giang khu
 27,27126,271268,27100,ward,平野区,ひらのく,Hirano-ku,平野区,平野區,히라노구,Hirano-ku,Bình Dã khu
 27,27127,271276,27100,ward,北区,きたく,Kita-ku,北区,北區,기타구,Kita-ku,Bắc khu
-27,27128,271284,27100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+27,27128,271284,27100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 27,27140,271403,,designated_city,堺市,さかいし,Sakai-shi,堺市,堺市,사카이시,Sakai-shi,Cảnh thị
 27,27141,271411,27140,ward,堺区,さかいく,Sakai-ku,堺区,堺區,사카이구,Sakai-ku,Cảnh khu
 27,27142,271420,27140,ward,中区,なかく,Naka-ku,中区,中區,나카구,Naka-ku,Trung khu
@@ -1253,7 +1253,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 27,27203,272035,,city,豊中市,とよなかし,Toyonaka-shi,丰中市,豐中市,도요나카시,Toyonaka-shi,Trì Điền thị
 27,27204,272043,,city,池田市,いけだし,Ikeda-shi,池田市,池田市,이케다시,Ikeda-shi,Xuy Điền thị
 27,27205,272051,,city,吹田市,すいたし,Suita-shi,吹田市,吹田市,스이타시,Suita-shi,Tuyền Đại Tân thị
-27,27206,272060,,city,泉大津市,いずみおおつし,Izumiotsu-shi,泉大津市,泉大津市,이즈미오쓰시,Izumiotsu-shi,Cao Tắc thị
+27,27206,272060,,city,泉大津市,いずみおおつし,Izumiotsu-shi,泉大津市,泉大津市,이즈미오쓰시,Izumiōtsu-shi,Cao Tắc thị
 27,27207,272078,,city,高槻市,たかつきし,Takatsuki-shi,高槻市,高槻市,다카쓰키시,Takatsuki-shi,Bối Trủng thị
 27,27208,272086,,city,貝塚市,かいづかし,Kaizuka-shi,贝冢市,貝塚市,가이즈카시,Kaizuka-shi,Thủ Khẩu thị
 27,27209,272094,,city,守口市,もりぐちし,Moriguchi-shi,守口市,守口市,모리구치시,Moriguchi-shi,Khốc Phương thị
@@ -1265,7 +1265,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 27,27215,272159,,city,寝屋川市,ねやがわし,Neyagawa-shi,寝屋川市,寢屋川市,네야가와시,Neyagawa-shi,Hà Nội Trường Dã thị
 27,27216,272167,,city,河内長野市,かわちながのし,Kawachinagano-shi,河内长野市,河內長野市,가와치나가노시,Kawachinagano-shi,Tùng Nguyên thị
 27,27217,272175,,city,松原市,まつばらし,Matsubara-shi,松原市,松原市,마쓰바라시,Matsubara-shi,Đại Đông thị
-27,27218,272183,,city,大東市,だいとうし,Daito-shi,大东市,大東市,다이토시,Daito-shi,Hòa Tuyền thị
+27,27218,272183,,city,大東市,だいとうし,Daito-shi,大东市,大東市,다이토시,Daitō-shi,Hòa Tuyền thị
 27,27219,272191,,city,和泉市,いずみし,Izumi-shi,和泉市,和泉市,이즈미시,Izumi-shi,Cân Diện thị
 27,27220,272205,,city,箕面市,みのおし,Mino-shi,箕面市,箕面市,미노오시,Mino-shi,Bách Nguyên thị
 27,27221,272213,,city,柏原市,かしわらし,Kashiwara-shi,柏原市,柏原市,가시와라시,Kashiwara-shi,Vũ Bãi Dã thị
@@ -1274,11 +1274,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 27,27224,272248,,city,摂津市,せっつし,Settsu-shi,摄津市,攝津市,셋쓰시,Settsu-shi,Cao Thạch thị
 27,27225,272256,,city,高石市,たかいしし,Takaishi-shi,高石市,高石市,다카이시시,Takaishi-shi,Đằng Tỉnh Tự thị
 27,27226,272264,,city,藤井寺市,ふじいでらし,Fujiidera-shi,藤井寺市,藤井寺市,후지이데라시,Fujiidera-shi,Đông Đại Phản thị
-27,27227,272272,,city,東大阪市,ひがしおおさかし,Higashiosaka-shi,东大阪市,東大阪市,히가시오사카시,Higashiosaka-shi,Tuyền Nam thị
+27,27227,272272,,city,東大阪市,ひがしおおさかし,Higashiosaka-shi,东大阪市,東大阪市,히가시오사카시,Higashiōsaka-shi,Tuyền Nam thị
 27,27228,272280,,city,泉南市,せんなんし,Sennan-shi,泉南市,泉南市,센난시,Sennan-shi,Tứ Điều Phướng thị
-27,27229,272299,,city,四條畷市,しじようなわてし,Shijonawate-shi,四条畷市,四條畷市,시조나와테시,Shijonawate-shi,Giao Dã thị
+27,27229,272299,,city,四條畷市,しじようなわてし,Shijonawate-shi,四条畷市,四條畷市,시조나와테시,Shijiyōnawate-shi,Giao Dã thị
 27,27230,272302,,city,交野市,かたのし,Katano-shi,交野市,交野市,가타노시,Katano-shi,Đại Phản Hiệp Sơn thị
-27,27231,272310,,city,大阪狭山市,おおさかさやまし,Osakasayama-shi,大阪狭山市,大阪狹山市,오사카사야마시,Osakasayama-shi,Bản Nam thị
+27,27231,272310,,city,大阪狭山市,おおさかさやまし,Osakasayama-shi,大阪狭山市,大阪狹山市,오사카사야마시,Ōsakasayama-shi,Bản Nam thị
 27,27232,272329,,city,阪南市,はんなんし,Hannan-shi,阪南市,阪南市,한난시,Hannan-shi,Bản Nam thị
 27,27301,273015,,town,島本町,しまもとちょう,Shimamoto-cho,岛本町,島本町,시마모토정,Shimamoto-cho,Đảo Bản đinh
 27,27321,273210,,town,豊能町,とよのちょう,Toyono-cho,丰能町,豐能町,도요노정,Toyono-cho,Phong Năng đinh
@@ -1290,15 +1290,15 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 27,27381,273813,,town,太子町,たいしちょう,Taishi-cho,太子町,太子町,다이시정,Taishi-cho,Thái Tử đinh
 27,27382,273821,,town,河南町,かなんちょう,Kanan-cho,河南町,河南町,가난정,Kanan-cho,Hà Nam đinh
 27,27383,273830,,village,千早赤阪村,ちはやあかさかむら,Chihayaakasaka-mura,千早赤阪村,千早赤阪村,지하야아카사카촌,Chihayaakasaka-mura,Thiên Tảo Xích Phản thôn
-28,28100,281000,,designated_city,神戸市,こうべし,Kobe-shi,神户市,神戶市,고베시,Kobe-shi,Thần Hộ thị
+28,28100,281000,,designated_city,神戸市,こうべし,Kobe-shi,神户市,神戶市,고베시,Kōbe-shi,Thần Hộ thị
 28,28101,281018,28100,ward,東灘区,ひがしなだく,Higashinada-ku,东灘区,東灘區,히가시나다구,Higashinada-ku,Đông Than khu
 28,28102,281026,28100,ward,灘区,なだく,Nada-ku,灘区,灘區,나다구,Nada-ku,Than khu
-28,28105,281050,28100,ward,兵庫区,ひょうごく,Hyogo-ku,兵库区,兵庫區,효고구,Hyogo-ku,Tu Ma khu
+28,28105,281050,28100,ward,兵庫区,ひょうごく,Hyogo-ku,兵库区,兵庫區,효고구,Hyōgo-ku,Tu Ma khu
 28,28106,281069,28100,ward,長田区,ながたく,Nagata-ku,长田区,長田區,나가타구,Nagata-ku,Thùy Thủy khu
 28,28107,281077,28100,ward,須磨区,すまく,Suma-ku,须磨区,須磨區,스마구,Suma-ku,Bắc khu
 28,28108,281085,28100,ward,垂水区,たるみく,Tarumi-ku,垂水区,垂水區,다루미구,Tarumi-ku,Trung Ương khu
 28,28109,281093,28100,ward,北区,きたく,Kita-ku,北区,北區,기타구,Kita-ku,Tây khu
-28,28110,281107,28100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+28,28110,281107,28100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 28,28111,281115,28100,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
 28,28201,282014,,city,姫路市,ひめじし,Himeji-shi,姬路市,姬路市,히메지시,Himeji-shi,Cơ Lộ thị
 28,28202,282022,,city,尼崎市,あまがさきし,Amagasaki-shi,尼崎市,尼崎市,아마가사키시,Amagasaki-shi,Ni Kỳ thị
@@ -1310,7 +1310,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 28,28208,282081,,city,相生市,あいおいし,Aioi-shi,相生市,相生市,아이오이시,Aioi-shi,Tương Sinh thị
 28,28209,282090,,city,豊岡市,とよおかし,Toyooka-shi,丰冈市,豐岡市,도요오카시,Toyooka-shi,Phong Cương thị
 28,28210,282103,,city,加古川市,かこがわし,Kakogawa-shi,加古川市,加古川市,가코가와시,Kakogawa-shi,Gia Cổ Xuyên thị
-28,28212,282120,,city,赤穂市,あこうし,Ako-shi,赤穗市,赤穗市,아코시,Ako-shi,Xích Tuệ thị
+28,28212,282120,,city,赤穂市,あこうし,Ako-shi,赤穗市,赤穗市,아코시,Akō-shi,Xích Tuệ thị
 28,28213,282138,,city,西脇市,にしわきし,Nishiwaki-shi,西胁市,西脇市,니시와키시,Nishiwaki-shi,Tây Vận thị
 28,28214,282146,,city,宝塚市,たからづかし,Takarazuka-shi,宝冢市,寶塚市,다카라즈카시,Takarazuka-shi,Bảo Trủng thị
 28,28215,282154,,city,三木市,みきし,Miki-shi,三木市,三木市,미키시,Miki-shi,Tam Mộc thị
@@ -1325,8 +1325,8 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 28,28224,282243,,city,南あわじ市,みなみあわじし,Minamiawaji-shi,南淡路市,南淡路市,미나미아와지시,Minamiawaji-shi,Nam Đạm Lộ thị
 28,28225,282251,,city,朝来市,あさごし,Asago-shi,朝来市,朝來市,아사고시,Asago-shi,Triêu Lai thị
 28,28226,282260,,city,淡路市,あわじし,Awaji-shi,淡路市,淡路市,아와지시,Awaji-shi,Đạm Lộ thị
-28,28227,282278,,city,宍粟市,しそうし,Shiso-shi,宍粟市,宍粟市,시소시,Shiso-shi,Sất Túc thị
-28,28228,282286,,city,加東市,かとうし,Kato-shi,加东市,加東市,가토시,Kato-shi,Gia Đông thị
+28,28227,282278,,city,宍粟市,しそうし,Shiso-shi,宍粟市,宍粟市,시소시,Shisō-shi,Sất Túc thị
+28,28228,282286,,city,加東市,かとうし,Kato-shi,加东市,加東市,가토시,Katō-shi,Gia Đông thị
 28,28229,282294,,city,たつの市,たつのし,Tatsuno-shi,龙野市,龍野市,다쓰노시,Tatsuno-shi,Long Dã thị
 28,28301,283010,,town,猪名川町,いながわちょう,Inagawa-cho,猪名川町,豬名川町,이나가와정,Inagawa-cho,Trư Danh Xuyên đinh
 28,28365,283657,,town,多可町,たかちょう,Taka-cho,多可町,多可町,다카정,Taka-cho,Đa Khả đinh
@@ -1336,17 +1336,17 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 28,28443,284432,,town,福崎町,ふくさきちょう,Fukusaki-cho,福崎町,福崎町,후쿠사키정,Fukusaki-cho,Phúc Kỳ đinh
 28,28446,284467,,town,神河町,かみかわちょう,Kamikawa-cho,神河町,神河町,가미카와정,Kamikawa-cho,Thần Hà đinh
 28,28464,284645,,town,太子町,たいしちょう,Taishi-cho,太子町,太子町,다이시정,Taishi-cho,Thái Tử đinh
-28,28481,284815,,town,上郡町,かみごおりちょう,Kamigori-cho,上郡町,上郡町,가미고리정,Kamigori-cho,Thượng Quận đinh
-28,28501,285013,,town,佐用町,さようちょう,Sayo-cho,佐用町,佐用町,사요정,Sayo-cho,Tá Dụng đinh
+28,28481,284815,,town,上郡町,かみごおりちょう,Kamigori-cho,上郡町,上郡町,가미고리정,Kamigōri-cho,Thượng Quận đinh
+28,28501,285013,,town,佐用町,さようちょう,Sayo-cho,佐用町,佐用町,사요정,Sayō-cho,Tá Dụng đinh
 28,28585,285854,,town,香美町,かみちょう,Kami-cho,香美町,香美町,가미정,Kami-cho,Hương Mỹ đinh
 28,28586,285862,,town,新温泉町,しんおんせんちょう,Shinonsen-cho,新温泉町,新溫泉町,신온센정,Shinonsen-cho,Tân Ôn Tuyền đinh
 29,29201,292010,,city,奈良市,ならし,Nara-shi,奈良市,奈良市,나라시,Nara-shi,Nại Lương thị
 29,29202,292028,,city,大和高田市,やまとたかだし,Yamatotakada-shi,大和高田市,大和高田市,야마토타카다시,Yamatotakada-shi,Đại Hòa Cao Điền thị
-29,29203,292036,,city,大和郡山市,やまとこおりやまし,Yamatokoriyama-shi,大和郡山市,大和郡山市,야마토코리야마시,Yamatokoriyama-shi,Đại Hòa Quận Sơn thị
+29,29203,292036,,city,大和郡山市,やまとこおりやまし,Yamatokoriyama-shi,大和郡山市,大和郡山市,야마토코리야마시,Yamatokōriyama-shi,Đại Hòa Quận Sơn thị
 29,29204,292044,,city,天理市,てんりし,Tenri-shi,天理市,天理市,덴리시,Tenri-shi,Thiên Lý thị
 29,29205,292052,,city,橿原市,かしはらし,Kashihara-shi,橿原市,橿原市,가시하라시,Kashihara-shi,Khải Nguyên thị
 29,29206,292060,,city,桜井市,さくらいし,Sakurai-shi,樱井市,櫻井市,사쿠라이시,Sakurai-shi,Anh Tỉnh thị
-29,29207,292079,,city,五條市,ごじょうし,Gojo-shi,五条市,五條市,고조시,Gojo-shi,Ngũ Điều thị
+29,29207,292079,,city,五條市,ごじょうし,Gojo-shi,五条市,五條市,고조시,Gojō-shi,Ngũ Điều thị
 29,29208,292087,,city,御所市,ごせし,Gose-shi,御所市,御所市,고세시,Gose-shi,Ngự Sở thị
 29,29209,292095,,city,生駒市,いこまし,Ikoma-shi,生驹市,生駒市,이코마시,Ikoma-shi,Sinh Câu thị
 29,29210,292109,,city,香芝市,かしばし,Kashiba-shi,香芝市,香芝市,가시바시,Kashiba-shi,Hương Chi Ba thị
@@ -1354,7 +1354,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 29,29212,292125,,city,宇陀市,うだし,Uda-shi,宇陀市,宇陀市,우다시,Uda-shi,Vũ Đà thị
 29,29322,293229,,village,山添村,やまぞえむら,Yamazoe-mura,山添村,山添村,야마조에촌,Yamazoe-mura,Sơn Thiêm thôn
 29,29342,293423,,town,平群町,へぐりちょう,Heguri-cho,平群町,平群町,헤구리정,Heguri-cho,Tam Hương đinh
-29,29343,293431,,town,三郷町,さんごうちょう,Sango-cho,三乡町,三鄉町,산고정,Sango-cho,Ban Cưu đinh
+29,29343,293431,,town,三郷町,さんごうちょう,Sango-cho,三乡町,三鄉町,산고정,Sangō-cho,Ban Cưu đinh
 29,29344,293440,,town,斑鳩町,いかるがちょう,Ikaruga-cho,斑鸠町,斑鳩町,이카루가정,Ikaruga-cho,An Độ đinh
 29,29345,293458,,town,安堵町,あんどちょう,Ando-cho,安堵町,安堵町,안도정,Ando-cho,An Độ đinh
 29,29361,293610,,town,川西町,かわにしちょう,Kawanishi-cho,川西町,川西町,가와니시정,Kawanishi-cho,Xuyên Tây đinh
@@ -1365,11 +1365,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 29,29401,294012,,town,高取町,たかとりちょう,Takatori-cho,高取町,高取町,다카토리정,Takatori-cho,Cao Thủ đinh
 29,29402,294020,,village,明日香村,あすかむら,Asuka-mura,明日香村,明日香村,아스카촌,Asuka-mura,Minh Nhật Hương thôn
 29,29424,294241,,town,上牧町,かんまきちょう,Kanmaki-cho,上牧町,上牧町,간마키정,Kanmaki-cho,Thượng Mục đinh
-29,29425,294250,,town,王寺町,おうじちょう,Oji-cho,王寺町,王寺町,오지정,Oji-cho,Thượng Mục đinh
-29,29426,294268,,town,広陵町,こうりようちょう,Koryo-cho,广陵町,廣陵町,고료정,Koryo-cho,Vương Tự đinh
+29,29425,294250,,town,王寺町,おうじちょう,Oji-cho,王寺町,王寺町,오지정,Ōji-cho,Thượng Mục đinh
+29,29426,294268,,town,広陵町,こうりようちょう,Koryo-cho,广陵町,廣陵町,고료정,Kōriyō-cho,Vương Tự đinh
 29,29427,294276,,town,河合町,かわいちょう,Kawai-cho,河合町,河合町,가와이정,Kawai-cho,Quảng Lăng đinh
 29,29441,294411,,town,吉野町,よしのちょう,Yoshino-cho,吉野町,吉野町,요시노정,Yoshino-cho,Cát Dã đinh
-29,29442,294420,,town,大淀町,おおよどちょう,Oyodo-cho,大淀町,大淀町,오요도정,Oyodo-cho,Đại Thục đinh
+29,29442,294420,,town,大淀町,おおよどちょう,Oyodo-cho,大淀町,大淀町,오요도정,Ōyodo-cho,Đại Thục đinh
 29,29443,294438,,city,下市町,しもいちちょう,Shimoichi-cho,下市町,下市町,시모이치정,Shimoichi-cho,Hạ Thị đinh
 29,29444,294446,,village,黒滝村,くろたきむら,Kurotaki-mura,黑泷村,黑瀧村,구로타키촌,Kurotaki-mura,Hắc Lũng thôn
 29,29446,294462,,village,天川村,てんかわむら,Tenkawa-mura,天川村,天川村,덴카와촌,Tenkawa-mura,Dã Thứu Xuyên thôn
@@ -1383,15 +1383,15 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 30,30202,302023,,city,海南市,かいなんし,Kainan-shi,海南市,海南市,가이난시,Kainan-shi,Hải Nam thị
 30,30203,302031,,city,橋本市,はしもとし,Hashimoto-shi,桥本市,橋本市,하시모토시,Hashimoto-shi,Kiều Bản thị
 30,30204,302040,,city,有田市,ありだし,Arida-shi,有田市,有田市,아리다시,Arida-shi,Hữu Điền thị
-30,30205,302058,,city,御坊市,ごぼうし,Gobo-shi,御坊市,御坊市,고보시,Gobo-shi,Ngự Phường thị
+30,30205,302058,,city,御坊市,ごぼうし,Gobo-shi,御坊市,御坊市,고보시,Gobō-shi,Ngự Phường thị
 30,30206,302066,,city,田辺市,たなべし,Tanabe-shi,田边市,田邊市,다나베시,Tanabe-shi,Điền Biên thị
-30,30207,302074,,city,新宮市,しんぐうし,Shingu-shi,新宫市,新宮市,신구시,Shingu-shi,Tân Cung thị
+30,30207,302074,,city,新宮市,しんぐうし,Shingu-shi,新宫市,新宮市,신구시,Shingū-shi,Tân Cung thị
 30,30208,302082,,city,紀の川市,きのかわし,Kinokawa-shi,纪之川市,紀之川市,기노카와시,Kinokawa-shi,Kỷ Chi Xuyên thị
 30,30209,302090,,city,岩出市,いわでし,Iwade-shi,岩出市,岩出市,이와데시,Iwade-shi,Nham Xuất thị
 30,30304,303046,,town,紀美野町,きみのちょう,Kimino-cho,纪美野町,紀美野町,기미노정,Kimino-cho,Kỷ Mỹ Dã đinh
 30,30341,303410,,town,かつらぎ町,かつらぎちょう,Katsuragi-cho,葛城町,葛城町,가쓰라기정,Katsuragi-cho,Hoa Tuế đinh
 30,30343,303437,,town,九度山町,くどやまちょう,Kudoyama-cho,九度山町,九度山町,구도야마정,Kudoyama-cho,Cao Dã đinh
-30,30344,303445,,town,高野町,こうやちょう,Koya-cho,高野町,高野町,고야정,Koya-cho,Cao Dã đinh
+30,30344,303445,,town,高野町,こうやちょう,Koya-cho,高野町,高野町,고야정,Kōya-cho,Cao Dã đinh
 30,30361,303615,,town,湯浅町,ゆあさちょう,Yuasa-cho,汤浅町,湯淺町,유아사정,Yuasa-cho,Thang Thiển đinh
 30,30362,303623,,town,広川町,ひろがわちょう,Hirogawa-cho,广川町,廣川町,히로카와정,Hirogawa-cho,Quảng Xuyên đinh
 30,30366,303666,,town,有田川町,ありだがわちょう,Aridagawa-cho,有田川町,有田川町,아리다가와정,Aridagawa-cho,Do La đinh
@@ -1404,7 +1404,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 30,30401,304018,,town,白浜町,しらはまちょう,Shirahama-cho,白滨町,白濱町,시라하마정,Shirahama-cho,Bạch Tân đinh
 30,30404,304042,,town,上富田町,かみとんだちょう,Kamitonda-cho,上富田町,上富田町,가미톤다정,Kamitonda-cho,Thượng Phú Điền đinh
 30,30406,304069,,town,すさみ町,すさみちょう,Susami-cho,周参见町,周參見町,스사미정,Susami-cho,Tơ Sami đinh
-30,30421,304212,,town,那智勝浦町,なちかつうらちょう,Nachikatsuura-cho,那智胜浦町,那智勝浦町,나치카쓰우라정,Nachikatsuura-cho,Na Trí Thắng Phổ đinh
+30,30421,304212,,town,那智勝浦町,なちかつうらちょう,Nachikatsuura-cho,那智胜浦町,那智勝浦町,나치카쓰우라정,Nachikatsūra-cho,Na Trí Thắng Phổ đinh
 30,30422,304220,,town,太地町,たいじちょう,Taiji-cho,太地町,太地町,다이지정,Taiji-cho,Thái Địa đinh
 30,30424,304247,,town,古座川町,こざがわちょう,Kozagawa-cho,古座川町,古座川町,고자가와정,Kozagawa-cho,Cổ Tọa Xuyên đinh
 30,30427,304271,,village,北山村,きたやまむら,Kitayama-mura,北山村,北山村,기타야마촌,Kitayama-mura,Bắc Sơn thôn
@@ -1419,28 +1419,28 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 31,31329,313297,,town,八頭町,やずちょう,Yazu-cho,八头町,八頭町,야즈정,Yazu-cho,Bát Đầu đinh
 31,31364,313645,,town,三朝町,みささちょう,Misasa-cho,三朝町,三朝町,미사사정,Misasa-cho,Tam Triêu đinh
 31,31370,313700,,town,湯梨浜町,ゆりはまちょう,Yurihama-cho,汤梨滨町,湯梨濱町,유리하마정,Yurihama-cho,Thang Lý Tân đinh
-31,31371,313718,,town,琴浦町,ことうらちょう,Kotoura-cho,琴浦町,琴浦町,고토우라정,Kotoura-cho,Cầm Phổ đinh
+31,31371,313718,,town,琴浦町,ことうらちょう,Kotoura-cho,琴浦町,琴浦町,고토우라정,Kotōra-cho,Cầm Phổ đinh
 31,31372,313726,,town,北栄町,ほくえいちょう,Hokuei-cho,北荣町,北榮町,호쿠에이정,Hokuei-cho,Bắc Vinh đinh
 31,31384,313840,,village,日吉津村,ひえづそん,Hiezu-son,日吉津村,日吉津村,히에즈촌,Hiezu-son,Nhật Thần Tân thôn
 31,31386,313866,,town,大山町,だいせんちょう,Daisen-cho,大山町,大山町,다이센정,Daisen-cho,Đại Sơn đinh
 31,31389,313890,,town,南部町,なんぶちょう,Nanbu-cho,南部町,南部町,난부정,Nambu-cho,Nam Bộ đinh
-31,31390,313904,,town,伯耆町,ほうきちょう,Hoki-cho,伯耆町,伯耆町,호키정,Hoki-cho,Bá Kỳ đinh
+31,31390,313904,,town,伯耆町,ほうきちょう,Hoki-cho,伯耆町,伯耆町,호키정,Hōki-cho,Bá Kỳ đinh
 31,31401,314013,,town,日南町,にちなんちょう,Nichinan-cho,日南町,日南町,니치난정,Nichinan-cho,Nhật Nam đinh
 31,31402,314021,,town,日野町,ひのちょう,Hino-cho,日野町,日野町,히노정,Hino-cho,Nhật Dã đinh
-31,31403,314030,,town,江府町,こうふちょう,Kofu-cho,江府町,江府町,고후정,Kofu-cho,Giang Phủ đinh
+31,31403,314030,,town,江府町,こうふちょう,Kofu-cho,江府町,江府町,고후정,Kōfu-cho,Giang Phủ đinh
 32,32201,322016,,city,松江市,まつえし,Matsue-shi,松江市,松江市,마쓰에시,Matsue-shi,Tùng Giang thị
 32,32202,322024,,city,浜田市,はまだし,Hamada-shi,滨田市,濱田市,하마다시,Hamada-shi,Tân Điền thị
 32,32203,322032,,city,出雲市,いずもし,Izumo-shi,出云市,出雲市,이즈모시,Izumo-shi,Xuất Vân thị
 32,32204,322040,,city,益田市,ますだし,Masuda-shi,益田市,益田市,마스다시,Masuda-shi,Ích Điền thị
-32,32205,322059,,city,大田市,おおだし,Oda-shi,大田市,大田市,오다시,Oda-shi,Đại Điền thị
+32,32205,322059,,city,大田市,おおだし,Oda-shi,大田市,大田市,오다시,Ōda-shi,Đại Điền thị
 32,32206,322067,,city,安来市,やすぎし,Yasugi-shi,安来市,安來市,야스기시,Yasugi-shi,An Lai thị
-32,32207,322075,,city,江津市,ごうつし,Gotsu-shi,江津市,江津市,고쓰시,Gotsu-shi,Giang Tân thị
+32,32207,322075,,city,江津市,ごうつし,Gotsu-shi,江津市,江津市,고쓰시,Gōtsu-shi,Giang Tân thị
 32,32209,322091,,city,雲南市,うんなんし,Unnan-shi,云南市,雲南市,운난시,Unnan-shi,Vân Nam thị
 32,32343,323438,,town,奥出雲町,おくいずもちょう,Okuizumo-cho,奥出云町,奧出雲町,오쿠이즈모정,Okuizumo-cho,Áo Xuất Vân đinh
 32,32386,323861,,town,飯南町,いいなんちょう,Iinan-cho,饭南町,飯南町,이난정,Iinan-cho,Phạn Nam đinh
 32,32441,324418,,town,川本町,かわもとまち,Kawamoto-machi,川本町,川本町,가와모토정,Kawamoto-machi,Xuyên Bản đinh
 32,32448,324485,,town,美郷町,みさとちょう,Misato-cho,美乡町,美鄉町,미사토정,Misato-cho,Mỹ Hương đinh
-32,32449,324493,,town,邑南町,おおなんちょう,Onan-cho,邑南町,邑南町,오난정,Onan-cho,Ấp Nam đinh
+32,32449,324493,,town,邑南町,おおなんちょう,Onan-cho,邑南町,邑南町,오난정,Ōnan-cho,Ấp Nam đinh
 32,32501,325015,,town,津和野町,つわのちょう,Tsuwano-cho,津和野町,津和野町,쓰와노정,Tsuwano-cho,Tân Hòa Dã đinh
 32,32505,325058,,town,吉賀町,よしかちょう,Yoshika-cho,吉贺町,吉賀町,요시카정,Yoshika-cho,Cát Hạ đinh
 32,32525,325252,,town,海士町,あまちょう,Ama-cho,海士町,海士町,아마정,Ama-cho,Hải Sĩ đinh
@@ -1457,27 +1457,27 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 33,33204,332046,,city,玉野市,たまのし,Tamano-shi,玉野市,玉野市,다마노시,Tamano-shi,Ngọc Dã thị
 33,33205,332054,,city,笠岡市,かさおかし,Kasaoka-shi,笠冈市,笠岡市,가사오카시,Kasaoka-shi,Lạp Cương thị
 33,33207,332070,,city,井原市,いばらし,Ibara-shi,井原市,井原市,이바라시,Ibara-shi,Y Nguyên thị
-33,33208,332089,,city,総社市,そうじやし,Soja-shi,总社市,總社市,소자시,Soja-shi,Tổng Xã thị
+33,33208,332089,,city,総社市,そうじやし,Soja-shi,总社市,總社市,소자시,Sōjiya-shi,Tổng Xã thị
 33,33209,332097,,city,高梁市,たかはしし,Takahashi-shi,高梁市,高梁市,다카하시시,Takahashi-shi,Cao Lương thị
 33,33210,332100,,city,新見市,にいみし,Niimi-shi,新见市,新見市,니미시,Niimi-shi,Tân Kiến thị
 33,33211,332119,,city,備前市,びぜんし,Bizen-shi,备前市,備前市,비젠시,Bizen-shi,Bị Tiền thị
-33,33212,332127,,city,瀬戸内市,せとうちし,Setouchi-shi,濑户内市,瀨戶內市,세토우치시,Setouchi-shi,Lại Hộ Nội thị
+33,33212,332127,,city,瀬戸内市,せとうちし,Setouchi-shi,濑户内市,瀨戶內市,세토우치시,Setōchi-shi,Lại Hộ Nội thị
 33,33213,332135,,city,赤磐市,あかいわし,Akaiwa-shi,赤磐市,赤磐市,아카이와시,Akaiwa-shi,Xích Bàn thị
 33,33214,332143,,city,真庭市,まにわし,Maniwa-shi,真庭市,真庭市,마니와시,Maniwa-shi,Chân Luân thị
 33,33215,332151,,city,美作市,みまさかし,Mimasaka-shi,美作市,美作市,미마사카시,Mimasaka-shi,Mỹ Tác thị
 33,33216,332160,,city,浅口市,あさくちし,Asakuchi-shi,浅口市,淺口市,아사쿠치시,Asakuchi-shi,Thiển Khẩu thị
 33,33346,333468,,town,和気町,わけちょう,Wake-cho,和气町,和氣町,와케정,Wake-cho,Hòa Khí đinh
 33,33423,334235,,town,早島町,はやしまちょう,Hayashima-cho,早岛町,早島町,하야시마정,Hayashima-cho,Tảo Đảo đinh
-33,33445,334456,,town,里庄町,さとしょうちょう,Satosho-cho,里庄町,里庄町,사토쇼정,Satosho-cho,Lý Trang đinh
+33,33445,334456,,town,里庄町,さとしょうちょう,Satosho-cho,里庄町,里庄町,사토쇼정,Satoshō-cho,Lý Trang đinh
 33,33461,334618,,town,矢掛町,やかげちょう,Yakage-cho,矢挂町,矢掛町,야카게정,Yakage-cho,Thỉ Quải đinh
-33,33586,335860,,village,新庄村,しんじようそん,Shinjo-son,新庄村,新庄村,신조촌,Shinjo-son,Tân Trang thôn
+33,33586,335860,,village,新庄村,しんじようそん,Shinjo-son,新庄村,新庄村,신조촌,Shinjiyō-son,Tân Trang thôn
 33,33606,336068,,town,鏡野町,かがみのちょう,Kagamino-cho,镜野町,鏡野町,가가미노정,Kagamino-cho,Kính Dã đinh
-33,33622,336220,,town,勝央町,しょうおうちょう,Shoo-cho,胜央町,勝央町,쇼오정,Shoo-cho,Thắng Ương đinh
+33,33622,336220,,town,勝央町,しょうおうちょう,Shoo-cho,胜央町,勝央町,쇼오정,Shōō-cho,Thắng Ương đinh
 33,33623,336238,,town,奈義町,なぎちょう,Nagi-cho,奈义町,奈義町,나기정,Nagi-cho,Na Nghĩa đinh
 33,33643,336432,,village,西粟倉村,にしあわくらそん,Nishiawakura-son,西粟仓村,西粟倉村,니시아와쿠라촌,Nishiawakura-son,Tây Túc Thương thôn
 33,33663,336637,,town,久米南町,くめなんちょう,Kumenan-cho,久米南町,久米南町,구메난정,Kumenan-cho,Cửu Mễ Nam đinh
 33,33666,336661,,town,美咲町,みさきちょう,Misaki-cho,美咲町,美咲町,미사키정,Misaki-cho,Mỹ Kỳ đinh
-33,33681,336815,,town,吉備中央町,きびちゅうおうちょう,Kibichuo-cho,吉备中央町,吉備中央町,기비추오정,Kibichuo-cho,Cát Bị Trung Ương đinh
+33,33681,336815,,town,吉備中央町,きびちゅうおうちょう,Kibichuo-cho,吉备中央町,吉備中央町,기비추오정,Kibichūō-cho,Cát Bị Trung Ương đinh
 34,34100,341002,,designated_city,広島市,ひろしまし,Hiroshima-shi,广岛市,廣島市,히로시마시,Hiroshima-shi,Quảng Đảo thị
 34,34101,341010,34100,ward,中区,なかく,Naka-ku,中区,中區,나카구,Naka-ku,Trung khu
 34,34102,341029,34100,ward,東区,ひがしく,Higashi-ku,东区,東區,히가시구,Higashi-ku,Trung khu
@@ -1492,37 +1492,37 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 34,34204,342041,,city,三原市,みはらし,Mihara-shi,三原市,三原市,미하라시,Mihara-shi,Tam Nguyên thị
 34,34205,342050,,city,尾道市,おのみちし,Onomichi-shi,尾道市,尾道市,오노미치시,Onomichi-shi,Vĩ Đạo thị
 34,34207,342076,,city,福山市,ふくやまし,Fukuyama-shi,福山市,福山市,후쿠야마시,Fukuyama-shi,Phúc Sơn thị
-34,34208,342084,,city,府中市,ふちゅうし,Fuchu-shi,府中市,府中市,후추시,Fuchu-shi,Phủ Trung thị
+34,34208,342084,,city,府中市,ふちゅうし,Fuchu-shi,府中市,府中市,후추시,Fuchū-shi,Phủ Trung thị
 34,34209,342092,,city,三次市,みよしし,Miyoshi-shi,三次市,三次市,미요시시,Miyoshi-shi,Tam Thứ thị
-34,34210,342106,,city,庄原市,しょうばらし,Shobara-shi,庄原市,庄原市,쇼바라시,Shobara-shi,Trang Nguyên thị
-34,34211,342114,,city,大竹市,おおたけし,Otake-shi,大竹市,大竹市,오타케시,Otake-shi,Đại Trúc thị
+34,34210,342106,,city,庄原市,しょうばらし,Shobara-shi,庄原市,庄原市,쇼바라시,Shōbara-shi,Trang Nguyên thị
+34,34211,342114,,city,大竹市,おおたけし,Otake-shi,大竹市,大竹市,오타케시,Ōtake-shi,Đại Trúc thị
 34,34212,342122,,city,東広島市,ひがしひろしまし,Higashihiroshima-shi,东广岛市,東廣島市,히가시히로시마시,Higashihiroshima-shi,Đông Quảng Đảo thị
 34,34213,342130,,city,廿日市市,はつかいちし,Hatsukaichi-shi,廿日市市,廿日市市,하쓰카이치시,Hatsukaichi-shi,Niệm Nhật Thị thị
 34,34214,342149,,city,安芸高田市,あきたかたし,Akitakata-shi,安艺高田市,安藝高田市,아키타카타시,Akitakata-shi,An Nghệ Cao Điền thị
 34,34215,342157,,city,江田島市,えたじまし,Etajima-shi,江田岛市,江田島市,에타지마시,Etajima-shi,Giang Điền Đảo thị
-34,34302,343021,,town,府中町,ふちゅうちょう,Fuchu-cho,府中町,府中町,후추정,Fuchu-cho,Phủ Trung đinh
+34,34302,343021,,town,府中町,ふちゅうちょう,Fuchu-cho,府中町,府中町,후추정,Fuchū-cho,Phủ Trung đinh
 34,34304,343048,,town,海田町,かいたちょう,Kaita-cho,海田町,海田町,가이타정,Kaita-cho,Hải Điền đinh
 34,34307,343072,,town,熊野町,くまのちょう,Kumano-cho,熊野町,熊野町,구마노정,Kumano-cho,Bản đinh
 34,34309,343099,,town,坂町,さかちょう,Saka-cho,坂町,坂町,사카정,Saka-cho,Bản đinh
-34,34368,343684,,town,安芸太田町,あきおおたちょう,Akiota-cho,安艺太田町,安藝太田町,아키오타정,Akiota-cho,An Nghệ Thái Điền đinh
+34,34368,343684,,town,安芸太田町,あきおおたちょう,Akiota-cho,安艺太田町,安藝太田町,아키오타정,Akiōta-cho,An Nghệ Thái Điền đinh
 34,34369,343692,,town,北広島町,きたひろしまちょう,Kitahiroshima-cho,北广岛町,北廣島町,기타히로시마정,Kitahiroshima-cho,Bắc Quảng Đảo đinh
-34,34431,344311,,town,大崎上島町,おおさきかみじまちょう,Osakikamijima-cho,大崎上岛町,大崎上島町,오사키카미지마정,Osakikamijima-cho,Đại Kỳ Thượng Đảo đinh
+34,34431,344311,,town,大崎上島町,おおさきかみじまちょう,Osakikamijima-cho,大崎上岛町,大崎上島町,오사키카미지마정,Ōsakikamijima-cho,Đại Kỳ Thượng Đảo đinh
 34,34462,344621,,town,世羅町,せらちょう,Sera-cho,世罗町,世羅町,세라정,Sera-cho,Thế La đinh
-34,34545,345458,,town,神石高原町,じんせきこうげんちょう,Jinsekikogen-cho,神石高原町,神石高原町,진세키코겐정,Jinsekikogen-cho,Thần Thạch Cao Nguyên đinh
+34,34545,345458,,town,神石高原町,じんせきこうげんちょう,Jinsekikogen-cho,神石高原町,神石高原町,진세키코겐정,Jinsekikōgen-cho,Thần Thạch Cao Nguyên đinh
 35,35201,352012,,city,下関市,しものせきし,Shimonoseki-shi,下关市,下關市,시모노세키시,Shimonoseki-shi,Hạ Quan thị
 35,35202,352020,,city,宇部市,うべし,Ube-shi,宇部市,宇部市,우베시,Ube-shi,Vũ Bộ thị
 35,35203,352039,,city,山口市,やまぐちし,Yamaguchi-shi,山口市,山口市,야마구치시,Yamaguchi-shi,Sơn Khẩu thị
 35,35204,352047,,city,萩市,はぎし,Hagi-shi,萩市,萩市,하기시,Hagi-shi,Tiêu thị
-35,35206,352063,,city,防府市,ほうふし,Hofu-shi,防府市,防府市,호후시,Hofu-shi,Hạ Tùng thị
+35,35206,352063,,city,防府市,ほうふし,Hofu-shi,防府市,防府市,호후시,Hōfu-shi,Hạ Tùng thị
 35,35207,352071,,city,下松市,くだまつし,Kudamatsu-shi,下松市,下松市,구다마쓰시,Kudamatsu-shi,Nham Quốc thị
 35,35208,352080,,city,岩国市,いわくにし,Iwakuni-shi,岩国市,岩國市,이와쿠니시,Iwakuni-shi,Quang thị
 35,35210,352101,,city,光市,ひかりし,Hikari-shi,光市,光市,히카리시,Hikari-shi,Trường Môn thị
 35,35211,352110,,city,長門市,ながとし,Nagato-shi,长门市,長門市,나가토시,Nagato-shi,Liễu Tỉnh thị
 35,35212,352128,,city,柳井市,やないし,Yanai-shi,柳井市,柳井市,야나이시,Yanai-shi,Mỹ Nễ thị
 35,35213,352136,,city,美祢市,みねし,Mine-shi,美祢市,美祢市,미네시,Mine-shi,Mỹ Nễ thị
-35,35215,352152,,city,周南市,しゅうなんし,Shunan-shi,周南市,周南市,슈난시,Shunan-shi,Sơn Dương Tiểu Dã Điền thị
+35,35215,352152,,city,周南市,しゅうなんし,Shunan-shi,周南市,周南市,슈난시,Shūnan-shi,Sơn Dương Tiểu Dã Điền thị
 35,35216,352160,,city,山陽小野田市,さんようおのだし,San'yoonoda-shi,山阳小野田市,山陽小野田市,산요오노다시,Sanyo-Onoda-shi,Sơn Dương Tiểu Dã Điền thị
-35,35305,353051,,town,周防大島町,すおうおおしまちょう,Suooshima-cho,周防大岛町,周防大島町,스오오시마정,Suooshima-cho,Chu Phòng Đại Đảo đinh
+35,35305,353051,,town,周防大島町,すおうおおしまちょう,Suooshima-cho,周防大岛町,周防大島町,스오오시마정,Suōōshima-cho,Chu Phòng Đại Đảo đinh
 35,35321,353213,,town,和木町,わきちょう,Waki-cho,和木町,和木町,와키정,Waki-cho,Hòa Mộc đinh
 35,35341,353418,,town,上関町,かみのせきちょう,Kaminoseki-cho,上关町,上關町,가미노세키정,Kaminoseki-cho,Thượng Quan đinh
 35,35343,353434,,town,田布施町,たぶせちょう,Tabuse-cho,田布施町,田布施町,다부세정,Tabuse-cho,Điền Bố Thí đinh
@@ -1536,15 +1536,15 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 36,36206,362069,,city,阿波市,あわし,Awa-shi,阿波市,阿波市,아와시,Awa-shi,A Ba thị
 36,36207,362077,,city,美馬市,みまし,Mima-shi,美马市,美馬市,미마시,Mima-shi,Mỹ Mã thị
 36,36208,362085,,city,三好市,みよしし,Miyoshi-shi,三好市,三好市,미요시시,Miyoshi-shi,Tam Hiếu thị
-36,36301,363014,,town,勝浦町,かつうらちょう,Katsuura-cho,胜浦町,勝浦町,가쓰우라정,Katsuura-cho,Thắng Phổ đinh
+36,36301,363014,,town,勝浦町,かつうらちょう,Katsuura-cho,胜浦町,勝浦町,가쓰우라정,Katsūra-cho,Thắng Phổ đinh
 36,36302,363022,,town,上勝町,かみかつちょう,Kamikatsu-cho,上胜町,上勝町,가미카쓰정,Kamikatsu-cho,Thượng Thắng đinh
-36,36321,363219,,village,佐那河内村,さなごうちそん,Sanagochi-son,佐那河内村,佐那河內村,사나고치촌,Sanagochi-son,Tá Na Hà Nội thôn
+36,36321,363219,,village,佐那河内村,さなごうちそん,Sanagochi-son,佐那河内村,佐那河內村,사나고치촌,Sanagōchi-son,Tá Na Hà Nội thôn
 36,36341,363413,,town,石井町,いしいちょう,Ishii-cho,石井町,石井町,이시이정,Ishii-cho,Thạch Tỉnh đinh
 36,36342,363421,,town,神山町,かみやまちょう,Kamiyama-cho,神山町,神山町,가미야마정,Kamiyama-cho,Thần Sơn đinh
 36,36368,363685,,town,那賀町,なかちょう,Naka-cho,那贺町,那賀町,나가정,Naka-cho,Na Hạ đinh
 36,36383,363839,,town,牟岐町,むぎちょう,Mugi-cho,牟岐町,牟岐町,무기정,Mugi-cho,Lao Kỳ đinh
 36,36387,363871,,town,美波町,みなみちょう,Minami-cho,美波町,美波町,미나미정,Minami-cho,Mỹ Ba đinh
-36,36388,363880,,town,海陽町,かいようちょう,Kaiyo-cho,海阳町,海陽町,가이요정,Kaiyo-cho,Hải Dương đinh
+36,36388,363880,,town,海陽町,かいようちょう,Kaiyo-cho,海阳町,海陽町,가이요정,Kaiyō-cho,Hải Dương đinh
 36,36401,364010,,town,松茂町,まつしげちょう,Matsushige-cho,松茂町,松茂町,마쓰시게정,Matsushige-cho,Tùng Mậu đinh
 36,36402,364029,,town,北島町,きたじまちょう,Kitajima-cho,北岛町,北島町,기타지마정,Kitajima-cho,Bắc Đảo đinh
 36,36403,364037,,town,藍住町,あいずみちょう,Aizumi-cho,蓝住町,藍住町,아이즈미정,Aizumi-cho,Lam Trú đinh
@@ -1555,33 +1555,33 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 37,37201,372013,,city,高松市,たかまつし,Takamatsu-shi,高松市,高松市,다카마쓰시,Takamatsu-shi,Cao Tùng thị
 37,37202,372021,,city,丸亀市,まるがめし,Marugame-shi,丸龟市,丸龜市,마루가메시,Marugame-shi,Hoàn Quy thị
 37,37203,372030,,city,坂出市,さかいでし,Sakaide-shi,坂出市,坂出市,사카이데시,Sakaide-shi,Bản Xuất thị
-37,37204,372048,,city,善通寺市,ぜんつうじし,Zentsuji-shi,善通寺市,善通寺市,젠쓰지시,Zentsuji-shi,Thiện Thông Tự thị
-37,37205,372056,,city,観音寺市,かんおんじし,Kan'onji-shi,观音寺市,觀音寺市,간온지시,Kan'onji-shi,Quan Âm Tự thị
+37,37204,372048,,city,善通寺市,ぜんつうじし,Zentsuji-shi,善通寺市,善通寺市,젠쓰지시,Zentsūji-shi,Thiện Thông Tự thị
+37,37205,372056,,city,観音寺市,かんおんじし,Kan'onji-shi,观音寺市,觀音寺市,간온지시,Kanonji-shi,Quan Âm Tự thị
 37,37206,372064,,city,さぬき市,さぬきし,Sanuki-shi,赞岐市,讚岐市,사누키시,Sanuki-shi,Tán Kỳ thị
 37,37207,372072,,city,東かがわ市,ひがしかがわし,Higashikagawa-shi,东香川市,東香川市,히가시카가와시,Higashikagawa-shi,Đông Hương Xuyên thị
 37,37208,372080,,city,三豊市,みとよし,Mitoyo-shi,三丰市,三豐市,미토요시,Mitoyo-shi,Tam Phong thị
-37,37322,373222,,town,土庄町,とのしょうちょう,Tonosho-cho,土庄町,土庄町,도노쇼정,Tonosho-cho,Thổ Trang đinh
-37,37324,373249,,town,小豆島町,しょうどしまちょう,Shodoshima-cho,小豆岛町,小豆島町,쇼도시마정,Shodoshima-cho,Tiểu Đậu Đảo đinh
+37,37322,373222,,town,土庄町,とのしょうちょう,Tonosho-cho,土庄町,土庄町,도노쇼정,Tonoshō-cho,Thổ Trang đinh
+37,37324,373249,,town,小豆島町,しょうどしまちょう,Shodoshima-cho,小豆岛町,小豆島町,쇼도시마정,Shōdoshima-cho,Tiểu Đậu Đảo đinh
 37,37341,373419,,town,三木町,みきちょう,Miki-cho,三木町,三木町,미키정,Miki-cho,Tam Mộc đinh
 37,37364,373648,,town,直島町,なおしまちょう,Naoshima-cho,直岛町,直島町,나오시마정,Naoshima-cho,Trực Đảo đinh
 37,37386,373869,,town,宇多津町,うたづちょう,Utazu-cho,宇多津町,宇多津町,우타즈정,Utazu-cho,Vũ Đa Tân đinh
 37,37387,373877,,town,綾川町,あやがわちょう,Ayagawa-cho,绫川町,綾川町,아야가와정,Ayagawa-cho,Lăng Xuyên đinh
 37,37403,374032,,town,琴平町,ことひらちょう,Kotohira-cho,琴平町,琴平町,고토히라정,Kotohira-cho,Trực Đảo đinh
 37,37404,374040,,town,多度津町,たどつちょう,Tadotsu-cho,多度津町,多度津町,다도쓰정,Tadotsu-cho,Vũ Đa Tân đinh
-37,37406,374067,,town,まんのう町,まんのうちょう,Manno-cho,满浓町,滿濃町,만노정,Manno-cho,Cầm Bình đinh
+37,37406,374067,,town,まんのう町,まんのうちょう,Manno-cho,满浓町,滿濃町,만노정,Mannō-cho,Cầm Bình đinh
 38,38201,382019,,city,松山市,まつやまし,Matsuyama-shi,松山市,松山市,마쓰야마시,Matsuyama-shi,Tùng Sơn thị
 38,38202,382027,,city,今治市,いまばりし,Imabari-shi,今治市,今治市,이마바리시,Imabari-shi,Kim Trị thị
 38,38203,382035,,city,宇和島市,うわじまし,Uwajima-shi,宇和岛市,宇和島市,우와지마시,Uwajima-shi,Vũ Hòa Đảo thị
 38,38204,382043,,city,八幡浜市,やわたはまし,Yawatahama-shi,八幡滨市,八幡濱市,야와타하마시,Yawatahama-shi,Bát Phan Tân thị
 38,38205,382051,,city,新居浜市,にいはまし,Niihama-shi,新居滨市,新居濱市,니이하마시,Niihama-shi,Tân Cư Tân thị
-38,38206,382060,,city,西条市,さいじょうし,Saijo-shi,西条市,西條市,사이조시,Saijo-shi,Tây Điều thị
-38,38207,382078,,city,大洲市,おおずし,Ozu-shi,大洲市,大洲市,오즈시,Ozu-shi,Đại Châu thị
+38,38206,382060,,city,西条市,さいじょうし,Saijo-shi,西条市,西條市,사이조시,Saijō-shi,Tây Điều thị
+38,38207,382078,,city,大洲市,おおずし,Ozu-shi,大洲市,大洲市,오즈시,Ōzu-shi,Đại Châu thị
 38,38210,382108,,city,伊予市,いよし,Iyo-shi,伊予市,伊予市,이요시,Iyo-shi,Y Dư thị
-38,38213,382132,,city,四国中央市,しこくちゅうおうし,Shikokuchuo-shi,四国中央市,四國中央市,시코쿠추오시,Shikokuchuo-shi,Tây Dư thị
+38,38213,382132,,city,四国中央市,しこくちゅうおうし,Shikokuchuo-shi,四国中央市,四國中央市,시코쿠추오시,Shikokuchūō-shi,Tây Dư thị
 38,38214,382140,,city,西予市,せいよし,Seiyo-shi,西予市,西予市,세이요시,Seiyo-shi,Đông Ôn thị
-38,38215,382159,,city,東温市,とうおんし,Toon-shi,东温市,東溫市,도온시,Toon-shi,Đông Ôn thị
+38,38215,382159,,city,東温市,とうおんし,Toon-shi,东温市,東溫市,도온시,Tōon-shi,Đông Ôn thị
 38,38356,383562,,town,上島町,かみじまちょう,Kamijima-cho,上岛町,上島町,가미지마정,Kamijima-cho,Thượng Đảo đinh
-38,38386,383864,,town,久万高原町,くまこうげんちょう,Kumakogen-cho,久万高原町,久萬高原町,구마코겐정,Kumakogen-cho,Cửu Vạn Cao Nguyên đinh
+38,38386,383864,,town,久万高原町,くまこうげんちょう,Kumakogen-cho,久万高原町,久萬高原町,구마코겐정,Kumakōgen-cho,Cửu Vạn Cao Nguyên đinh
 38,38401,384011,,town,松前町,まさきちょう,Masaki-cho,松前町,松前町,마사키정,Masaki-cho,Tùng Tiền đinh
 38,38402,384020,,town,砥部町,とべちょう,Tobe-cho,砥部町,砥部町,도베정,Tobe-cho,Sa Bộ đinh
 38,38422,384224,,town,内子町,うちこちょう,Uchiko-cho,内子町,內子町,우치코정,Uchiko-cho,Nội Tử đinh
@@ -1589,7 +1589,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 38,38484,384844,,town,松野町,まつのちょう,Matsuno-cho,松野町,松野町,마쓰노정,Matsuno-cho,Tùng Dã đinh
 38,38488,384887,,town,鬼北町,きほくちょう,Kihoku-cho,鬼北町,鬼北町,기호쿠정,Kihoku-cho,Quỷ Bắc đinh
 38,38506,385069,,town,愛南町,あいなんちょう,Ainan-cho,爱南町,愛南町,아이난정,Ainan-cho,Ái Nam đinh
-39,39201,392014,,city,高知市,こうちし,Kochi-shi,高知市,高知市,고치시,Kochi-shi,Cao Tri thị
+39,39201,392014,,city,高知市,こうちし,Kochi-shi,高知市,高知市,고치시,Kōchi-shi,Cao Tri thị
 39,39202,392022,,city,室戸市,むろとし,Muroto-shi,室户市,室戶市,무로토시,Muroto-shi,Thất Đô thị
 39,39203,392030,,city,安芸市,あきし,Aki-shi,安艺市,安藝市,아키시,Aki-shi,An Nghệ thị
 39,39204,392049,,city,南国市,なんこくし,Nankoku-shi,南国市,南國市,난코쿠시,Nankoku-shi,Nam Quốc thị
@@ -1598,9 +1598,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 39,39208,392081,,city,宿毛市,すくもし,Sukumo-shi,宿毛市,宿毛市,스쿠모시,Sukumo-shi,Thổ Tá Thanh Thủy thị
 39,39209,392090,,city,土佐清水市,とさしみずし,Tosashimizu-shi,土佐清水市,土佐清水市,도사시미즈시,Tosashimizu-shi,Tứ Vạn Thập thị
 39,39210,392103,,city,四万十市,しまんとし,Shimanto-shi,四万十市,四萬十市,시만토시,Shimanto-shi,Hương Nam thị
-39,39211,392111,,city,香南市,こうなんし,Konan-shi,香南市,香南市,고난시,Konan-shi,Hương Mỹ thị
+39,39211,392111,,city,香南市,こうなんし,Konan-shi,香南市,香南市,고난시,Kōnan-shi,Hương Mỹ thị
 39,39212,392120,,city,香美市,かみし,Kami-shi,香美市,香美市,가미시,Kami-shi,Hương Mỹ thị
-39,39301,393010,,town,東洋町,とうようちょう,Toyo-cho,东洋町,東洋町,도요정,Toyo-cho,Đông Dương đinh
+39,39301,393010,,town,東洋町,とうようちょう,Toyo-cho,东洋町,東洋町,도요정,Tōyō-cho,Đông Dương đinh
 39,39302,393029,,town,奈半利町,なはりちょう,Nahari-cho,奈半利町,奈半利町,나하리정,Nahari-cho,Nại Bán Lợi đinh
 39,39303,393037,,town,田野町,たのちょう,Tano-cho,田野町,田野町,다노정,Tano-cho,Điền Dã đinh
 39,39304,393045,,town,安田町,やすだちょう,Yasuda-cho,安田町,安田町,야스다정,Yasuda-cho,An Điền đinh
@@ -1608,9 +1608,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 39,39306,393061,,village,馬路村,うまじむら,Umaji-mura,马路村,馬路村,우마지촌,Umaji-mura,Mã Lộ thôn
 39,39307,393070,,village,芸西村,げいせいむら,Geisei-mura,艺西村,藝西村,게이세이촌,Geisei-mura,Nghệ Tây thôn
 39,39341,393410,,town,本山町,もとやまちょう,Motoyama-cho,本山町,本山町,모토야마정,Motoyama-cho,Bản Sơn đinh
-39,39344,393444,,town,大豊町,おおとよちょう,Otoyo-cho,大丰町,大豐町,오토요정,Otoyo-cho,Đại Phong đinh
+39,39344,393444,,town,大豊町,おおとよちょう,Otoyo-cho,大丰町,大豐町,오토요정,Ōtoyo-cho,Đại Phong đinh
 39,39363,393630,,town,土佐町,とさちょう,Tosa-cho,土佐町,土佐町,도사정,Tosa-cho,Thổ Tá đinh
-39,39364,393649,,village,大川村,おおかわむら,Okawa-mura,大川村,大川村,오카와촌,Okawa-mura,Đại Xuyên thôn
+39,39364,393649,,village,大川村,おおかわむら,Okawa-mura,大川村,大川村,오카와촌,Ōkawa-mura,Đại Xuyên thôn
 39,39386,393860,,town,いの町,いのちょう,Ino-cho,伊野町,伊野町,이노정,Ino-cho,Thổ Tá đinh
 39,39387,393878,,town,仁淀川町,によどがわちょう,Niyodogawa-cho,仁淀川町,仁淀川町,니요도가와정,Niyodogawa-cho,Đại Xuyên thôn
 39,39401,394017,,town,中土佐町,なかとさちょう,Nakatosa-cho,中土佐町,中土佐町,나카토사정,Nakatosa-cho,Y Dã đinh
@@ -1620,10 +1620,10 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 39,39410,394106,,village,日高村,ひだかむら,Hidaka-mura,日高村,日高村,히다카촌,Hidaka-mura,Nhật Cao thôn
 39,39411,394114,,town,津野町,つのちょう,Tsuno-cho,津野町,津野町,쓰노정,Tsuno-cho,Tân Dã đinh
 39,39412,394122,,town,四万十町,しまんとちょう,Shimanto-cho,四万十町,四萬十町,시만토정,Shimanto-cho,Tứ Vạn Thập đinh
-39,39424,394246,,town,大月町,おおつきちょう,Otsuki-cho,大月町,大月町,오쓰키정,Otsuki-cho,Đại Nguyệt đinh
+39,39424,394246,,town,大月町,おおつきちょう,Otsuki-cho,大月町,大月町,오쓰키정,Ōtsuki-cho,Đại Nguyệt đinh
 39,39427,394270,,village,三原村,みはらむら,Mihara-mura,三原村,三原村,미하라촌,Mihara-mura,Hắc Triều đinh
 39,39428,394289,,town,黒潮町,くろしおちょう,Kuroshio-cho,黑潮町,黑潮町,구로시오정,Kuroshio-cho,Hắc Triều đinh
-40,40100,401005,,designated_city,北九州市,きたきゅうしゅうし,Kitakyushu-shi,北九州市,北九州市,기타큐슈시,Kitakyushu-shi,Bắc Cửu Châu thị
+40,40100,401005,,designated_city,北九州市,きたきゅうしゅうし,Kitakyushu-shi,北九州市,北九州市,기타큐슈시,Kitakyūshū-shi,Bắc Cửu Châu thị
 40,40101,401013,40100,ward,門司区,もじく,Moji-ku,门司区,門司區,모지구,Moji-ku,Môn Tư khu
 40,40103,401030,40100,ward,若松区,わかまつく,Wakamatsu-ku,若松区,若松區,와카마쓰구,Wakamatsu-ku,Nhược Tùng khu
 40,40105,401056,40100,ward,戸畑区,とばたく,Tobata-ku,户畑区,戶畑區,도바타구,Tobata-ku,Tiểu Thương Bắc khu
@@ -1634,27 +1634,27 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 40,40130,401307,,designated_city,福岡市,ふくおかし,Fukuoka-shi,福冈市,福岡市,후쿠오카시,Fukuoka-shi,Phúc Cương thị
 40,40131,401315,40130,ward,東区,ひがしく,Higashi-ku,东区,東區,히가시구,Higashi-ku,Đông khu
 40,40132,401323,40130,ward,博多区,はかたく,Hakata-ku,博多区,博多區,하카타구,Hakata-ku,Bác Đa khu
-40,40133,401331,40130,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+40,40133,401331,40130,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 40,40134,401340,40130,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
 40,40135,401358,40130,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
-40,40136,401366,40130,ward,城南区,じょうなんく,Jonan-ku,城南区,城南區,조난구,Jonan-ku,Thành Nam khu
+40,40136,401366,40130,ward,城南区,じょうなんく,Jonan-ku,城南区,城南區,조난구,Jōnan-ku,Thành Nam khu
 40,40137,401374,40130,ward,早良区,さわらく,Sawara-ku,早良区,早良區,사와라구,Sawara-ku,Tảo Lương khu
-40,40202,402028,,city,大牟田市,おおむたし,Omuta-shi,大牟田市,大牟田市,오무타시,Omuta-shi,Đại Mâu Điền thị
+40,40202,402028,,city,大牟田市,おおむたし,Omuta-shi,大牟田市,大牟田市,오무타시,Ōmuta-shi,Đại Mâu Điền thị
 40,40203,402036,,city,久留米市,くるめし,Kurume-shi,久留米市,久留米市,구루메시,Kurume-shi,Cửu Lưu Mễ thị
-40,40204,402044,,city,直方市,のおがたし,Nogata-shi,直方市,直方市,노가타시,Nogata-shi,Trực Phương thị
+40,40204,402044,,city,直方市,のおがたし,Nogata-shi,直方市,直方市,노가타시,Nōgata-shi,Trực Phương thị
 40,40205,402052,,city,飯塚市,いいづかし,Iizuka-shi,饭冢市,飯冢市,이즈카시,Iizuka-shi,Phạn Trủng thị
 40,40206,402060,,city,田川市,たがわし,Tagawa-shi,田川市,田川市,다가와시,Tagawa-shi,Điền Xuyên thị
 40,40207,402079,,city,柳川市,やながわし,Yanagawa-shi,柳川市,柳川市,야나가와시,Yanagawa-shi,Liễu Xuyên thị
 40,40210,402109,,city,八女市,やめし,Yame-shi,八女市,八女市,야메시,Yame-shi,Trúc Hậu thị
 40,40211,402117,,city,筑後市,ちくごし,Chikugo-shi,筑后市,筑後市,지쿠고시,Chikugo-shi,Đại Xuyên thị
-40,40212,402125,,city,大川市,おおかわし,Okawa-shi,大川市,大川市,오카와시,Okawa-shi,Đại Xuyên thị
+40,40212,402125,,city,大川市,おおかわし,Okawa-shi,大川市,大川市,오카와시,Ōkawa-shi,Đại Xuyên thị
 40,40213,402133,,city,行橋市,ゆくはしし,Yukuhashi-shi,行桥市,行橋市,유쿠하시시,Yukuhashi-shi,Hành Kiều thị
 40,40214,402141,,city,豊前市,ぶぜんし,Buzen-shi,丰前市,豐前市,부젠시,Buzen-shi,Phong Tiền thị
 40,40215,402150,,city,中間市,なかまし,Nakama-shi,中间市,中間市,나카마시,Nakama-shi,Trung Gian thị
-40,40216,402168,,city,小郡市,おごおりし,Ogori-shi,小郡市,小郡市,오고리시,Ogori-shi,Tiểu Quận thị
+40,40216,402168,,city,小郡市,おごおりし,Ogori-shi,小郡市,小郡市,오고리시,Ogōri-shi,Tiểu Quận thị
 40,40217,402176,,city,筑紫野市,ちくしのし,Chikushino-shi,筑紫野市,筑紫野市,지쿠시노시,Chikushino-shi,Trúc Tử Dã thị
 40,40218,402184,,city,春日市,かすがし,Kasuga-shi,春日市,春日市,가스가시,Kasuga-shi,Xuân Nhật thị
-40,40219,402192,,city,大野城市,おおのじょうし,Onojo-shi,大野城市,大野城市,오노조시,Onojo-shi,Đại Dã Thành thị
+40,40219,402192,,city,大野城市,おおのじょうし,Onojo-shi,大野城市,大野城市,오노조시,Ōnojō-shi,Đại Dã Thành thị
 40,40220,402206,,city,宗像市,むなかたし,Munakata-shi,宗像市,宗像市,무나카타시,Munakata-shi,Tông Tượng thị
 40,40221,402214,,city,太宰府市,だざいふし,Dazaifu-shi,太宰府市,太宰府市,다자이후시,Dazaifu-shi,Thái Tể Phủ thị
 40,40223,402230,,city,古賀市,こがし,Koga-shi,古贺市,古賀市,고가시,Koga-shi,Cổ Hạ thị
@@ -1670,33 +1670,33 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 40,40342,403423,,town,篠栗町,ささぐりまち,Sasaguri-machi,篠栗町,篠栗町,사사구리정,Sasaguri-machi,Thủy Quyển đinh
 40,40343,403431,,town,志免町,しめまち,Shime-machi,志免町,志免町,시메정,Shime-machi,Cương Thạch đinh
 40,40344,403440,,town,須恵町,すえまち,Sue-machi,须惠町,須惠町,스에정,Sue-machi,Viễn Hạ đinh
-40,40345,403458,,town,新宮町,しんぐうまち,Shingu-machi,新宫町,新宮町,신구정,Shingu-machi,Tân Cung đinh
+40,40345,403458,,town,新宮町,しんぐうまち,Shingu-machi,新宫町,新宮町,신구정,Shingū-machi,Tân Cung đinh
 40,40348,403482,,town,久山町,ひさやままち,Hisayama-machi,久山町,久山町,히사야마정,Hisayama-machi,Cửu Sơn đinh
 40,40349,403490,,town,粕屋町,かすやまち,Kasuya-machi,粕屋町,粕屋町,가스야정,Kasuya-machi,Thủ Ốc đinh
 40,40381,403814,,town,芦屋町,あしやまち,Ashiya-machi,芦屋町,蘆屋町,아시야정,Ashiya-machi,Quế Xuyên đinh
 40,40382,403822,,town,水巻町,みずまきまち,Mizumaki-machi,水卷町,水卷町,미즈마키정,Mizumaki-machi,Thủy Quyển đinh
 40,40383,403830,,town,岡垣町,おかがきまち,Okagaki-machi,冈垣町,岡垣町,오카가키정,Okagaki-machi,Cương Thạch đinh
 40,40384,403849,,town,遠賀町,おんがちょう,Onga-cho,远贺町,遠賀町,온가정,Onga-cho,Viễn Hạ đinh
-40,40401,404012,,town,小竹町,こたけまち,Kotate-machi,小竹町,小竹町,고타케정,Kotate-machi,Trúc Tiền đinh
+40,40401,404012,,town,小竹町,こたけまち,Kotate-machi,小竹町,小竹町,고타케정,Kotake-machi,Trúc Tiền đinh
 40,40402,404020,,town,鞍手町,くらてまち,Kurate-machi,鞍手町,鞍手町,구라테정,Kurate-machi,Đông Phong thôn
 40,40421,404217,,town,桂川町,けいせんまち,Keisen-machi,桂川町,桂川町,게이센정,Keisen-machi,Đại Đao Tẩy đinh
 40,40447,404470,,town,筑前町,ちくぜんまち,Chikuzen-machi,筑前町,筑前町,지쿠젠정,Chikuzen-machi,Đại Mộc đinh
-40,40448,404489,,village,東峰村,とうほうむら,Toho-mura,东峰村,東峰村,도호촌,Toho-mura,Quảng Xuyên đinh
+40,40448,404489,,village,東峰村,とうほうむら,Toho-mura,东峰村,東峰村,도호촌,Tōhō-mura,Quảng Xuyên đinh
 40,40503,405035,,town,大刀洗町,たちあらいまち,Tachiarai-machi,大刀洗町,大刀洗町,다치아라이정,Tachiarai-machi,Ty Điền đinh
-40,40522,405221,,town,大木町,おおきまち,Oki-machi,大木町,大木町,오키정,Oki-machi,Đô đinh
+40,40522,405221,,town,大木町,おおきまち,Oki-machi,大木町,大木町,오키정,Ōki-machi,Đô đinh
 40,40544,405442,,town,広川町,ひろかわまち,Hirokawa-machi,广川町,廣川町,히로카와정,Hirokawa-machi,Cát Phú đinh
 40,40601,406015,,town,香春町,かわらまち,Kawara-machi,香春町,香春町,가와라정,Kawara-machi,Hương Xuân đinh
 40,40602,406023,,town,添田町,そえだまち,Soeda-machi,添田町,添田町,소에다정,Soeda-machi,Thiêm Điền đinh
 40,40604,406040,,town,糸田町,いとだまち,Itoda-machi,糸田町,糸田町,이토다정,Itoda-machi,Ty Điền đinh
 40,40605,406058,,town,川崎町,かわさきまち,Kawasaki-machi,川崎町,川崎町,가와사키정,Kawasaki-machi,Xuyên Kỳ đinh
-40,40608,406082,,town,大任町,おおとうまち,Oto-machi,大任町,大任町,오토정,Oto-machi,Đại Nhậm đinh
+40,40608,406082,,town,大任町,おおとうまち,Oto-machi,大任町,大任町,오토정,Ōtō-machi,Đại Nhậm đinh
 40,40609,406090,,village,赤村,あかむら,Aka-mura,赤村,赤村,아카촌,Aka-mura,Xích thôn
 40,40610,406104,,town,福智町,ふくちまち,Fukuchi-machi,福智町,福智町,후쿠치정,Fukuchi-machi,Phúc Trí đinh
 40,40621,406210,,town,苅田町,かんだまち,Kanda-machi,苅田町,苅田町,간다정,Kanda-machi,Thủ Điền đinh
 40,40625,406252,,town,みやこ町,みやこまち,Miyako-machi,京都町,京都町,미야코정,Miyako-machi,Đô đinh
 40,40642,406422,,town,吉富町,よしとみまち,Yoshitomi-machi,吉富町,吉富町,요시토미정,Yoshitomi-machi,Cát Phú đinh
-40,40646,406465,,town,上毛町,こうげまち,Koge-machi,上毛町,上毛町,고게정,Koge-machi,Thượng Mao đinh
-40,40647,406473,,town,築上町,ちくじょうまち,Chikujo-machi,筑上町,築上町,지쿠조정,Chikujo-machi,Trúc Thượng đinh
+40,40646,406465,,town,上毛町,こうげまち,Koge-machi,上毛町,上毛町,고게정,Kōge-machi,Thượng Mao đinh
+40,40647,406473,,town,築上町,ちくじょうまち,Chikujo-machi,筑上町,築上町,지쿠조정,Chikujō-machi,Trúc Thượng đinh
 41,41201,412015,,city,佐賀市,さがし,Saga-shi,佐贺市,佐賀市,사가시,Saga-shi,Tá Hạ thị
 41,41202,412023,,city,唐津市,からつし,Karatsu-shi,唐津市,唐津市,가라쓰시,Karatsu-shi,Đường Tân thị
 41,41203,412031,,city,鳥栖市,とすし,Tosu-shi,鸟栖市,鳥栖市,도스시,Tosu-shi,Điểu Tứ thị
@@ -1713,20 +1713,20 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 41,41346,413461,,town,みやき町,みやきちょう,Miyaki-cho,三养基町,三養基町,미야키정,Miyaki-cho,Mi Dã Kỳ đinh
 41,41387,413879,,town,玄海町,げんかいちょう,Genkai-cho,玄海町,玄海町,겐카이정,Genkai-cho,Huyền Hải đinh
 41,41401,414018,,town,有田町,ありたちょう,Arita-cho,有田町,有田町,아리타정,Arita-cho,Hữu Điền đinh
-41,41423,414239,,town,大町町,おおまちちょう,Omachi-cho,大町町,大町町,오마치정,Omachi-cho,Giang Bắc đinh
-41,41424,414247,,town,江北町,こうほくまち,Kohoku-cho,江北町,江北町,고호쿠정,Kohoku-cho,Bạch Thạch đinh
+41,41423,414239,,town,大町町,おおまちちょう,Omachi-cho,大町町,大町町,오마치정,Ōmachi-cho,Giang Bắc đinh
+41,41424,414247,,town,江北町,こうほくまち,Kohoku-cho,江北町,江北町,고호쿠정,Kōhoku-cho,Bạch Thạch đinh
 41,41425,414255,,town,白石町,しろいしちょう,Shiroishi-cho,白石町,白石町,시로이시정,Shiroishi-cho,Bạch Thạch đinh
 41,41441,414417,,town,太良町,たらちょう,Tara-cho,太良町,太良町,다라정,Tara-cho,Thái Lương đinh
 42,42201,422010,,city,長崎市,ながさきし,Nagasaki-shi,长崎市,長崎市,나가사키시,Nagasaki-shi,Trường Kỳ thị
 42,42202,422029,,city,佐世保市,させぼし,Sasebo-shi,佐世保市,佐世保市,사세보시,Sasebo-shi,Tá Thế Bảo thị
 42,42203,422037,,city,島原市,しまばらし,Shimabara-shi,岛原市,島原市,시마바라시,Shimabara-shi,Đảo Nguyên thị
 42,42204,422045,,city,諫早市,いさはやし,Isahaya-shi,谏早市,諫早市,이사하야시,Isahaya-shi,Gián Tảo thị
-42,42205,422053,,city,大村市,おおむらし,Omura-shi,大村市,大村市,오무라시,Omura-shi,Đại Thôn thị
+42,42205,422053,,city,大村市,おおむらし,Omura-shi,大村市,大村市,오무라시,Ōmura-shi,Đại Thôn thị
 42,42207,422070,,city,平戸市,ひらどし,Hirado-shi,平户市,平戶市,히라도시,Hirado-shi,Tùng Phổ thị
 42,42208,422088,,city,松浦市,まつうらし,Matsura-shi,松浦市,松浦市,마쓰우라시,Matsuura-shi,Đối Mã thị
 42,42209,422096,,city,対馬市,つしまし,Tsushima-shi,对马市,對馬市,쓰시마시,Tsushima-shi,Nhất Kỳ thị
 42,42210,422100,,city,壱岐市,いきし,Iki-shi,壹岐市,壹岐市,이키시,Iki-shi,Ngũ Đảo thị
-42,42211,422118,,city,五島市,ごとうし,Goto-shi,五岛市,五島市,고토시,Goto-shi,Tây Hải thị
+42,42211,422118,,city,五島市,ごとうし,Goto-shi,五岛市,五島市,고토시,Gotō-shi,Tây Hải thị
 42,42212,422126,,city,西海市,さいかいし,Saikai-shi,西海市,西海市,사이카이시,Saikai-shi,Vân Tiên thị
 42,42213,422134,,city,雲仙市,うんぜんし,Unzen-shi,云仙市,雲仙市,운젠시,Unzen-shi,Nam Đảo Nguyên thị
 42,42214,422142,,city,南島原市,みなみしまばらし,Minamishimabara-shi,南岛原市,南島原市,미나미시마바라시,Minamishimabara-shi,Nam Đảo Nguyên thị
@@ -1737,9 +1737,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 42,42323,423238,,town,波佐見町,はさみちょう,Hasami-cho,波佐见町,波佐見町,하사미정,Hasami-cho,Ba Tá Kiến đinh
 42,42383,423831,,town,小値賀町,おぢかちょう,Ojika-cho,小值贺町,小值賀町,오지카정,Ojika-cho,Tiểu Trị Hạ đinh
 42,42391,423912,,town,佐々町,さざちょう,Saza-cho,佐佐町,佐佐町,사자정,Saza-cho,Tá Tá đinh
-42,42411,424110,,town,新上五島町,しんかみごとうちょう,Shinkamigoto-cho,新上五岛町,新上五島町,신카미고토정,Shinkamigoto-cho,Tân Thượng Ngũ Đảo đinh
+42,42411,424110,,town,新上五島町,しんかみごとうちょう,Shinkamigoto-cho,新上五岛町,新上五島町,신카미고토정,Shinkamigotō-cho,Tân Thượng Ngũ Đảo đinh
 43,43100,431001,,designated_city,熊本市,くまもとし,Kumamoto-shi,熊本市,熊本市,구마모토시,Kumamoto-shi,Hùng Bản thị
-43,43101,431010,43100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chuo-ku,Trung Ương khu
+43,43101,431010,43100,ward,中央区,ちゅうおうく,Chuo-ku,中央区,中央區,주오구,Chūō-ku,Trung Ương khu
 43,43102,431028,43100,ward,東区,ひがしく,Higashi-ku,东区,東區,히가시구,Higashi-ku,Đông khu
 43,43103,431036,43100,ward,西区,にしく,Nishi-ku,西区,西區,니시구,Nishi-ku,Tây khu
 43,43104,431044,43100,ward,南区,みなみく,Minami-ku,南区,南區,미나미구,Minami-ku,Nam khu
@@ -1756,14 +1756,14 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 43,43213,432130,,city,宇城市,うきし,Uki-shi,宇城市,宇城市,우키시,Uki-shi,Thiên Thảo thị
 43,43214,432148,,city,阿蘇市,あそし,Aso-shi,阿苏市,阿蘇市,아소시,Aso-shi,Hợp Chí thị
 43,43215,432156,,city,天草市,あまくさし,Amakusa-shi,天草市,天草市,아마쿠사시,Amakusa-shi,Thiên Thảo thị
-43,43216,432164,,city,合志市,こうしし,Koshi-shi,合志市,合志市,고시시,Koshi-shi,Hợp Chí thị
+43,43216,432164,,city,合志市,こうしし,Koshi-shi,合志市,合志市,고시시,Kōshi-shi,Hợp Chí thị
 43,43348,433489,,town,美里町,みさとまち,Misato-machi,美里町,美里町,미사토정,Misato-machi,Mỹ Lý đinh
-43,43364,433640,,town,玉東町,ぎょくとうまち,Gyokuto-machi,玉东町,玉東町,교쿠토정,Gyokuto-machi,Ngọc Đông đinh
+43,43364,433640,,town,玉東町,ぎょくとうまち,Gyokuto-machi,玉东町,玉東町,교쿠토정,Gyokutō-machi,Ngọc Đông đinh
 43,43367,433675,,town,南関町,なんかんまち,Nankan-machi,南关町,南關町,난칸정,Nankan-machi,Nam Quan đinh
 43,43368,433683,,town,長洲町,ながすまち,Nagasu-machi,长洲町,長洲町,나가스정,Nagasu-machi,Trường Châu đinh
 43,43369,433691,,town,和水町,なごみまち,Nagomi-machi,和水町,和水町,나고미정,Nagomi-machi,Hòa Thủy đinh
-43,43403,434035,,town,大津町,おおづまち,Ozu-machi,大津町,大津町,오즈정,Ozu-machi,Đại Tân đinh
-43,43404,434043,,town,菊陽町,きくようまち,Kikuyo-machi,菊阳町,菊陽町,기쿠요정,Kikuyo-machi,Đại Tân đinh
+43,43403,434035,,town,大津町,おおづまち,Ozu-machi,大津町,大津町,오즈정,Ōzu-machi,Đại Tân đinh
+43,43404,434043,,town,菊陽町,きくようまち,Kikuyo-machi,菊阳町,菊陽町,기쿠요정,Kikuyō-machi,Đại Tân đinh
 43,43423,434230,,town,南小国町,みなみおぐにまち,Minamioguni-machi,南小国町,南小國町,미나미오구니정,Minamioguni-machi,Nam Tiểu Quốc đinh
 43,43424,434248,,town,小国町,おぐにまち,Oguni-machi,小国町,小國町,오구니정,Oguni-machi,Tiểu Quốc đinh
 43,43425,434256,,village,産山村,うぶやまむら,Ubuyama-mura,产山村,產山村,우부야마촌,Ubuyama-mura,Sản Sơn thôn
@@ -1773,7 +1773,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 43,43441,434418,,town,御船町,みふねまち,Mifune-machi,御船町,御船町,미후네정,Mifune-machi,Ngự Thuyền đinh
 43,43442,434426,,town,嘉島町,かしままち,Kashima-machi,嘉岛町,嘉島町,가시마정,Kashima-machi,Gia Đảo đinh
 43,43443,434434,,town,益城町,ましきまち,Mashiki-machi,益城町,益城町,마시키정,Mashiki-machi,Tây Nguyên thôn
-43,43444,434442,,town,甲佐町,こうさまち,Kosa-machi,甲佐町,甲佐町,고사정,Kosa-machi,Nam A Tô thôn
+43,43444,434442,,town,甲佐町,こうさまち,Kosa-machi,甲佐町,甲佐町,고사정,Kōsa-machi,Nam A Tô thôn
 43,43447,434477,,town,山都町,やまとちょう,Yamato-cho,山都町,山都町,야마토정,Yamato-cho,Sơn Đô đinh
 43,43468,434680,,town,氷川町,ひかわちょう,Hikawa-cho,冰川町,冰川町,히카와정,Hikawa-cho,Ngự Thuyền đinh
 43,43482,434825,,town,芦北町,あしきたまち,Ashikita-machi,芦北町,蘆北町,아시키타정,Ashikita-machi,Sơn Đô đinh
@@ -1788,7 +1788,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 43,43513,435139,,village,球磨村,くまむら,Kuma-mura,球磨村,球磨村,구마촌,Kuma-mura,Cầu Ma thôn
 43,43514,435147,,town,あさぎり町,あさぎりちょう,Asagiri-cho,朝雾町,朝霧町,아사기리정,Asagiri-cho,A Sa Cát Lý đinh
 43,43531,435317,,town,苓北町,れいほくまち,Reihoku-machi,苓北町,苓北町,레이호쿠정,Reihoku-machi,Linh Bắc đinh
-44,44201,442011,,city,大分市,おおいたし,Oita-shi,大分市,大分市,오이타시,Oita-shi,Đại Phân thị
+44,44201,442011,,city,大分市,おおいたし,Oita-shi,大分市,大分市,오이타시,Ōita-shi,Đại Phân thị
 44,44202,442020,,city,別府市,べっぷし,Beppu-shi,别府市,別府市,벳푸시,Beppu-shi,Biệt Phủ thị
 44,44203,442038,,city,中津市,なかつし,Nakatsu-shi,中津市,中津市,나카쓰시,Nakatsu-shi,Trung Tân thị
 44,44204,442046,,city,日田市,ひたし,Hita-shi,日田市,日田市,히타시,Hita-shi,Nhật Điền thị
@@ -1799,7 +1799,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 44,44209,442097,,city,豊後高田市,ぶんごたかだし,Bungotakada-shi,丰后高田市,豐後高田市,분고타카다시,Bungotakada-shi,Phong Hậu Cao Điền thị
 44,44210,442100,,city,杵築市,きつきし,Kitsuki-shi,杵筑市,杵築市,기쓰키시,Kitsuki-shi,Hạ Trúc thị
 44,44211,442119,,city,宇佐市,うさし,Usa-shi,宇佐市,宇佐市,우사시,Usa-shi,Vũ Tá thị
-44,44212,442127,,city,豊後大野市,ぶんごおおのし,Bungoono-shi,丰后大野市,豐後大野市,분고오노시,Bungoono-shi,Phong Hậu Đại Dã thị
+44,44212,442127,,city,豊後大野市,ぶんごおおのし,Bungoono-shi,丰后大野市,豐後大野市,분고오노시,Bungōono-shi,Phong Hậu Đại Dã thị
 44,44213,442135,,city,由布市,ゆふし,Yufu-shi,由布市,由布市,유후시,Yufu-shi,Do Bố thị
 44,44214,442143,,city,国東市,くにさきし,Kunisaki-shi,国东市,國東市,구니사키시,Kunisaki-shi,Quốc Đông thị
 44,44322,443220,,village,姫島村,ひめしまむら,Himeshima-mura,姬岛村,姬島村,히메시마촌,Himeshima-mura,Cơ Đảo thôn
@@ -1807,11 +1807,11 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 44,44461,444618,,town,九重町,ここのえまち,Kokonoe-machi,九重町,九重町,고코노에정,Kokonoe-machi,Cửu Trọng đinh
 44,44462,444626,,town,玖珠町,くすまち,Kusu-machi,玖珠町,玖珠町,구스정,Kusu-machi,Cửu Châu đinh
 45,45201,452017,,city,宮崎市,みやざきし,Miyazaki-shi,宫崎市,宮崎市,미야자키시,Miyazaki-shi,Cung Kỳ thị
-45,45202,452025,,city,都城市,みやこのじょうし,Miyakonojo-shi,都城市,都城市,미야코노조시,Miyakonojo-shi,Đô Thành thị
+45,45202,452025,,city,都城市,みやこのじょうし,Miyakonojo-shi,都城市,都城市,미야코노조시,Miyakonojō-shi,Đô Thành thị
 45,45203,452033,,city,延岡市,のべおかし,Nobeoka-shi,延冈市,延岡市,노베오카시,Nobeoka-shi,Diên Cương thị
 45,45204,452041,,city,日南市,にちなんし,Nichinan-shi,日南市,日南市,니치난시,Nichinan-shi,Nhật Nam thị
 45,45205,452050,,city,小林市,こばやしし,Kobayashi-shi,小林市,小林市,고바야시시,Kobayashi-shi,Tiểu Lâm thị
-45,45206,452068,,city,日向市,ひゅうがし,Hyuga-shi,日向市,日向市,휴가시,Hyuga-shi,Nhật Hướng thị
+45,45206,452068,,city,日向市,ひゅうがし,Hyuga-shi,日向市,日向市,휴가시,Hyūga-shi,Nhật Hướng thị
 45,45207,452076,,city,串間市,くしまし,Kushima-shi,串间市,串間市,구시마시,Kushima-shi,Xuyên Gian thị
 45,45208,452084,,city,西都市,さいとし,Saito-shi,西都市,西都市,사이토시,Saito-shi,Tây Đô thị
 45,45209,452092,,city,えびの市,えびのし,Ebino-shi,虾野市,蝦野市,에비노시,Ebino-shi,Lão Hỏa Dã thị
@@ -1822,7 +1822,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 45,45401,454010,,town,高鍋町,たかなべちょう,Takanabe-cho,高锅町,高鍋町,다카나베정,Takanabe-cho,Cao Nọc đinh
 45,45402,454028,,town,新富町,しんとみちょう,Shintomi-cho,新富町,新富町,신토미정,Shintomi-cho,Tân Phú đinh
 45,45403,454036,,village,西米良村,にしめらそん,Nishimera-son,西米良村,西米良村,니시메라촌,Nishimera-son,Tây Mễ Lương thôn
-45,45404,454044,,town,木城町,きじょうちょう,Kijo-cho,木城町,木城町,기조정,Kijo-cho,Mộc Thành đinh
+45,45404,454044,,town,木城町,きじょうちょう,Kijo-cho,木城町,木城町,기조정,Kijō-cho,Mộc Thành đinh
 45,45405,454052,,town,川南町,かわみなみちょう,Kawaminami-cho,川南町,川南町,가와미나미정,Kawaminami-cho,Xuyên Nam đinh
 45,45406,454060,,town,都農町,つのちょう,Tsuno-cho,都农町,都農町,쓰노정,Tsuno-cho,Đô Nùng đinh
 45,45421,454214,,town,門川町,かどがわちょう,Kadogawa-cho,门川町,門川町,가도가와정,Kadogawa-cho,Môn Xuyên đinh
@@ -1838,36 +1838,36 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 46,46206,462063,,city,阿久根市,あくねし,Akune-shi,阿久根市,阿久根市,아쿠네시,Akune-shi,A Cửu Căn thị
 46,46208,462080,,city,出水市,いずみし,Izumi-shi,出水市,出水市,이즈미시,Izumi-shi,Xuất Thủy thị
 46,46210,462101,,city,指宿市,いぶすきし,Ibusuki-shi,指宿市,指宿市,이부스키시,Ibusuki-shi,Chỉ Túc thị
-46,46213,462136,,city,西之表市,にしのおもてし,Nishinoomote-shi,西之表市,西之表市,니시노오모테시,Nishinoomote-shi,Thùy Thủy thị
+46,46213,462136,,city,西之表市,にしのおもてし,Nishinoomote-shi,西之表市,西之表市,니시노오모테시,Nishinōmote-shi,Thùy Thủy thị
 46,46214,462144,,city,垂水市,たるみずし,Tarumizu-shi,垂水市,垂水市,다루미즈시,Tarumizu-shi,Tát Ma Xuyên Nội thị
 46,46215,462152,,city,薩摩川内市,さつませんだいし,Satsumasendai-shi,萨摩川内市,薩摩川內市,사쓰마센다이시,Satsumasendai-shi,Nhật Trí thị
 46,46216,462160,,city,日置市,ひおきし,Hioki-shi,日置市,日置市,히오키시,Hioki-shi,Tằng Ư thị
-46,46217,462179,,city,曽於市,そおし,So-shi,曾于市,曾於市,소오시,So-shi,Vụ Đảo thị
+46,46217,462179,,city,曽於市,そおし,So-shi,曾于市,曾於市,소오시,Sō-shi,Vụ Đảo thị
 46,46218,462187,,city,霧島市,きりしまし,Kirishima-shi,雾岛市,霧島市,기리시마시,Kirishima-shi,Nhất Kỳ Xuyên Mộc Dã thị
 46,46219,462195,,city,いちき串木野市,いちきくしきのし,Ichikikushikino-shi,市来串木野市,市來串木野市,이치키쿠시키노시,Ichikikushikino-shi,Nam Tát Ma thị
 46,46220,462209,,city,南さつま市,みなみさつまし,Minamisatsuma-shi,南萨摩市,南薩摩市,미나미사쓰마시,Minamisatsuma-shi,Chí Bố Chí thị
 46,46221,462217,,city,志布志市,しぶしし,Shibushi-shi,志布志市,志布志市,시부시시,Shibushi-shi,Yêm Mỹ thị
 46,46222,462225,,city,奄美市,あまみし,Amami-shi,奄美市,奄美市,아마미시,Amami-shi,Nam Cửu Châu thị
-46,46223,462233,,city,南九州市,みなみきゅうしゅうし,Minamikyushu-shi,南九州市,南九州市,미나미큐슈시,Minamikyushu-shi,Y Tá thị
+46,46223,462233,,city,南九州市,みなみきゅうしゅうし,Minamikyushu-shi,南九州市,南九州市,미나미큐슈시,Minamikyūshū-shi,Y Tá thị
 46,46224,462241,,city,伊佐市,いさし,Isa-shi,伊佐市,伊佐市,이사시,Isa-shi,Khắc Lương thị
 46,46225,462250,,city,姶良市,あいらし,Aira-shi,姶良市,姶良市,아이라시,Aira-shi,Khắc Lương thị
 46,46303,463035,,village,三島村,みしまむら,Mishima-mura,三岛村,三島村,미시마촌,Mishima-mura,Tam Đảo thôn
 46,46304,463043,,village,十島村,としまむら,Toshima-mura,十岛村,十島村,도시마촌,Toshima-mura,Thập Đảo thôn
 46,46392,463922,,town,さつま町,さつまちょう,Satsuma-cho,萨摩町,薩摩町,사쓰마정,Satsuma-cho,Tát Ma đinh
 46,46404,464040,,town,長島町,ながしまちょう,Nagashima-cho,长岛町,長島町,나가시마정,Nagashima-cho,Trường Đảo đinh
-46,46452,464520,,town,湧水町,ゆうすいちょう,Yusui-cho,涌水町,湧水町,유스이정,Yusui-cho,Dũng Thủy đinh
-46,46468,464686,,town,大崎町,おおさきちょう,Osaki-cho,大崎町,大崎町,오사키정,Osaki-cho,Tát Ma đinh
+46,46452,464520,,town,湧水町,ゆうすいちょう,Yusui-cho,涌水町,湧水町,유스이정,Yūsui-cho,Dũng Thủy đinh
+46,46468,464686,,town,大崎町,おおさきちょう,Osaki-cho,大崎町,大崎町,오사키정,Ōsaki-cho,Tát Ma đinh
 46,46482,464821,,town,東串良町,ひがしくしらちょう,Higashikushira-cho,东串良町,東串良町,히가시쿠시라정,Higashikushira-cho,Trung Chủng Tử đinh
-46,46490,464902,,town,錦江町,きんこうちょう,Kinko-cho,锦江町,錦江町,긴코정,Kinko-cho,Ốc Cửu Đảo đinh
-46,46491,464910,,town,南大隅町,みなみおおすみちょう,Minamiosumi-cho,南大隅町,南大隅町,미나미오스미정,Minamiosumi-cho,Nam Đại Ngung đinh
+46,46490,464902,,town,錦江町,きんこうちょう,Kinko-cho,锦江町,錦江町,긴코정,Kinkō-cho,Ốc Cửu Đảo đinh
+46,46491,464910,,town,南大隅町,みなみおおすみちょう,Minamiosumi-cho,南大隅町,南大隅町,미나미오스미정,Minamiōsumi-cho,Nam Đại Ngung đinh
 46,46492,464929,,town,肝付町,きもつきちょう,Kimotsuki-cho,肝付町,肝付町,기모쓰키정,Kimotsuki-cho,Can Phó đinh
 46,46501,465011,,town,中種子町,なかたねちょう,Nakatane-cho,中种子町,中種子町,나카타네정,Nakatane-cho,Trung Chủng Tử đinh
 46,46502,465020,,town,南種子町,みなみたねちょう,Minamitane-cho,南种子町,南種子町,미나미타네정,Minamitane-cho,Nam Chủng Tử đinh
 46,46505,465054,,town,屋久島町,やくしまちょう,Yakushima-cho,屋久岛町,屋久島町,야쿠시마정,Yakushima-cho,Ốc Cửu Đảo đinh
 46,46523,465232,,village,大和村,やまとそん,Yamato-son,大和村,大和村,야마토촌,Yamato-son,Đại Hòa thôn
 46,46524,465240,,village,宇検村,うけんそん,Uken-son,宇检村,宇檢村,우켄촌,Uken-son,Vũ Kiểm thôn
-46,46525,465259,,town,瀬戸内町,せとうちちょう,Setouchi-cho,濑户内町,瀨戶內町,세토우치정,Setouchi-cho,Lại Hộ Nội đinh
-46,46527,465275,,town,龍郷町,たつごうちょう,Tatsugo-cho,龙乡町,龍鄉町,다쓰고정,Tatsugo-cho,Hỷ Giới đinh
+46,46525,465259,,town,瀬戸内町,せとうちちょう,Setouchi-cho,濑户内町,瀨戶內町,세토우치정,Setōchi-cho,Lại Hộ Nội đinh
+46,46527,465275,,town,龍郷町,たつごうちょう,Tatsugo-cho,龙乡町,龍鄉町,다쓰고정,Tatsugō-cho,Hỷ Giới đinh
 46,46529,465291,,town,喜界町,きかいちょう,Kikai-cho,喜界町,喜界町,기카이정,Kikai-cho,Thiên Thành đinh
 46,46530,465305,,town,徳之島町,とくのしまちょう,Tokunoshima-cho,德之岛町,德之島町,도쿠노시마정,Tokunoshima-cho,Y Tiên đinh
 46,46531,465313,,town,天城町,あまぎちょう,Amagi-cho,天城町,天城町,아마기정,Amagi-cho,Hòa Bạc đinh
@@ -1885,9 +1885,9 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 47,47212,472123,,city,豊見城市,とみぐすくし,Tomigusuku-shi,丰见城市,豐見城市,도미구스쿠시,Tomigusuku-shi,Phong Kiến Thành thị
 47,47213,472131,,city,うるま市,うるまし,Uruma-shi,宇流麻市,宇流麻市,우루마시,Uruma-shi,Ú Lỗ Ma thị
 47,47214,472140,,city,宮古島市,みやこじまし,Miyakojima-shi,宫古岛市,宮古島市,미야코지마시,Miyakojima-shi,Cung Cổ Đảo thị
-47,47215,472158,,city,南城市,なんじょうし,Nanjo-shi,南城市,南城市,난조시,Nanjo-shi,Nam Thành thị
+47,47215,472158,,city,南城市,なんじょうし,Nanjo-shi,南城市,南城市,난조시,Nanjō-shi,Nam Thành thị
 47,47301,473014,,village,国頭村,くにがみそん,Kunigami-son,国头村,國頭村,구니가미촌,Kunigami-son,Quốc Đầu thôn
-47,47302,473022,,village,大宜味村,おおぎみそん,Ogimi-son,大宜味村,大宜味村,오기미촌,Ogimi-son,Đại Nghi Vị thôn
+47,47302,473022,,village,大宜味村,おおぎみそん,Ogimi-son,大宜味村,大宜味村,오기미촌,Ōgimi-son,Đại Nghi Vị thôn
 47,47303,473030,,village,東村,ひがしそん,Higashi-son,东村,東村,히가시촌,Higashi-son,Đông thôn
 47,47306,473065,,village,今帰仁村,なきじんそん,Nakijin-son,今归仁村,今歸仁村,나키진촌,Nakijin-son,Kim Quy Nhân thôn
 47,47308,473081,,town,本部町,もとぶちょう,Motobu-cho,本部町,本部町,모토부정,Motobu-cho,Bản Bộ đinh
@@ -1897,7 +1897,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 47,47315,473154,,village,伊江村,いえそん,Ie-son,伊江村,伊江村,이에촌,Ie-son,Y Giang thôn
 47,47324,473243,,village,読谷村,よみたんそん,Yomitan-son,读谷村,讀谷村,요미탄촌,Yomitan-son,Đọc Cốc thôn
 47,47325,473251,,town,嘉手納町,かでなちょう,Kadena-cho,嘉手纳町,嘉手納町,가데나정,Kadena-cho,Hộ Điền Nạp đinh
-47,47326,473260,,town,北谷町,ちやたんちょう,Chatan-cho,北谷町,北谷町,자탄정,Chatan-cho,Bắc Cốc đinh
+47,47326,473260,,town,北谷町,ちやたんちょう,Chatan-cho,北谷町,北谷町,자탄정,Chiyatan-cho,Bắc Cốc đinh
 47,47327,473278,,village,北中城村,きたなかぐすくそん,Kitanakagusuku-son,北中城村,北中城村,기타나카구스쿠촌,Kitanakagusuku-son,Bắc Trung Thành thôn
 47,47328,473286,,village,中城村,なかぐすくそん,Nakagusuku-son,中城村,中城村,나카구스쿠촌,Nakagusuku-son,Trung Thành thôn
 47,47329,473294,,town,西原町,にしはらちょう,Nishihara-cho,西原町,西原町,니시하라정,Nishihara-cho,Tây Nguyên đinh
@@ -1907,8 +1907,8 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 47,47354,473545,,village,座間味村,ざまみそん,Zamami-son,座间味村,座間味村,자마미촌,Zamami-son,Tọa Gian Vị thôn
 47,47355,473553,,village,粟国村,あぐにそん,Aguni-son,粟国村,粟國村,아구니촌,Aguni-son,Túc Quốc thôn
 47,47356,473561,,village,渡名喜村,となきそん,Tonaki-son,渡名喜村,渡名喜村,도나키촌,Tonaki-son,Độ Danh Hỷ thôn
-47,47357,473570,,village,南大東村,みなみだいとうそん,Minamidaito-son,南大东村,南大東村,미나미다이토촌,Minamidaito-son,Nam Đại Đông thôn
-47,47358,473588,,village,北大東村,きただいとうそん,Kitadaito-son,北大东村,北大東村,기타다이토촌,Kitadaito-son,Bắc Đại Đông thôn
+47,47357,473570,,village,南大東村,みなみだいとうそん,Minamidaito-son,南大东村,南大東村,미나미다이토촌,Minamidaitō-son,Nam Đại Đông thôn
+47,47358,473588,,village,北大東村,きただいとうそん,Kitadaito-son,北大东村,北大東村,기타다이토촌,Kitadaitō-son,Bắc Đại Đông thôn
 47,47359,473596,,village,伊平屋村,いへやそん,Iheya-son,伊平屋村,伊平屋村,이헤야촌,Iheya-son,Y Bình Ốc thôn
 47,47360,473600,,village,伊是名村,いぜなそん,Izena-son,伊是名村,伊是名村,이제나촌,Izena-son,Y Thị Danh thôn
 47,47361,473618,,town,久米島町,くめじまちょう,Kumejima-cho,久米岛町,久米島町,구메지마정,Kumejima-cho,Cửu Mễ Đảo đinh
