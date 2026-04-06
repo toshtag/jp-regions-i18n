@@ -9,6 +9,16 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.9.2] - 2026-04-06
+
+### Fixed
+
+- **Demo: search icon** — replaced `⌕` glyph (renders too small on most platforms) with an inline SVG for consistent sizing across browsers and OS
+- **Demo: search icon position** — moved from right side to left side of input fields; right side conflicted with the browser's native clear (×) button
+- **Demo: placeholder text truncation** — shortened prefecture search placeholder to avoid clipping in the narrow sidebar
+- **Demo: placeholder panel** — empty-state panel now correctly hides after selecting a prefecture (CSS specificity bug fixed)
+- **Demo: UI language** — switched single-language UI text to English; bilingual labels (都道府県 / Prefecture) kept as-is
+
 ## [0.9.1] - 2026-04-06
 
 ### Changed
