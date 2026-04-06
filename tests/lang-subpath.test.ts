@@ -105,12 +105,14 @@ describe("jp-regions-i18n/en", () => {
       expect(getPrefectureByCode("27", { macrons: true })?.name).toBe("Ōsaka");
     });
 
-    it("getCities with macrons: ハイフン付きサフィックスを維持", () => {
+    it("getCities with macrons: サフィックスを正しく変換", () => {
       const cities = getCities("01", { macrons: true });
-      // 札幌市 (さっぽろし) → 長音なし、サフィックス維持
+      // 札幌市 (さっぽろし) → 長音なし
       expect(cities.find((c) => c.jisCode === "01100")?.name).toBe("Sapporo-shi");
       // 中央区 (ちゅうおうく) → Chūō-ku
       expect(cities.find((c) => c.jisCode === "01101")?.name).toBe("Chūō-ku");
+      // 当別町 (とうべつちょう) → ちょう = -chō (長母音)
+      expect(cities.find((c) => c.jisCode === "01303")?.name).toBe("Tōbetsu-chō");
     });
 
     it("getCityByJisCode with macrons", () => {
