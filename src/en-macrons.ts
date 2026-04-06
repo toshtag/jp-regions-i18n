@@ -1,5 +1,5 @@
-import cityData from "./generated/cities-en.json" with { type: "json" };
-import prefData from "./generated/prefectures-en.json" with { type: "json" };
+import cityData from "./generated/cities-en-macrons.json" with { type: "json" };
+import prefData from "./generated/prefectures-en-macrons.json" with { type: "json" };
 import { createLangStore } from "./store-lang.js";
 
 const store = createLangStore(prefData as unknown[][], cityData as unknown[][], "en", false);

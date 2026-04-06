@@ -19,6 +19,11 @@
       "import": "./dist/en.js",
       "require": "./dist/en.cjs"
     },
+    "./en-macrons": {
+      "types": "./dist/en-macrons.d.ts",
+      "import": "./dist/en-macrons.js",
+      "require": "./dist/en-macrons.cjs"
+    },
     "./zh-CN": {
       "types": "./dist/zh-CN.d.ts",
       "import": "./dist/zh-CN.js",
