@@ -9,6 +9,17 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.9.1] - 2026-04-06
+
+### Changed
+
+- **Demo UI redesigned** — replaced generic indigo palette with a navy/vermilion scheme inspired by Japanese maps and administrative materials
+- **City display: language tab switcher** — switch between 7 languages (ja / en / zh-CN / zh-TW / ko / pt / vi) to see municipality names in any language; selected language is preserved in the URL (`?lang=`)
+- **City display: inline search filter** — filter municipalities by name in real time; search matches across all 10 languages simultaneously
+- **City display: designated-city hierarchy** — wards (区) are now shown as indented sub-groups under their parent designated city, reflecting `parentJisCode` relationships
+- **City chips: click to copy JSON** — clicking any municipality chip copies its full `CityAllLangs` JSON to the clipboard
+- **Cache busting** — `style.css` and `app.js` are loaded with `?v=0.9.1` query suffix to prevent stale caches after updates
+
 ## [0.9.0] - 2026-04-06
 
 ### Added
