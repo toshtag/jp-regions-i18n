@@ -22,7 +22,7 @@ const CITY_SUFFIXES: Record<Lang, readonly string[]> = {
   "zh-TW": ["市", "區", "町", "村"],
   ko: ["시", "구", "정", "촌"],
   en: ["-shi", "-ku", "-machi", "-cho", "-son", "-mura"],
-  pt: ["-shi", "-ku", "-machi", "-cho", "-son", "-mura"],
+  pt: ["-xi", "-cu", "-maxi", "-xo", "-son", "-mura"],
   vi: [" thị", " khu", " đinh", " thôn"],
 };
 
