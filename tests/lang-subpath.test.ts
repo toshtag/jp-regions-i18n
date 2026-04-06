@@ -11,6 +11,13 @@ import {
   getPrefectures,
 } from "../src/en.js";
 import {
+  getCities as getCitiesMacrons,
+  getCityByJisCode as getCityByJisCodeMacrons,
+  getCityByLGCode as getCityByLGCodeMacrons,
+  getPrefectureByCode as getPrefectureByCodeMacrons,
+  getPrefectures as getPrefecturesMacrons,
+} from "../src/en-macrons.js";
+import {
   getCities as getCitiesJa,
   getCityByJisCode as getCityByJisCodeJa,
   getPrefectureByCode as getPrefectureByCodeJa,
@@ -78,52 +85,47 @@ describe("jp-regions-i18n/en", () => {
     const cities = getCitiesByPrefName("Tokyo");
     expect(cities.length).toBeGreaterThan(0);
   });
+});
 
-  describe("macrons option", () => {
-    it("getPrefectures with macrons: 行政区分サフィックスを除いた長音表記", () => {
-      const prefs = getPrefectures({ macrons: true });
-      // 東京都: とうきょう + と(都) → Tōkyō
-      expect(prefs.find((p) => p.code === "13")?.name).toBe("Tōkyō");
-      // 大阪府: おおさか + ふ(府) → Ōsaka
-      expect(prefs.find((p) => p.code === "27")?.name).toBe("Ōsaka");
-      // 京都府: きょうと + ふ → Kyōto
-      expect(prefs.find((p) => p.code === "26")?.name).toBe("Kyōto");
-      // 兵庫県: ひょうご + けん → Hyōgo
-      expect(prefs.find((p) => p.code === "28")?.name).toBe("Hyōgo");
-      // 高知県: こうち + けん → Kōchi
-      expect(prefs.find((p) => p.code === "39")?.name).toBe("Kōchi");
-      // 大分県: おおいた + けん → Ōita
-      expect(prefs.find((p) => p.code === "44")?.name).toBe("Ōita");
-    });
+describe("jp-regions-i18n/en-macrons", () => {
+  it("getPrefectures: 行政区分サフィックスを除いた長音表記", () => {
+    const prefs = getPrefecturesMacrons();
+    // 東京都: とうきょう + と(都) → Tōkyō
+    expect(prefs.find((p) => p.code === "13")?.name).toBe("Tōkyō");
+    // 大阪府: おおさか + ふ(府) → Ōsaka
+    expect(prefs.find((p) => p.code === "27")?.name).toBe("Ōsaka");
+    // 京都府: きょうと + ふ → Kyōto
+    expect(prefs.find((p) => p.code === "26")?.name).toBe("Kyōto");
+    // 兵庫県: ひょうご + けん → Hyōgo
+    expect(prefs.find((p) => p.code === "28")?.name).toBe("Hyōgo");
+    // 高知県: こうち + けん → Kōchi
+    expect(prefs.find((p) => p.code === "39")?.name).toBe("Kōchi");
+    // 大分県: おおいた + けん → Ōita
+    expect(prefs.find((p) => p.code === "44")?.name).toBe("Ōita");
+  });
 
-    it("getPrefectures without macrons stays unchanged", () => {
-      const prefs = getPrefectures();
-      expect(prefs.find((p) => p.code === "13")?.name).toBe("Tokyo");
-    });
+  it("getPrefectureByCode returns macron name", () => {
+    expect(getPrefectureByCodeMacrons("27")?.name).toBe("Ōsaka");
+  });
 
-    it("getPrefectureByCode with macrons", () => {
-      expect(getPrefectureByCode("27", { macrons: true })?.name).toBe("Ōsaka");
-    });
+  it("getCities: サフィックスを正しく変換", () => {
+    const cities = getCitiesMacrons("01");
+    // 札幌市 (さっぽろし) → 長音なし
+    expect(cities.find((c) => c.jisCode === "01100")?.name).toBe("Sapporo-shi");
+    // 中央区 (ちゅうおうく) → Chūō-ku
+    expect(cities.find((c) => c.jisCode === "01101")?.name).toBe("Chūō-ku");
+    // 当別町 (とうべつちょう) → ちょう = -chō (長母音)
+    expect(cities.find((c) => c.jisCode === "01303")?.name).toBe("Tōbetsu-chō");
+  });
 
-    it("getCities with macrons: サフィックスを正しく変換", () => {
-      const cities = getCities("01", { macrons: true });
-      // 札幌市 (さっぽろし) → 長音なし
-      expect(cities.find((c) => c.jisCode === "01100")?.name).toBe("Sapporo-shi");
-      // 中央区 (ちゅうおうく) → Chūō-ku
-      expect(cities.find((c) => c.jisCode === "01101")?.name).toBe("Chūō-ku");
-      // 当別町 (とうべつちょう) → ちょう = -chō (長母音)
-      expect(cities.find((c) => c.jisCode === "01303")?.name).toBe("Tōbetsu-chō");
-    });
+  it("getCityByJisCode returns macron name", () => {
+    // 大阪市 (おおさかし) → Ōsaka-shi
+    expect(getCityByJisCodeMacrons("27100")?.name).toBe("Ōsaka-shi");
+  });
 
-    it("getCityByJisCode with macrons", () => {
-      // 大阪市 (おおさかし) → Ōsaka-shi
-      expect(getCityByJisCode("27100", { macrons: true })?.name).toBe("Ōsaka-shi");
-    });
-
-    it("getCityByLGCode with macrons", () => {
-      // lgCode = jisCode + lgSuffix = "27100" + "4" = "271004"
-      expect(getCityByLGCode("271004", { macrons: true })?.name).toBe("Ōsaka-shi");
-    });
+  it("getCityByLGCode returns macron name", () => {
+    // lgCode = jisCode + lgSuffix = "27100" + "4" = "271004"
+    expect(getCityByLGCodeMacrons("271004")?.name).toBe("Ōsaka-shi");
   });
 });
 
