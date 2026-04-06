@@ -272,7 +272,7 @@ btnCopyPrefEl.addEventListener("click", () => {
   navigator.clipboard.writeText(json).then(() => {
     btnCopyPrefEl.classList.add("copied");
     btnCopyPrefEl.textContent = "✓ Copied!";
-    showToast("JSON をクリップボードにコピーしました");
+    showToast("Copied JSON to clipboard");
     setTimeout(() => {
       btnCopyPrefEl.classList.remove("copied");
       btnCopyPrefEl.textContent = "📋 Copy JSON";
@@ -283,7 +283,7 @@ btnCopyPrefEl.addEventListener("click", () => {
 // ===== Render cities header (once per prefecture) =====
 function renderCitiesHeader(pref) {
   citiesSectionEl.classList.remove("hidden");
-  citiesTitleEl.textContent = `${pref.name.ja} の市区町村`;
+  citiesTitleEl.textContent = `${pref.name.ja} / Cities`;
   citiesCountEl.textContent = `${selectedCities.length} 件`;
 }
 
@@ -298,7 +298,7 @@ function renderCitiesContent() {
   citiesContEl.textContent = "";
 
   if (filtered.length === 0) {
-    const empty = el("div", "cities-empty", `「${cityFilter}」に一致する市区町村はありません`);
+    const empty = el("div", "cities-empty", `No cities found for "${cityFilter}"`);
     citiesContEl.appendChild(empty);
     return;
   }
@@ -349,7 +349,7 @@ function renderDesignatedCities(designatedCities, allFiltered, container) {
     );
     if (wards.length > 0) {
       const subgroup = el("div", "city-subgroup");
-      subgroup.appendChild(el("div", "city-subgroup-title", `区 (${wards.length})`));
+      subgroup.appendChild(el("div", "city-subgroup-title", `Wards (${wards.length})`));
       subgroup.appendChild(buildCityChips(wards));
       cityWrap.appendChild(subgroup);
     }
@@ -393,7 +393,7 @@ function buildCityChip(city, isParent) {
       2
     );
     navigator.clipboard.writeText(json).then(() => {
-      showToast(`${city.name.ja} の JSON をコピーしました`);
+      showToast(`Copied ${city.name.ja} JSON to clipboard`);
     });
   });
 
