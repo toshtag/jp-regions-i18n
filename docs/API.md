@@ -381,7 +381,7 @@ Suffixes stripped by language:
 | `zh-CN` | 都, 道, 府, 县 | 市, 区, 町, 村 |
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
-| `en` | (none — already suffix-free) | -shi, -ku, -machi, -cho, -chō, -son, -mura |
+| `en` | (none — already suffix-free) | -shi, -ku, -machi, -cho, -son, -mura |
 | `en-macrons` | (none — already suffix-free) | -shi, -ku, -machi, -chō, -son, -mura |
 | `pt` | (none — already suffix-free) | -xi, -cu, -maxi, -xo, -son, -mura |
 | `vi` | tỉnh, phủ, đô, đạo | thị, khu, đinh, thôn |
@@ -797,7 +797,7 @@ interface GetCitiesOptions {
 | `zh-CN` | 都, 道, 府, 县 | 市, 区, 町, 村 |
 | `zh-TW` | 都, 道, 府, 縣 | 市, 區, 町, 村 |
 | `ko` | 도, 부, 현 | 시, 구, 정, 촌 |
-| `en` | （なし） | -shi, -ku, -machi, -cho, -chō, -son, -mura |
+| `en` | （なし） | -shi, -ku, -machi, -cho, -son, -mura |
 | `en-macrons` | （なし） | -shi, -ku, -machi, -chō, -son, -mura |
 | `pt` | （なし） | -xi, -cu, -maxi, -xo, -son, -mura |
 | `vi` | tỉnh, phủ, đô, đạo | thị, khu, đinh, thôn |
