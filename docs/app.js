@@ -51,6 +51,7 @@ let cityFilter     = "";
 const searchEl        = document.getElementById("search");
 const listEl          = document.getElementById("pref-list");
 const countEl         = document.getElementById("pref-count");
+const placeholderEl   = document.getElementById("detail-placeholder");
 const prefDetailEl    = document.getElementById("pref-detail");
 const citiesSectionEl = document.getElementById("cities-section");
 const detailTitleEl   = document.getElementById("detail-title");
@@ -212,12 +213,14 @@ function selectPref(pref, pushState = true) {
 function clearDetail() {
   selectedPref = null;
   selectedCities = [];
+  placeholderEl.classList.remove("hidden");
   prefDetailEl.classList.add("hidden");
   citiesSectionEl.classList.add("hidden");
 }
 
 // ===== Render prefecture detail =====
 function renderDetail(pref) {
+  placeholderEl.classList.add("hidden");
   prefDetailEl.classList.remove("hidden");
 
   detailTitleEl.textContent = pref.name.ja;
