@@ -25,7 +25,7 @@ code,iso,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi,lg_code
 24,JP-24,三重県,みえけん,Mie,三重县,三重縣,미에현,Mie,Tam Trọng tỉnh,240001
 25,JP-25,滋賀県,しがけん,Shiga,滋贺县,滋賀縣,시가현,Shiga,Tư Hạ tỉnh,250007
 26,JP-26,京都府,きょうとふ,Kyoto,京都府,京都府,교토부,Quioto,Kinh Đô phủ,260002
-27,JP-27,大阪府,おおさかふ,Osaka,大阪府,大阪府,오사카부,Osaka,Đại Phản phủ,270008
+27,JP-27,大阪府,おおさかふ,Osaka,大阪府,大阪府,오사카부,Ōsaka,Đại Phản phủ,270008
 28,JP-28,兵庫県,ひょうごけん,Hyogo,兵库县,兵庫縣,효고현,Hyogo,Binh Khố tỉnh,280003
 29,JP-29,奈良県,ならけん,Nara,奈良县,奈良縣,나라현,Nara,Nại Lương tỉnh,290009
 30,JP-30,和歌山県,わかやまけん,Wakayama,和歌山县,和歌山縣,와카야마현,Wakayama,Hòa Ca Sơn tỉnh,300004
@@ -42,7 +42,7 @@ code,iso,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi,lg_code
 41,JP-41,佐賀県,さがけん,Saga,佐贺县,佐賀縣,사가현,Saga,Tá Hạ tỉnh,410004
 42,JP-42,長崎県,ながさきけん,Nagasaki,长崎县,長崎縣,나가사키현,Nagasaki,Trường Kỳ tỉnh,420000
 43,JP-43,熊本県,くまもとけん,Kumamoto,熊本县,熊本縣,구마모토현,Kumamoto,Hùng Bản tỉnh,430005
-44,JP-44,大分県,おおいたけん,Oita,大分县,大分縣,오이타현,Oita,Đại Phân tỉnh,440001
+44,JP-44,大分県,おおいたけん,Oita,大分县,大分縣,오이타현,Ōita,Đại Phân tỉnh,440001
 45,JP-45,宮崎県,みやざきけん,Miyazaki,宫崎县,宮崎縣,미야자키현,Miyazaki,Cung Kỳ tỉnh,450006
 46,JP-46,鹿児島県,かごしまけん,Kagoshima,鹿儿岛县,鹿兒島縣,가고시마현,Kagoshima,Lộc Nhi Đảo tỉnh,460001
 47,JP-47,沖縄県,おきなわけん,Okinawa,冲绳县,沖繩縣,오키나와현,Okinawa,Xung Thằng tỉnh,470007
