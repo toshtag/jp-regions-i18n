@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jp-regions-i18n — Demo</title>
-  <meta name="description" content="日本の都道府県・市区町村を10言語で検索できるインタラクティブデモ" />
-  <link rel="stylesheet" href="style.css?v=0.9.1" />
+  <meta name="description" content="Interactive demo for jp-regions-i18n — browse Japanese prefectures and cities in 10 languages" />
+  <link rel="stylesheet" href="style.css?v=0.9.2" />
 </head>
 <body>
   <header class="site-header">
@@ -14,11 +14,11 @@
         <div class="header-logo" aria-hidden="true">🗾</div>
         <div class="header-title-wrap">
           <span class="header-name">jp-regions-i18n</span>
-          <span class="header-tagline">日本の都道府県・市区町村 10言語データライブラリ</span>
+          <span class="header-tagline">Japanese prefectures &amp; cities in 10 languages</span>
         </div>
-        <span class="header-badge">v0.9.1</span>
+        <span class="header-badge">v0.9.2</span>
       </div>
-      <nav class="header-links" aria-label="外部リンク">
+      <nav class="header-links" aria-label="External links">
         <a class="header-link" href="https://github.com/toshtag/jp-regions-i18n" target="_blank" rel="noopener">
           GitHub
         </a>
@@ -36,26 +36,26 @@
         <div class="sidebar-title">都道府県 / Prefecture</div>
       </div>
       <div class="search-wrap">
-        <label for="search" class="visually-hidden">検索</label>
+        <label for="search" class="visually-hidden">Search</label>
+        <svg class="search-icon" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="5.5"/><line x1="13.5" y1="13.5" x2="17" y2="17"/></svg>
         <input
           id="search"
           type="search"
           class="search-input"
-          placeholder="名前・コードで検索（多言語対応）"
+          placeholder="Search by name or code"
           autocomplete="off"
           spellcheck="false"
         />
-        <span class="search-icon" aria-hidden="true">⌕</span>
       </div>
       <div id="pref-count" class="pref-count"></div>
-      <ul id="pref-list" class="pref-list" role="listbox" aria-label="都道府県一覧"></ul>
+      <ul id="pref-list" class="pref-list" role="listbox" aria-label="Prefecture list"></ul>
     </aside>
 
     <!-- Right: detail + cities -->
     <section class="detail-panel" id="detail-panel">
       <div class="detail-placeholder" id="detail-placeholder">
         <span class="placeholder-icon" aria-hidden="true">🗾</span>
-        <p>都道府県を選択すると<br>全言語の表記と市区町村が表示されます</p>
+        <p>Select a prefecture to explore<br>names in 10 languages and cities</p>
       </div>
 
       <!-- Prefecture detail -->
@@ -65,8 +65,8 @@
             <h2 id="detail-title"></h2>
             <div class="detail-codes" id="detail-codes"></div>
           </div>
-          <button type="button" class="btn-copy" id="btn-copy-pref" title="JSON をコピー">
-            ⎘ Copy JSON
+          <button type="button" class="btn-copy" id="btn-copy-pref" title="Copy as JSON">
+            📋 Copy JSON
           </button>
         </div>
         <div class="lang-grid" id="lang-grid"></div>
@@ -79,18 +79,18 @@
             <h3 id="cities-title"></h3>
             <span id="cities-count" class="cities-count"></span>
           </div>
-          <div class="city-lang-tabs" id="city-lang-tabs" role="tablist" aria-label="表示言語"></div>
+          <div class="city-lang-tabs" id="city-lang-tabs" role="tablist" aria-label="Display language"></div>
         </div>
         <div class="cities-search-wrap">
+          <svg class="cities-search-icon" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="5.5"/><line x1="13.5" y1="13.5" x2="17" y2="17"/></svg>
           <input
             id="cities-search"
             type="search"
             class="cities-search-input"
-            placeholder="市区町村名で絞り込み…"
+            placeholder="Filter cities..."
             autocomplete="off"
             spellcheck="false"
           />
-          <span class="cities-search-icon" aria-hidden="true">⌕</span>
         </div>
         <div id="cities-container" class="cities-container"></div>
       </div>
@@ -107,6 +107,6 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script type="module" src="app.js?v=0.9.1"></script>
+  <script type="module" src="app.js?v=0.9.2"></script>
 </body>
 </html>
