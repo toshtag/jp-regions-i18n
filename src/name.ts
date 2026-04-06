@@ -10,7 +10,7 @@ const PREF_SUFFIXES: Record<Lang, readonly string[]> = {
   ko: ["도", "부", "현"],
   en: [],
   pt: [],
-  vi: [],
+  vi: [" tỉnh", " phủ", " đô", " đạo"],
 };
 
 const CITY_SUFFIXES: Record<Lang, readonly string[]> = {
@@ -23,7 +23,7 @@ const CITY_SUFFIXES: Record<Lang, readonly string[]> = {
   ko: ["시", "구", "정", "촌"],
   en: ["-shi", "-ku", "-machi", "-cho", "-son", "-mura"],
   pt: ["-shi", "-ku", "-machi", "-cho", "-son", "-mura"],
-  vi: ["-shi", "-ku", "-machi", "-cho", "-son", "-mura"],
+  vi: [" thị", " khu", " đinh", " thôn"],
 };
 
 function stripSuffix(name: string, suffixes: readonly string[]): string {
