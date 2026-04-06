@@ -212,10 +212,11 @@ export function hiraToHepburn(hira: string): string {
   return parts.join("");
 }
 
-// 都市サフィックス: ひらがな末尾 → ローマ字サフィックス (ハイフン付き)
+// 都市サフィックス: ひらがな末尾 → マクロン付きローマ字サフィックス (ハイフン付き)
 // 長い順に並べてグリーディマッチ
+// 町(ちょう)は長母音なので -chō、まち/むら/そん/し/く は短母音でそのまま
 const CITY_SUFFIX_MAP: ReadonlyArray<[string, string]> = [
-  ["ちょう", "-cho"],
+  ["ちょう", "-chō"],
   ["まち", "-machi"],
   ["むら", "-mura"],
   ["そん", "-son"],
@@ -229,27 +230,27 @@ const PREF_SUFFIX_HIRA: ReadonlyArray<string> = ["けん", "ふ", "と"];
 
 /**
  * ひらがなから修正ヘボン式に変換し、都市サフィックスをハイフン付きで付与する。
- * en 名（既存）を参照してサフィックスの形式（-cho/-machi 等）を決定する。
+ * ひらがなのサフィックスから正しいマクロン付き形式（-chō 等）を決定する。
  *
  * @param hira ひらがな（例: "いいだし"）
- * @param enName 既存の en 名（例: "Iida-shi"）。サフィックス判定に使用。
+ * @param enName 既存の en 名（例: "Iida-shi"）。ハイフン有無の判定に使用。
  */
 export function hiraToHepburnCity(hira: string, enName: string): string {
-  // en名にハイフンがある場合はサフィックスを流用
-  const hyphenIdx = enName.lastIndexOf("-");
-  if (hyphenIdx !== -1) {
-    const enSuffix = enName.slice(hyphenIdx); // "-shi" / "-ku" 等
-    // ひらがなからサフィックス分を除去
+  const hasHyphen = enName.includes("-");
+  if (hasHyphen) {
+    // ひらがなのサフィックスを検出してマクロン付きサフィックスを決定
     let hiraBody = hira;
-    for (const [hiraSuf] of CITY_SUFFIX_MAP) {
+    let suffix = "";
+    for (const [hiraSuf, romSuf] of CITY_SUFFIX_MAP) {
       if (hira.endsWith(hiraSuf)) {
         hiraBody = hira.slice(0, -hiraSuf.length);
+        suffix = romSuf;
         break;
       }
     }
     const body = hiraToHepburn(hiraBody);
     const cap = body ? body[0].toUpperCase() + body.slice(1) : body;
-    return cap + enSuffix;
+    return cap + suffix;
   }
 
   // ハイフンなし（既存 en 名がサフィックスなし）: 全体変換して先頭大文字
