@@ -9,6 +9,18 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-04-06
+
+### Added
+
+- **Interactive demo** (GitHub Pages) — https://toshtag.github.io/jp-regions-i18n/
+  - Search prefectures and cities in any of the 10 supported languages in real time
+  - View all 10 language variants side-by-side for any selected prefecture
+  - Browse municipalities grouped by type (designated city, special ward, city, ward, town, village)
+  - Copy `PrefectureAllLangs` JSON to clipboard with one click
+  - Share current state via URL (`?pref=13` / `?q=tokyo`)
+  - No npm install required — runs entirely in the browser via esm.sh
+
 ## [0.8.0] - 2026-04-06
 
 ### Added
