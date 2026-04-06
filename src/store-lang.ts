@@ -85,7 +85,8 @@ function prefToPublic(p: PrefLang, lang: string, short?: boolean, macrons?: bool
   if (lang === "ja-Kana" && p.nameHira) name = hiraToKana(p.nameHira);
   else if (lang === "ja-HW" && p.nameHira) name = kanaToHW(hiraToKana(p.nameHira));
   else if (lang === "ja-Hira" && p.nameHira) name = p.nameHira;
-  else if (lang === "en" && macrons && p.nameHira) name = capitalizeHepburn(hiraToHepburn(p.nameHira));
+  else if (lang === "en" && macrons && p.nameHira)
+    name = capitalizeHepburn(hiraToHepburn(p.nameHira));
   if (short) name = shortenPrefName(name, lang as never);
   return { code: p.code, iso: p.iso, lgCode: p.lgCode, name };
 }
@@ -95,7 +96,8 @@ function cityToPublic(c: CityLang, lang: string, short?: boolean, macrons?: bool
   if (lang === "ja-Kana" && c.nameHira) name = hiraToKana(c.nameHira);
   else if (lang === "ja-HW" && c.nameHira) name = kanaToHW(hiraToKana(c.nameHira));
   else if (lang === "ja-Hira" && c.nameHira) name = c.nameHira;
-  else if (lang === "en" && macrons && c.nameHira) name = capitalizeHepburn(hiraToHepburn(c.nameHira));
+  else if (lang === "en" && macrons && c.nameHira)
+    name = capitalizeHepburn(hiraToHepburn(c.nameHira));
   if (short) name = shortenCityName(name, lang as never);
   return {
     jisCode: c.code,
