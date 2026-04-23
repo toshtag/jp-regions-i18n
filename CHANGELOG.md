@@ -9,6 +9,12 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-04-23
+
+### Changed
+
+- **Stable release** — promoted from 0.x to 1.0.0; public API is now considered stable
+
 ## [0.9.4] - 2026-04-23
 
 ### Added
