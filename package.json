@@ -1,6 +1,6 @@
 {
   "name": "jp-regions-i18n",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Multilingual Japanese prefectures and cities data (i18n)",
   "type": "module",
   "exports": {
