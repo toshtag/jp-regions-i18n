@@ -9,6 +9,12 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.9.3] - 2026-04-23
+
+### Changed
+
+- **package.json `author` field** — set to `Pocket (https://github.com/toshtag)`; was previously empty, causing npm to show no publisher metadata on the package page
+
 ## [0.9.2] - 2026-04-06
 
 ### Fixed
