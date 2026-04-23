@@ -9,6 +9,17 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) wit
 
 ## [Unreleased]
 
+## [0.9.4] - 2026-04-23
+
+### Added
+
+- **Monthly data update check** — `scripts/check-update.ts` compares local CSV against [code4fukui/localgovjp](https://github.com/code4fukui/localgovjp) to detect newly established or abolished municipalities; `.github/workflows/data-check.yml` runs this check on the 1st of every month and opens a GitHub Issue when a difference is found
+
+### Fixed
+
+- **Iwami-cho (Tottori)** — corrected municipality code from `31301` / `313017` to `31302` / `313025`
+- **Tagami-machi (Niigata)** — added missing entry (`15361` / `153613`); the town was absent from the dataset
+
 ## [0.9.3] - 2026-04-23
 
 ### Changed
