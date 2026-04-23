@@ -1,0 +1,41 @@
+name: Data Update Check
+
+on:
+  schedule:
+    # 毎月1日 09:00 UTC (JST 18:00) に実行
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: "pnpm"
+      - run: pnpm install --frozen-lockfile
+
+      - name: Run data update check
+        id: check
+        run: |
+          set +e
+          pnpm tsx scripts/check-update.ts > diff-report.md 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          cat diff-report.md
+
+      - name: Create issue if changes detected
+        if: steps.check.outputs.exit_code == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u '+%Y-%m-%d')
+          TITLE="データ更新検知: 市区町村コードに差異があります ($DATE)"
+          gh issue create \
+            --title "$TITLE" \
+            --body-file diff-report.md

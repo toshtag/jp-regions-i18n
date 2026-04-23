@@ -816,6 +816,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 15,15227,152277,,city,胎内市,たいないし,Tainai-shi,胎内市,胎內市,다이나이시,Tainai-xi,Thai Nội thị
 15,15307,153079,,town,聖籠町,せいろうまち,Seiro-machi,圣笼町,聖籠町,세이로정,Seirō-maxi,Thánh Lung đinh
 15,15342,153427,,village,弥彦村,やひこむら,Yahiko-mura,弥彦村,彌彥村,야히코촌,Yahico-mura,Dã Ngạn thôn
+15,15361,153613,,town,田上町,たがみまち,Tagami-machi,田上町,田上町,다가미정,Tagami-maxi,Điền Thượng đinh
 15,15385,153850,,town,阿賀町,あがまち,Aga-machi,阿贺町,阿賀町,아가정,Aga-maxi,A Hạ đinh
 15,15405,154059,,town,出雲崎町,いずもざきまち,Izumozaki-machi,出云崎町,出雲崎町,이즈모자키정,Izumozaqui-maxi,A Hạ đinh
 15,15461,154610,,town,湯沢町,ゆざわまち,Yuzawa-machi,汤泽町,湯澤町,유자와정,Yuzawa-maxi,Thủ Vũ thôn
@@ -1413,7 +1414,7 @@ pref_code,code,lg_code,parent_code,type,ja,ja_hira,en,zh-CN,zh-TW,ko,pt,vi
 31,31202,312029,,city,米子市,よなごし,Yonago-shi,米子市,米子市,요나고시,Yonago-xi,Mễ Tử thị
 31,31203,312037,,city,倉吉市,くらよしし,Kurayoshi-shi,仓吉市,倉吉市,구라요시시,Curayoxi-xi,Thương Cát thị
 31,31204,312045,,city,境港市,さかいみなとし,Sakaiminato-shi,境港市,境港市,사카이미나토시,Sacaiminato-xi,Cảnh Cảng thị
-31,31301,313017,,town,岩美町,いわみちょう,Iwami-cho,岩美町,岩美町,이와미정,Iwami-xo,Nham Mỹ đinh
+31,31302,313025,,town,岩美町,いわみちょう,Iwami-cho,岩美町,岩美町,이와미정,Iwami-xo,Nham Mỹ đinh
 31,31325,313254,,town,若桜町,わかさちょう,Wakasa-cho,若樱町,若櫻町,와카사정,Wacasa-xo,Nhược Anh đinh
 31,31328,313289,,town,智頭町,ちづちょう,Chizu-cho,智头町,智頭町,지즈정,Xizu-xo,Trí Đầu đinh
 31,31329,313297,,town,八頭町,やずちょう,Yazu-cho,八头町,八頭町,야즈정,Yazu-xo,Bát Đầu đinh
